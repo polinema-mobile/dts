@@ -10,4 +10,4 @@
   * [Praktikum 4 Halaman Form](chapter03/chapter03-form.md)
   * [Praktikum 5 Intent Splash Screen](chapter03/chapter03-intentsplashscreen.md)
   * [Praktikum 6 Intent Antar Activity](chapter03/chapter03-intentactivity.md)
-  * [Tugas 1](chapter03/task01.md)
+  * [Tugas 1](chapter03/chapter03-task01.md)
