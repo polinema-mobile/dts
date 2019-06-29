@@ -1,0 +1,5 @@
+node_modules/
+docs/package.json
+docs/package-lock.json
+docs/.gitignore
+docs/gitbook/gitbook-plugin-livereload/
