@@ -25,4 +25,11 @@ Untuk mengubah desain layout menjadi layout android xml diperlukan asset berupa 
 ![import](images/03importhdpo.png)
 5. Pilih gambar yang akan di import kemudian klik import
 ![import again](images/03importhem.png)
+
 ##Cara Import Custom Font
+Pada starter code juga sudah disediakan dua varian custom font yang dapat digunakan pada layout android. Untuk mengimport custom font dilakukan dengan langkah langkah berikut :
+1. Klik kanan pada folder `res` kemudian pilih `new -> android resource directory`
+![import font](images/03resourcedirectory.png)
+2. Pilih Resource type `font`
+![font](images/03fontfolder.png)
+3. Copy dan paste custom font yang anda miliki ke dalam folder font ini, dengan syarat penamaan font semua menggunakan huruf kecil dan disambungkan dengan menggunakan underscore.
