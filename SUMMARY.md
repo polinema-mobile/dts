@@ -11,3 +11,7 @@
   * [Praktikum 5 Intent Splash Screen](chapter03/chapter03-07intentsplashscreen.md)
   * [Praktikum 6 Intent Antar Activity](chapter03/chapter03-08intentactivity.md)
   * [Tugas 1](chapter03/chapter03-09task01.md)
+* [Bab 04 Validasi dan Interaksi Activity](chapter04/chapter04-pendahuluan.md)
+  * [Pendahuluan](chapter04/chapter04-pendahuluan.md)
+  * [Praktikum 1 - Validasi](chapter04/chapter04-validasi.md)
+  * [Tugas Praktikum 1](chapter04/chapter04-tugasvalidasi.md)
