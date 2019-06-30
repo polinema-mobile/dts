@@ -4,3 +4,5 @@ docs/package-lock.json
 docs/.gitignore
 docs/gitbook/gitbook-plugin-livereload/
 _book/
+
+.DS_Store
