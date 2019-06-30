@@ -284,10 +284,22 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="splashscreen">Splashscreen</h1>
+<p>Splashscreen merupakan screen awal yang dibuka ketika aplikasi dijalankan ada banyak aplikasi yang menggunakan splash screen namun ada juga yang tidak menggunakan, namun demikian kemampuan membuat splash screen tetap harus dimiliki oleh seorang junior mobile programmer.</p>
 <h2 id="buka-main-activity">Buka Main Activity</h2>
+<p>Bukalah file MainActivity.java, file ini akan kita jadikan sebagai splash screen. Pada file ini anda akan menemukan bahwa pada fungsi onCreate layout yang di load adalah <code>activity_main.xml</code>. Oleh karena itu untuk mengubah tampilannya kita harus mengubah isi file dari <code>activity_main.xml</code></p>
 <h2 id="edit-file-activitymainxml">Edit file activity_main.xml</h2>
+<p>Lakukan langkah langkah berikut untuk membuat splash screen. Desain yang diinginkan untuk splash screen dapat anda lihat pada folder <code>design</code>.
+<img src="images/0304splash.png" alt="splash"></p>
 <h3 id="tambahkan-logo">Tambahkan Logo</h3>
+<ol>
+<li>Hapuslah TextView Hello World dari halaman activity_main.xml</li>
+<li>Buatlah sebuah ImageView dan atur posisinya di tengah layar dengan menggunakan constraint_layout</li>
+</ol>
 <h3 id="tambahkan-text">Tambahkan Text</h3>
+<ol>
+<li>Buatlah sebuah TextView dengan font montsterrat semi bold dan beri isi &quot;DTS Kominfo&quot;</li>
+<li>Letakkan TextView tersebut dibawah logo dengan jarak 8dp.</li>
+</ol>
 
                                 
                                 </section>
@@ -331,7 +343,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Praktikum 2 Halaman Splash Screen","level":"1.2.4","depth":2,"next":{"title":"Praktikum 3 Halaman Welcome","level":"1.2.5","depth":2,"path":"chapter03/chapter03-05welcome.md","ref":"chapter03/chapter03-05welcome.md","articles":[]},"previous":{"title":"Praktikum 1 Load Starter Code","level":"1.2.3","depth":2,"path":"chapter03/chapter03-03startercode.md","ref":"chapter03/chapter03-03startercode.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter03/chapter03-04splashscreen.md","mtime":"2019-06-29T10:24:52.301Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-29T14:12:42.737Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Praktikum 2 Halaman Splash Screen","level":"1.2.4","depth":2,"next":{"title":"Praktikum 3 Halaman Welcome","level":"1.2.5","depth":2,"path":"chapter03/chapter03-05welcome.md","ref":"chapter03/chapter03-05welcome.md","articles":[]},"previous":{"title":"Praktikum 1 Load Starter Code","level":"1.2.3","depth":2,"path":"chapter03/chapter03-03startercode.md","ref":"chapter03/chapter03-03startercode.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter03/chapter03-04splashscreen.md","mtime":"2019-06-29T14:29:25.968Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-30T01:00:46.855Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
