@@ -1,7 +1,8 @@
-#Pendahuluan
+# Pendahuluan
+
 Pada praktikum pertama chapter 4 ini Anda akan mencoba membuat validasi input pada halaman login dari chapter sebelumnya. Mengapa kita perlu membuat validasi pada input ? Validasi input dilakukan untuk memastikan data yang diisi oleh user sesuai dengan apa yang dibutuhkan oleh aplikasi. Pada kasus halaman login terdapat minimal 2 input yang harus Anda validasi. Pertama adalah inputan email dan yang kedua adalah inputan kata sandi atau password. Pertanyaan selanjutnya adalah bagaimana cara memvalidasi inputan email dan password ? Untuk menjawab hal tersebut, kita harus mengetahui ciri khusus dari kedua inputan tersebut. Apa ciri khusus dari email ? Ciri yang paling sederhana dari email adalah memiliki karakter penguhubung yaitu *@*. Selanjutnya, apa ciri dari password ? Inputan password **tidak boleh** ditampilkan dalam interface. Ciri password lainnya dapat kita definisikan sesuai dengan kebutuhan. Contoh ciri password adalah jumlah karakter, penggunaan *lowercase* dan *uppercase*, serta penggunaan karakter unik dalam sebuah password.
 
-##Validasi Inputan Email
+## Validasi Inputan Email
 Validasi email akan dilakukan pada bagian layout dan kode activity. Buka kode layout `activity_welcome_back.xml`. Tambahkan parameter `android:inputType="textEmailAddress"` pada bagian `editText` untuk email. Hasil modifikasi adalah sebagai berikut,
 
 ```xml
@@ -75,7 +76,7 @@ inputan email. `toString()` digunakan untuk mengubah object menjadi sebuah strin
 2. `isValidEmail()` merupakan method yang telah kita buat untuk pengecekan email dengan menggunakan kelas Patterns.
 
 3. Pesan tidak valid akan dimunculkan dengan menggunakan [Toast](https://developer.android.com/reference/android/widget/Toast). Toast merupakan tampilan pesan yang disediakan oleh Android untuk menampilkan pesan dalam kurun waktu yang singkat. `Toast.makeText()` digunakan untuk membuat pesan pada toast. `Toast.makeText()` memiliki 3 parameter, yaitu **Context**, **Pesan**, dan **Durasi**.
-Sampai tahap ini, validasi akan berjalan seperti berikut, 
+Sampai tahap ini, validasi akan berjalan seperti berikut,
 
 <p align="center"><img src="images/validasi-email.gif" alt="Hasil Sementara"/></p>
 
