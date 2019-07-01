@@ -1,4 +1,23 @@
 # Activity 
+## Hello World Android
+- Bukalah aplikasi Android Studio.
+- Buatlah sebuah project baru dengan konfigurasi seperti pada gambar di bawah ini
+
+  !['newproject'](images/02-newproject.png)
+
+  Nama aplikasi silakan disesuaikan dengan keinginan anda, perhatikan ada warning mengenai path project, sebaiknya path project tidak memiliki spasi.
+
+  !['newproject'](images/02-newproject-step2.png)
+  Targetkan phone dan pilihlah minimum sdk sesuai kebutuhan, semakin tinggi minimum sdk semakin sedikit device yang dapat menggunakan aplikasi yang anda buat.
+  !['newproject'](images/02-newproject-step3.png)
+  Pilihlah empty activity sebagai template starter project anda.
+  !['newproject'](images/02-newproject-step4.png)
+
+* Bukalah file MainActivity.java
+
+  !['newproject'](images/02-newproject-step5.png)
+  !['newproject'](images/02-newproject-step6.png)
+
 ## Pengertian Activity
 Activity adalah:
 -	Komponen yang menampilkan dan mengatur halaman aplikasi sebagai tempat interaksi antara pengguna dengan aplikasi Android.
@@ -19,7 +38,7 @@ Activity adalah:
     4. **Restart**: Jika activity “paused” atau “stopped”, sistem dapat menghapus activity ini dari memory, dan ketika activity ini dibutuhkan dan dipanggil kembali maka, activity akan kembali ke keadaan awal (restart).
 ![activity1](images/life_cyccle_activity.png)
 
-## PRAKTIKUM
+## Praktikum 
 
 1. Buat sebuah project baru dengan nama **Activity_Life_Cycle** atau download "Starter_Code"
 2. Saat membuat project baru, secara otomatis activity utama akan terbuat dengan nama "MainActivity"
