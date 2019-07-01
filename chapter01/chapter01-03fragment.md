@@ -108,10 +108,10 @@ Di Fragment ini pertama-tama kita inflate layout dan dapatkan referensi terhadap
 9. fragment_second.xml
 ![2ndlayout](images/2ndlay.png)
 
-10. buka res > value > color.xml. 
+10. Buka res > value > color.xml. 
 Disini kita akan mendefinisikan warna yang akan digunakan dalam file xml
 ![color](images/color.png)
 
-11. buka AndroidManifest.xml.  Pada langkah ini, kita buka file Android Manifest yang sebenarnya tidak perlu kita edit sama sekali karena aplikasi ini hanya berisi satu Activitty yaitu MainActivity yang sudah didefinisikan di dalamnya. Dalam proyek ini, kita memang membuat dua Fragment tetapi kedua fragment tersebut tidak perlu didefinisikan dalam manifest karena fragment adalah bagian dari activity.
+11. Buka AndroidManifest.xml.  Pada langkah ini, kita buka file Android Manifest yang sebenarnya tidak perlu kita edit sama sekali karena aplikasi ini hanya berisi satu Activitty yaitu MainActivity yang sudah didefinisikan di dalamnya. Dalam proyek ini, kita memang membuat dua Fragment tetapi kedua fragment tersebut tidak perlu didefinisikan dalam manifest karena fragment adalah bagian dari activity.
 
-12. jalankan aplikasi
+12. Jalankan aplikasi
