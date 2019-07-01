@@ -1,6 +1,10 @@
 # Summary
 
 * [Introduction](README.md)
+* [Bab 01 Activity dan Fragment](chapter01/chapter01-01pendahuluan.md)
+    * [Pendahuluan](chapter01/chapter01-01pendahuluan.md)
+    * [Activity](chapter01/chapter01-02activity.md)
+    * [Fragment](chapter01/chapter01-03fragment.md)
 * [Bab 03 Konversi Desain ke Android Xml](chapter03/chapter03-01pendahuluan.md)
   * [Pendahuluan](chapter03/chapter03-01pendahuluan.md)
   * [Hasil Yang Diharapkan](chapter03/chapter03-02hasil.md)
