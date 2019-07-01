@@ -1,4 +1,4 @@
-# Fragment Life Cycle
+# Android Fragment Life Cycle
 ## Pengertian Fragment
 
 Android Fragment adalah bagian yang dapat digunakan kembali dari antarmuka pengguna android activity yang digunakan untuk membuat UI yang dinamis dan fleksibel.
@@ -24,4 +24,39 @@ Pada gambar diatas, dicontohkan bagaimana dua modul UI yang di definisikan oleh 
 untuk membuat fragmen, kita membuat subkelas fragmen (atau subkelas yang ada). kelas fragmen memiliki kode yang mirip seperti Activity. Kelas ini memiliki metode callback yang serupa dengan activity seperti onCreate(), onStart(), onPause(), dan onStop(). 
 
 ![frag2](images/frag2.png) 
+
+- onAttach()
+metode ini panggil pertama kali bahkan sebelum onCreate() callback dan setelah fragmen telah dipasangkan ke activity
+- onCreate()
+Sistem akan memanggilnya saat membuat fragmen. Dalam implementasi, kita harus melakukan inisialisasi komponen penting dari fragmen yang ingin dipertahankan saat fragmen dihentikan sementara atau dihentikan, kemudian dilanjutkan.
+- onCreateView()
+Sistem akan memanggilnya saat fragmen menggambar antarmuka penggunanya (UI)untuk yang pertama kali. Untuk menggambar UI fragmen, Anda harus mengembalikan View dari metode ini yang menjadi akar layout fragmen. Hasil yang dikembalikan bisa berupa null jika fragmen tidak menyediakan UI.
+- onActivityCreated()
+Metode ini dipanggil setelah Activity onCreate() Callback telah menyelesaikan eksekusi. Metode ini merupakan indikasi untuk activity tersebut telah menyelesaikan eksekusi sebelum kita mencoba mengakses dan memodifikasi elemen UI dari activity secara bebas
+- onStart()
+metode yang dipanggil setelah fragmen terlihat pada activity
+- onResume()
+metode ini dipanggil ketika pengguna berinteraksi dengan fragmen dalam activity setelah Activity onResume() callback
+
+Karena sebuah fragment tidak lagi digunakan, maka ia akan melewati serangkaian reverse callback
+
+- onPause()
+metode ini dipanggil ketika fragmen tidak lagi berinteraksi dengan pengguna baik karena aktivitasnya sedang ditunda atau operasi fragmen mengubahnya dalam activity.
+
+- onStop()
+metode ini dipanggil ketika fragmen tidak lagi berinteraksi dengan pengguna baik karena aktivitasnya dihentikan atau operasi fragmen mengubahnya dalam activity
+
+- onDestroyView()
+metode ini dipanggil untuk memungkinkan fragmen membersihkan resources yang terkait dengan view yang ada pada activity
+
+- onDestroyView()
+metode ini dipanggil untuk melakukan pembersihan akhir dari status fragmen
+
+- onDetach()
+metode ini dipanggil ke fragmen yang tidak lagi dikaitkan dengan aktivitasnya
+
+Biasanya kita harus mengimplementasikan setidaknya metode alur onCreate(), onCreateView(), dan onPause().
+
+- onSaveInstanceState()
+callback ini disebut dimana kita diizinkan untuk menyimpan beberapa data mengenai peristiwa fragmen tepat sebelum aplikasi di pause sehingga pengguna kembali ke aplikasi merekadengan mendapatkan data yang disimpan. Disini dibutuhkan Bundle sehingga kita dapat menyimpan data sebagai key atau nilai.
 
