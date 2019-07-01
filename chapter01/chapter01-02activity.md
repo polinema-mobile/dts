@@ -1,6 +1,7 @@
-## Activity Life Cycle
-## Pengertian Activity
+# Activity 
+## New P
 
+## Pengertian Activity
 Activity adalah:
 -	Kompenen yang menampilkan dan mengatur halaman aplikasi sebagai tempat interaksi antara pengguna dengan aplikasi Android.
 -	Class MainActivity secara otomatis akan ter-generate ketika membuat suatu project, dimana Class tersebut merupakan extends dari Class Activity.
