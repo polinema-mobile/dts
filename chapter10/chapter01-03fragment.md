@@ -23,5 +23,6 @@ Pada gambar diatas, dicontohkan bagaimana dua modul UI yang di definisikan oleh 
 
 untuk membuat fragmen, kita membuat subkelas fragmen (atau subkelas yang ada). kelas fragmen memiliki kode yang mirip seperti Activity. Kelas ini memiliki metode callback yang serupa dengan activity seperti onCreate(), onStart(), onPause(), dan onStop(). 
 
-![frag2](images/frag2.png) 
+![frag2](images/frag2.png)
+Daur hidup fragmen (saat activity berjalan)
 
