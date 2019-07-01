@@ -24,7 +24,7 @@ Activity adalah:
 1. Buat sebuah project baru dengan nama Activity_Life_Cycle atau download "Starter_Code"
 2. Saat membuat project baru, secara otomatis activity utama akan terbuat dengan nama "MainActivity"
 3. Ketikkan kode seperti pada gambar berikut (Sudah tersedia pula di Starter_Code).
-    (chapter01/activity1.JPG)
+    ![activity1](activity1.JPG)
 4. Jalankan kode tersebut
 5. Perhatikan tampilan pop up yang keluar ketika aplikasi dijalankan.
 6. Tambahkan kode seperti gambar berikut kemudian jalankan kembali.
