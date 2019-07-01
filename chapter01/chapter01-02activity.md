@@ -3,7 +3,7 @@
 - Bukalah aplikasi Android Studio.
 - Buatlah sebuah project baru dengan konfigurasi seperti pada gambar dibawah ini
 
-  !['newproject'](img/02-newproject.png)
+  !['newproject'](images/02-newproject.png)
 
   Nama aplikasi silahkan disesuaikan dengan keinginan anda, perhatikan ada warning mengenai path project, sebaiknya path project tidak memiliki spasi.
 
