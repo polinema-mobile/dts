@@ -1,0 +1,9 @@
+_book/
+docs/
+node_modules/
+
+*.md
+.DS_Store
+book.json
+package-lock.json
+package.json
