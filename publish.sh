@@ -2,7 +2,7 @@
 
 npm install && npm run build
 
-git checkout gh-pages
+git checkout -f gh-pages
 
 git pull origin gh-pages --rebase
 
