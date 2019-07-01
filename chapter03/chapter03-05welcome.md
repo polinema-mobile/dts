@@ -1,8 +1,8 @@
-#Welcome Activity
+# Welcome Activity
 Welcome activity adalah activity yang di jalankan setelah splash screen, di activity welcome ini ditampilkan secara singkat fitur fitur aplikasi. Berikut ini screen shot tampilan aplikasi yang diharapkan.
 
 
-##Buat Activity Baru WelcomeSlideCalendar 
+## Buat Activity Baru WelcomeSlideCalendar 
 Buatalah activity baru dengan nama WelcomeSlideCalendar. Untuk membuatnya perhatikan gambar dibawah ini. Klik Kanan di package `dtschapter03_starter->new->activity->empty activity`.
 ![empty activity](images/0305emptyactivity.png)
 
