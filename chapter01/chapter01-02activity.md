@@ -28,6 +28,6 @@ Activity adalah:
 4. Jalankan kode tersebut
 5. Perhatikan tampilan pop up yang keluar ketika aplikasi dijalankan.
 6. Tambahkan kode seperti gambar berikut kemudian jalankan kembali.
-  (chapter01/activity2.JPG)
+  ![activity](avtivity2.JPG)
 
 
