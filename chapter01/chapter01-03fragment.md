@@ -14,4 +14,15 @@ Fragment Manager bertanggung jawab untuk menambah / menghapus atau mengganti fra
 Bila Kita menambahkan fragmen sebagai bagian dari layout aktivitas, fragmen itu akan berada dalam ViewGroup di hierarki tampilan aktivitas tersebut dan fragmen mendefinisikan layout tampilannya sendiri. 
 
 Kita bisa menyisipkan fragmen ke dalam layout aktivitas dengan mendeklarasikan fragmen dalam file layout aktivitas, sebagai elemen `<fragment>`, atau dari kode aplikasi dengan menambahkannya ke ViewGroup yang ada. 
+
 ![frag1](images/Frag1.png)
+
+Pada gambar diatas, dicontohkan bagaimana dua modul UI yang di definisikan oleh fragmen bisa digabungkan ke dalam satu activity untuk desain tablet namun dipisahkan untuk desain handset
+
+## Membuat Fragment
+
+untuk membuat fragmen, kita membuat subkelas fragmen (atau subkelas yang ada). kelas fragmen memiliki kode yang mirip seperti Activity. Kelas ini memiliki metode callback yang serupa dengan activity seperti onCreate(), onStart(), onPause(), dan onStop(). 
+
+![frag2](images/frag2.png)
+Daur hidup fragmen (saat activity berjalan)
+
