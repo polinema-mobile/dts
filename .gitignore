@@ -6,3 +6,4 @@ docs/gitbook/gitbook-plugin-livereload/
 _book/
 
 .DS_Store
+docs/
