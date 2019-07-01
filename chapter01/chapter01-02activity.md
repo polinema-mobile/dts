@@ -1,5 +1,5 @@
 ## Activity Life Cycle
-##Pengertian Activity
+## Pengertian Activity
 
 Activity adalah:
 -	Kompenen yang menampilkan dan mengatur halaman aplikasi sebagai tempat interaksi antara pengguna dengan aplikasi Android.
@@ -10,7 +10,7 @@ Activity adalah:
 -	Untuk menghubungkan Activity dengan tampilan yang telah dibentuk pada xml, digunakan fungsi setContentView().
 -	Untuk memanggil widget pada activity digunakan fungsi findViewById().
 
-##Activity Life Cycle (Daur Hidup Life Cycle)
+## Activity Life Cycle (Daur Hidup Life Cycle)
 -	Activity aplikasi android dikelola dengan sistem “activity stack” (antrian bertumpuk).
 -	Ketika suatu activity dinyatakan “start” maka activity tersebut terletak diatas dari activity-activity yang telah berjalan pada “activity stack”. Keadaan tersebut bertahan hingga muncul suatu activity baru.
 -	4 keadaan yang dimiliki activity, yaitu:
