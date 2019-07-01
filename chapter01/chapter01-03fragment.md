@@ -17,47 +17,47 @@ Kita bisa menyisipkan fragmen ke dalam layout aktivitas dengan mendeklarasikan f
 
 ![frag1](images/Frag1.png)
 
-Pada gambar diatas, dicontohkan bagaimana dua modul UI yang di definisikan oleh fragmen bisa digabungkan ke dalam satu activity untuk desain tablet namun dipisahkan untuk desain handset
+Pada gambar di atas, dicontohkan bagaimana dua modul UI yang didefinisikan oleh fragmen bisa digabungkan ke dalam satu activity untuk desain tablet namun dipisahkan untuk desain handset.
 
 ## Membuat Fragment
 
-untuk membuat fragmen, kita membuat subkelas fragmen (atau subkelas yang ada). kelas fragmen memiliki kode yang mirip seperti Activity. Kelas ini memiliki metode callback yang serupa dengan activity seperti onCreate(), onStart(), onPause(), dan onStop(). 
+Untuk membuat fragment, kita membuat subkelas fragment (atau subkelas yang ada). kelas fragment memiliki kode yang mirip seperti Activity. Kelas ini memiliki metode callback yang serupa dengan activity seperti onCreate(), onStart(), onPause(), dan onStop(). 
 
 ![frag2](images/frag2.png) 
 
-- onAttach()
+- **onAttach()**
 metode ini panggil pertama kali bahkan sebelum onCreate() callback dan setelah fragmen telah dipasangkan ke activity
-- onCreate()
+- **onCreate()**
 Sistem akan memanggilnya saat membuat fragmen. Dalam implementasi, kita harus melakukan inisialisasi komponen penting dari fragmen yang ingin dipertahankan saat fragmen dihentikan sementara atau dihentikan, kemudian dilanjutkan.
-- onCreateView()
+- **onCreateView()**
 Sistem akan memanggilnya saat fragmen menggambar antarmuka penggunanya (UI)untuk yang pertama kali. Untuk menggambar UI fragmen, Anda harus mengembalikan View dari metode ini yang menjadi akar layout fragmen. Hasil yang dikembalikan bisa berupa null jika fragmen tidak menyediakan UI.
-- onActivityCreated()
+- **onActivityCreated()**
 Metode ini dipanggil setelah Activity onCreate() Callback telah menyelesaikan eksekusi. Metode ini merupakan indikasi untuk activity tersebut telah menyelesaikan eksekusi sebelum kita mencoba mengakses dan memodifikasi elemen UI dari activity secara bebas
-- onStart()
+- **onStart()**
 metode yang dipanggil setelah fragmen terlihat pada activity
-- onResume()
+- **onResume()**
 metode ini dipanggil ketika pengguna berinteraksi dengan fragmen dalam activity setelah Activity onResume() callback
 
-Karena sebuah fragment tidak lagi digunakan, maka ia akan melewati serangkaian reverse callback
+Karena sebuah fragment tidak lagi digunakan, maka ia akan melewati serangkaian *reverse callback*
 
-- onPause()
+- **onPause()**
 metode ini dipanggil ketika fragmen tidak lagi berinteraksi dengan pengguna baik karena aktivitasnya sedang ditunda atau operasi fragmen mengubahnya dalam activity.
 
-- onStop()
+- **onStop()**
 metode ini dipanggil ketika fragmen tidak lagi berinteraksi dengan pengguna baik karena aktivitasnya dihentikan atau operasi fragmen mengubahnya dalam activity
 
-- onDestroyView()
+- **onDestroyView()**
 metode ini dipanggil untuk memungkinkan fragmen membersihkan resources yang terkait dengan view yang ada pada activity
 
-- onDestroyView()
+- **onDestroyView()**
 metode ini dipanggil untuk melakukan pembersihan akhir dari status fragmen
 
-- onDetach()
+- **onDetach()**
 metode ini dipanggil ke fragmen yang tidak lagi dikaitkan dengan aktivitasnya
 
 Biasanya kita harus mengimplementasikan setidaknya metode alur onCreate(), onCreateView(), dan onPause().
 
-- onSaveInstanceState()
+- **onSaveInstanceState()**
 callback ini disebut dimana kita diizinkan untuk menyimpan beberapa data mengenai peristiwa fragmen tepat sebelum aplikasi di pause sehingga pengguna kembali ke aplikasi merekadengan mendapatkan data yang disimpan. Disini dibutuhkan Bundle sehingga kita dapat menyimpan data sebagai key atau nilai.
 
 ## Kegunaan Fragmen Di Android
@@ -95,7 +95,7 @@ Pada langkah ini,buka MainActivity dan tambahkan kode untuk inisiasi tombol. Set
 
 4. buat dua fragment dengan cara klik kanan pada folder package dan buat class kemudian beri nama sebagai "FirstFragment" dan "SecondFragment" dan tambahkan kode berikut di masing-masing clas fragment.
 5. FirstFragment.class
-![1st](images/1stfrag.png)
+![1st](images/1stfragmen.png)
 Di Fragment ini pertama-tama kita inflate layout dan dapatkan referensi terhadap Button object. Setelah itu kita lakukan event setOnClickListener di Button sehingga setiap kali pengguna mengklik tombol dengan pesan "First Fragment" ditampilkan di layar dengan menggunakan Toast.
 
 6. SecondFragment.class
@@ -108,6 +108,7 @@ Di Fragment ini pertama-tama kita inflate layout dan dapatkan referensi terhadap
 9. fragment_second.xml
 ![2ndlayout](images/2ndlay.png)
 
+<<<<<<< HEAD
 10. Buka res > value > color.xml. 
 Disini kita akan mendefinisikan warna yang akan digunakan dalam file xml
 ![color](images/color.png)
@@ -115,3 +116,13 @@ Disini kita akan mendefinisikan warna yang akan digunakan dalam file xml
 11. Buka AndroidManifest.xml.  Pada langkah ini, kita buka file Android Manifest yang sebenarnya tidak perlu kita edit sama sekali karena aplikasi ini hanya berisi satu Activitty yaitu MainActivity yang sudah didefinisikan di dalamnya. Dalam proyek ini, kita memang membuat dua Fragment tetapi kedua fragment tersebut tidak perlu didefinisikan dalam manifest karena fragment adalah bagian dari activity.
 
 12. Jalankan aplikasi
+=======
+10. buka res > value > color.xml. 
+Pada tahap ini kita akan mendefinisikan warna yang akan digunakan dalam file xml
+![color](images/color.png)
+
+11. buka AndroidManifest.xml.  Pada langkah ini, kita buka file Android Manifest yang sebenarnya tidak perlu kita edit sama sekali karena aplikasi ini hanya berisi satu Activitty yaitu MainActivity yang sudah didefinisikan didalamnya. Dalam proyek ini, kita memang membuat dua fragment tetapi kedua fragment tersebut tidak perlu didefinisikan dalam manifest karena fragment adalah bagian dari activity.
+
+12. jalankan aplikasi.
+  
+>>>>>>> 637da133233b2ced5a500727bda3496148b6f28a
