@@ -16,3 +16,4 @@
 
   !['newproject'](images/02-newproject-step5.png)
   !['newproject'](images/02-newproject-step6.png)
+* Jalankan aplikasi hello world ini ke mobile device anda
