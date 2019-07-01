@@ -115,4 +115,3 @@ Disini kita akan mendefinisikan warna yang akan digunakan dalam file xml
 11. buka AndroidManifest.xml.  Pada langkah ini, kita buka file Android Manifest yang sebenarnya tidak perlu kita edit sama sekali karena aplikasi ini hanya berisi satu Activitty yaitu MainActivity yang sudah didefinisikan di dalamnya. Dalam proyek ini, kita memang membuat dua Fragment tetapi kedua fragment tersebut tidak perlu didefinisikan dalam manifest karena fragment adalah bagian dari activity.
 
 12. jalankan aplikasi
-  
