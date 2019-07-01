@@ -19,4 +19,15 @@ Activity adalah:
     3. Stopped: Jika activity sudah tidak dipakai dan digantikan oleh activity lain. Activity yang telah “stopped” tidak akan dipanggil lagi, dan memori akan menghapus segala informasi mengenai activity tersebut. 
     4. Restart: Jika activity “paused” atau “stopped”, sistem dapat menghapus activity ini dari memory, dan ketika activity ini dibutuhkan dan dipanggil kembali maka, activity akan kembali ke keadaan awal (restart).
 
+## PRAKTIKUM
+
+1. Buat sebuah project baru dengan nama Activity_Life_Cycle atau download "Starter_Code"
+2. Saat membuat project baru, secara otomatis activity utama akan terbuat dengan nama "MainActivity"
+3. Ketikkan kode seperti pada gambar berikut (Sudah tersedia pula di Starter_Code).
+    (chapter01/activity1.JPG)
+4. Jalankan kode tersebut
+5. Perhatikan tampilan pop up yang keluar ketika aplikasi dijalankan.
+6. Tambahkan kode seperti gambar berikut kemudian jalankan kembali.
+  (chapter01/activity2.JPG)
+
 
