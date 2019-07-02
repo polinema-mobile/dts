@@ -63,3 +63,13 @@ seperti di atas
    untuk menampilkan dialog pemilihan email client, jika menginginkan
    email default yang digunakan parameter yang dilewatkan cukup intent.
    Baris program cukup dengan `startActivity(i);`
+   
+   >Dengan memanfaatkan implicit intent tentunya aplikasi yang akan kita
+   >buat akan lebih interaktif ketika dapat memanfaatkan layanan-layanan
+   >yang terdapat pada handphone android yang kita miliki, selain itu
+   >kita sebagai programmer tidak perlu membuat lagi fungsi-fungsi atau
+   >komponen build tetapi lebih fokus ke logic aplikasi yang akan
+   >dikembangkan.
+
+## Latihan
+//to do
