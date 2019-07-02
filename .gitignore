@@ -1,9 +1,6 @@
-node_modules/
-docs/package.json
-docs/package-lock.json
-docs/.gitignore
-docs/gitbook/gitbook-plugin-livereload/
 _book/
+docs/
+node_modules/
 
 .DS_Store
-docs/
+.nvimlog
