@@ -48,7 +48,7 @@ Untuk memahami penggunaannya lakukan langkah percobaaan berikut ini :
 
 > kita dapat menggunakan LinearLayout sebagai child dari LinearLayout atau layout lain proses ini dinamakan nested layout
 
-- Berdasarkan percobaan diatas lakukan lah perubahan perubahan sebagai berikut kemudian ambil lah kesimpulan dari percobaan ini.
-  - ubah orientasi menjadi horizontal
-  - ubah weight sum menjadi angka integer yang lain
-  - ubah layout_weight dari salah satu LinearLayout
+- Berdasarkan percobaan di atas lakukanlah perubahan-perubahan sebagai berikut kemudian ambillah kesimpulan dari percobaan ini.
+  - ubah *orientation* menjadi horizontal
+  - ubah *weight sum* menjadi angka integer yang lain
+  - ubah *layout_weight* dari salah satu **LinearLayout**

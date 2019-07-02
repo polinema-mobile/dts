@@ -12,7 +12,7 @@ Pada praktikum kali ini anda akan mempelajari teori mengenai beberapa layout pop
 3. Membuat android xml layout constraint layout
 
 ## Alat dan bahan
-<!-- 1. Clone starter code : [Starter Code Chapter 3](https://github.com/siubie/dtschapter03-starter)
-2. Perhatikan folder “design” pada starter code untuk melihat layout yang akan dibuat. -->
+1. Clone starter code : [Starter Code Chapter 2](https://github.com/polinema-mobile/dtschapter02-starter)
+2. Perhatikan folder “design” pada starter code untuk melihat layout yang akan dibuat.
 
 
