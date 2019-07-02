@@ -9,4 +9,4 @@ Pada praktikum kali ini anda akan dikenalkan mengenai activity dan fragment bese
 2. Membuat Fragment
 
 ## Alat dan bahan
-1. Clone starter code : [Starter Code Chapter 1](https://github.com/siubie/dtschapter01-starter)
+1. Clone starter code : [Starter Code Chapter 1](https://github.com/polinema-mobile/dtschapter01-starter)
