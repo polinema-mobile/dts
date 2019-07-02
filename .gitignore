@@ -4,6 +4,7 @@ node_modules/
 
 *.md
 .DS_Store
+.nvimlog
 book.json
 package-lock.json
 package.json
