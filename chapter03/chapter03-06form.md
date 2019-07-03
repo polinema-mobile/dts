@@ -1,11 +1,11 @@
-#Login Form
-Login Form merupakan .... Di activity ini ditampilkan form Login ...... Berikut ini screen shot tampilan aplikasi yang diharapkan.
+# Login Form
+Form Login merupakan form yang nantinya akan ditampilkan setelah Welcome Activity. Berikut ini screen shot tampilan aplikasi yang diharapkan.
 ![Sign In](images/Sign%20In.png)
 
-##Buat activity WelcomeBack
+## Buat activity WelcomeBack
 Buatlah activity baru dengan nama WelcomeBack. Halaman ini akan digunakan sebagai halaman login. 
 
-##Edit activity_welcome_back.xml
+## Edit activity_welcome_back.xml
 Langkah selanjutnya adalah mengubah isi file dari `activity_welcome_back.xml`, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.
 ```xml
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -28,7 +28,7 @@ Pada desain layout terdapat beberapa komponen yaitu:
 7. Text Forgot Password
 8. Button Login
 
-###Tambahkan Judul
+### Tambahkan Judul
 Tambahkan sebuah TextView untuk menulis judul
 ```xml
 <TextView
@@ -46,7 +46,7 @@ Tambahkan sebuah TextView untuk menulis judul
         />
 ```
 
-###Tambahkan Sub Judul
+### Tambahkan Sub Judul
 Tambahkan sebuah sub text baru di bawah judul, berilah id `sign_in`
 ```xml
 <TextView
@@ -63,7 +63,7 @@ Tambahkan sebuah sub text baru di bawah judul, berilah id `sign_in`
         app:layout_constraintTop_toBottomOf="@id/welcome_back" />
 ```
 
-###Tambahkan Username
+### Tambahkan Username
 Tambahkan Text View untuk label Username.
 ```xml
 <TextView
@@ -79,7 +79,7 @@ Tambahkan Text View untuk label Username.
         app:layout_constraintTop_toBottomOf="@+id/sign_in" />
 ```
 
-###Tambahkan Edit Text Username
+### Tambahkan Edit Text Username
 Tambahkan Edit Text untuk pengisian Username
 ```xml
 <EditText
@@ -96,7 +96,7 @@ Tambahkan Edit Text untuk pengisian Username
         />
 ```
 
-###Tambahkan Password
+### Tambahkan Password
 Tambahkan label Password menggunakan TextView
 ```xml
 <TextView
@@ -112,7 +112,7 @@ Tambahkan label Password menggunakan TextView
         app:layout_constraintTop_toBottomOf="@+id/edt_reset_code" />
 ```
 
-###Tambahkan Edit Text Password
+### Tambahkan Edit Text Password
 Tambahkan EditText untuk pengisian password.
 ```xml
 <EditText
@@ -128,7 +128,7 @@ Tambahkan EditText untuk pengisian password.
         app:layout_constraintTop_toBottomOf="@+id/new_password" />
 ```
 
-###Tambahkan Text Forgot Password
+### Tambahkan Text Forgot Password
 Tambahkan text Forgot Password yang dapat di-klik untuk pengguna yang lupa password.
 ```xml
 <TextView
@@ -145,7 +145,7 @@ Tambahkan text Forgot Password yang dapat di-klik untuk pengguna yang lupa passw
         android:onClick="clickForgot"
         />
 ```
-###Buat Drawable button_red.xml
+### Buat Drawable button_red.xml
 Tambahkan sebuah file res drawable dengan nama `button_red.xml`. Ganti isi file `button_red.xml`
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -156,7 +156,7 @@ Tambahkan sebuah file res drawable dengan nama `button_red.xml`. Ganti isi file 
 </shape>
 ```
 
-###Tambahkan Button Login
+### Tambahkan Button Login
 Buat Button Log In, beri text `LOG IN` dengan warna text putih.
 ```xml
 <Button
@@ -173,7 +173,6 @@ Buat Button Log In, beri text `LOG IN` dengan warna text putih.
         android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="postLogin"
         />
 ```
 
