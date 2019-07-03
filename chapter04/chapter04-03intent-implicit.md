@@ -47,6 +47,7 @@ seperti di atas
 2. Untuk mengimplementasikan perubahan layout di atas, kita perlu
    menambahkan kode program pada class `WelcomeSlideCalendar` seperti
    berikut ini 
+   
    ```java
    public void clickContactUs(View view) {
         Intent i = new Intent(Intent.ACTION_SEND);
@@ -72,4 +73,6 @@ seperti di atas
    >dikembangkan.
 
 ## Latihan
-//to do
+1. Tambahkan alamat email yang dituju lebih dari satu alamat?
+2. Masih tentang mengirimkan email, silakan ditambahkan fungsi untuk CC
+   dan BCC ke email yang lain?
