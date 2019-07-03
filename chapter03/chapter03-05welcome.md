@@ -1,6 +1,6 @@
 # Welcome Activity
 Welcome activity adalah activity yang di jalankan setelah splash screen, di activity welcome ini ditampilkan secara singkat fitur fitur aplikasi. Berikut ini screen shot tampilan aplikasi yang diharapkan.
-
+![welcome](images/0304splash.png)
 
 ## Buat Activity Baru WelcomeSlideCalendar
 Buatalah activity baru dengan nama WelcomeSlideCalendar. Untuk membuatnya perhatikan gambar dibawah ini. Klik Kanan di package `dtschapter03_starter->new->activity->empty activity`.
@@ -10,6 +10,7 @@ Beri nama activity yang baru WelcomeSlideCalendar seperti pada gambar dibawah in
 ![nama activity](images/0305namaactivity.png)
 
 Setelah itu tekan tombol ok dan android studio akan melakukan proses pembuatan activity, perhatikan di folder android manifest sudah ditambahkan activity baru dan pada folder res->layout sudah terdapat file layout baru.
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -187,4 +188,3 @@ Ganti isi file `button_white.xml`
 </shape>
 ```
 ![drwad](images/0305buttonwhitexml.png)
-
