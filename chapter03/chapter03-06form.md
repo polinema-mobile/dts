@@ -1,8 +1,8 @@
 # Form
 Pada langkah ini akan dibuat beberapa activity yang terdiri dari:
 1. Acitivity WelcomeBack
-2. Activity SlideSuperHero
-3. Activity SlideAsign
+2. Activity WelcomeSlideSuperHero
+3. Activity WelcomeSlideAssign
 4. Activity ResetPassword
 5. Activity ForgotPassword
 6. Activity Success
@@ -185,7 +185,135 @@ Buat Button Log In, beri text `LOG IN` dengan warna text putih.
         />
 ```
 
-## Membuat Activity SlideSuperHero
+## Membuat Activity Welcome SlideSuperHero
 Buatlah activity baru dengan nama WelcomeSlideSuperhero. Activity ini yang nantinya akan muncul sebagai aksi button "Get Started" di klik pada activity welcome slide. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter->new->activity->empty activity. 
 Langkah selanjutnya adalah melakukan desain layout pada file `activity_welcome_slide_superhero`, Berikut ini screen shot tampilan aplikasi yang diharapkan.
+![Walk](images/Walkthrough 2.png)
 
+### Edit activity_welcome_slide_superhero.xml
+Untuk membuat form seperti gambar diatas yaitu dengan mengubah isi file dari `activity_welcome_slide_superhero`, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih. 
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeSlideSuperhero">
+
+</android.support.constraint.ConstraintLayout>
+```
+Pada desain layout terdapat beberapa komponen yaitu:
+1. Image Icon
+2. Judul Image
+3. Sub judul image
+4. Image Background
+5. Button get started
+6. Text Login
+
+
+#### Tambahkan Image Icon
+Tambahkan sebuah ImageView untuk menambahkan gambar dengan nama id= slide_dua, serta panggil file gambar ic_superhero di drawable.
+```xml
+<ImageView
+        android:id="@+id/slide_dua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_superhero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+```
+
+#### Tambahkan Judul Image
+Tambahkan sebuah TextView untuk menulis judul dengan nama id=welcome_text
+```xml
+<TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/slide_dua"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Work Happen"
+        android:textColor="#313131"
+        android:textSize="24sp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        />
+```
+
+#### Tambahkan Sub Judul Image
+Tambahkan sebuah sub text baru di bawah judul dengan nama id=sub_welcome
+```xml
+<TextView
+        android:id="@+id/sub_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Get Notified When Work Happens"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="#313131"
+        />
+```
+
+#### Tambahkan Image Backgroud
+Tambahkan sebuah ImageView untuk menambahkan gambar dengan nama id= backgorud_dua, serta panggil file gambar bg_blue di drawable.
+```xml
+ <ImageView
+        android:id="@+id/background_dua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        />
+```
+
+#### Tambahkan Button get started
+Buat Button get started, beri text `GET STARTED` dengan nama id=btn_get_started
+```xml
+<Button
+<Button
+        android:id="@+id/btn_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/login_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:textSize="18sp"
+        android:text="@string/get_started"
+        android:fontFamily="@font/montserrat_light"
+        android:background="@drawable/button_white"
+        android:layout_marginBottom="42dp"      
+
+        />
+```
+#### Tambahkan Text Login
+Tambahkan text Login yang nantinya dapat di klik untuk menuju form login, kemudian berilah nama id=login_text.
+```xml
+<TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/log_in"
+        android:fontFamily="@font/montserrat_light"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="72dp"
+        android:onClick="clickLogin"
+        />
+```
