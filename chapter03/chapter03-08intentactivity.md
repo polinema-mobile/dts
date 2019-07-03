@@ -327,5 +327,5 @@ public void postChangePassword(View view) {
 ```
 
 ## Test Aplikasi
-Berikut ini hasil dari project yang telah dibuat
+Berikut ini hasil dari project yang telah dibuat    
 ![intent activity](images/screencapture.gif)
