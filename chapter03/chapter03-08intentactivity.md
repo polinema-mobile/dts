@@ -1,5 +1,5 @@
 #  Intent Antar Aplikasi
-Pada praktikum ini akan dibuat....
+Intent adalah sebuah class dalam programming Android yang berfungsi untuk perpindahan halaman. Pada praktikum ini akan dibuat intent dari form yang telah dibuat di praktikum 6 sebelumnya.
 
 ## Edit File activity_welcome_slide_calendar.xml
 
