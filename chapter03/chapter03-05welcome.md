@@ -188,5 +188,3 @@ Ganti isi file `button_white.xml`
 ```
 ![drwad](images/0305buttonwhitexml.png)
 
-
-### Edit MainActivity.java
