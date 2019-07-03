@@ -129,12 +129,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../chapter01/chapter01-02activity.html">
+        <li class="chapter " data-level="1.2.2" data-path="../chapter01/chapter01-04helloworld.html">
             
-                <a href="../chapter01/chapter01-02activity.html">
+                <a href="../chapter01/chapter01-04helloworld.html">
             
                     
-                    Activity
+                    Praktikum 1 Hello World
             
                 </a>
             
@@ -142,12 +142,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../chapter01/chapter01-03fragment.html">
+        <li class="chapter " data-level="1.2.3" data-path="../chapter01/chapter01-02activity.html">
+            
+                <a href="../chapter01/chapter01-02activity.html">
+            
+                    
+                    Praktikum 2 Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter01/chapter01-03fragment.html">
             
                 <a href="../chapter01/chapter01-03fragment.html">
             
                     
-                    Fragment
+                    Praktikum 3 Fragment
             
                 </a>
             
@@ -219,6 +232,19 @@
             
                     
                     Praktikum 3 Constraint Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chapter02/chapter02-05latihan.html">
+            
+                <a href="../chapter02/chapter02-05latihan.html">
+            
+                    
+                    Praktikum 4 Latihan Convert Layout
             
                 </a>
             
@@ -480,12 +506,39 @@
 <h3 id="tambahkan-logo">Tambahkan Logo</h3>
 <ol>
 <li>Hapuslah TextView Hello World dari halaman activity_main.xml</li>
-<li>Buatlah sebuah ImageView dan atur posisinya di tengah layar dengan menggunakan constraint_layout</li>
+<li>Buatlah sebuah ImageView dan atur posisinya di tengah layar dengan menggunakan constraint_layout<pre><code class="lang-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
+     <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/imageView&quot;</span>
+     <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+     <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+     <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+     <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+     <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+     <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+     <span class="hljs-attr">android:src</span>=<span class="hljs-string">&quot;@drawable/ic_logo&quot;</span>
+     <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+     <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+     <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+     <span class="hljs-attr">app:layout_constraintTop_toTopOf</span>=<span class="hljs-string">&quot;parent&quot;</span> /&gt;</span>
+</code></pre>
+</li>
 </ol>
 <h3 id="tambahkan-text">Tambahkan Text</h3>
 <ol>
 <li>Buatlah sebuah TextView dengan font montsterrat semi bold dan beri isi &quot;DTS Kominfo&quot;</li>
-<li>Letakkan TextView tersebut dibawah logo dengan jarak 8dp.</li>
+<li>Letakkan TextView tersebut dibawah logo dengan jarak 8dp.<pre><code class="lang-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+     <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+     <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+     <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+     <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+     <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+     <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_semi_bold&quot;</span>
+     <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;20sp&quot;</span>
+     <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/logo_text&quot;</span>
+     <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+     <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+     <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/imageView&quot;</span> /&gt;</span>
+</code></pre>
+</li>
 </ol>
 
                                 
@@ -530,7 +583,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Praktikum 2 Halaman Splash Screen","level":"1.4.4","depth":2,"next":{"title":"Praktikum 3 Halaman Welcome","level":"1.4.5","depth":2,"path":"chapter03/chapter03-05welcome.md","ref":"chapter03/chapter03-05welcome.md","articles":[]},"previous":{"title":"Praktikum 1 Load Starter Code","level":"1.4.3","depth":2,"path":"chapter03/chapter03-03startercode.md","ref":"chapter03/chapter03-03startercode.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter03/chapter03-04splashscreen.md","mtime":"2019-07-01T09:45:48.664Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-01T09:47:45.735Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Praktikum 2 Halaman Splash Screen","level":"1.4.4","depth":2,"next":{"title":"Praktikum 3 Halaman Welcome","level":"1.4.5","depth":2,"path":"chapter03/chapter03-05welcome.md","ref":"chapter03/chapter03-05welcome.md","articles":[]},"previous":{"title":"Praktikum 1 Load Starter Code","level":"1.4.3","depth":2,"path":"chapter03/chapter03-03startercode.md","ref":"chapter03/chapter03-03startercode.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter03/chapter03-04splashscreen.md","mtime":"2019-07-02T23:22:07.771Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-03T01:01:05.660Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
