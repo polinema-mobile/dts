@@ -94,7 +94,7 @@
                 <a href="../">
             
                     
-                    Introduction
+                    Digital Talent Scholarship
             
                 </a>
             
@@ -393,64 +393,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../chapter04/chapter04-pendahuluan.html">
-            
-                <a href="../chapter04/chapter04-pendahuluan.html">
-            
-                    
-                    Bab 04 Validasi dan Interaksi Activity
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.5.1" data-path="../chapter04/chapter04-pendahuluan.html">
-            
-                <a href="../chapter04/chapter04-pendahuluan.html">
-            
-                    
-                    Pendahuluan
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.2" data-path="../chapter04/chapter04-validasi.html">
-            
-                <a href="../chapter04/chapter04-validasi.html">
-            
-                    
-                    Praktikum 1 - Validasi
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.3" data-path="../chapter04/chapter04-tugasvalidasi.html">
-            
-                <a href="../chapter04/chapter04-tugasvalidasi.html">
-            
-                    
-                    Tugas Praktikum 1
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
 
     
 
@@ -498,7 +440,16 @@
                                 
                                 <h1 id="intent-splash-screen">Intent Splash Screen</h1>
 <h2 id="edit-mainactivityjava">Edit MainActivity.java</h2>
-<h2 id="test-aplikasi">Test Aplikasi</h2>
+<p>Bukalah file <code>MainActivity.java</code>, tambahkan kode berikut pada method <code>onCreate</code>, sehingga ketika ketila membuka aplikasi kemudian tampil splash screen setelah itu akan menampilkan welcome activity </p>
+<pre><code class="lang-java"><span class="hljs-keyword">new</span> Handler().postDelayed(<span class="hljs-keyword">new</span> Runnable() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+                Intent i = <span class="hljs-keyword">new</span> Intent(MainActivity.<span class="hljs-keyword">this</span>, WelcomeSlideCalendar.class);
+                startActivity(i);
+                finish();
+            }
+        }, <span class="hljs-number">1000</span>);
+</code></pre>
 
                                 
                                 </section>
@@ -542,7 +493,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Praktikum 5 Intent Splash Screen","level":"1.4.7","depth":2,"next":{"title":"Praktikum 6 Intent Antar Activity","level":"1.4.8","depth":2,"path":"chapter03/chapter03-08intentactivity.md","ref":"chapter03/chapter03-08intentactivity.md","articles":[]},"previous":{"title":"Praktikum 4 Halaman Form","level":"1.4.6","depth":2,"path":"chapter03/chapter03-06form.md","ref":"chapter03/chapter03-06form.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter03/chapter03-07intentsplashscreen.md","mtime":"2019-07-02T23:22:07.771Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-03T01:01:05.660Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Praktikum 5 Intent Splash Screen","level":"1.4.7","depth":2,"next":{"title":"Praktikum 6 Intent Antar Activity","level":"1.4.8","depth":2,"path":"chapter03/chapter03-08intentactivity.md","ref":"chapter03/chapter03-08intentactivity.md","articles":[]},"previous":{"title":"Praktikum 4 Halaman Form","level":"1.4.6","depth":2,"path":"chapter03/chapter03-06form.md","ref":"chapter03/chapter03-06form.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter03/chapter03-07intentsplashscreen.md","mtime":"2019-07-03T23:19:14.077Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-03T23:20:31.135Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

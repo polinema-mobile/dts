@@ -94,7 +94,7 @@
                 <a href="../">
             
                     
-                    Introduction
+                    Digital Talent Scholarship
             
                 </a>
             
@@ -393,64 +393,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../chapter04/chapter04-pendahuluan.html">
-            
-                <a href="../chapter04/chapter04-pendahuluan.html">
-            
-                    
-                    Bab 04 Validasi dan Interaksi Activity
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.5.1" data-path="../chapter04/chapter04-pendahuluan.html">
-            
-                <a href="../chapter04/chapter04-pendahuluan.html">
-            
-                    
-                    Pendahuluan
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.2" data-path="../chapter04/chapter04-validasi.html">
-            
-                <a href="../chapter04/chapter04-validasi.html">
-            
-                    
-                    Praktikum 1 - Validasi
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.3" data-path="../chapter04/chapter04-tugasvalidasi.html">
-            
-                <a href="../chapter04/chapter04-tugasvalidasi.html">
-            
-                    
-                    Tugas Praktikum 1
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
 
     
 
@@ -496,18 +438,749 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="login-form">Login Form</h1>
-<h2 id="buat-activity-welcomeback">Buat activity WelcomeBack</h2>
-<h2 id="edit-activitywelcomebackxml">Edit activity_welcome_back.xml</h2>
-<h3 id="tambahkan-judul">Tambahkan Judul</h3>
-<h3 id="tambahkan-sub-judul">Tambahkan Sub Judul</h3>
-<h3 id="tambahkan-username">Tambahkan Username</h3>
-<h3 id="tambahkan-edit-text-username">Tambahkan Edit Text Username</h3>
-<h3 id="tambahkan-password">Tambahkan Password</h3>
-<h3 id="tambahkan-edit-text-password">Tambahkan Edit Text Password</h3>
-<h3 id="tambahkan-text-forgot-password">Tambahkan Text Forgot Password</h3>
-<h3 id="buat-drawable-buttonredxml">Buat Drawable button_red.xml</h3>
-<h3 id="tambahkan-button-login">Tambahkan Button Login</h3>
+                                <h1 id="form">Form</h1>
+<p>Pada langkah ini akan dibuat beberapa activity yang terdiri dari:</p>
+<ol>
+<li>Acitivity WelcomeBack</li>
+<li>Activity WelcomeSlideSuperHero</li>
+<li>Activity WelcomeSlideAssign</li>
+<li>Activity ResetPassword</li>
+<li>Activity ForgotPassword</li>
+<li>Activity Success</li>
+</ol>
+<h2 id="membuat-activity-welcomeback">Membuat Activity WelcomeBack</h2>
+<p>Buatlah activity baru dengan nama WelcomeBack. Halaman ini akan digunakan sebagai form login. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter-&gt;new-&gt;activity-&gt;empty activity.
+Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welcome_back.xml</code>, Berikut ini screen shot tampilan aplikasi yang diharapkan.
+<img src="images/Sign%20In.png" alt="Sign In"></p>
+<h3 id="edit-activitywelcomebackxml">Edit activity_welcome_back.xml</h3>
+<p>Untuk membuat form login seperti gambar diatas yaitu dengan mengubah isi file dari <code>activity_welcome_back.xml</code>, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">android.support.constraint.ConstraintLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span>
+    <span class="hljs-attr">tools:context</span>=<span class="hljs-string">&quot;.WelcomeBack&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">android.support.constraint.ConstraintLayout</span>&gt;</span>
+</code></pre>
+<p>Pada desain layout terdapat beberapa komponen yaitu:</p>
+<ol>
+<li>Judul</li>
+<li>Sub Judul</li>
+<li>Username</li>
+<li>Edit Text Username</li>
+<li>Password</li>
+<li>Edit Text Password</li>
+<li>Text Forgot Password</li>
+<li>Button Login</li>
+</ol>
+<h4 id="tambahkan-judul">Tambahkan Judul</h4>
+<p>Tambahkan sebuah TextView untuk menulis judul</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/welcome_back&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_semi_bold&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Welcome Back&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#313131&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;32sp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toTopOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;90dp&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-sub-judul">Tambahkan Sub Judul</h4>
+<p>Tambahkan sebuah sub text baru di bawah judul, berilah id <code>sign_in</code></p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/sign_in&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_light&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/sign_in_to_continue&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#9b9b9b&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;16sp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/welcome_back&quot;</span> /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-username">Tambahkan Username</h4>
+<p>Tambahkan Text View untuk label Username.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/reset_code&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;20dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;48dp&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Username&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#313131&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;20sp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/sign_in&quot;</span> /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-edit-text-username">Tambahkan Edit Text Username</h4>
+<p>Tambahkan Edit Text untuk pengisian Username</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">EditText</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/edt_reset_code&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginRight</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:hint</span>=<span class="hljs-string">&quot;Enter Your Email&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/reset_code&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-password">Tambahkan Password</h4>
+<p>Tambahkan label Password menggunakan TextView</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/new_password&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;20dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Password&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#313131&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;20sp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/edt_reset_code&quot;</span> /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-edit-text-password">Tambahkan Edit Text Password</h4>
+<p>Tambahkan EditText untuk pengisian password.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">EditText</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/edt_new_password&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginRight</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:hint</span>=<span class="hljs-string">&quot;@string/enter_your_password&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/new_password&quot;</span> /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-text-forgot-password">Tambahkan Text Forgot Password</h4>
+<p>Tambahkan text Forgot Password yang dapat di-klik untuk pengguna yang lupa password.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/forgot_password&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginRight</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/forgot_password&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#313131&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/edt_new_password&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="buat-drawable-buttonredxml">Buat Drawable button_red.xml</h4>
+<p>Tambahkan sebuah file res drawable dengan nama <code>button_red.xml</code>. Ganti isi file <code>button_red.xml</code></p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">shape</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="hljs-attr">android:shape</span>=<span class="hljs-string">&quot;rectangle&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">solid</span> <span class="hljs-attr">android:color</span>=<span class="hljs-string">&quot;#F96060&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">corners</span> <span class="hljs-attr">android:radius</span>=<span class="hljs-string">&quot;5dp&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">shape</span>&gt;</span>
+</code></pre>
+<h4 id="tambahkan-button-login">Tambahkan Button Login</h4>
+<p>Buat Button Log In, beri text <code>LOG IN</code> dengan warna text putih.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+        <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;200dp&quot;</span>
+        <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;@drawable/button_red&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;LOG IN&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/forgot_password&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;80dp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h2 id="membuat-activity-welcome-slidesuperhero">Membuat Activity Welcome SlideSuperHero</h2>
+<p>Buatlah activity baru dengan nama WelcomeSlideSuperhero. Activity ini yang nantinya akan muncul sebagai aksi button &quot;Get Started&quot; di klik pada activity welcome slide. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter-&gt;new-&gt;activity-&gt;empty activity.
+Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welcome_slide_superhero</code> Berikut ini screen shot tampilan aplikasi yang diharapkan.</p>
+<p><img src="images/Walk.png" alt="Sign In"></p>
+<h3 id="edit-activitywelcomeslidesuperheroxml">Edit activity_welcome_slide_superhero.xml</h3>
+<p>Untuk membuat form seperti gambar diatas yaitu dengan mengubah isi file dari <code>activity_welcome_slide_superhero</code>, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">android.support.constraint.ConstraintLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">tools:context</span>=<span class="hljs-string">&quot;.WelcomeSlideSuperhero&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">android.support.constraint.ConstraintLayout</span>&gt;</span>
+</code></pre>
+<p>Pada desain layout ini terdapat beberapa komponen yaitu:</p>
+<ol>
+<li>Image Icon</li>
+<li>Judul Image</li>
+<li>Sub judul image</li>
+<li>Image Background</li>
+<li>Button get started</li>
+<li>Text Login</li>
+</ol>
+<h4 id="tambahkan-image-icon">Tambahkan Image Icon</h4>
+<p>Tambahkan sebuah ImageView untuk menambahkan gambar dengan nama id= slide_dua, serta panggil file gambar ic_superhero di drawable.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/slide_dua&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toTopOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;30dp&quot;</span>
+        <span class="hljs-attr">android:src</span>=<span class="hljs-string">&quot;@drawable/ic_superhero&quot;</span>
+        <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">&quot;parent&quot;</span> /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-judul-image">Tambahkan Judul Image</h4>
+<p>Tambahkan sebuah TextView untuk menulis judul dengan nama id=welcome_text</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/welcome_text&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/slide_dua&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Work Happen&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#313131&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;24sp&quot;</span>
+        <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_semi_bold&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-sub-judul-image">Tambahkan Sub Judul Image</h4>
+<p>Tambahkan sebuah sub text baru di bawah judul dengan nama id=sub_welcome</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/sub_welcome&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/welcome_text&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Get Notified When Work Happens&quot;</span>
+        <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_light&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#313131&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-image-backgroud">Tambahkan Image Backgroud</h4>
+<p>Tambahkan sebuah ImageView untuk menambahkan gambar dengan nama id= backgorud_dua, serta panggil file gambar bg_blue di drawable.</p>
+<pre><code class="lang-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/background_dua&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:scaleType</span>=<span class="hljs-string">&quot;fitXY&quot;</span>
+        <span class="hljs-attr">android:src</span>=<span class="hljs-string">&quot;@drawable/bg_blue&quot;</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="buat-drawable-buttonwhitexml">Buat Drawable button_white.xml</h4>
+<p>Tambahkan sebuah file res drawable dengan nama <code>button_white.xml</code>. Ganti isi file <code>button_white.xml</code></p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">shape</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="hljs-attr">android:shape</span>=<span class="hljs-string">&quot;rectangle&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">solid</span> <span class="hljs-attr">android:color</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">corners</span> <span class="hljs-attr">android:radius</span>=<span class="hljs-string">&quot;5dp&quot;</span> /&gt;</span>
+    <span class="hljs-comment">&lt;!--&lt;stroke android:width=&quot;1dp&quot;--&gt;</span>
+        <span class="hljs-comment">&lt;!--android:color=&quot;#979797&quot; /&gt;--&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">shape</span>&gt;</span>
+</code></pre>
+<h4 id="tambahkan-button-get-started">Tambahkan Button get started</h4>
+<p>Buat Button get started, beri text <code>GET STARTED</code> dengan nama id=btn_get_started</p>
+<pre><code class="lang-xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/btn_get_started&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toTopOf</span>=<span class="hljs-string">&quot;@id/login_text&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;42dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginRight</span>=<span class="hljs-string">&quot;42dp&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/get_started&quot;</span>
+        <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_light&quot;</span>
+        <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;@drawable/button_white&quot;</span>
+        <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;42dp&quot;</span>
+
+        /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-text-login">Tambahkan Text Login</h4>
+<p>Tambahkan text Login yang nantinya dapat di klik untuk menuju form login, kemudian berilah nama id=login_text.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/login_text&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/log_in&quot;</span>
+        <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_light&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span>
+        <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;72dp&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h2 id="membuat-activity-welcomeslideassign">Membuat Activity WelcomeSlideAssign</h2>
+<p>Buatlah activity baru dengan nama WelcomeSlideAssign. Halaman ini akan digunakan sebagai form Task and Assign. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter-&gt;new-&gt;activity-&gt;empty activity.
+Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_slide_assign.xml</code>, Berikut ini screen shot tampilan aplikasi yang diharapkan.</p>
+<p><img src="images/Walkthrough3.png" alt="Walk3"></p>
+<h3 id="edit-activityslideassignxml">Edit activity_slide_assign.xml</h3>
+<p>Untuk membuat form  seperti gambar diatas yaitu dengan mengubah isi file dari <code>activity_slide_assign.xml</code>, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">android.support.constraint.ConstraintLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span>
+    <span class="hljs-attr">tools:context</span>=<span class="hljs-string">&quot;.WelcomeSlideAssign&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">android.support.constraint.ConstraintLayout</span>&gt;</span>
+</code></pre>
+<p>Pada desain layout ini terdapat beberapa komponen yaitu:</p>
+<ol>
+<li>Image Icon</li>
+<li>Judul Image</li>
+<li>Sub judul image</li>
+<li>Image Background</li>
+<li>Button get started</li>
+<li>Text Login</li>
+</ol>
+<h4 id="tambahkan-image-icon">Tambahkan Image Icon</h4>
+<p>Tambahkan sebuah ImageView untuk menambahkan gambar dengan nama id= slide_tiga, serta tambahkan file gambar ic_assign di drawable.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/slide_tiga&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toTopOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;30dp&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:src</span>=<span class="hljs-string">&quot;@drawable/ic_assign&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-judul-image">Tambahkan Judul Image</h4>
+<p>Tambahkan sebuah TextView untuk menulis judul dengan nama id=welcome_text</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/welcome_text&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/slide_tiga&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Task and Assign&quot;</span>
+        <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_semi_bold&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;24sp&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#313131&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-sub-judul-image">Tambahkan Sub Judul Image</h4>
+<p>Tambahkan sebuah sub text baru di bawah judul</p>
+<pre><code class="lang-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#313131&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/welcome_text&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Task and Assign them to colleagues&quot;</span>
+        <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_light&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-image-background">Tambahkan Image Background</h4>
+<p>Tambahkan sebuah ImageView untuk menambahkan gambar dengan nama id= background_tiga, serta tambahkan file gambar bg_purple di drawable.</p>
+<pre><code class="lang-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/background_tiga&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:scaleType</span>=<span class="hljs-string">&quot;fitXY&quot;</span>
+        <span class="hljs-attr">android:src</span>=<span class="hljs-string">&quot;@drawable/bg_purple&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-button-get-started">Tambahkan Button get started</h4>
+<p>Buat Button get started, beri text <code>GET STARTED</code> dengan nama id=btn_get_started</p>
+<pre><code class="lang-xml">&lt;Button
+ &lt;Button
+        android:id=&quot;@+id/btn_get_started&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        app:layout_constraintBottom_toTopOf=&quot;@+id/login_text&quot;
+        app:layout_constraintLeft_toLeftOf=&quot;parent&quot;
+        app:layout_constraintRight_toRightOf=&quot;parent&quot;
+        android:layout_marginLeft=&quot;42dp&quot;
+        android:layout_marginRight=&quot;42dp&quot;
+        android:text=&quot;Get Started&quot;
+        android:background=&quot;@drawable/button_white&quot;
+        android:layout_marginBottom=&quot;32dp&quot;
+        android:textSize=&quot;18sp&quot;
+        android:fontFamily=&quot;@font/montserrat_light&quot;
+        /&gt;
+</code></pre>
+<h4 id="tambahkan-text-login">Tambahkan Text Login</h4>
+<p>Tambahkan text Login yang nantinya dapat di klik untuk menuju form login, kemudian berilah nama id=login_text.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/login_text&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Log In&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+        <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_light&quot;</span>
+        <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;72dp&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h2 id="membuat-activity-reset-password">Membuat Activity Reset Password</h2>
+<p>Buatlah activity baru dengan nama ResetPassword. Halaman ini akan digunakan sebagai form untuk melakukan reset password. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter-&gt;new-&gt;activity-&gt;empty activity.
+Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_reset_password.xml</code>, Berikut ini screen shot tampilan aplikasi yang diharapkan.
+<img src="images/ResetPassword.png" alt="ResetPass"></p>
+<h3 id="edit-activityresetpasswordxml">Edit activity_reset_password.xml</h3>
+<p>Untuk membuat form reset password seperti gambar diatas yaitu dengan mengubah isi file dari <code>activity_reset_password.xml</code>, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini.</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">android.support.constraint.ConstraintLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">tools:context</span>=<span class="hljs-string">&quot;.ResetPassword&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">android.support.constraint.ConstraintLayout</span>&gt;</span>
+</code></pre>
+<p>Pada desain layout terdapat beberapa komponen yaitu:</p>
+<ol>
+<li>Judul</li>
+<li>Sub Judul</li>
+<li>Reset Code</li>
+<li>Edit Reset Code</li>
+<li>New Password</li>
+<li>Edit Text New Password</li>
+<li>Confirm Password</li>
+<li>Edit Confirm Password</li>
+<li>Button Change Password</li>
+</ol>
+<h4 id="tambahkan-judul">Tambahkan Judul</h4>
+<p>Tambahkan sebuah TextView untuk menulis judul</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/welcome_back&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_semi_bold&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Reset Password&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#313131&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;32sp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toTopOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;90dp&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="sub-judul">Sub Judul</h4>
+<p>Tambahkan sebuah sub judul baru di bawah judul untuk memberikan keterangan judul</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/sign_in&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_light&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Reset code was sent to your email. Please enter the code and create new password.&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#9b9b9b&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;16sp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/welcome_back&quot;</span> /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-reset-code">Tambahkan Reset Code</h4>
+<p>Tambahkan Text View untuk label reset code.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/reset_code&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;20dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;48dp&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/reset_code&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#313131&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;20sp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/sign_in&quot;</span> /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-edit-text-reset-code">Tambahkan Edit Text Reset Code</h4>
+<p>Tambahkan Edit Text untuk pengisian Reset Code</p>
+<pre><code class="lang-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">EditText</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/edt_reset_code&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginRight</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:hint</span>=<span class="hljs-string">&quot;@string/enter_your_reset_code&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/reset_code&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-new-password">Tambahkan New Password</h4>
+<p>Tambahkan label New Password menggunakan TextView</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/new_password&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;20dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/new_password&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#313131&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;20sp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/edt_reset_code&quot;</span> /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-edit-text-new-password">Tambahkan Edit Text New Password</h4>
+<p>Tambahkan EditText untuk pengisian password baru.</p>
+<pre><code class="lang-xml">&lt;EditText
+    &lt;EditText
+        android:id=&quot;@+id/edt_new_password&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:layout_marginLeft=&quot;24dp&quot;
+        android:layout_marginTop=&quot;8dp&quot;
+        android:layout_marginRight=&quot;24dp&quot;
+        android:hint=&quot;@string/enter_your_password&quot;
+        app:layout_constraintLeft_toLeftOf=&quot;parent&quot;
+        app:layout_constraintRight_toRightOf=&quot;parent&quot;
+        app:layout_constraintTop_toBottomOf=&quot;@+id/new_password&quot; /&gt;
+</code></pre>
+<h4 id="tambahkan-text-confirm-password">Tambahkan Text Confirm Password</h4>
+<p>Tambahkan text label Confirm Password.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/confirm_password&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;20dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/confirm_password&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#313131&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;20sp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/edt_new_password&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-edit-text-confirm-password">Tambahkan Edit Text Confirm Password</h4>
+<p>Tambahkan edit text Confirm Password untuk mengkonfirmasi password baru.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">EditText</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/edt_confirm_password&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginRight</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:hint</span>=<span class="hljs-string">&quot;@string/enter_your_password&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/confirm_password&quot;</span>
+        <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;62dp&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-button-change-password">Tambahkan Button Change Password</h4>
+<p>Buat Button Change Password, beri text <code>CHANGE PASSWORD</code>.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;64dp&quot;</span>
+        <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;@drawable/button_red&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/change_password&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span>
+        <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/edt_confirm_password&quot;</span>
+        <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">&quot;postChangePassword&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h2 id="membuat-activity-forgotpassword">Membuat Activity ForgotPassword</h2>
+<p>Buatlah activity baru dengan nama ForgotPassword. Halaman ini akan digunakan sebagai form lupa password. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter-&gt;new-&gt;activity-&gt;empty activity.
+Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_forgot_password.xml</code>,Berikut ini screen shot tampilan aplikasi yang diharapkan.</p>
+<p><img src="images/ForgotPassword.png" alt="forgot"></p>
+<h3 id="edit-activityforgotpasswordxml">Edit activity_forgot_password.xml</h3>
+<p>Untuk membuat form lupa password seperti gambar diatas yaitu dengan mengubah isi file dari <code>activity_forgot_password.xml</code>, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini.</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">android.support.constraint.ConstraintLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">tools:context</span>=<span class="hljs-string">&quot;.ForgotPassword&quot;</span>&gt;</span>
+</code></pre>
+<p>Pada desain layout terdapat beberapa komponen yaitu:</p>
+<ol>
+<li>Judul</li>
+<li>Sub Judul</li>
+<li>Reset Code</li>
+<li>Edit Text Reset Code</li>
+<li>Button Send Request</li>
+</ol>
+<h4 id="tambahkan-judul">Tambahkan Judul</h4>
+<p>Tambahkan sebuah TextView untuk menulis judul</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/welcome_back&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_semi_bold&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/forgot_password&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#313131&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;32sp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toTopOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;90dp&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-sub-judul">Tambahkan Sub Judul</h4>
+<p>Tambahkan sebuah sub text baru di bawah judul, berilah id <code>sign_in</code></p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/sign_in&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_light&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Please enter your email below to recieve your password reset instruction&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#9b9b9b&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;16sp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/welcome_back&quot;</span> /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-reset-code">Tambahkan Reset Code</h4>
+<p>Tambahkan Text View untuk label Reset Code.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/reset_code&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;20dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;48dp&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/username&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#313131&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;20sp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/sign_in&quot;</span> /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-edit-reset-code">Tambahkan Edit Reset Code</h4>
+<p>Tambahkan Edit Text untuk pengisian reset code</p>
+<pre><code class="lang-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">EditText</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/edt_reset_code&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginRight</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:hint</span>=<span class="hljs-string">&quot;Enter Your Email&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/reset_code&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-button-send-request">Tambahkan Button Send Request</h4>
+<p>Buat Button Send Request, beri text <code>SEND REQUEST</code> dengan warna text putih.</p>
+<pre><code class="lang-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+        <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;@drawable/button_red&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/send_request&quot;</span>
+        <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/edt_reset_code&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;32dp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        /&gt;</span>
+</code></pre>
+<h2 id="membuat-activity-success">Membuat Activity Success</h2>
+<p>Buatlah activity baru dengan nama SuccessActivity. Halaman ini akan digunakan sebagai form yang akan muncul ketika berhasil melakukan ganti password. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter-&gt;new-&gt;activity-&gt;empty activity.
+Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_success.xml</code>, Berikut ini screen shot tampilan aplikasi yang diharapkan.</p>
+<p><img src="images/Successful.png" alt="success"></p>
+<h3 id="edit-activityforgotpasswordxml">Edit activity_forgot_password.xml</h3>
+<p>Untuk membuat form lupa password seperti gambar diatas yaitu dengan mengubah isi file dari <code>activity_success.xml</code>, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini.</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">android.support.constraint.ConstraintLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span>
+    <span class="hljs-attr">tools:context</span>=<span class="hljs-string">&quot;.SuccessActivity&quot;</span>&gt;</span>
+</code></pre>
+<p>Pada desain layout terdapat beberapa komponen yaitu:</p>
+<ol>
+<li>Image</li>
+<li>Judul</li>
+<li>Sub Judul<h3 id="menambahkan-constraint-guideline">Menambahkan Constraint Guideline</h3>
+Tambahkan constraint guideline untuk mengatur layout constraint kemudian atur orientation=horizontal dan layout_constraintGuide_percent=&quot;0.5&quot; serta berilah id=guideline<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">android.support.constraint.Guideline</span>
+     <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/guideline&quot;</span>
+     <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+     <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+     <span class="hljs-attr">android:orientation</span>=<span class="hljs-string">&quot;horizontal&quot;</span>
+     <span class="hljs-attr">app:layout_constraintGuide_percent</span>=<span class="hljs-string">&quot;0.5&quot;</span> /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-image">Tambahkan Image</h4>
+Tambahkan sebuah Image untuk menulis judul berilah id=succes_image serta tambahkan ic_succesfull_logo dari drawable<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
+     <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/success_image&quot;</span>
+     <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+     <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+     <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+     <span class="hljs-attr">android:src</span>=<span class="hljs-string">&quot;@drawable/ic_succesfull_logo&quot;</span>
+     <span class="hljs-attr">app:layout_constraintBottom_toTopOf</span>=<span class="hljs-string">&quot;@+id/txt_success&quot;</span>
+     <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+     <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span> /&gt;</span>
+</code></pre>
+</li>
+</ol>
+<h4 id="tambahkan-judul">Tambahkan Judul</h4>
+<p>Tambahkan sebuah TextView untuk menulis judul berilah id=txt_success dan atur layout constraint yaitu <code>app:layout_constraintTop_toTopOf=&quot;@+id/guideline&quot;</code></p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/txt_success&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_semi_bold&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Successful!!&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;32sp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toTopOf</span>=<span class="hljs-string">&quot;@+id/guideline&quot;</span> /&gt;</span>
+</code></pre>
+<h4 id="tambahkan-sub-judul">Tambahkan Sub Judul</h4>
+<p>Tambahkan sebuah sub text baru di bawah judul, berilah id <code>sub_txt_success</code></p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/sub_txt_success&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;16dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginRight</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;You have successfully changed password. Please use your new passwords when logging in&quot;</span>
+        <span class="hljs-attr">android:textAlignment</span>=<span class="hljs-string">&quot;center&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;16sp&quot;</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/txt_success&quot;</span> /&gt;</span>
+</code></pre>
 
                                 
                                 </section>
@@ -551,7 +1224,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Praktikum 4 Halaman Form","level":"1.4.6","depth":2,"next":{"title":"Praktikum 5 Intent Splash Screen","level":"1.4.7","depth":2,"path":"chapter03/chapter03-07intentsplashscreen.md","ref":"chapter03/chapter03-07intentsplashscreen.md","articles":[]},"previous":{"title":"Praktikum 3 Halaman Welcome","level":"1.4.5","depth":2,"path":"chapter03/chapter03-05welcome.md","ref":"chapter03/chapter03-05welcome.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter03/chapter03-06form.md","mtime":"2019-07-02T23:22:07.771Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-03T01:01:05.660Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Praktikum 4 Halaman Form","level":"1.4.6","depth":2,"next":{"title":"Praktikum 5 Intent Splash Screen","level":"1.4.7","depth":2,"path":"chapter03/chapter03-07intentsplashscreen.md","ref":"chapter03/chapter03-07intentsplashscreen.md","articles":[]},"previous":{"title":"Praktikum 3 Halaman Welcome","level":"1.4.5","depth":2,"path":"chapter03/chapter03-05welcome.md","ref":"chapter03/chapter03-05welcome.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter03/chapter03-06form.md","mtime":"2019-07-03T23:19:14.077Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-03T23:20:31.135Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
