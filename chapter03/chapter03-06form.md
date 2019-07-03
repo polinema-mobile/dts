@@ -773,8 +773,8 @@ Pada desain layout terdapat beberapa komponen yaitu:
 1. Image
 2. Judul
 3. Sub Judul
-### Membuat Contraint Guideline
-Tambahkan contraint guideline untuk mengatur layout constraint kemudian atur orientation=horizontal dan layout_constraintGuide_percent="0.5" serta berilah id=guideline
+### Menambahkan Constraint Guideline
+Tambahkan constraint guideline untuk mengatur layout constraint kemudian atur orientation=horizontal dan layout_constraintGuide_percent="0.5" serta berilah id=guideline
 ```xml
 <android.support.constraint.Guideline
         android:id="@+id/guideline"
