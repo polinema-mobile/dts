@@ -30,14 +30,30 @@ Layout yang dibuat meliputi beberapa komponen yaitu `RadioGroup`, `TextView`, `E
 5. Tambahkan tiga buah TextView, berikan nama masing-masing **Bobot(kg)**, **Tinggi(cm)**, **Umur(th)**.![textview satu](images/2.6_textview1.png)![text view 2](images/2.7_textview2.png)
 6. Tambahkan dua buah `Button` dan sebuah `EditText` dengan posisi setelah `TextView` yang telah dibuat. Perhatikan bahwa `Button` dan `EditText` memiliki id yang berbeda.
 
-    a. `Button` dan `EditText` pada bobot.![bobot text dan button 1](images/2.8_btn_edt_bobot.png)![bobot text dan button 2](images/2.9_btn_edt_bobot2.png)
-    b. `Button` dan `EditText` pada tinggi.![tinggi text dan button 1](images/2.10_btn_edt_tinggi.png)![tinggi text dan button 2](images/2.11_btn_edt_tinggi2.png)
-    c. `Button` dan `EditText` pada umur. ![umur text dan button 1](images/2.12_btn_edt_umur.png)![umur text dan button 2](images/2.13_btn_edt_umur2.png)
+    a. `Button` dan `EditText` pada bobot.
+    
+    ![bobot text dan button 1](images/2.8_btn_edt_bobot.png)![bobot text dan button 2](images/2.9_btn_edt_bobot2.png)
+
+
+    b. `Button` dan `EditText` pada tinggi.
+    
+    ![tinggi text dan button 1](images/2.10_btn_edt_tinggi.png)![tinggi text dan button 2](images/2.11_btn_edt_tinggi2.png)
+
+
+    c. `Button` dan `EditText` pada umur.
+    
+    ![umur text dan button 1](images/2.12_btn_edt_umur.png)![umur text dan button 2](images/2.13_btn_edt_umur2.png)
 7. Tambahkan sebuah `Button` di bagian layout paling bawah untuk tombol proses hitung BMI.![button bmi](images/2.14_btn_hitbmi.png) 
 8. Tanda merah yang terdapat di kode program diatasi dengan memperhatikan posisi `value` yang seharusnya diletakkan, seperti **@string/** berarti terletak di **app -> res -> values -> string**.
 
-    a. string.xml![strings xml](images/2.15_stringxml.png)
-    b. dimen.xml![dimens xml](images/2.16_dimenxml.png)
+    a. string.xml
+
+    ![strings xml](images/2.15_stringxml.png)
+
+    b. dimen.xml
+
+    ![dimens xml](images/2.16_dimenxml.png)
+
     c. drawable
 
 ## Fitur BMI
