@@ -750,3 +750,84 @@ Buat Button Send Request, beri text `SEND REQUEST` dengan warna text putih.
         app:layout_constraintStart_toStartOf="parent"
         />
 ```
+
+## Membuat Activity Success
+Buatlah activity baru dengan nama SuccessActivity. Halaman ini akan digunakan sebagai form yang akan muncul ketika berhasil melakukan ganti password. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter->new->activity->empty activity. 
+Langkah selanjutnya adalah melakukan desain layout pada file `activity_success.xml`, Berikut ini screen shot tampilan aplikasi yang diharapkan.
+![success](images/Successful.png)
+
+### Edit activity_forgot_password.xml
+Untuk membuat form lupa password seperti gambar diatas yaitu dengan mengubah isi file dari `activity_success.xml`, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini. 
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".SuccessActivity">
+```
+Pada desain layout terdapat beberapa komponen yaitu:
+1. Image
+2. Judul
+3. Sub Judul
+### Membuat Contraint Guideline
+Tambahkan contraint guideline untuk mengatur layout constraint kemudian atur orientation=horizontal dan layout_constraintGuide_percent="0.5" serta berilah id=guideline
+```xml
+<android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+```
+#### Tambahkan Image
+Tambahkan sebuah Image untuk menulis judul berilah id=succes_image serta tambahkan ic_succesfull_logo dari drawable
+```xml
+  <ImageView
+        android:id="@+id/success_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_succesfull_logo"
+        app:layout_constraintBottom_toTopOf="@+id/txt_success"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+```
+
+#### Tambahkan Judul
+Tambahkan sebuah TextView untuk menulis judul berilah id=txt_success dan atur layout constraint yaitu `app:layout_constraintTop_toTopOf="@+id/guideline"`
+
+```xml
+<TextView
+        android:id="@+id/txt_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="Successful!!"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+```
+
+#### Tambahkan Sub Judul
+Tambahkan sebuah sub text baru di bawah judul, berilah id `sub_txt_success`
+```xml
+<TextView
+        android:id="@+id/sub_txt_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="24dp"
+        android:text="You have successfully changed password. Please use your new passwords when logging in"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_success" />
+```
+
