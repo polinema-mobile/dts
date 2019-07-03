@@ -455,3 +455,188 @@ Tambahkan text Login yang nantinya dapat di klik untuk menuju form login, kemudi
         android:layout_marginBottom="72dp"
         />
 ```
+## Membuat Activity Reset Password
+Buatlah activity baru dengan nama ResetPassword. Halaman ini akan digunakan sebagai form untuk melakukan reset password. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter->new->activity->empty activity. 
+Langkah selanjutnya adalah melakukan desain layout pada file `activity_reset_password.xml`, Berikut ini screen shot tampilan aplikasi yang diharapkan.
+![ResetPass](images/Reset Password.png)
+
+### Edit activity_reset_password.xml
+Untuk membuat form reset password seperti gambar diatas yaitu dengan mengubah isi file dari `activity_reset_password.xml`, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini. 
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResetPassword">
+</android.support.constraint.ConstraintLayout>
+```
+Pada desain layout terdapat beberapa komponen yaitu:
+1. Judul
+2. Sign in
+3. Reset Code
+4. Edit Reset Code
+5. New Password
+6. Edit Text New Password
+7. Confirm Password
+8. Edit Confirm Password
+9. Button Change Password
+
+#### Tambahkan Judul
+Tambahkan sebuah TextView untuk menulis judul
+```xml
+<TextView
+        android:id="@+id/welcome_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="Reset Password"
+        android:textColor="#313131"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="90dp"
+        />
+```
+
+#### Sign in
+Tambahkan sebuah sub text baru di bawah judul, berilah id `sign_in`
+```xml
+<TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Reset code was sent to your email. Please enter the code and create new password."
+        android:textColor="#9b9b9b"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_back" />
+```
+
+#### Tambahkan Reset Code
+Tambahkan Text View untuk label reset code.
+```xml
+<TextView
+        android:id="@+id/reset_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/reset_code"
+        android:textColor="#313131"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in" />
+```
+
+#### Tambahkan Edit Text Reset Code
+Tambahkan Edit Text untuk pengisian Reset Code
+```xml
+ <EditText
+        android:id="@+id/edt_reset_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="24dp"
+        android:hint="@string/enter_your_reset_code"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset_code"
+        />
+```
+
+#### Tambahkan Newe Password
+Tambahkan label New Password menggunakan TextView
+```xml
+<TextView
+ <TextView
+        android:id="@+id/new_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/new_password"
+        android:textColor="#313131"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_reset_code" />
+```
+
+#### Tambahkan Edit Text New Password
+Tambahkan EditText untuk pengisian password baru.
+```xml
+<EditText
+    <EditText
+        android:id="@+id/edt_new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="24dp"
+        android:hint="@string/enter_your_password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_password" />
+```
+
+#### Tambahkan Text Confirm Password
+Tambahkan text label Confirm Password.
+```xml
+<TextView
+        android:id="@+id/confirm_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirm_password"
+        android:textColor="#313131"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_new_password"
+        />
+```
+
+#### Tambahkan Edit Text Confirm Password
+Tambahkan edit text Confirm Password untuk mengkonfirmasi password baru.
+```xml
+<EditText
+        android:id="@+id/edt_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="24dp"
+        android:hint="@string/enter_your_password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password"
+        android:layout_marginBottom="62dp"
+        />
+```
+
+#### Tambahkan Button Change Password
+Buat Button Change Password, beri text `CHANGE PASSWORD`.
+```xml
+<Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textSize="18sp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/button_red"
+        android:text="@string/change_password"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_confirm_password"
+        android:onClick="postChangePassword"
+        />
+```
