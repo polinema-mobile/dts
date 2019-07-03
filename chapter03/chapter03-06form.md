@@ -759,8 +759,8 @@ Langkah selanjutnya adalah melakukan desain layout pada file `activity_success.x
 
 ![success](images/Successful.png)
 
-### Edit activity_forgot_password.xml
-Untuk membuat form lupa password seperti gambar diatas yaitu dengan mengubah isi file dari `activity_success.xml`, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini.
+### Edit activity_success.xml
+Untuk membuat activity success seperti gambar diatas yaitu dengan mengubah isi file dari `activity_success.xml`, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
