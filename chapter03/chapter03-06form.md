@@ -8,7 +8,7 @@ Pada langkah ini akan dibuat beberapa activity yang terdiri dari:
 6. Activity Success
 
 ## Membuat Activity WelcomeBack
-Buatlah activity baru dengan nama WelcomeBack. Halaman ini akan digunakan sebagai form login. Login Form merupakan tampilan yang dijalankan setelah welcome activity. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter->new->activity->empty activity. 
+Buatlah activity baru dengan nama WelcomeBack. Halaman ini akan digunakan sebagai form login. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter->new->activity->empty activity. 
 Langkah selanjutnya adalah melakukan desain layout pada file `activity_welcome_back.xml`, Berikut ini screen shot tampilan aplikasi yang diharapkan.
 ![Sign In](images/Sign%20In.png)
 
@@ -458,7 +458,7 @@ Tambahkan text Login yang nantinya dapat di klik untuk menuju form login, kemudi
 ```
 ## Membuat Activity Reset Password
 Buatlah activity baru dengan nama ResetPassword. Halaman ini akan digunakan sebagai form untuk melakukan reset password. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter->new->activity->empty activity. 
-Langkah selanjutnya adalah melakukan desain layout pada file `activity_reset_password.xml`, Berikut ini screen shot tampilan aplikasi yang diharapkan.
+Langkah selanjutnya adalah melakukan desain layout pada file `activity_reset_password.xml`, Berikut ini screen shot tampilan aplikasi yang diharapkan.                                      
 ![ResetPass](images/ResetPassword.png)
 
 ### Edit activity_reset_password.xml
