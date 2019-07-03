@@ -2,7 +2,7 @@
 Welcome activity adalah activity yang di jalankan setelah splash screen, di activity welcome ini ditampilkan secara singkat fitur fitur aplikasi. Berikut ini screen shot tampilan aplikasi yang diharapkan.
 
 
-## Buat Activity Baru WelcomeSlideCalendar 
+## Buat Activity Baru WelcomeSlideCalendar
 Buatalah activity baru dengan nama WelcomeSlideCalendar. Untuk membuatnya perhatikan gambar dibawah ini. Klik Kanan di package `dtschapter03_starter->new->activity->empty activity`.
 ![empty activity](images/0305emptyactivity.png)
 
@@ -38,7 +38,7 @@ Setelah itu tekan tombol ok dan android studio akan melakukan proses pembuatan a
 Jika berhasil struktur file projectnya akan seperti pada gambar dibawah ini.
 ![result](images/0305resultbuatactivity.png)
 
-##Edit File activity_welcome_slide_calendar.xml
+## Edit File activity_welcome_slide_calendar.xml
 Langkah selanjutnya adalah mengubah isi file dari `activity_welcome_slide_calendar.xml`, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.
 ```xml
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -59,7 +59,7 @@ Pada desain layout terdapat beberapa komponen yaitu:
 5. Text Login
 6. Background Footer Merah
 
-###Tambahkan Gambar 
+### Tambahkan Gambar
 Tambahkan gambar dengan nama `ic_eventlist` dari folder drawable ke layout
 ```xml
     <ImageView
@@ -77,7 +77,7 @@ Tambahkan gambar dengan nama `ic_eventlist` dari folder drawable ke layout
 
 perhatikan penamaan id dan constraint dari image
 ![image](images/0305layout2.png)
-###Tambahkan Text
+### Tambahkan Text
 Tambahkan sebuah Text View untuk menulis welcome text
 ```xml
     <TextView
@@ -98,7 +98,7 @@ Perhatikan bagaimana TextView disusun dan bagaimana cara mengganti font serta wa
 
 ![welcometext](images/0305welcometext.png)
 
-###Tambahkan Sub Text 
+### Tambahkan Sub Text
 Tambahkan sebuah sub text baru di bawah welcome text berilah id `sub_welcome`
 ```xml
     <TextView
@@ -115,7 +115,7 @@ Tambahkan sebuah sub text baru di bawah welcome text berilah id `sub_welcome`
 ```
 ![subtext](images/0305subtext.png)
 
-###Tambahkan Gambar Footer
+### Tambahkan Gambar Footer
 Tambahkan gambar footer dengan membuat sebuah image view dengan id `background_satu` perhatikan bahwa footer di constraint ke parent bottom dan menggunakan scaletype `fitXY`.
 ```xml
     <ImageView
@@ -129,7 +129,7 @@ Tambahkan gambar footer dengan membuat sebuah image view dengan id `background_s
         app:layout_constraintStart_toStartOf="parent" />
 ```
 ![footer](images/0305footer.png)
-###Tambahkan Text Login
+### Tambahkan Text Login
 Buatlah sebuah text view berilah id `login_text` font `montserrat_light` textSize 18sp dan textColor `#FFFFFF`
 ```xml
     <TextView
@@ -148,7 +148,7 @@ Buatlah sebuah text view berilah id `login_text` font `montserrat_light` textSiz
 ```
 ![login](images/0305login.png)
 
-###Tambahkan Button Get Started
+### Tambahkan Button Get Started
 Buat button dengan id `btn_get_started`, beri text `GET STARTED` fontFamily `montserrat_light` textSize `18sp` dan atur constraint agar posisi button menyerupai posisi pada desain layout.
 ```xml
     <Button
@@ -167,7 +167,7 @@ Buat button dengan id `btn_get_started`, beri text `GET STARTED` fontFamily `mon
         />
 ```
 
-###Tambahkan Drawable button_white.xml
+### Tambahkan Drawable button_white.xml
 Setelah membuat button tambahkan sebuah file res drawable dengan nama `button_white.xml`, klik kanan pada folder `drawable` kemudian pilih `new drawable resource`
 ![drawable](images/0305drawable.png)
 
@@ -189,4 +189,4 @@ Ganti isi file `button_white.xml`
 ![drwad](images/0305buttonwhitexml.png)
 
 
-###Edit MainActivity.java
+### Edit MainActivity.java

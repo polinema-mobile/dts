@@ -1,10 +1,13 @@
 #  Intent Antar Aplikasi
+
 Intent adalah sebuah class dalam programming Android yang berfungsi untuk perpindahan halaman. Pada praktikum ini akan dibuat intent dari activity yang telah dibuat di praktikum 6 sebelumnya.
 
 ## Edit File activity_welcome_slide_calendar.xml
 
 ### Menambahkan event onclick
+
 Tambahkan fungsi onClick `android:onClick="clickGetStarted"` pada Button Get Started untuk menuju ke halaman berikutnya dan fungsi onClick `android:onClick="clickLogin"` pada TextView Login
+
 ```xml
 <Button
     android:id="@+id/btn_get_started"
@@ -36,11 +39,12 @@ Tambahkan fungsi onClick `android:onClick="clickGetStarted"` pada Button Get Sta
     android:textSize="18sp"
     android:fontFamily="@font/montserrat_light"
     android:onClick="clickLogin"
-    />  
+    />
 ```
 
-### Buat fungsi handler onclick 
+### Buat fungsi handler onclick
 Buka file `WelcomeSlideCalendar.java`, tambahkan fungsi handler di bawah ini
+
 ```java
 public void clickGetStarted(View view) {
 }
@@ -66,7 +70,9 @@ public void clickLogin(View view) {
 ## Edit File activity_welcome_back.xml
 
 ### Menambahkan event onclick
+
 Tambahkan fungsi onClick `android:onClick="clickForgot"` pada Text View Forgot Password untuk menuju ke halaman Forgot Password dan fungsi `android:onClick="postLogin"` pada Button Login untuk melanjutkan Login.
+
 ```xml
 <TextView
     android:id="@+id/forgot_password"
@@ -97,11 +103,12 @@ Tambahkan fungsi onClick `android:onClick="clickForgot"` pada Text View Forgot P
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     android:onClick="postLogin"
-    />  
+    />
 ```
 
-### Buat fungsi handler onclick 
+### Buat fungsi handler onclick
 Buka file `WelcomeBack.java`, tambahkan fungsi handler di bawah ini
+
 ```java
 public void clickForgot(View view) {
 }
@@ -112,6 +119,7 @@ public void postLogin(View view) {
 
 ### Isi fungsi handler onclick
 Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika TextView `forgot_password` di Klik maka fungsi `clickForgot` akan memanggil class `ForgotPassword.class` sedangkan ketika TextView `log_in` di Klik maka fungsi `postLogin` akan memanggil class `SuccessActivity.class`
+
 ```java
 public void clickForgot(View view) {
     Intent i = new Intent(WelcomeBack.this, ForgotPassword.class);
@@ -163,7 +171,7 @@ Tambahkan fungsi onClick `android:onClick="clickGetStarted"` pada Button Get Sta
 />
 ```
 
-### Buat fungsi handler onclick 
+### Buat fungsi handler onclick
 Buka file `WelcomeSlideSuperhero.java`, tambahkan fungsi handler di bawah ini
 ```java
 public void clickGetStarted(View view) {
@@ -226,7 +234,7 @@ Tambahkan fungsi onClick `android:onClick="clickGetStarted"` pada Button Get Sta
     />
 ```
 
-### Buat fungsi handler onclick 
+### Buat fungsi handler onclick
 Buka file `WelcomeSlideAssign.java`, tambahkan fungsi handler di bawah ini
 
 ```java
@@ -275,7 +283,7 @@ Tambahkan fungsi onClick `android:onClick="postSendRequest"` pada Button Send Re
     />
 ```
 
-### Buat fungsi handler onclick 
+### Buat fungsi handler onclick
 Buka file `ForgotPassword.java`, tambahkan fungsi handler di bawah ini
 ```java
 public void postSendRequest(View view) {
@@ -314,7 +322,7 @@ Tambahkan fungsi onClick `android:onClick="postChangePassword"` pada Button Chan
     />
 ```
 
-### Buat fungsi handler onclick 
+### Buat fungsi handler onclick
 Buka file `ResetPassword.java`, tambahkan fungsi handler di bawah ini
 
 ```java
@@ -323,7 +331,7 @@ public void postChangePassword(View view) {
 ```
 
 ### Isi fungsi handler onclick
-Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika Button `change_password` di Klik maka fungsi `postChangePassword` akan memanggil class `SuccessActivity.class` 
+Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika Button `change_password` di Klik maka fungsi `postChangePassword` akan memanggil class `SuccessActivity.class`
 
 ```java
 public void postChangePassword(View view) {
@@ -333,5 +341,5 @@ public void postChangePassword(View view) {
 ```
 
 ## Test Aplikasi
-Berikut ini hasil dari project yang telah dibuat    
+Berikut ini hasil dari project yang telah dibuat
 ![intent activity](images/screencapture.gif)
