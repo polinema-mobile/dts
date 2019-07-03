@@ -1,29 +1,17 @@
-# REQUIREMENTS
+# Kebutuhan
 
 - NodeJS
 
-# INSTALASI
+# Instalasi
 
 Silahkan lakukan perintah `npm install` untuk menginstalasi *dependencies* yang
-dibutuhkan.
+dibutuhkan melalui terminal.
 
-# BUILD
+# Kontribusi
 
-Modul ini dibangun menggunakan Gitbook yang berbasis berkas markdown, untuk
-menghasilkan berkas luaran html silahkan lakukan perintah berikut.
-
-```
-npm run build
-```
-
-Untuk mencoba melihat hasil di local komputer anda, silahkan lakukan perintah
-berikut.
+Modul ini dibangun menggunakan Gitbook yang berbasis berkas markdown. Untuk
+mencoba melihat hasil di local komputer anda, silahkan lakukan perintah berikut.
 
 ```
 npm start
 ```
-
-# DISCLAIMER
-
-> Pastikan lakukan proses build sebelum **push** untuk dapat melihat hasil akhir
-> yang diinginkan
