@@ -475,7 +475,7 @@ Untuk membuat form reset password seperti gambar diatas yaitu dengan mengubah is
 ```
 Pada desain layout terdapat beberapa komponen yaitu:
 1. Judul
-2. Sign in
+2. Sub Judul
 3. Reset Code
 4. Edit Reset Code
 5. New Password
@@ -502,8 +502,8 @@ Tambahkan sebuah TextView untuk menulis judul
         />
 ```
 
-#### Sign in
-Tambahkan sebuah sub text baru di bawah judul, berilah id `sign_in`
+#### Sub Judul
+Tambahkan sebuah sub judul baru di bawah judul untuk memberikan keterangan judul
 ```xml
 <TextView
         android:id="@+id/sign_in"
@@ -638,5 +638,115 @@ Buat Button Change Password, beri text `CHANGE PASSWORD`.
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edt_confirm_password"
         android:onClick="postChangePassword"
+        />
+```
+## Membuat Activity ForgotPassword
+Buatlah activity baru dengan nama ForgotPassword. Halaman ini akan digunakan sebagai form lupa password. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter->new->activity->empty activity. 
+Langkah selanjutnya adalah melakukan desain layout pada file `activity_forgot_password.xml`, Berikut ini screen shot tampilan aplikasi yang diharapkan.
+![forgotpass](images/Forgot Password.png)
+
+### Edit activity_forgot_password.xml
+Untuk membuat form lupa password seperti gambar diatas yaitu dengan mengubah isi file dari `activity_forgot_password.xml`, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini. 
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotPassword">
+```
+Pada desain layout terdapat beberapa komponen yaitu:
+1. Judul
+2. Sub Judul
+3. Reset Code
+4. Edit Text Reset Code
+5. Button Send Request
+
+#### Tambahkan Judul
+Tambahkan sebuah TextView untuk menulis judul
+```xml
+<TextView
+        android:id="@+id/welcome_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="@string/forgot_password"
+        android:textColor="#313131"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="90dp"
+        />
+```
+
+#### Tambahkan Sub Judul
+Tambahkan sebuah sub text baru di bawah judul, berilah id `sign_in`
+```xml
+<TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Please enter your email below to recieve your password reset instruction"
+        android:textColor="#9b9b9b"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_back" />
+```
+
+#### Tambahkan Reset Code
+Tambahkan Text View untuk label Reset Code.
+```xml
+<TextView
+        android:id="@+id/reset_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/username"
+        android:textColor="#313131"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in" />
+```
+
+#### Tambahkan Edit Reset Code
+Tambahkan Edit Text untuk pengisian reset code
+```xml
+ <EditText
+        android:id="@+id/edt_reset_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="24dp"
+        android:hint="Enter Your Email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset_code"
+        />
+```
+
+#### Tambahkan Button Send Request
+Buat Button Send Request, beri text `SEND REQUEST` dengan warna text putih.
+```xml
+ <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textSize="18sp"
+        android:background="@drawable/button_red"
+        android:text="@string/send_request"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/edt_reset_code"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         />
 ```
