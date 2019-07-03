@@ -1,5 +1,5 @@
 #  Intent Antar Aplikasi
-Intent adalah sebuah class dalam programming Android yang berfungsi untuk perpindahan halaman. Pada praktikum ini akan dibuat intent dari form yang telah dibuat di praktikum 6 sebelumnya.
+Intent adalah sebuah class dalam programming Android yang berfungsi untuk perpindahan halaman. Pada praktikum ini akan dibuat intent dari activity yang telah dibuat di praktikum 6 sebelumnya.
 
 ## Edit File activity_welcome_slide_calendar.xml
 
@@ -50,7 +50,7 @@ public void clickLogin(View view) {
 ```
 
 ### Isi fungsi handler onclick
-Isi fungsi handler OnClick dengan kode berikut
+Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika button `btn_get_started` di Klik maka fungsi `clickGetStarted` akan memanggil class `WelcomeSlideSuperhero.class` sedangkan ketika TextView `login_text` di Klik maka fungsi `clickLogin` akan memanggil class `WelcomeBack.class`
 ```java
 public void clickGetStarted(View view) {
     Intent i = new Intent(WelcomeSlideCalendar.this, WelcomeSlideSuperhero.class);
@@ -111,7 +111,7 @@ public void postLogin(View view) {
 ```
 
 ###Isi fungsi handler onclick
-Isi fungsi handler OnClick dengan kode berikut
+Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika TextView `forgot_password` di Klik maka fungsi `clickForgot` akan memanggil class `ForgotPassword.class` sedangkan ketika TextView `log_in` di Klik maka fungsi `postLogin` akan memanggil class `SuccessActivity.class`
 ```java
 public void clickForgot(View view) {
     Intent i = new Intent(WelcomeBack.this, ForgotPassword.class);
@@ -173,7 +173,7 @@ public void clickLogin(View view) {
 ```
 
 ### Isi fungsi handler onclick
-Isi fungsi handler OnClick dengan kode berikut
+Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika Button `btn_get_started` di Klik maka fungsi `clickGetStarted` akan memanggil class `WelcomeSlideAssign.class` sedangkan ketika TextView `login_text` di Klik maka fungsi `clickLogin` akan memanggil class `WelcomeBack.class`
 ```java
 public void clickGetStarted(View view) {
     Intent i = new Intent(WelcomeSlideSuperhero.this, WelcomeSlideAssign.class);
@@ -237,7 +237,7 @@ public void clickLogin(View view) {
 ```
 
 ### Isi fungsi handler onclick
-Isi fungsi handler OnClick dengan kode berikut
+Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika Button `btn_get_started` di Klik maka fungsi `clickGetStarted` akan memanggil class `WelcomeBack.class` sedangkan ketika TextView `login_text` di Klik maka fungsi `clickLogin` akan memanggil class `WelcomeBack.class`
 ```java
 public void clickGetStarted(View view) {
     Intent i = new Intent(WelcomeSlideAssign.this, WelcomeBack.class);
@@ -280,7 +280,7 @@ public void postSendRequest(View view) {
 ```
 
 ### Isi fungsi handler onclick
-Isi fungsi handler OnClick dengan kode berikut
+Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika Button `send_request` di Klik maka fungsi `postSendRequest` akan memanggil class `ResetPassword.class`
 ```java
 public void postSendRequest(View view) {
     Intent i = new Intent(ForgotPassword.this, ResetPassword.class);
@@ -318,7 +318,7 @@ public void postChangePassword(View view) {
 ```
 
 ### Isi fungsi handler onclick
-Isi fungsi handler OnClick dengan kode berikut
+Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika Button `change_password` di Klik maka fungsi `postChangePassword` akan memanggil class `SuccessActivity.class` 
 ```java
 public void postChangePassword(View view) {
     Intent i = new Intent(ResetPassword.this, SuccessActivity.class);
@@ -327,5 +327,5 @@ public void postChangePassword(View view) {
 ```
 
 ## Test Aplikasi
-Berikut ini hasil dari...
+Berikut ini hasil dari project yang telah dibuat
 ![intent activity](images/screencapture.gif)
