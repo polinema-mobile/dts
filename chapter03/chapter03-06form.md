@@ -185,8 +185,10 @@ Buat Button Log In, beri text `LOG IN` dengan warna text putih.
 
 ## Membuat Activity Welcome SlideSuperHero
 Buatlah activity baru dengan nama WelcomeSlideSuperhero. Activity ini yang nantinya akan muncul sebagai aksi button "Get Started" di klik pada activity welcome slide. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter->new->activity->empty activity.
-Langkah selanjutnya adalah melakukan desain layout pada file `activity_welcome_slide_superhero`, Berikut ini screen shot tampilan aplikasi yang diharapkan.
+Langkah selanjutnya adalah melakukan desain layout pada file `activity_welcome_slide_superhero` Berikut ini screen shot tampilan aplikasi yang diharapkan.
+
 ![Sign In](images/Walk.png)
+
 
 ### Edit activity_welcome_slide_superhero.xml
 Untuk membuat form seperti gambar diatas yaitu dengan mengubah isi file dari `activity_welcome_slide_superhero`, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.
@@ -360,7 +362,6 @@ Pada desain layout ini terdapat beberapa komponen yaitu:
 Tambahkan sebuah ImageView untuk menambahkan gambar dengan nama id= slide_tiga, serta tambahkan file gambar ic_assign di drawable.
 ```xml
 <ImageView
-      <ImageView
         android:id="@+id/slide_tiga"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -557,7 +558,6 @@ Tambahkan Edit Text untuk pengisian Reset Code
 Tambahkan label New Password menggunakan TextView
 ```xml
 <TextView
- <TextView
         android:id="@+id/new_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -643,7 +643,8 @@ Buat Button Change Password, beri text `CHANGE PASSWORD`.
 ```
 ## Membuat Activity ForgotPassword
 Buatlah activity baru dengan nama ForgotPassword. Halaman ini akan digunakan sebagai form lupa password. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter->new->activity->empty activity.
-Langkah selanjutnya adalah melakukan desain layout pada file `activity_forgot_password.xml`, Berikut ini screen shot tampilan aplikasi yang diharapkan.
+Langkah selanjutnya adalah melakukan desain layout pada file `activity_forgot_password.xml`,Berikut ini screen shot tampilan aplikasi yang diharapkan.
+
 ![forgot](images/ForgotPassword.png)
 
 ### Edit activity_forgot_password.xml
@@ -755,6 +756,7 @@ Buat Button Send Request, beri text `SEND REQUEST` dengan warna text putih.
 ## Membuat Activity Success
 Buatlah activity baru dengan nama SuccessActivity. Halaman ini akan digunakan sebagai form yang akan muncul ketika berhasil melakukan ganti password. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter->new->activity->empty activity.
 Langkah selanjutnya adalah melakukan desain layout pada file `activity_success.xml`, Berikut ini screen shot tampilan aplikasi yang diharapkan.
+
 ![success](images/Successful.png)
 
 ### Edit activity_forgot_password.xml
