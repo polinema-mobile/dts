@@ -11,6 +11,7 @@
   * [Praktikum 1 Linier Layout](chapter02/chapter02-02linearlayout.md)
   * [Praktikum 2 Relative Layout](chapter02/chapter02-03relativelayout.md)
   * [Praktikum 3 Constraint Layout](chapter02/chapter02-04constraintlayout.md)
+  * [Praktikum 4 Latihan Convert Layout](chapter02/chapter02-05latihan.md)
 * [Bab 03 Konversi Desain ke Android Xml](chapter03/chapter03-01pendahuluan.md)
   * [Pendahuluan](chapter03/chapter03-01pendahuluan.md)
   * [Hasil Yang Diharapkan](chapter03/chapter03-02hasil.md)
