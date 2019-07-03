@@ -110,7 +110,7 @@ public void postLogin(View view) {
 }
 ```
 
-###Isi fungsi handler onclick
+### Isi fungsi handler onclick
 Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika TextView `forgot_password` di Klik maka fungsi `clickForgot` akan memanggil class `ForgotPassword.class` sedangkan ketika TextView `log_in` di Klik maka fungsi `postLogin` akan memanggil class `SuccessActivity.class`
 ```java
 public void clickForgot(View view) {
@@ -124,10 +124,11 @@ public void postLogin(View view) {
 }
 ```
 
-##Edit File activity_welcome_slide_superhero.xml
+## Edit File activity_welcome_slide_superhero.xml
 
-###tambahkan event onclick
+### tambahkan event onclick
 Tambahkan fungsi onClick `android:onClick="clickGetStarted"` pada Button Get Started untuk menuju ke halaman berikutnya dan fungsi onClick `android:onClick="clickLogin"` pada TextView Login
+
 ```xml
 <Button
     android:id="@+id/btn_get_started"
@@ -190,6 +191,7 @@ public void clickLogin(View view) {
 
 ### Menambahkan event onclick
 Tambahkan fungsi onClick `android:onClick="clickGetStarted"` pada Button Get Started untuk menuju ke halaman berikutnya dan fungsi onClick `android:onClick="clickLogin"` pada TextView Login
+
 ```xml
 <Button
     android:id="@+id/btn_get_started"
@@ -226,6 +228,7 @@ Tambahkan fungsi onClick `android:onClick="clickGetStarted"` pada Button Get Sta
 
 ### Buat fungsi handler onclick 
 Buka file `WelcomeSlideAssign.java`, tambahkan fungsi handler di bawah ini
+
 ```java
 public void clickGetStarted(View view) {
 
@@ -281,6 +284,7 @@ public void postSendRequest(View view) {
 
 ### Isi fungsi handler onclick
 Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika Button `send_request` di Klik maka fungsi `postSendRequest` akan memanggil class `ResetPassword.class`
+
 ```java
 public void postSendRequest(View view) {
     Intent i = new Intent(ForgotPassword.this, ResetPassword.class);
@@ -312,6 +316,7 @@ Tambahkan fungsi onClick `android:onClick="postChangePassword"` pada Button Chan
 
 ### Buat fungsi handler onclick 
 Buka file `ResetPassword.java`, tambahkan fungsi handler di bawah ini
+
 ```java
 public void postChangePassword(View view) {
 }
@@ -319,6 +324,7 @@ public void postChangePassword(View view) {
 
 ### Isi fungsi handler onclick
 Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika Button `change_password` di Klik maka fungsi `postChangePassword` akan memanggil class `SuccessActivity.class` 
+
 ```java
 public void postChangePassword(View view) {
     Intent i = new Intent(ResetPassword.this, SuccessActivity.class);
