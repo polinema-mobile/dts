@@ -13,5 +13,3 @@ new Handler().postDelayed(new Runnable() {
         }, 1000);
 ```
 
-##Test Aplikasi
-![intent splashscreen](images/screencapture.gif)
