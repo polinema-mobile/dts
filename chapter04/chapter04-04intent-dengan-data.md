@@ -51,7 +51,7 @@ di atas
    <p align="center"><img src="images/chapter04-04intent-with-data-02.png" alt="Penambahan label Sign up"/></p>
    
    Potongan program di atas berfungsi untuk menjalankan sebuah activity
-   `RegisterActivity`, activity tersebut berisi sebuah form registrasi.
+   `RegisterActivity`, activity tersebut berisi sebuah form registrasi. Kode `RegisterActivity` sudah terdapat dalam **starter-code** chapter04, sehingga Anda perlu membuat ulang activity tersebut. 
    
 3. Buka file `activity_register.xml` kemudian tambahkan widget pada
    layout tersebut seperti di bawah ini
