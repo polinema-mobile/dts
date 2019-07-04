@@ -4,7 +4,7 @@ Pada praktikum kali ini kita akan belajar mengenai perpindahan dari activity sat
 ## Intent Explicit
 Sesuai yang dijelaskan sebelumnya explicit berarti tujuan dari pembuatan adalah sesuai dengan kebutuhan developer, seorang developer harus mendefinisikan kebutuhan tersebut dan direalisasikan dalam sebuah kode program. 
 
-![Intent Explicit](images/chapter04-02intent-explicit.gif)
+<p align="center"><img src="images/chapter04-02intent-explicit.gif" alt="Intent Explicit"/></p>
 
 Jika dilihat dari video di atas halaman pertama adalah sebuah gambar
 splash screen, kemudian menuju halaman link login sebelum halaman login,

@@ -19,4 +19,14 @@ Model intent ini sebaliknya dari intent explicit, kita tidak perlu menggunakan n
 Dengan menggunakan parcelable kita tidak hanya dapat melewatkan sebuah nilai pada sebuah intent, tetapi kita dapat melewatkan sebuah objek. Objek yang akan dilewatkan melalui intent harus implement interface Parcelable
 
 ### Intent dengan ResultActivity
-Intent dengan ResultActivity berkaitan dengan sebuah perpindahan dari Activity satu ke Activity yang lain. Jadi ada kebutuhan ketika ada sebuah activity yang dijalankan oleh Activity pemanggilnya menginginkan nilai balik/kembalian, Activity dapat mengembalikan nilai balik ketika sudah ditutup atau memanggil fungsi `finish()`. Misalkan Activity A memanggil Activity B, Activity A dapat menerima nilai tertentu dari Activity B setelah Activity B ditutup atau memanggil fungsi `finish()`
+Intent dengan ResultActivity berkaitan dengan sebuah perpindahan dari
+Activity satu ke Activity yang lain. Jadi ada kebutuhan ketika ada
+sebuah activity yang dijalankan oleh Activity pemanggilnya menginginkan
+nilai balik/kembalian, Activity dapat mengembalikan nilai balik ketika
+sudah ditutup atau memanggil fungsi `finish()`. Misalkan Activity A
+memanggil Activity B, Activity A dapat menerima nilai tertentu dari
+Activity B setelah Activity B ditutup atau memanggil fungsi `finish()`
+
+### Source Code 
+Untuk memudahkan proses praktikum, Anda bisa mendapatkan started code di
+[github](https://github.com/polinema-mobile/dtschapter04-starter.git) .

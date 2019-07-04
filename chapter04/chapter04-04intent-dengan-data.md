@@ -10,7 +10,7 @@ Sebuah intent dapat melewatkan sebuah data, tidak hanya data primivite,
 tetapi juga data array atau bahkan sebuah data bertipe object. Yang akan
 dicontohkan kira-kira adalah sebagai berikut
 
-![Intent Implicit](images/chapter04-04intent-with-data.gif)
+<p align="center"><img src="images/chapter04-04intent-with-data.gif" alt="Intent Implicit"/></p>
 
 Tampilan di atas adalah salah contoh penerapan intent dengan melewatkan
 sebuah data, setelah klik `sign up` akan dibawa ke sebuah form
@@ -42,13 +42,13 @@ di atas
    Sehingga setelah ditambahkan layout di atas hasilnya dapat dilihat
    pada gambar di bawah ini
    
-   ![Penambahan label Sign up](images/chapter04-04intent-with-data-01.png)
+   <p align="center"><img src="images/chapter04-04intent-with-data-01.png" alt="Penambahan label Sign up"/></p>
    
 2. Untuk mengimplementasikan perubahan layout di atas, kita perlu
    menambahkan kode program untuk membuat sebuah method pada class
    `WelcomeBack` seperti berikut ini
    
-   ![Penambahan label Sign up](images/chapter04-04intent-with-data-02.png)
+   <p align="center"><img src="images/chapter04-04intent-with-data-02.png" alt="Penambahan label Sign up"/></p>
    
    Potongan program di atas berfungsi untuk menjalankan sebuah activity
    `RegisterActivity`, activity tersebut berisi sebuah form registrasi.
@@ -235,12 +235,12 @@ di atas
    ```
    Hasil dari design layout di atas ada seperti ini 
    
-   ![Form registration](images/chapter04-04intent-with-data-03.png)
+   <p align="center"><img src="images/chapter04-04intent-with-data-03.png" alt="Form registration"/></p>
 
 4. Selanjutnya implementasi file `RegisterActivity` dengan menambahkan
    kode program seperti di bawah ini
    
-   ![RegisterActivity](images/chapter04-04intent-with-data-04.png)
+   <p align="center"><img src="images/chapter04-04intent-with-data-04.png" alt="RegisterActivity"/></p>
 
    Keterangan kode program di atas adalah variabel `TAG` digunakan untuk
    kebutuhan debug aplikasi ketika dijalankan, `Key_RegisterActivity`
@@ -405,7 +405,7 @@ di atas
    atas kita implementasikan ke dalam class `RegisterResultActivity`.
    Potongan kode program tersebut adalah sebagai berikut
    
-   ![RegisterActivity](images/chapter04-04intent-with-data-05.png)
+   <p align="center"><img src="images/chapter04-04intent-with-data-05.png" alt="RegisterActivity"/></p>
    
    Dari potongan program di atas untuk dapat mengambil data yang
    dilewatkan dari sebuah intent dapat menggunakan

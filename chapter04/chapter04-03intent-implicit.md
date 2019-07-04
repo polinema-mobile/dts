@@ -10,7 +10,7 @@ kita buat adalah memanggil mail client bawaan aplikasi andorid untuk
 mengirimkan sebuah email, untuk lebih jelasnya dapat dilihat pada gambar
 di bawah ini
 
-![Intent Implicit](images/chapter04-03intent-implicit.gif)
+<p align="center"><img src="images/chapter04-03intent-implicit.gif" alt="Intent Implicit"/></p>
 
 Tampilan di atas adalah kelanjutan dari pertemuan ke-3 yang dimodifikasi
 pada bagian halaman utama setelah splash screen ditambahkan label
@@ -42,7 +42,7 @@ seperti di atas
    Sehingga setelah ditambahkan layout di atas hasilnya dapat dilihat
    pada gambar di bawah ini
    
-   ![Penambahan label contact us](images/chapter04-03intent-implicit-01.png)
+   <p align="center"><img src="images/chapter04-03intent-implicit-01.png" alt="Penambahan label contact us"/></p>
    
 2. Untuk mengimplementasikan perubahan layout di atas, kita perlu
    menambahkan kode program pada class `WelcomeSlideCalendar` seperti
