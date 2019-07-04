@@ -417,8 +417,7 @@ di atas
    
 >Jika pada contoh di atas data yang dilewatkan adalah string array,
 >intent dapat juga melewatkan tipe data primitive lainnya dan juga
->object. Yang membedakan adalah nama method ketika mengambilnya, misalkan
->ketika akan mengambil data string menggunakan `getStringExtra`, boolan
->array mengunakan `getBooleanExtra`, objek pojo menggunakan
->`getParcelableExtra`, dan lainnya.
-   
+>object. Yang membedakan adalah nama method ketika mengambilnya,
+>misalkan ketika akan mengambil data string menggunakan
+>`getStringExtra`, boolan array mengunakan `getBooleanExtra`, objek pojo
+>menggunakan `getParcelableExtra`, dan lainnya.
