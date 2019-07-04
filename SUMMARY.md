@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Digital Talent Scholarship](README.md)
 * [Bab 01 Activity dan Fragment](chapter01/chapter01-01pendahuluan.md)
     * [Pendahuluan](chapter01/chapter01-01pendahuluan.md)
     * [Praktikum 1 Hello World](chapter01/chapter01-04helloworld.md)
