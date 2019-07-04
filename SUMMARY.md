@@ -25,4 +25,8 @@
 * [Bab 04 Validasi dan Interaksi Activity](chapter04/chapter04-pendahuluan.md)
   * [Pendahuluan](chapter04/chapter04-pendahuluan.md)
   * [Praktikum 1 - Validasi](chapter04/chapter04-validasi.md)
+  * [Praktikum 2 - Intent](chapter04/chapter04-01intent.md)
+  * [Praktikum 3 - Intent Explicit](chapter04/chapter04-02intent-explicit.md)
+  * [Praktikum 4 - Intent Implicit](chapter04/chapter04-03intent-implicit.md)
+  * [Praktikum 5 - Intent dengan Data](chapter04/chapter04-04intent-dengan-data.md)
   * [Tugas Praktikum 1](chapter04/chapter04-tugasvalidasi.md)
