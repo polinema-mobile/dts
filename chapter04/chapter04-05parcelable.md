@@ -1,5 +1,5 @@
 # Tujuan
-Intent dapat dimanfaatkan untuk mengirimkan informasi antara activity. Namun bagaimana jika data yang kita kirimkan sangat banyak ? Apakah intent menjadi solusi yang efektif ? Kemungkinan jawabannya adalah tidak. Untuk itu, Android menyediakan kelas [Parcelable](https://developer.android.com/reference/android/os/Parcelable) untuk mengatasi permasalahan ini. Kita dapat mengirimkan banyak informasi atau data dengan menggunakan `Parcelable` dalam satu kali pengiriman. Hal ini dikarenakan, `Parcelable` merupakan sebuah object yang dapat berisi banyak data.
+Intent dapat dimanfaatkan untuk mengirimkan informasi antar activity. Namun bagaimana jika data yang kita kirimkan sangat banyak ? Apakah intent menjadi solusi yang efektif ? Kemungkinan jawabannya adalah tidak. Untuk itu, Android menyediakan kelas [Parcelable](https://developer.android.com/reference/android/os/Parcelable) untuk mengatasi permasalahan ini. Kita dapat mengirimkan banyak informasi atau data dengan menggunakan `Parcelable` dalam satu kali pengiriman. Hal ini dikarenakan, `Parcelable` merupakan sebuah object yang dapat berisi banyak data.
 
 ## Plugin Tambahan
 Untuk mempermudah pembuatan object `parcelable` kita akan menambahkan plugin kedalam Android Studio.
@@ -14,11 +14,11 @@ Berikut ilustrasi instalasi plugin pada Android Studio. Ilustrasi mungkin berbed
 ![Installasi Plugin - Sumber : https://www.codepolitan.com/menggunakan-parcelable-untuk-pengiriman-data-antar-komponen-di-android-599848cf0f158](images/plugin.gif)
 
 ## Membuat Model Parcelable
-Parceable merupakan sebuah object yang memiliki property didalamnya. Property dalam sebuah object dapat kita `set` nilainya dan dapat kita ambil `get` nilai yang sudah di definisikan. Object yang digunakan sebagai `Parcelable` lebih merujuk pada konsep sebuah model. Model merupakan kerangka object yang property-propertynya dapat dimanfaatkan secara berulang.
+**Parcelable** merupakan sebuah object yang memiliki property didalamnya. Property dalam sebuah object dapat kita `set` nilainya dan dapat kita ambil atau `get` nilai yang sudah di definisikan. Object yang digunakan sebagai **Parcelable** lebih merujuk pada konsep sebuah model. Model merupakan kerangka object yang property-propertynya dapat dimanfaatkan secara berulang.
 
-Pada percobaan kali ini, kita akan mencoba untuk membuat model `Parcelable` dari form **Register** yang sudah dilakukan sebelumnya.
+Pada percobaan kali ini, kita akan mencoba untuk membuat model **Parcelable** dari form **Register** yang sudah dilakukan sebelumnya. Selanjutnya kita akan mencoba memanfaatkan **Parcelable** untuk mengirim data dengan menggunakan intent.
 
-Untuk membuat sebuah model `Parcelable` langkah-langkah yang harus dilakukan adalah,
+Untuk membuat sebuah model **Parcelable** langkah-langkah yang harus dilakukan adalah,
 
 1. Pertama, buatlah `package` baru bernama model didalam package `polinema.ac.id.dtsdesigntolayout`. Klik kanan package `polinema.ac.id.dtsdesigntolayout` -> New -> Package
 
@@ -69,13 +69,13 @@ public class Register {
 
 ![Setter Getter](images/settergetter.png)
 
-11. Sampai tahapan ini kita sudah membuat model `Parcelable` untuk form register.
+11. Sampai tahapan ini kita sudah membuat model **Parcelable** untuk form register.
 
 ## Implementasi Parcelable
 
-Setelah model selesai kita buat, selanjutnuya kita akan mengimplementasi model parcelable pada activity **Register**
+Setelah model selesai kita buat, selanjutnya kita akan mengimplementasi model **Parcelable** pada activity **Register**
 
-1. Buka kode activity `RegisterActivity.hava`
+1. Buka kode activity `RegisterActivity.java`
 
 2. Modifikasi kode menjadi seperti berikut,
 
