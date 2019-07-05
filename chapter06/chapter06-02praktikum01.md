@@ -84,32 +84,32 @@ Fungsi yang dikembangkan dibuat di **MainActivity.java** meliputi: fungsi dasar,
 ### Fungsi Dasar
 1. Berdasarkan kegiatan sebelumnya, diketahui terdapat tiga komponen antarmuka untuk masukan yang dibuat, yaitu: `EditText`, `RadioGroup`, dan `RadioButton`. Walaupun terdapat beberapa `Button` yang memiliki id yaitu `calc`, `krgBerat`, `tmbBerat`, `krgTinggi`, `tmbTinggi`, `krgUmur`, dan  `tmbUmur` untuk memproses nilai masukan, `Button` tersebut tidak perlu diinisialisasikan di **MainActivity.java** karena sudah didaftarkan `android:onClick=""` di `Button` tersebut (secara otomatis mengarah ke method yang dituju). 
 
-![dasarsatu MainActivity java](images/2.21_dasarsatu.png)
+    ![dasarsatu MainActivity java](images/2.21_dasarsatu.png)
 
 2. Tambahkan inisialisasi tipe data dari setiap `EditText` yang ditampilkan di antarmuka.
 
-![dasardua MainActivity java](images/2.22_dasardua.png)
+    ![dasardua MainActivity java](images/2.22_dasardua.png)
 
 3. Kenalkan komponen tersebut sesuai id yang didaftarkan melalui activity_main.xml.
 
-![dasartiga MainActivity java](images/2.23_dasartiga.png)
+    ![dasartiga MainActivity java](images/2.23_dasartiga.png)
 
-Khusus `RadioGroup` pastikan juga diberikan sebuah variabel bernama `pilihGender` untuk mendapatkan id dari `RadioButton` yang dipilih.
+    Khusus `RadioGroup` pastikan juga diberikan sebuah variabel bernama `pilihGender` untuk mendapatkan id dari `RadioButton` yang dipilih.
 
-![dasarempat MainActivity java](images/2.24_dasarempat.png)
+    ![dasarempat MainActivity java](images/2.24_dasarempat.png)
 
 4. Supaya tombol plus dan minus yang terdapat pada setiap menu bobot, tinggi, dan umur berfungsi maka buat method untuk mengaktifkan pengurangan dan penambahan nilai pada `EditText` di setiap menu.
 Contoh pada menu bobot
 
-![dasarlima MainActivity java](images/2.25_dasarlima.png)
+    ![dasarlima MainActivity java](images/2.25_dasarlima.png)
 
-Buat juga method yang lain untuk menu tinggi dan umur sesuai yang terdaftar di `android:onClick=""` di **activity_main.xml**. Jika `displayBerat()` masih berwarna merah, abaikan saja karena method ini dibuat di langkah selanjutnya.
+    Buat juga method yang lain untuk menu tinggi dan umur sesuai yang terdaftar di `android:onClick=""` di **activity_main.xml**. Jika `displayBerat()` masih berwarna merah, abaikan saja karena method ini dibuat di langkah selanjutnya.
 
 5. Supaya method yang dibuat pada langkah 4 (langkah sebelumnya) berfungsi di EditText, maka tambahkan method display untuk setiap menu.
 
-![dasarenam MainActivity java](images/2.26_dasarenam.png)
+    ![dasarenam MainActivity java](images/2.26_dasarenam.png)
 
-Buat juga method yang lain untuk menu tinggi dan umur.
+    Buat juga method yang lain untuk menu tinggi dan umur.
 
 6. Versi lengkap dari langkah 4 dan 5 adalah sebagai berikut
 
@@ -222,23 +222,23 @@ Karena tampilan awal dari aplikasi ini adalah splash screen, maka harus dilakuka
 2. Ubah `<activity android:name=".MainActivity">` menjadi `<activity android:name=".SplashActivity">`.
 3.  Tambahkan activity baru dengan nama `.MainActivity` sehingga kode di dalam **AndroidManifest.xml** secara keseluruhan adalah sebagai berikut
 
-![splashempat MainActivity java](images/3.4_splashscreenempat.png)
+    ![splashempat MainActivity java](images/3.4_splashscreenempat.png)
 
 ## Hasil Aplikasi
 Jalankan aplikasi yang telah dibuat, jika berhasil maka aplikasi akan berjalan sesuai tahapan berikut:
 
 1. Muncul splash screen sebagai tampilan pembuka aplikasi
 
-![hasilsatu MainActivity java](images/4.1_hasilsatu.png)
+    ![hasilsatu MainActivity java](images/4.1_hasilsatu.png)
 
 2. Tampilan berikutnya adalah tampilan kalkulator dengan set nilai pada setiap menu bobot, tinggi, dan umur adalah 0 (sesuai set saat inisialisasi di kode program)
 
-![hasildua MainActivity java](images/4.2_hasildua.png)
+    ![hasildua MainActivity java](images/4.2_hasildua.png)
 
 3. Percobaan pengisian data
 
-![hasiltiga MainActivity java](images/4.3_hasiltiga.png)
+    ![hasiltiga MainActivity java](images/4.3_hasiltiga.png)
 
 4. Tekan tombol **Hitung BMI** dan laporan hasil penghitungan ditampilkan
 
-![hasilempat MainActivity java](images/4.4_hasilempat.png)
+    ![hasilempat MainActivity java](images/4.4_hasilempat.png)
