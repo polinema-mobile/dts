@@ -12,12 +12,4 @@ Pada pertemuan kali ini, kegiatan yang dilakukan adalah pembuatan projek aplikas
 2. Layout dengan asset desain.
 
 ## Alat dan Bahan
-1. Starter Praktikum 01 [Starter Code Chapter 1 Praktikum 1](https://github.com/polinema-mobile/dtschapter06-starter). memuat:
-
-    a. activity_main.xml beserta komponen (no constraint)
-
-    b. splashbmi.xml (kosong)
-
-    c. MainActivity.java (default)
-
-    d. SplashActivity.java (default)
+1. Clone kode starter chapter6 : [Starter Code Chapter 6](https://github.com/polinema-mobile/dtschapter06-starter)
