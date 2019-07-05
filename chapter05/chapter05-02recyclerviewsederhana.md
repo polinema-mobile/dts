@@ -105,7 +105,7 @@ setelah membuat model, maka kita bisa buat layout untuk pada main activity sebag
 
 Sekarang RecyclerView telah tertanam dalam file layout. Selanjutnya, kita dapat menentukan layout untuk setiap item dalam contact list.
 
-<p align="center"> <img src="images/LayoutActivityMain.png" alt="LayoutActivityMain"/></p>
+<p align="center"> <img src="images/layoutActivityMain.png" alt="LayoutActivityMain"/></p>
 
 ## Membuat Layout Khusus Recyclerview
 
