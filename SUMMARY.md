@@ -31,6 +31,5 @@
   - [Praktikum 5 - Intent Implicit](chapter04/chapter04-03intent-implicit.md)
   - [Praktikum 6 - Intent dengan Data](chapter04/chapter04-04intent-dengan-data.md)
   - [Praktikum 7 - Parcelable](chapter04/chapter04-05parcelable.md)
-  - [Tugas Praktikum 1](chapter04/chapter04-tugasvalidasi.md)
 - [Bab 05 Recycler View](chapter05/chapter05-pendahuluan.md)
   - [Pendahuluan](chapter05/chapter05-pendahuluan.md)
