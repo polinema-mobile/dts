@@ -57,6 +57,7 @@ Layout yang dibuat meliputi beberapa komponen yaitu `RadioGroup`, `TextView`, `E
     c. **drawable**, berdasarkan properti pada `RadioButton` yang sudah dibuat di **activity_main.xml** yaitu `android:background="@drawable/radio_flat_selector"` dan `android:textColor="@drawable/radio_flat_text_selector"`, maka di direktori drawable perlu penambahan berkas sumber daya bernama **radio_flat_selector.xml** yang berfungsi memberikan efek ganti warna pada `RadioButton` ketika dipilih (berwarna pink) atau tidak dipilih (warna putih) dan **radio_flat_text_selector.xml** yang berfungsi untuk memberikan warna yang khas ketika terpilih (teks berwarna putih) dan tidak terpilih (teks berwarna pink) bagi setiap teks di `RadioButton` tersebut.
 
     **radio_flat_selector.xml**
+    
     ![radio_flat_text_selector xml](images/2.18_warna_rdbtn.png)
 
     Perlu diketahui bahwa di dalam **radio_flat_selector.xml** ternyata membutuhkan **radio_flat_selected.xml** sebagai penanda perubahan warna untuk `RadioButton` yang terpilih dan **radio_flat_regular.xml** sebagai penanda perubahan warna untuk `RadioButton` yang tidak terpilih di direktori **drawable**, oleh karena itu tambahkan dua berkas tersebut.
