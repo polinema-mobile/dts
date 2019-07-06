@@ -34,4 +34,5 @@
 - [Bab 05 Recycler View](chapter05/chapter05-pendahuluan.md)
   - [Pendahuluan](chapter05/chapter05-pendahuluan.md)
   - [Teori Recycler View](chapter05/chapter05-01teori.md)
-  - [Praktikum 1 - RecyclerView Sederhana](chapter05/chapter05-02recyclerviewsederhana.md)
+  - [Praktikum 1 - RecyclerView Sangat Sederhana](chapter05/chapter05-02recyclerviewsangatsederhana.md)
+  - [Praktikum 2 - RecyclerView Sederhana](chapter05/chapter05-02recyclerviewsederhana.md)
