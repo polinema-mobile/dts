@@ -183,9 +183,103 @@ Sebuah adapter harus melakukan extend ke class RecyclerView.Adapter<VH>, perhati
 
 Pada langkah ini akan terjadi error yang akan kita perbaiki pada tahap selanjutnya
 
-### Override
+### Implement Methods
+
+Pindahkan cursor pada awal class `RecyclerView` kemudian pilih `alt+insert` untuk windows atau `alt + enter` untuk mac os kemudian pilih `Implements Methods`.
+
+![0521](images/0521implementmethods.png)
+![0522](images/0522pilihimplements.png)
+
+Pilih semua method dan hasilnya ada seperti berikut ini :
+
+```java
+package polinema.ac.id.recyclerviewsangatsederhana.adapters;
+
+
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+public class SuperHeroAdapter extends RecyclerView.Adapter<SuperHeroAdapter.MyViewHolder> {
+    @NonNull
+    @Override
+    public SuperHeroAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return null;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull SuperHeroAdapter.MyViewHolder holder, int position) {
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return 0;
+    }
+}
+
+```
 
 ### Inner Class
+
+Sampai pada saat ini class yang anda buat masih error, lanjutkan dengan memindahkan cursor ke `MyViewHolder` kemudian tekan kembali `alt+insert` atau `alt+enter` kemudian pilih `create class`
+
+![0523](images/0523inner.png)
+
+Hasil dari perintah diatas seperti gambar dibawah ini
+
+![0524](images/0524intter.png)
+
+Class nya masih error arahkan cursor ke `SuperHeroAdapter.MyViewHolder` kemudian pilih opsi `Make MyViewHolder extends ...`
+
+![0525](images/0525make.png)
+
+Berikut ini hasilnya, namun masih ada error untuk memperbaiki error lanjutkan ke langkah selanjutnya
+![0526](images/0526haha.png)
+
+Pindahkan kursor ke kode program yang masih merah kemudian tekan kembali `alt+enter` atau `alt+insert` kemudian pilih opsi `create constructor matching super`
+
+![0527](images/0527alsjd.png)
+
+Berikut ini hasil dari proses pembuatan Adapter (masih separoh jalan :) )
+
+```java
+package polinema.ac.id.recyclerviewsangatsederhana.adapters;
+
+
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+public class SuperHeroAdapter extends RecyclerView.Adapter<SuperHeroAdapter.MyViewHolder> {
+    @NonNull
+    @Override
+    public SuperHeroAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return null;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull SuperHeroAdapter.MyViewHolder holder, int position) {
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return 0;
+    }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+        }
+    }
+}
+```
+
+Langkah selanjutnya adalah mengisi dan memahami fungsi dari masing masing function dan inner class yang ada pada adapter
 
 ## Instansiasi RecyclerView
 
