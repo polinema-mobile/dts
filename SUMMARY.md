@@ -33,3 +33,5 @@
   - [Praktikum 7 - Parcelable](chapter04/chapter04-05parcelable.md)
 - [Bab 05 Recycler View](chapter05/chapter05-pendahuluan.md)
   - [Pendahuluan](chapter05/chapter05-pendahuluan.md)
+  - [Teori Recycler View](chapter05/chapter05-01teori.md)
+  - [Praktikum 1 - RecyclerView Sederhana](chapter05/chapter05-02recyclerviewsederhana.md)
