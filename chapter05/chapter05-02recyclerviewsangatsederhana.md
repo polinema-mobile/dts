@@ -307,6 +307,28 @@ Langkah selanjutnya adalah mengisi dan memahami fungsi dari masing masing functi
 
 ### Urutan Mengisi Function Pada Adapter
 
+#### Inner Class ViewHolder
+
+Inner Class ini berfungsi sebagai pembuat view pada class ini dibuat variabel yang menghubungkan id pada layout item_super_hero dengan variabel yang dapat digunakan pada saat mengisi nilai dari dataset.
+
+```java
+
+public class SuperHeroAdapter extends RecyclerView.Adapter<SuperHeroAdapter.MyViewHolder> {
+
+    ...
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        public TextView heroName;
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+            //variabel disesuaikan dengan layout, karena pada layout item_super_hero terdapat satu
+            //TextView maka pada kode program ini dibuat satu TextView yang melakukan findViewById ke id layout yang bersesuaian
+            heroName = itemView.findViewById(R.id.heroName);
+        }
+    }
+}
+
+```
+
 #### Get Item Count
 
 Function yang paling mudah untuk di isi pada adapter ini adalah function `getItemCount()` function ini berfungsi mengembalikan jumlah data yang ingin ditampilkan pada `RecyclerView`, Tambahkan `heroList.size()` pada function `getItemCount()`
@@ -322,6 +344,9 @@ public class SuperHeroAdapter extends RecyclerView.Adapter<SuperHeroAdapter.MyVi
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
+            //variabel disesuaikan dengan layout, karena pada layout item_super_hero terdapat satu
+            //TextView maka pada kode program ini dibuat satu TextView yang melakukan findViewById ke id layout yang bersesuaian
+            TextView heroName = itemView.findViewById(R.id.heroName);
         }
     }
 }
@@ -331,6 +356,110 @@ public class SuperHeroAdapter extends RecyclerView.Adapter<SuperHeroAdapter.MyVi
 #### OnCreateViewHolder
 
 Function ini berfungsi seperti `onCreate` pada activity dimana pada function ini juga dilakukan pendefenisian layout mana yang digunakan pada saat recyclerview dibuat. Jadi item layout yang dibuat sebelumnya di koneksikan di fungsi ini.
+
+```java
+public class SuperHeroAdapter extends RecyclerView.Adapter<SuperHeroAdapter.MyViewHolder> {
+    List<SuperHero> heroList;
+
+    public SuperHeroAdapter(List<SuperHero> heroList) {
+        this.heroList = heroList;
+    }
+
+    @NonNull
+    @Override
+    public SuperHeroAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        //object context diambil dari parent
+        Context context = parent.getContext();
+        //object context digunakan untuk membuat object layoutInflater
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        //object layoutInflater digunakan untuk membuat object view yang merupakan hasil inflate  layout ( mengubungkan adapter degnan layout)
+        View superHeroView = layoutInflater.inflate(R.layout.item_super_hero,parent,false);
+        //object superHeroView digunakan untuk membuat object viewHolder
+        MyViewHolder viewHolder = new MyViewHolder(superHeroView);
+        return viewHolder;
+    }
+    ...
+    ...
+
+    @Override
+    public int getItemCount()    {
+        return heroList.size();
+    }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+            TextView heroName = itemView.findViewById(R.id.heroName);
+        }
+    }
+}
+
+```
+
+#### OnBindViewHolder
+
+Pada fungsi ini kita menghubungkan data pada salah satu item di `listSuperHero` dengan item pada pada layout item_super_hero,kode program pada item_super_hero terdapat sebuah textView dengan id `heroName` pada fungsi inilah kita menghubungkan data dari item super hero ke layout.
+
+```java
+package polinema.ac.id.recyclerviewsangatsederhana.adapters;
+
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import org.w3c.dom.Text;
+
+import java.util.List;
+
+import polinema.ac.id.recyclerviewsangatsederhana.R;
+import polinema.ac.id.recyclerviewsangatsederhana.models.SuperHero;
+
+public class SuperHeroAdapter extends RecyclerView.Adapter<SuperHeroAdapter.MyViewHolder> {
+    List<SuperHero> heroList;
+
+    public SuperHeroAdapter(List<SuperHero> heroList) {
+        this.heroList = heroList;
+    }
+
+    @NonNull
+    @Override
+    public SuperHeroAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        Context context = parent.getContext();
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View superHeroView = layoutInflater.inflate(R.layout.item_super_hero,parent,false);
+        MyViewHolder viewHolder = new MyViewHolder(superHeroView);
+        return viewHolder;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull SuperHeroAdapter.MyViewHolder holder, int position) {
+        //ambil satu item hero
+        SuperHero hero = heroList.get(position);
+        //set text heroName berdasarkan data dari model hero
+        holder.heroName.setText(hero.getHeroName());
+    }
+
+    @Override
+    public int getItemCount()    {
+        return heroList.size();
+    }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        public TextView heroName;
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+            heroName = itemView.findViewById(R.id.heroName);
+        }
+    }
+}
+
+```
 
 ## Instansiasi RecyclerView
 
