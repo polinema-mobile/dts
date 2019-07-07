@@ -167,6 +167,7 @@ di atas
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:text="Laki-laki"
+            android:checked="true"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="367dp" />
 
