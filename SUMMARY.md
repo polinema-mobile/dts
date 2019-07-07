@@ -36,3 +36,4 @@
   - [Teori Recycler View](chapter05/chapter05-01teori.md)
   - [Praktikum 1 - RecyclerView Sangat Sederhana](chapter05/chapter05-02recyclerviewsangatsederhana.md)
   - [Praktikum 2 - RecyclerView Sederhana](chapter05/chapter05-02recyclerviewsederhana.md)
+  - [Tugas](chapter05/chapter05-tugas.md)
