@@ -511,19 +511,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.9" data-path="../chapter04/chapter04-tugasvalidasi.html">
-            
-                <a href="../chapter04/chapter04-tugasvalidasi.html">
-            
-                    
-                    Tugas Praktikum 1
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -549,6 +536,45 @@
             
                     
                     Pendahuluan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter05/chapter05-01teori.html">
+            
+                <a href="../chapter05/chapter05-01teori.html">
+            
+                    
+                    Teori Recycler View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter05/chapter05-02recyclerviewsangatsederhana.html">
+            
+                <a href="../chapter05/chapter05-02recyclerviewsangatsederhana.html">
+            
+                    
+                    Praktikum 1 - RecyclerView Sangat Sederhana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter05/chapter05-02recyclerviewsederhana.html">
+            
+                <a href="../chapter05/chapter05-02recyclerviewsederhana.html">
+            
+                    
+                    Praktikum 2 - RecyclerView Sederhana
             
                 </a>
             
@@ -608,15 +634,16 @@
                                 
                                 <h1 id="buka-project-starter-code">Buka Project Starter Code</h1>
 <h2 id="yang-sudah-ada-di-starter-code">Yang sudah ada di starter code</h2>
-<p>Clone repository starter code <a href="https://github.com/siubie/dtschapter03-starter" target="_blank">Starter Code Chapter 3</a>, jika menggunakan git jalankan perintah ini di console</p>
+<p>Clone repository starter code <a href="https://github.com/siubie/dtschapter03-starter" target="_blank">Starter Code Chapter 3</a>. Jika Anda menggunakan git jalankan perintah ini di console</p>
 <pre><code>git clone https://github.com/polinema-mobile/dtschapter03-starter.git
-</code></pre><p>Atau jika tidak memiliki git silahkan download zip dari url repository
+</code></pre><p>Jika tidak memiliki git silahkan download zip dari url repository
 <img src="images/03zipdl.png" alt="download zip github"></p>
 <h2 id="screen-layout-desain">Screen Layout Desain</h2>
-<p>Screen layout desain sudah disediakan di dalam starter code layout ini dapat anda lihat pada folder <code>design</code>, untuk melihat isi folder design ganti view pada android studio menjadi <code>project</code>
+<p>Screen layout desain sudah disediakan di dalam starter code layout ini. Layout dapat Anda lihat pada folder <code>design</code>. Untuk melihat isi folder design, ganti view pada Android Studio menjadi <code>project</code>
 <img src="images/03folderdesign2.png" alt="folder design"></p>
 <h2 id="cara-import-drawable">Cara Import Drawable</h2>
-<p>Untuk mengubah desain layout menjadi layout android xml diperlukan asset berupa potongan gambar yang sudah disesuaikan ukurannya dengan sistem resolusi sistem operasi android mulai dari <code>hdpi</code>,<code>mdpi</code>,<code>xdpi</code>,<code>xxhdpi</code>,dan <code>xxxhdpi</code>. Untuk semua layout pada folder design sudah dipotongkan dan disiapkan gambarnya di starter code. Sebagai pengetahuan tambahan proses untuk memasukkan gambar ke folder res pada android studio dilakukan dengan cara berikut.</p>
+<p>Untuk mengubah desain layout menjadi layout android xml, diperlukan asset berupa potongan gambar yang sudah disesuaikan ukurannya. Resolusi asset pada Android mulai dari <code>hdpi</code>, <code>mdpi</code>, <code>xdpi</code>, <code>xxhdpi</code>, dan <code>xxxhdpi</code>. Untuk semua layout pada folder design sudah dipotongkan dan disiapkan gambarnya di dalam starter code. </p>
+<p>Sebagai pengetahuan tambahan, proses untuk memasukkan aset gambar ke folder <code>res</code> pada Android Studio dilakukan dengan cara berikut,</p>
 <ol>
 <li>Buka tab Resource Manager
 <img src="images/03resourcemanager.png" alt="resource manager"></li>
@@ -630,13 +657,17 @@
 <img src="images/03importhem.png" alt="import again"></li>
 </ol>
 <h2 id="cara-import-custom-font">Cara Import Custom Font</h2>
-<p>Pada starter code juga sudah disediakan dua varian custom font yang dapat digunakan pada layout android. Untuk mengimport custom font dilakukan dengan langkah langkah berikut :</p>
+<p>Pada starter code juga sudah disediakan dua varian custom font yang dapat digunakan pada layout android. Untuk mengimport custom font dilakukan dengan langkah langkah berikut,</p>
 <ol>
-<li>Klik kanan pada folder <code>res</code> kemudian pilih <code>new -&gt; android resource directory</code>
-<img src="images/03resourcedirectory.png" alt="import font"></li>
-<li>Pilih Resource type <code>font</code>
-<img src="images/03fontfolder.png" alt="font"></li>
-<li>Copy dan paste custom font yang anda miliki ke dalam folder font ini, dengan syarat penamaan font semua menggunakan huruf kecil dan disambungkan dengan menggunakan underscore.</li>
+<li>Klik kanan pada folder <code>res</code> kemudian pilih <strong>New -&gt; Android Resource Directory</strong></li>
+</ol>
+<p><img src="images/03resourcedirectory.png" alt="import font"></p>
+<ol>
+<li><p>Pada Resource type, pilih <code>font</code>
+<img src="images/03fontfolder.png" alt="font"></p>
+</li>
+<li><p>Copy dan paste custom font yang Anda miliki ke dalam folder font yang Anda buat sebelumnya. <strong>Font yang Anda copy kedalam folder harus menggunakan huruf kecil dan disambungkan dengan menggunakan underscore jika lebih dari satu suku kata</strong>.</p>
+</li>
 </ol>
 
                                 
@@ -681,7 +712,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Praktikum 1 Load Starter Code","level":"1.4.3","depth":2,"next":{"title":"Praktikum 2 Halaman Splash Screen","level":"1.4.4","depth":2,"path":"chapter03/chapter03-04splashscreen.md","ref":"chapter03/chapter03-04splashscreen.md","articles":[]},"previous":{"title":"Hasil Yang Diharapkan","level":"1.4.2","depth":2,"path":"chapter03/chapter03-02hasil.md","ref":"chapter03/chapter03-02hasil.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter03/chapter03-03startercode.md","mtime":"2019-07-04T00:46:14.032Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T23:59:04.112Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Praktikum 1 Load Starter Code","level":"1.4.3","depth":2,"next":{"title":"Praktikum 2 Halaman Splash Screen","level":"1.4.4","depth":2,"path":"chapter03/chapter03-04splashscreen.md","ref":"chapter03/chapter03-04splashscreen.md","articles":[]},"previous":{"title":"Hasil Yang Diharapkan","level":"1.4.2","depth":2,"path":"chapter03/chapter03-02hasil.md","ref":"chapter03/chapter03-02hasil.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter03/chapter03-03startercode.md","mtime":"2019-07-07T08:00:38.381Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-07T08:00:54.311Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

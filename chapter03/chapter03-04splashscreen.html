@@ -511,19 +511,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.9" data-path="../chapter04/chapter04-tugasvalidasi.html">
-            
-                <a href="../chapter04/chapter04-tugasvalidasi.html">
-            
-                    
-                    Tugas Praktikum 1
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -549,6 +536,45 @@
             
                     
                     Pendahuluan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter05/chapter05-01teori.html">
+            
+                <a href="../chapter05/chapter05-01teori.html">
+            
+                    
+                    Teori Recycler View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter05/chapter05-02recyclerviewsangatsederhana.html">
+            
+                <a href="../chapter05/chapter05-02recyclerviewsangatsederhana.html">
+            
+                    
+                    Praktikum 1 - RecyclerView Sangat Sederhana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter05/chapter05-02recyclerviewsederhana.html">
+            
+                <a href="../chapter05/chapter05-02recyclerviewsederhana.html">
+            
+                    
+                    Praktikum 2 - RecyclerView Sederhana
             
                 </a>
             
@@ -607,49 +633,49 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="splashscreen">Splashscreen</h1>
-<p>Splashscreen merupakan screen awal yang dibuka ketika aplikasi dijalankan ada banyak aplikasi yang menggunakan splash screen namun ada juga yang tidak menggunakan, namun demikian kemampuan membuat splash screen tetap harus dimiliki oleh seorang junior mobile programmer.</p>
+<p><strong>Splash screen</strong> merupakan tamoilan awal yang pertama kali dibuka ketika aplikasi dijalankan. Ada banyak aplikasi yang menggunakan splash screen, namun ada juga yang tidak menggunakannya. Akan tetapi,  kemampuan untuk membuat splash screen tetap harus dimiliki oleh seorang junior mobile programmer.</p>
 <h2 id="buka-main-activity">Buka Main Activity</h2>
-<p>Bukalah file MainActivity.java, file ini akan kita jadikan sebagai splash screen. Pada file ini anda akan menemukan bahwa pada fungsi onCreate layout yang di load adalah <code>activity_main.xml</code>. Oleh karena itu untuk mengubah tampilannya kita harus mengubah isi file dari <code>activity_main.xml</code></p>
+<p>Bukalah file <code>MainActivity.java</code>, file ini akan kita jadikan sebagai splash screen. Pada file <code>MainActivity.java</code>, Anda akan menemukan bahwa pada fungsi onCreate, layout yang dipanggil atau di tampilkan adalah <code>activity_main.xml</code>. Oleh karena itu, untuk mengubah tampilannya kita harus mengubah isi dari file <code>activity_main.xml</code></p>
 <h2 id="edit-file-activitymainxml">Edit file activity_main.xml</h2>
-<p>Lakukan langkah langkah berikut untuk membuat splash screen. Desain yang diinginkan untuk splash screen dapat anda lihat pada folder <code>design</code>.
+<p>Lakukan langkah langkah berikut untuk membuat splash screen. Desain yang diinginkan untuk splash screen dapat Anda lihat pada folder <code>design</code>.
 <img src="images/0304splash.png" alt="splash"></p>
 <h3 id="tambahkan-logo">Tambahkan Logo</h3>
 <ol>
-<li>Hapuslah TextView Hello World dari halaman activity_main.xml</li>
-<li>Buatlah sebuah ImageView dan atur posisinya di tengah layar dengan menggunakan constraint_layout<pre><code class="lang-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
-     <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/imageView&quot;</span>
-     <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
-     <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
-     <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">&quot;8dp&quot;</span>
-     <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
-     <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">&quot;8dp&quot;</span>
-     <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;8dp&quot;</span>
-     <span class="hljs-attr">android:src</span>=<span class="hljs-string">&quot;@drawable/ic_logo&quot;</span>
-     <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
-     <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
-     <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
-     <span class="hljs-attr">app:layout_constraintTop_toTopOf</span>=<span class="hljs-string">&quot;parent&quot;</span> /&gt;</span>
-</code></pre>
-</li>
+<li>Hapuslah <code>TextView</code> Hello World dari halaman activity_main.xml</li>
+<li>Buatlah sebuah <code>ImageView</code> dan atur posisinya di tengah layar dengan menggunakan constraint layout</li>
 </ol>
+<pre><code class="lang-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/imageView&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:src</span>=<span class="hljs-string">&quot;@drawable/ic_logo&quot;</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toTopOf</span>=<span class="hljs-string">&quot;parent&quot;</span> /&gt;</span>
+</code></pre>
 <h3 id="tambahkan-text">Tambahkan Text</h3>
 <ol>
-<li>Buatlah sebuah TextView dengan font montsterrat semi bold dan beri isi &quot;DTS Kominfo&quot;</li>
-<li>Letakkan TextView tersebut dibawah logo dengan jarak 8dp.<pre><code class="lang-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
-     <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
-     <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
-     <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">&quot;8dp&quot;</span>
-     <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
-     <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">&quot;8dp&quot;</span>
-     <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_semi_bold&quot;</span>
-     <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;20sp&quot;</span>
-     <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/logo_text&quot;</span>
-     <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
-     <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
-     <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/imageView&quot;</span> /&gt;</span>
-</code></pre>
-</li>
+<li>Buatlah sebuah <code>TextView</code> dengan font <strong>montsterrat semi bold</strong> dan ganti teks dengan &quot;<strong>DTS Kominfo</strong>&quot;</li>
+<li>Letakkan <code>TextView</code> tersebut dibawah logo dengan jarak 8dp.</li>
 </ol>
+<pre><code class="lang-xml">    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_semi_bold&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;20sp&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/logo_text&quot;</span>
+        <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/imageView&quot;</span> /&gt;</span>
+</code></pre>
 
                                 
                                 </section>
@@ -693,7 +719,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Praktikum 2 Halaman Splash Screen","level":"1.4.4","depth":2,"next":{"title":"Praktikum 3 Halaman Welcome","level":"1.4.5","depth":2,"path":"chapter03/chapter03-05welcome.md","ref":"chapter03/chapter03-05welcome.md","articles":[]},"previous":{"title":"Praktikum 1 Load Starter Code","level":"1.4.3","depth":2,"path":"chapter03/chapter03-03startercode.md","ref":"chapter03/chapter03-03startercode.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter03/chapter03-04splashscreen.md","mtime":"2019-07-04T00:46:14.032Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T23:59:04.112Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Praktikum 2 Halaman Splash Screen","level":"1.4.4","depth":2,"next":{"title":"Praktikum 3 Halaman Welcome","level":"1.4.5","depth":2,"path":"chapter03/chapter03-05welcome.md","ref":"chapter03/chapter03-05welcome.md","articles":[]},"previous":{"title":"Praktikum 1 Load Starter Code","level":"1.4.3","depth":2,"path":"chapter03/chapter03-03startercode.md","ref":"chapter03/chapter03-03startercode.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter03/chapter03-04splashscreen.md","mtime":"2019-07-07T08:00:38.381Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-07T08:00:54.311Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

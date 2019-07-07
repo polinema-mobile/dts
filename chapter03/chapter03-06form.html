@@ -511,19 +511,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.9" data-path="../chapter04/chapter04-tugasvalidasi.html">
-            
-                <a href="../chapter04/chapter04-tugasvalidasi.html">
-            
-                    
-                    Tugas Praktikum 1
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -549,6 +536,45 @@
             
                     
                     Pendahuluan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter05/chapter05-01teori.html">
+            
+                <a href="../chapter05/chapter05-01teori.html">
+            
+                    
+                    Teori Recycler View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter05/chapter05-02recyclerviewsangatsederhana.html">
+            
+                <a href="../chapter05/chapter05-02recyclerviewsangatsederhana.html">
+            
+                    
+                    Praktikum 1 - RecyclerView Sangat Sederhana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter05/chapter05-02recyclerviewsederhana.html">
+            
+                <a href="../chapter05/chapter05-02recyclerviewsederhana.html">
+            
+                    
+                    Praktikum 2 - RecyclerView Sederhana
             
                 </a>
             
@@ -607,7 +633,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="form">Form</h1>
-<p>Pada langkah ini akan dibuat beberapa activity yang terdiri dari:</p>
+<p>Pada praktikum kali ini akan dibuat beberapa activity, yaitu:</p>
 <ol>
 <li>Acitivity WelcomeBack</li>
 <li>Activity WelcomeSlideSuperHero</li>
@@ -617,11 +643,11 @@
 <li>Activity Success</li>
 </ol>
 <h2 id="membuat-activity-welcomeback">Membuat Activity WelcomeBack</h2>
-<p>Buatlah activity baru dengan nama WelcomeBack. Halaman ini akan digunakan sebagai form login. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter-&gt;new-&gt;activity-&gt;empty activity.
-Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welcome_back.xml</code>, Berikut ini screen shot tampilan aplikasi yang diharapkan.
-<img src="images/Sign%20In.png" alt="Sign In"></p>
+<p>Buatlah activity baru dengan nama WelcomeBack. Halaman ini akan digunakan sebagai form login. Untuk membuatnya activity tersebut adalah Klik Kanan di package <strong>dtschapter03_starter-&gt;new-&gt;activity-&gt;empty activity</strong></p>
+<p>Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welcome_back.xml</code>. Berikut ini merupakan screenshot tampilan aplikasi yang diharapkan.</p>
+<p><img src="images/Sign%20In.png" alt="Sign In"></p>
 <h3 id="edit-activitywelcomebackxml">Edit activity_welcome_back.xml</h3>
-<p>Untuk membuat form login seperti gambar diatas yaitu dengan mengubah isi file dari <code>activity_welcome_back.xml</code>, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.</p>
+<p>Untuk membuat form login seperti gambar diatas, Anda perlu mengubah isi dari file <code>activity_welcome_back.xml</code>. Constraint layout digunakan pada layout <code>activity_welcome_back.xml</code>. Pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.</p>
 <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">android.support.constraint.ConstraintLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
     <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>
     <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">&quot;http://schemas.android.com/tools&quot;</span>
@@ -644,7 +670,7 @@ Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welc
 <li>Button Login</li>
 </ol>
 <h4 id="tambahkan-judul">Tambahkan Judul</h4>
-<p>Tambahkan sebuah TextView untuk menulis judul</p>
+<p>Tambahkan sebuah <code>TextView</code> untuk menulis judul.</p>
 <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
         <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/welcome_back&quot;</span>
         <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
@@ -660,7 +686,7 @@ Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welc
         /&gt;</span>
 </code></pre>
 <h4 id="tambahkan-sub-judul">Tambahkan Sub Judul</h4>
-<p>Tambahkan sebuah sub text baru di bawah judul, berilah id <code>sign_in</code></p>
+<p>Tambahkan sebuah sub text baru di bawah judul dengan id <code>sign_in</code> dengan menggunakan <code>TextView</code></p>
 <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
         <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/sign_in&quot;</span>
         <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
@@ -675,7 +701,7 @@ Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welc
         <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/welcome_back&quot;</span> /&gt;</span>
 </code></pre>
 <h4 id="tambahkan-username">Tambahkan Username</h4>
-<p>Tambahkan Text View untuk label Username.</p>
+<p>Tambahkan <code>TextView</code> sebagai label Username</p>
 <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
         <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/reset_code&quot;</span>
         <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
@@ -688,8 +714,8 @@ Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welc
         <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
         <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/sign_in&quot;</span> /&gt;</span>
 </code></pre>
-<h4 id="tambahkan-edit-text-username">Tambahkan Edit Text Username</h4>
-<p>Tambahkan Edit Text untuk pengisian Username</p>
+<h4 id="tambahkan-edittext-username">Tambahkan EditText Username</h4>
+<p>Tambahkan <code>EditText</code> untuk pengisian Username</p>
 <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">EditText</span>
         <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/edt_reset_code&quot;</span>
         <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
@@ -704,7 +730,7 @@ Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welc
         /&gt;</span>
 </code></pre>
 <h4 id="tambahkan-password">Tambahkan Password</h4>
-<p>Tambahkan label Password menggunakan TextView</p>
+<p>Tambahkan label Password menggunakan <code>TextView</code></p>
 <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
         <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/new_password&quot;</span>
         <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
@@ -717,8 +743,8 @@ Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welc
         <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
         <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/edt_reset_code&quot;</span> /&gt;</span>
 </code></pre>
-<h4 id="tambahkan-edit-text-password">Tambahkan Edit Text Password</h4>
-<p>Tambahkan EditText untuk pengisian password.</p>
+<h4 id="tambahkan-edittext-password">Tambahkan EditText Password</h4>
+<p>Tambahkan <code>EditText</code> untuk pengisian password.</p>
 <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">EditText</span>
         <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/edt_new_password&quot;</span>
         <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
@@ -732,7 +758,7 @@ Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welc
         <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@+id/new_password&quot;</span> /&gt;</span>
 </code></pre>
 <h4 id="tambahkan-text-forgot-password">Tambahkan Text Forgot Password</h4>
-<p>Tambahkan text Forgot Password yang dapat di-klik untuk pengguna yang lupa password.</p>
+<p>Tambahkan teks <strong>Forgot Password</strong> yang dapat di-klik sebagai button bagi pengguna yang lupa password.</p>
 <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
         <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/forgot_password&quot;</span>
         <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
@@ -747,7 +773,7 @@ Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welc
         /&gt;</span>
 </code></pre>
 <h4 id="buat-drawable-buttonredxml">Buat Drawable button_red.xml</h4>
-<p>Tambahkan sebuah file res drawable dengan nama <code>button_red.xml</code>. Ganti isi file <code>button_red.xml</code></p>
+<p>Tambahkan sebuah file pada package <strong>res-&gt;drawable</strong> dengan nama <code>button_red.xml</code>. Ganti isi file <code>button_red.xml</code> dengan kode berikut, </p>
 <pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
 <span class="hljs-tag">&lt;<span class="hljs-name">shape</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
     <span class="hljs-attr">android:shape</span>=<span class="hljs-string">&quot;rectangle&quot;</span>&gt;</span>
@@ -756,7 +782,7 @@ Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welc
 <span class="hljs-tag">&lt;/<span class="hljs-name">shape</span>&gt;</span>
 </code></pre>
 <h4 id="tambahkan-button-login">Tambahkan Button Login</h4>
-<p>Buat Button Log In, beri text <code>LOG IN</code> dengan warna text putih.</p>
+<p>Buat button untuk fungsi Log In. Pada button tersebut, ganti teks button menjadi  <strong>LOG IN</strong>. Beri warna putih pada teks <strong>LOG IN</strong>.</p>
 <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
         <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
         <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
@@ -773,12 +799,12 @@ Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welc
         <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
         /&gt;</span>
 </code></pre>
-<h2 id="membuat-activity-welcome-slidesuperhero">Membuat Activity Welcome SlideSuperHero</h2>
-<p>Buatlah activity baru dengan nama WelcomeSlideSuperhero. Activity ini yang nantinya akan muncul sebagai aksi button &quot;Get Started&quot; di klik pada activity welcome slide. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter-&gt;new-&gt;activity-&gt;empty activity.
-Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welcome_slide_superhero</code> Berikut ini screen shot tampilan aplikasi yang diharapkan.</p>
+<h2 id="membuat-activity-welcomeslidesuperhero">Membuat Activity WelcomeSlideSuperHero</h2>
+<p>Buatlah activity baru dengan nama <strong>WelcomeSlideSuperhero</strong>. Activity ini nantinya akan muncul sebagai aksi button &quot;<strong>Get Started</strong>&quot; yang terdapat pada activity WelcomeSlide. Untuk membuatnya,klik kanan pada package <strong>dtschapter03_starter-&gt;New-&gt;Activity-&gt;Empty Activity</strong>.
+Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welcome_slide_superhero.xml</code>. Berikut ini screenshot tampilan aplikasi yang diharapkan.</p>
 <p><img src="images/Walk.png" alt="Sign In"></p>
-<h3 id="edit-activitywelcomeslidesuperheroxml">Edit activity_welcome_slide_superhero.xml</h3>
-<p>Untuk membuat form seperti gambar diatas yaitu dengan mengubah isi file dari <code>activity_welcome_slide_superhero</code>, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.</p>
+<h3 id="edit-layout-activitywelcomeslidesuperheroxml">Edit layout activity_welcome_slide_superhero.xml</h3>
+<p>Untuk membuat layout seperti gambar diatas,  ubah isi file <code>activity_welcome_slide_superhero</code>. Pada layout ini digunakan constraint layout. Pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.</p>
 <pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
 <span class="hljs-tag">&lt;<span class="hljs-name">android.support.constraint.ConstraintLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
     <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>
@@ -799,8 +825,8 @@ Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welc
 <li>Button get started</li>
 <li>Text Login</li>
 </ol>
-<h4 id="tambahkan-image-icon">Tambahkan Image Icon</h4>
-<p>Tambahkan sebuah ImageView untuk menambahkan gambar dengan nama id= slide_dua, serta panggil file gambar ic_superhero di drawable.</p>
+<h4 id="tambahkan-imageview">Tambahkan ImageView</h4>
+<p>Tambahkan sebuah <code>ImageView</code> untuk menambahkan gambar. Berikan <code>id</code> dengan nama <code>slide_dua</code>. Panggil file gambar <strong>ic_superhero</strong> dari package <strong>drawable</strong>.</p>
 <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
         <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/slide_dua&quot;</span>
         <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
@@ -814,7 +840,7 @@ Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welc
         <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">&quot;parent&quot;</span> /&gt;</span>
 </code></pre>
 <h4 id="tambahkan-judul-image">Tambahkan Judul Image</h4>
-<p>Tambahkan sebuah TextView untuk menulis judul dengan nama id=welcome_text</p>
+<p>Tambahkan sebuah <code>TextView</code> untuk menulis judul dengan id <code>welcome_text</code></p>
 <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
         <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/welcome_text&quot;</span>
         <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
@@ -829,7 +855,7 @@ Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welc
         /&gt;</span>
 </code></pre>
 <h4 id="tambahkan-sub-judul-image">Tambahkan Sub Judul Image</h4>
-<p>Tambahkan sebuah sub text baru di bawah judul dengan nama id=sub_welcome</p>
+<p>Tambahkan sebuah sub text baru di bawah judul dengan menggunakan <code>TextView</code>. Gunakan id <code>sub_welcome</code> sebagai id <code>TextView</code>.</p>
 <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
         <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/sub_welcome&quot;</span>
         <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
@@ -843,7 +869,7 @@ Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welc
         /&gt;</span>
 </code></pre>
 <h4 id="tambahkan-image-backgroud">Tambahkan Image Backgroud</h4>
-<p>Tambahkan sebuah ImageView untuk menambahkan gambar dengan nama id= backgorud_dua, serta panggil file gambar bg_blue di drawable.</p>
+<p>Tambahkan sebuah <code>ImageView</code> untuk menambahkan gambar. Gunakan id dengna nama <code>backgorud_dua</code>. Gunakan file gambar <strong>bg_blue</strong> dari drawable.</p>
 <pre><code class="lang-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">ImageView</span>
         <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/background_dua&quot;</span>
         <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
@@ -856,7 +882,7 @@ Langkah selanjutnya adalah melakukan desain layout pada file <code>activity_welc
         /&gt;</span>
 </code></pre>
 <h4 id="buat-drawable-buttonwhitexml">Buat Drawable button_white.xml</h4>
-<p>Tambahkan sebuah file res drawable dengan nama <code>button_white.xml</code>. Ganti isi file <code>button_white.xml</code></p>
+<p>Tambahkan sebuah file pada package <strong>res-&gt;drawable</strong> dengan nama <code>button_white.xml</code>. Ganti isi file <code>button_white.xml</code> dengan kode dibawah ini,</p>
 <pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
 <span class="hljs-tag">&lt;<span class="hljs-name">shape</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
     <span class="hljs-attr">android:shape</span>=<span class="hljs-string">&quot;rectangle&quot;</span>&gt;</span>
@@ -1392,7 +1418,7 @@ Tambahkan sebuah Image untuk menulis judul berilah id=succes_image serta tambahk
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Praktikum 4 Halaman Form","level":"1.4.6","depth":2,"next":{"title":"Praktikum 5 Intent Splash Screen","level":"1.4.7","depth":2,"path":"chapter03/chapter03-07intentsplashscreen.md","ref":"chapter03/chapter03-07intentsplashscreen.md","articles":[]},"previous":{"title":"Praktikum 3 Halaman Welcome","level":"1.4.5","depth":2,"path":"chapter03/chapter03-05welcome.md","ref":"chapter03/chapter03-05welcome.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter03/chapter03-06form.md","mtime":"2019-07-04T00:46:14.032Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-04T23:59:04.112Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Praktikum 4 Halaman Form","level":"1.4.6","depth":2,"next":{"title":"Praktikum 5 Intent Splash Screen","level":"1.4.7","depth":2,"path":"chapter03/chapter03-07intentsplashscreen.md","ref":"chapter03/chapter03-07intentsplashscreen.md","articles":[]},"previous":{"title":"Praktikum 3 Halaman Welcome","level":"1.4.5","depth":2,"path":"chapter03/chapter03-05welcome.md","ref":"chapter03/chapter03-05welcome.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter03/chapter03-06form.md","mtime":"2019-07-07T08:00:38.385Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-07T08:00:54.311Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
