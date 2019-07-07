@@ -242,6 +242,19 @@ Pindahkan kursor ke kode program yang masih merah kemudian tekan kembali `alt+en
 
 ![0527](images/0527alsjd.png)
 
+### Variabel Data
+
+Berikan variabel untuk menampung data dari activity, karena adapter membutuhkan data data ini diambil dari activity oleh karena itu buatlah sebuah variabel berupa list of `SuperHero` dengan nama `heroList`
+
+![superhero](images/0528superhero.png)
+
+Setelah itu buatkan constructor untuk class ini dengan menekan shortcut `alt + insert` pada windows atau `cmd+n` pada mac.
+
+![superhero](images/0529construktor.png)
+
+Pilih variabel `heroList`
+![superhero](images/0530pilih.png)
+
 Berikut ini hasil dari proses pembuatan Adapter (masih separoh jalan :) )
 
 ```java
@@ -254,7 +267,17 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
+import polinema.ac.id.recyclerviewsangatsederhana.models.SuperHero;
+
 public class SuperHeroAdapter extends RecyclerView.Adapter<SuperHeroAdapter.MyViewHolder> {
+    List<SuperHero> heroList;
+
+    public SuperHeroAdapter(List<SuperHero> heroList) {
+        this.heroList = heroList;
+    }
+
     @NonNull
     @Override
     public SuperHeroAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -277,9 +300,37 @@ public class SuperHeroAdapter extends RecyclerView.Adapter<SuperHeroAdapter.MyVi
         }
     }
 }
+
 ```
 
 Langkah selanjutnya adalah mengisi dan memahami fungsi dari masing masing function dan inner class yang ada pada adapter
+
+### Urutan Mengisi Function Pada Adapter
+
+#### Get Item Count
+
+Function yang paling mudah untuk di isi pada adapter ini adalah function `getItemCount()` function ini berfungsi mengembalikan jumlah data yang ingin ditampilkan pada `RecyclerView`, Tambahkan `heroList.size()` pada function `getItemCount()`
+
+```java
+public class SuperHeroAdapter extends RecyclerView.Adapter<SuperHeroAdapter.MyViewHolder> {
+...
+    @Override
+    public int getItemCount()    {
+        return heroList.size();
+    }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+        }
+    }
+}
+
+```
+
+#### OnCreateViewHolder
+
+Function ini berfungsi seperti `onCreate` pada activity dimana pada function ini juga dilakukan pendefenisian layout mana yang digunakan pada saat recyclerview dibuat. Jadi item layout yang dibuat sebelumnya di koneksikan di fungsi ini.
 
 ## Instansiasi RecyclerView
 
