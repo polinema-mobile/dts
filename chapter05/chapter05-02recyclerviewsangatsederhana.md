@@ -4,6 +4,8 @@ Pada Praktikum kali ini kita akan membuat sebuah recyclerview yang sangat sederh
 
 ## Hasil Yang Diharapkan
 
+![hasil](images/0532hasil.jpeg)
+
 ## New Project
 
 Buatlah sebuah project baru sesuaikan konfigurasi project ini dengan environtment SDK pada Android Studio anda, contoh konfigurasinya :
@@ -463,8 +465,152 @@ public class SuperHeroAdapter extends RecyclerView.Adapter<SuperHeroAdapter.MyVi
 
 ## Instansiasi RecyclerView
 
+Instansiasi RecyclerView dilakukan di MainActivity untuk melakukannya buatlah sebuah field pada Class MainActivity dengan tipe data RecyclerView berilah anama rvSuperHero.
+
+```java
+
+public class MainActivity extends AppCompatActivity {
+    //instansiasi Recyclerview
+    RecyclerView rvSuperHero;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+
+```
+
+Selanjutnya setelah `setContentView` panggil lakukan `findViewById` untuk menyambungkan `rvSuperHero` ke RecyclerView yang ada di layout.
+
+```java
+
+public class MainActivity extends AppCompatActivity {
+    //instansiasi Recyclerview
+    RecyclerView rvSuperHero;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        //menyambungkan rvSuperHero ke layout
+        rvSuperHero = findViewById(R.id.rvSuperHero);
+    }
+}
+
+```
+
 ## Instansiasi Model
+
+Langkah selanjutnya adalah membuat dataset, dataset dapat dibuat dengan membuat sebuah daftar super hero dengan membuat List of object `SuperHero` pada `MainActivity`
+
+```java
+
+public class MainActivity extends AppCompatActivity {
+    //instansiasi Recyclerview
+    RecyclerView rvSuperHero;
+    //instansiasi list superhero
+    List<SuperHero> listSuperHero = new ArrayList<>();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        //menyambungkan rvSuperHero ke layout
+        rvSuperHero = findViewById(R.id.rvSuperHero);
+
+    }
+}
+
+```
+
+Setelah itu buatlah beberapa object `SuperHero` dan ditambahkan kedalam `List<SuperHero>`
+
+```java
+
+public class MainActivity extends AppCompatActivity {
+    //instansiasi Recyclerview
+    RecyclerView rvSuperHero;
+    //instansiasi list superhero
+    List<SuperHero> listSuperHero = new ArrayList<>();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        //menyambungkan rvSuperHero ke layout
+        rvSuperHero = findViewById(R.id.rvSuperHero);
+        //Membuat object hero
+        SuperHero hero = new SuperHero("Petruk");
+        //menambahkan hero ke listSuperHero
+        listSuperHero.add(hero);
+        //membuat object hero baru
+        hero = new SuperHero("Gareng");
+        //menambahkan hero baru ke listSuperhero
+        listSuperHero.add(hero);
+    }
+}
+
+```
 
 ## Instansiasi Adapter
 
+Pada langkah ini semua data yang dibutuhkan untuk menginstansiasi adapter sudah dimiliki oleh karena itu adapter dapat di buat objeknya.
+
+```java
+public class MainActivity extends AppCompatActivity {
+    //instansiasi Recyclerview
+    RecyclerView rvSuperHero;
+    //instansiasi list superhero
+    List<SuperHero> listSuperHero = new ArrayList<>();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        //menyambungkan rvSuperHero ke layout
+        rvSuperHero = findViewById(R.id.rvSuperHero);
+        //Membuat object hero
+        SuperHero hero = new SuperHero("Petruk");
+        //menambahkan hero ke listSuperHero
+        listSuperHero.add(hero);
+        //membuat object hero baru
+        hero = new SuperHero("Gareng");
+        //menambahkan hero baru ke listSuperhero
+        listSuperHero.add(hero);
+        //Instansiasi Adapter
+        SuperHeroAdapter superHeroAdapter = new SuperHeroAdapter(listSuperHero);
+    }
+}
+```
+
 ## Set Adapter dan Layout Manager
+
+Langkah terakhir dalam membuat recyclerview adalah dengan melakukan set adapter dan set layout manager pada object recyclerview
+
+```java
+public class MainActivity extends AppCompatActivity {
+    //instansiasi Recyclerview
+    RecyclerView rvSuperHero;
+    //instansiasi list superhero
+    List<SuperHero> listSuperHero = new ArrayList<>();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        //menyambungkan rvSuperHero ke layout
+        rvSuperHero = findViewById(R.id.rvSuperHero);
+        //Membuat object hero
+        SuperHero hero = new SuperHero("Petruk");
+        //menambahkan hero ke listSuperHero
+        listSuperHero.add(hero);
+        //membuat object hero baru
+        hero = new SuperHero("Gareng");
+        //menambahkan hero baru ke listSuperhero
+        listSuperHero.add(hero);
+        //Instansiasi Adapter
+        SuperHeroAdapter superHeroAdapter = new SuperHeroAdapter(listSuperHero);
+        //set adapter dan layoutmanager
+        rvSuperHero.setAdapter(superHeroAdapter);
+        rvSuperHero.setLayoutManager(new LinearLayoutManager(this));
+    }
+}
+```
