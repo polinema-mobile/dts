@@ -1,5 +1,6 @@
 # Form
-Pada langkah ini akan dibuat beberapa activity yang terdiri dari:
+Pada praktikum kali ini akan dibuat beberapa activity, yaitu:
+
 1. Acitivity WelcomeBack
 2. Activity WelcomeSlideSuperHero
 3. Activity WelcomeSlideAssign
@@ -8,12 +9,14 @@ Pada langkah ini akan dibuat beberapa activity yang terdiri dari:
 6. Activity Success
 
 ## Membuat Activity WelcomeBack
-Buatlah activity baru dengan nama WelcomeBack. Halaman ini akan digunakan sebagai form login. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter->new->activity->empty activity.
-Langkah selanjutnya adalah melakukan desain layout pada file `activity_welcome_back.xml`, Berikut ini screen shot tampilan aplikasi yang diharapkan.
+Buatlah activity baru dengan nama WelcomeBack. Halaman ini akan digunakan sebagai form login. Untuk membuatnya activity tersebut adalah Klik Kanan di package **dtschapter03_starter->new->activity->empty activity**
+
+Langkah selanjutnya adalah melakukan desain layout pada file `activity_welcome_back.xml`. Berikut ini merupakan screenshot tampilan aplikasi yang diharapkan.
+
 ![Sign In](images/Sign%20In.png)
 
 ### Edit activity_welcome_back.xml
-Untuk membuat form login seperti gambar diatas yaitu dengan mengubah isi file dari `activity_welcome_back.xml`, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.
+Untuk membuat form login seperti gambar diatas, Anda perlu mengubah isi dari file `activity_welcome_back.xml`. Constraint layout digunakan pada layout `activity_welcome_back.xml`. Pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.
 
 ```xml
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -26,6 +29,7 @@ Untuk membuat form login seperti gambar diatas yaitu dengan mengubah isi file da
 
 </android.support.constraint.ConstraintLayout>
 ```
+
 Pada desain layout terdapat beberapa komponen yaitu:
 1. Judul
 2. Sub Judul
@@ -37,7 +41,8 @@ Pada desain layout terdapat beberapa komponen yaitu:
 8. Button Login
 
 #### Tambahkan Judul
-Tambahkan sebuah TextView untuk menulis judul
+Tambahkan sebuah `TextView` untuk menulis judul.
+
 ```xml
 <TextView
         android:id="@+id/welcome_back"
@@ -55,7 +60,8 @@ Tambahkan sebuah TextView untuk menulis judul
 ```
 
 #### Tambahkan Sub Judul
-Tambahkan sebuah sub text baru di bawah judul, berilah id `sign_in`
+Tambahkan sebuah sub text baru di bawah judul dengan id `sign_in` dengan menggunakan `TextView`
+
 ```xml
 <TextView
         android:id="@+id/sign_in"
@@ -72,7 +78,8 @@ Tambahkan sebuah sub text baru di bawah judul, berilah id `sign_in`
 ```
 
 #### Tambahkan Username
-Tambahkan Text View untuk label Username.
+Tambahkan `TextView` sebagai label Username
+
 ```xml
 <TextView
         android:id="@+id/reset_code"
@@ -87,8 +94,11 @@ Tambahkan Text View untuk label Username.
         app:layout_constraintTop_toBottomOf="@+id/sign_in" />
 ```
 
-#### Tambahkan Edit Text Username
-Tambahkan Edit Text untuk pengisian Username
+#### Tambahkan EditText Username
+Tambahkan `EditText` untuk pengisian Username
+
+[//]: # (TODO : fix id edt_reset_code)
+
 ```xml
 <EditText
         android:id="@+id/edt_reset_code"
@@ -105,7 +115,10 @@ Tambahkan Edit Text untuk pengisian Username
 ```
 
 #### Tambahkan Password
-Tambahkan label Password menggunakan TextView
+Tambahkan label Password menggunakan `TextView`
+
+[//]: # (TODO : fix id edt_reset_code)
+
 ```xml
 <TextView
         android:id="@+id/new_password"
@@ -120,8 +133,9 @@ Tambahkan label Password menggunakan TextView
         app:layout_constraintTop_toBottomOf="@+id/edt_reset_code" />
 ```
 
-#### Tambahkan Edit Text Password
-Tambahkan EditText untuk pengisian password.
+#### Tambahkan EditText Password
+Tambahkan `EditText` untuk pengisian password.
+
 ```xml
 <EditText
         android:id="@+id/edt_new_password"
@@ -137,7 +151,8 @@ Tambahkan EditText untuk pengisian password.
 ```
 
 #### Tambahkan Text Forgot Password
-Tambahkan text Forgot Password yang dapat di-klik untuk pengguna yang lupa password.
+Tambahkan teks **Forgot Password** yang dapat di-klik sebagai button bagi pengguna yang lupa password.
+
 ```xml
 <TextView
         android:id="@+id/forgot_password"
@@ -152,8 +167,10 @@ Tambahkan text Forgot Password yang dapat di-klik untuk pengguna yang lupa passw
         app:layout_constraintTop_toBottomOf="@id/edt_new_password"
         />
 ```
+
 #### Buat Drawable button_red.xml
-Tambahkan sebuah file res drawable dengan nama `button_red.xml`. Ganti isi file `button_red.xml`
+Tambahkan sebuah file pada package **res->drawable** dengan nama `button_red.xml`. Ganti isi file `button_red.xml` dengan kode berikut, 
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
@@ -164,7 +181,8 @@ Tambahkan sebuah file res drawable dengan nama `button_red.xml`. Ganti isi file 
 ```
 
 #### Tambahkan Button Login
-Buat Button Log In, beri text `LOG IN` dengan warna text putih.
+Buat button untuk fungsi Log In. Pada button tersebut, ganti teks button menjadi  **LOG IN**. Beri warna putih pada teks **LOG IN**.
+
 ```xml
 <Button
         android:layout_width="match_parent"
@@ -183,15 +201,15 @@ Buat Button Log In, beri text `LOG IN` dengan warna text putih.
         />
 ```
 
-## Membuat Activity Welcome SlideSuperHero
-Buatlah activity baru dengan nama WelcomeSlideSuperhero. Activity ini yang nantinya akan muncul sebagai aksi button "Get Started" di klik pada activity welcome slide. Untuk membuatnya activity tersebut adalah Klik Kanan di package dtschapter03_starter->new->activity->empty activity.
-Langkah selanjutnya adalah melakukan desain layout pada file `activity_welcome_slide_superhero` Berikut ini screen shot tampilan aplikasi yang diharapkan.
+## Membuat Activity WelcomeSlideSuperHero
+Buatlah activity baru dengan nama **WelcomeSlideSuperhero**. Activity ini nantinya akan muncul sebagai aksi button "**Get Started**" yang terdapat pada activity WelcomeSlide. Untuk membuatnya,klik kanan pada package **dtschapter03_starter->New->Activity->Empty Activity**.
+Langkah selanjutnya adalah melakukan desain layout pada file `activity_welcome_slide_superhero.xml`. Berikut ini screenshot tampilan aplikasi yang diharapkan.
 
 ![Sign In](images/Walk.png)
 
 
-### Edit activity_welcome_slide_superhero.xml
-Untuk membuat form seperti gambar diatas yaitu dengan mengubah isi file dari `activity_welcome_slide_superhero`, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.
+### Edit layout activity_welcome_slide_superhero.xml
+Untuk membuat layout seperti gambar diatas,  ubah isi file `activity_welcome_slide_superhero`. Pada layout ini digunakan constraint layout. Pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -205,6 +223,7 @@ Untuk membuat form seperti gambar diatas yaitu dengan mengubah isi file dari `ac
 
 </android.support.constraint.ConstraintLayout>
 ```
+
 Pada desain layout ini terdapat beberapa komponen yaitu:
 1. Image Icon
 2. Judul Image
@@ -214,8 +233,8 @@ Pada desain layout ini terdapat beberapa komponen yaitu:
 6. Text Login
 
 
-#### Tambahkan Image Icon
-Tambahkan sebuah ImageView untuk menambahkan gambar dengan nama id= slide_dua, serta panggil file gambar ic_superhero di drawable.
+#### Tambahkan ImageView
+Tambahkan sebuah `ImageView` untuk menambahkan gambar. Berikan `id` dengan nama `slide_dua`. Panggil file gambar **ic_superhero** dari package **drawable**.
 ```xml
 <ImageView
         android:id="@+id/slide_dua"
@@ -231,7 +250,8 @@ Tambahkan sebuah ImageView untuk menambahkan gambar dengan nama id= slide_dua, s
 ```
 
 #### Tambahkan Judul Image
-Tambahkan sebuah TextView untuk menulis judul dengan nama id=welcome_text
+Tambahkan sebuah `TextView` untuk menulis judul dengan id `welcome_text`
+
 ```xml
 <TextView
         android:id="@+id/welcome_text"
@@ -248,7 +268,8 @@ Tambahkan sebuah TextView untuk menulis judul dengan nama id=welcome_text
 ```
 
 #### Tambahkan Sub Judul Image
-Tambahkan sebuah sub text baru di bawah judul dengan nama id=sub_welcome
+Tambahkan sebuah sub text baru di bawah judul dengan menggunakan `TextView`. Gunakan id `sub_welcome` sebagai id `TextView`.
+
 ```xml
 <TextView
         android:id="@+id/sub_welcome"
@@ -264,7 +285,7 @@ Tambahkan sebuah sub text baru di bawah judul dengan nama id=sub_welcome
 ```
 
 #### Tambahkan Image Backgroud
-Tambahkan sebuah ImageView untuk menambahkan gambar dengan nama id= backgorud_dua, serta panggil file gambar bg_blue di drawable.
+Tambahkan sebuah `ImageView` untuk menambahkan gambar. Gunakan id dengna nama `backgorud_dua`. Gunakan file gambar **bg_blue** dari drawable.
 ```xml
  <ImageView
         android:id="@+id/background_dua"
@@ -279,7 +300,10 @@ Tambahkan sebuah ImageView untuk menambahkan gambar dengan nama id= backgorud_du
 ```
 
 #### Buat Drawable button_white.xml
-Tambahkan sebuah file res drawable dengan nama `button_white.xml`. Ganti isi file `button_white.xml`
+Tambahkan sebuah file pada package **res->drawable** dengan nama `button_white.xml`. Ganti isi file `button_white.xml` dengan kode dibawah ini,
+
+[//]: # (TODO : Editing baru sampai sini)
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"

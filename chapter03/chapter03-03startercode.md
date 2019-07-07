@@ -1,19 +1,22 @@
 # Buka Project Starter Code
 
 ## Yang sudah ada di starter code
-Clone repository starter code [Starter Code Chapter 3](https://github.com/siubie/dtschapter03-starter), jika menggunakan git jalankan perintah ini di console
+Clone repository starter code [Starter Code Chapter 3](https://github.com/siubie/dtschapter03-starter). Jika Anda menggunakan git jalankan perintah ini di console
 ```
 git clone https://github.com/polinema-mobile/dtschapter03-starter.git
 ```
-Atau jika tidak memiliki git silahkan download zip dari url repository
+
+Jika tidak memiliki git silahkan download zip dari url repository
 ![download zip github](images/03zipdl.png)
 
 ## Screen Layout Desain
-Screen layout desain sudah disediakan di dalam starter code layout ini dapat anda lihat pada folder `design`, untuk melihat isi folder design ganti view pada android studio menjadi `project`
+Screen layout desain sudah disediakan di dalam starter code layout ini. Layout dapat Anda lihat pada folder `design`. Untuk melihat isi folder design, ganti view pada Android Studio menjadi `project`
 ![folder design](images/03folderdesign2.png)
 
 ## Cara Import Drawable
-Untuk mengubah desain layout menjadi layout android xml diperlukan asset berupa potongan gambar yang sudah disesuaikan ukurannya dengan sistem resolusi sistem operasi android mulai dari `hdpi`,`mdpi`,`xdpi`,`xxhdpi`,dan `xxxhdpi`. Untuk semua layout pada folder design sudah dipotongkan dan disiapkan gambarnya di starter code. Sebagai pengetahuan tambahan proses untuk memasukkan gambar ke folder res pada android studio dilakukan dengan cara berikut.
+Untuk mengubah desain layout menjadi layout android xml, diperlukan asset berupa potongan gambar yang sudah disesuaikan ukurannya. Resolusi asset pada Android mulai dari `hdpi`, `mdpi`, `xdpi`, `xxhdpi`, dan `xxxhdpi`. Untuk semua layout pada folder design sudah dipotongkan dan disiapkan gambarnya di dalam starter code. 
+
+Sebagai pengetahuan tambahan, proses untuk memasukkan aset gambar ke folder `res` pada Android Studio dilakukan dengan cara berikut,
 
 1. Buka tab Resource Manager
 ![resource manager](images/03resourcemanager.png)
@@ -27,9 +30,13 @@ Untuk mengubah desain layout menjadi layout android xml diperlukan asset berupa 
 ![import again](images/03importhem.png)
 
 ## Cara Import Custom Font
-Pada starter code juga sudah disediakan dua varian custom font yang dapat digunakan pada layout android. Untuk mengimport custom font dilakukan dengan langkah langkah berikut :
-1. Klik kanan pada folder `res` kemudian pilih `new -> android resource directory`
+Pada starter code juga sudah disediakan dua varian custom font yang dapat digunakan pada layout android. Untuk mengimport custom font dilakukan dengan langkah langkah berikut,
+
+1. Klik kanan pada folder `res` kemudian pilih **New -> Android Resource Directory**
+
 ![import font](images/03resourcedirectory.png)
-2. Pilih Resource type `font`
+
+2. Pada Resource type, pilih `font`
 ![font](images/03fontfolder.png)
-3. Copy dan paste custom font yang anda miliki ke dalam folder font ini, dengan syarat penamaan font semua menggunakan huruf kecil dan disambungkan dengan menggunakan underscore.
+
+3. Copy dan paste custom font yang Anda miliki ke dalam folder font yang Anda buat sebelumnya. **Font yang Anda copy kedalam folder harus menggunakan huruf kecil dan disambungkan dengan menggunakan underscore jika lebih dari satu suku kata**.

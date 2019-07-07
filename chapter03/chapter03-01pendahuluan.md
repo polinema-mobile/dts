@@ -1,5 +1,5 @@
 # Pendahuluan
-Pada praktikum kali ini anda akan belajar mengimplementasikan pengetahuan dari pertemuan sebelumnya mengenai layout pada android xml dan mengimplementasikannya untuk membuat sebuah layout android xml berdasarkan desain user interface yang sudah disediakan sebelumnya.
+Pada praktikum kali ini, Anda akan belajar mengimplementasikan pengetahuan dari pertemuan sebelumnya mengenai layout pada android xml kemudian mengimplementasikannya untuk membuat sebuah layout android xml berdasarkan desain user interface yang sudah disediakan sebelumnya.
 
 ## Pengetahuan yang harus dimiliki
 1. Membuat project android

@@ -1,15 +1,18 @@
 # Welcome Activity
-Welcome activity adalah activity yang di jalankan setelah splash screen, di activity welcome ini ditampilkan secara singkat fitur fitur aplikasi. Berikut ini screen shot tampilan aplikasi yang diharapkan.
+Welcome activity adalah activity yang di jalankan setelah splash screen. Pada activity welcome ini, akan ditampilkan secara singkat fitur-fitur aplikasi. Berikut ini screenshoot tampilan aplikasi yang diharapkan.
+
 ![welcome](images/0304splash.png)
 
 ## Buat Activity Baru WelcomeSlideCalendar
-Buatalah activity baru dengan nama WelcomeSlideCalendar. Untuk membuatnya perhatikan gambar dibawah ini. Klik Kanan di package `dtschapter03_starter->new->activity->empty activity`.
+Buatalah activity baru dengan nama **WelcomeSlideCalendar**. Untuk membuatnya, perhatikan gambar dibawah ini. Klik Kanan pada package **dtschapter03_starter->new->activity->empty activity**.
+
 ![empty activity](images/0305emptyactivity.png)
 
-Beri nama activity yang baru WelcomeSlideCalendar seperti pada gambar dibawah ini.
+Beri nama activity yang baru, yaitu **WelcomeSlideCalendar** seperti pada gambar dibawah ini.
+
 ![nama activity](images/0305namaactivity.png)
 
-Setelah itu tekan tombol ok dan android studio akan melakukan proses pembuatan activity, perhatikan di folder android manifest sudah ditambahkan activity baru dan pada folder res->layout sudah terdapat file layout baru.
+Setelah itu tekan tombol **OK**. Android Studio akan melakukan proses pembuatan activity. Perhatikan folder  **manifest**. Jika activity sudah ditambahkan, maka akan muncul pada file `AndroidManifest.xml`. Selain itu, pada folder res->layout sudah terdapat file layout baru sesuai dengan nama activity yang dibuat.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -40,7 +43,8 @@ Jika berhasil struktur file projectnya akan seperti pada gambar dibawah ini.
 ![result](images/0305resultbuatactivity.png)
 
 ## Edit File activity_welcome_slide_calendar.xml
-Langkah selanjutnya adalah mengubah isi file dari `activity_welcome_slide_calendar.xml`, pada layout ini akan digunakan constraint layout pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.
+Langkah selanjutnya adalah mengubah isi file `activity_welcome_slide_calendar.xml`. Jenis layout yang digunakan adalah constraint layout. Pastikan layout xml dimulai dengan tag berikut ini. Tambahkan background warna putih.
+
 ```xml
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -52,7 +56,8 @@ Langkah selanjutnya adalah mengubah isi file dari `activity_welcome_slide_calend
 
 </android.support.constraint.ConstraintLayout>
 ```
-Pada desain layout terdapat beberapa komponen yaitu:
+
+Pada desain layout terdapat beberapa komponen, yaitu:
 1. Gambar Character dengan Calender
 2. Text Welcome
 3. Sub Text Welcome
@@ -62,6 +67,7 @@ Pada desain layout terdapat beberapa komponen yaitu:
 
 ### Tambahkan Gambar
 Tambahkan gambar dengan nama `ic_eventlist` dari folder drawable ke layout
+
 ```xml
     <ImageView
         android:id="@+id/calendar"
@@ -76,10 +82,12 @@ Tambahkan gambar dengan nama `ic_eventlist` dari folder drawable ke layout
 ```
 
 
-perhatikan penamaan id dan constraint dari image
+perhatikan penamaan **id** dan **constraint** dari image
 ![image](images/0305layout2.png)
+
 ### Tambahkan Text
-Tambahkan sebuah Text View untuk menulis welcome text
+Tambahkan sebuah `TextView` dengan id `welcome_text`. Ganti isi teks dengan **Welcome To DTS VSGA**
+
 ```xml
     <TextView
         android:id="@+id/welcome_text"
@@ -95,12 +103,13 @@ Tambahkan sebuah Text View untuk menulis welcome text
         />
 ```
 
-Perhatikan bagaimana TextView disusun dan bagaimana cara mengganti font serta warna dari text view.
+Perhatikan bagaimana `TextView` disusun dan bagaimana cara mengganti font serta warna dari `TextView`.
 
 ![welcometext](images/0305welcometext.png)
 
 ### Tambahkan Sub Text
-Tambahkan sebuah sub text baru di bawah welcome text berilah id `sub_welcome`
+Tambahkan sebuah sub text baru di bawah `welcome_text` dengan id `sub_welcome`
+
 ```xml
     <TextView
         android:id="@+id/sub_welcome"
@@ -114,10 +123,12 @@ Tambahkan sebuah sub text baru di bawah welcome text berilah id `sub_welcome`
         android:fontFamily="@font/montserrat_light"
         />
 ```
+
 ![subtext](images/0305subtext.png)
 
 ### Tambahkan Gambar Footer
-Tambahkan gambar footer dengan membuat sebuah image view dengan id `background_satu` perhatikan bahwa footer di constraint ke parent bottom dan menggunakan scaletype `fitXY`.
+Tambahkan gambar footer dengan membuat sebuah `ImageView` dengan id `background_satu`. Perhatikan bahwa footer memiliki constraint ke parent bottom dan menggunakan `scaleType` dengan value `fitXY`.
+
 ```xml
     <ImageView
         android:id="@+id/background_satu"
@@ -129,9 +140,12 @@ Tambahkan gambar footer dengan membuat sebuah image view dengan id `background_s
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 ```
+
 ![footer](images/0305footer.png)
+
 ### Tambahkan Text Login
-Buatlah sebuah text view berilah id `login_text` font `montserrat_light` textSize 18sp dan textColor `#FFFFFF`
+Buatlah sebuah `TextView` dengan id `login_text`. Ganti font dengan `montserrat_light`, `textSize` sebesar `18sp` dan `textColor` dengan warna `#FFFFFF`
+
 ```xml
     <TextView
         android:id="@+id/login_text"
@@ -150,7 +164,8 @@ Buatlah sebuah text view berilah id `login_text` font `montserrat_light` textSiz
 ![login](images/0305login.png)
 
 ### Tambahkan Button Get Started
-Buat button dengan id `btn_get_started`, beri text `GET STARTED` fontFamily `montserrat_light` textSize `18sp` dan atur constraint agar posisi button menyerupai posisi pada desain layout.
+Buat button dengan id `btn_get_started`. Ganti button text dengan **GET STARTED**. Ganti `fontFamily` dengan font `montserrat_light`. Atur `textSize` menjadi `18sp`. Selanjutnya,  atur constraint agar posisi button menyerupai posisi pada desain layout.
+
 ```xml
     <Button
         android:id="@+id/btn_get_started"
@@ -169,10 +184,14 @@ Buat button dengan id `btn_get_started`, beri text `GET STARTED` fontFamily `mon
 ```
 
 ### Tambahkan Drawable button_white.xml
-Setelah membuat button tambahkan sebuah file res drawable dengan nama `button_white.xml`, klik kanan pada folder `drawable` kemudian pilih `new drawable resource`
+Setelah membuat button, tambahkan sebuah file pada package **res->drawable** dengan nama `button_white.xml`. File `button_white.xml` digunakan untuk memodifikasi bentuk dari button. 
+
+Klik kanan pada folder package `drawable` kemudian pilih **New->Drawable Resource File**
+
 ![drawable](images/0305drawable.png)
 
-isi pilihan form dengan konfigurasi berikut ini
+Isi pilihan form dengan konfigurasi seperti pada gambar berikut ini,
+
 ![drawablexml](images/0305omm.png)
 
 Hasil file `button_white.xml`
@@ -183,8 +202,16 @@ Ganti isi file `button_white.xml`
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <solid android:color="#F96060" />
+    <solid android:color="#FFFFFF" />
     <corners android:radius="5dp" />
 </shape>
 ```
 ![drwad](images/0305buttonwhitexml.png)
+
+Keterangan kode `button_white.xml`
+
+- `android:shape="rectangle"` digunakan untuk membentuk button dengan bentuk persegit empat
+
+- `<solid android:color=#FFFFFF>` digunakan untuk memberikan warna putih (#FFFFFF) dengan tipe perwarnaan *solid*
+
+- `<corners android:radius="5dp">` digunakan untuk membentuk sisi-sisi ujung (pinggiran) button menjadi bulat dengan tingkat kelengkungan sebesar 5dp
