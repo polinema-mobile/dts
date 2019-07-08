@@ -5,4 +5,5 @@ Setelah membuat aplikasi kalkulator BMI Sederhana pada praktikum 1, tugas anda a
 
 ![kalkulator](images/BMI_tugas_kalkulator.png)
 
-Starter code untuk tugas ini dapat anda clone atau download pada folder BMI Calculator di [Starter Code Chapter 6](https://github.com/polinema-mobile/dtschapter06-starter)
+Starter code untuk tugas ini dapat anda clone atau download pada [Starter Code Chapter 6](https://github.com/polinema-mobile/dtschapter06-starter)
+Catatan: Layout splashscreen disusun dengan urutan asset **bg->bitmap->bg_cover** (disusun dari layer paling dasar)
