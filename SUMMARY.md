@@ -39,5 +39,5 @@
   - [Tugas](chapter05/chapter05-tugas.md)
 - [Bab 06 Project BMI](chapter06/chapter06-01pendahuluan.md)
     - [Pendahuluan](chapter06/chapter06-01pendahuluan.md)
-    - [Praktikum 1 - Aplikasi BMI Sederhana](chapter06/chapter06-02praktikum01.md)
+    - [Praktikum 1 - Aplikasi BMI Sederhana part 1](chapter06/chapter06-02praktikum01.md)
     - [Praktikum 2 - Aplikasi BMI Sederhana part 2](chapter06-03praktikum02.md)
