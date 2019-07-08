@@ -582,6 +582,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.6.5" data-path="chapter05-tugas.html">
+            
+                <a href="chapter05-tugas.html">
+            
+                    
+                    Tugas
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -635,6 +648,7 @@
                                 <h1 id="recyclerview-sangat-sederhana">RecyclerView Sangat Sederhana</h1>
 <p>Pada Praktikum kali ini kita akan membuat sebuah recyclerview yang sangat sederhana dimana pada recyclerview ini hanya terdapat sebuah item text view.</p>
 <h2 id="hasil-yang-diharapkan">Hasil Yang Diharapkan</h2>
+<p><img src="images/0532hasil.jpeg" alt="hasil"></p>
 <h2 id="new-project">New Project</h2>
 <p>Buatlah sebuah project baru sesuaikan konfigurasi project ini dengan environtment SDK pada Android Studio anda, contoh konfigurasinya :</p>
 <p><img src="images/0505rssnewproject.png" alt="newproject"></p>
@@ -799,6 +813,13 @@
 <img src="images/0526haha.png" alt="0526"></p>
 <p>Pindahkan kursor ke kode program yang masih merah kemudian tekan kembali <code>alt+enter</code> atau <code>alt+insert</code> kemudian pilih opsi <code>create constructor matching super</code></p>
 <p><img src="images/0527alsjd.png" alt="0527"></p>
+<h3 id="variabel-data">Variabel Data</h3>
+<p>Berikan variabel untuk menampung data dari activity, karena adapter membutuhkan data data ini diambil dari activity oleh karena itu buatlah sebuah variabel berupa list of <code>SuperHero</code> dengan nama <code>heroList</code></p>
+<p><img src="images/0528superhero.png" alt="superhero"></p>
+<p>Setelah itu buatkan constructor untuk class ini dengan menekan shortcut <code>alt + insert</code> pada windows atau <code>cmd+n</code> pada mac.</p>
+<p><img src="images/0529construktor.png" alt="superhero"></p>
+<p>Pilih variabel <code>heroList</code>
+<img src="images/0530pilih.png" alt="superhero"></p>
 <p>Berikut ini hasil dari proses pembuatan Adapter (masih separoh jalan :) )</p>
 <pre><code class="lang-java"><span class="hljs-keyword">package</span> polinema.ac.id.recyclerviewsangatsederhana.adapters;
 
@@ -809,7 +830,17 @@
 <span class="hljs-keyword">import</span> androidx.annotation.NonNull;
 <span class="hljs-keyword">import</span> androidx.recyclerview.widget.RecyclerView;
 
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">import</span> polinema.ac.id.recyclerviewsangatsederhana.models.SuperHero;
+
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SuperHeroAdapter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">Adapter</span>&lt;<span class="hljs-title">SuperHeroAdapter</span>.<span class="hljs-title">MyViewHolder</span>&gt; </span>{
+    List&lt;SuperHero&gt; heroList;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SuperHeroAdapter</span><span class="hljs-params">(List&lt;SuperHero&gt; heroList)</span> </span>{
+        <span class="hljs-keyword">this</span>.heroList = heroList;
+    }
+
     <span class="hljs-meta">@NonNull</span>
     <span class="hljs-meta">@Override</span>
     <span class="hljs-keyword">public</span> SuperHeroAdapter.<span class="hljs-function">MyViewHolder <span class="hljs-title">onCreateViewHolder</span><span class="hljs-params">(@NonNull ViewGroup parent, <span class="hljs-keyword">int</span> viewType)</span> </span>{
@@ -834,10 +865,267 @@
 }
 </code></pre>
 <p>Langkah selanjutnya adalah mengisi dan memahami fungsi dari masing masing function dan inner class yang ada pada adapter</p>
+<h3 id="urutan-mengisi-function-pada-adapter">Urutan Mengisi Function Pada Adapter</h3>
+<h4 id="inner-class-viewholder">Inner Class ViewHolder</h4>
+<p>Inner Class ini berfungsi sebagai pembuat view pada class ini dibuat variabel yang menghubungkan id pada layout item_super_hero dengan variabel yang dapat digunakan pada saat mengisi nilai dari dataset.</p>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SuperHeroAdapter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">Adapter</span>&lt;<span class="hljs-title">SuperHeroAdapter</span>.<span class="hljs-title">MyViewHolder</span>&gt; </span>{
+
+    ...
+    <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyViewHolder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">ViewHolder</span> </span>{
+        <span class="hljs-keyword">public</span> TextView heroName;
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MyViewHolder</span><span class="hljs-params">(@NonNull View itemView)</span> </span>{
+            <span class="hljs-keyword">super</span>(itemView);
+            <span class="hljs-comment">//variabel disesuaikan dengan layout, karena pada layout item_super_hero terdapat satu</span>
+            <span class="hljs-comment">//TextView maka pada kode program ini dibuat satu TextView yang melakukan findViewById ke id layout yang bersesuaian</span>
+            heroName = itemView.findViewById(R.id.heroName);
+        }
+    }
+}
+</code></pre>
+<h4 id="get-item-count">Get Item Count</h4>
+<p>Function yang paling mudah untuk di isi pada adapter ini adalah function <code>getItemCount()</code> function ini berfungsi mengembalikan jumlah data yang ingin ditampilkan pada <code>RecyclerView</code>, Tambahkan <code>heroList.size()</code> pada function <code>getItemCount()</code></p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SuperHeroAdapter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">Adapter</span>&lt;<span class="hljs-title">SuperHeroAdapter</span>.<span class="hljs-title">MyViewHolder</span>&gt; </span>{
+...
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span>    </span>{
+        <span class="hljs-keyword">return</span> heroList.size();
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyViewHolder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">ViewHolder</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MyViewHolder</span><span class="hljs-params">(@NonNull View itemView)</span> </span>{
+            <span class="hljs-keyword">super</span>(itemView);
+            <span class="hljs-comment">//variabel disesuaikan dengan layout, karena pada layout item_super_hero terdapat satu</span>
+            <span class="hljs-comment">//TextView maka pada kode program ini dibuat satu TextView yang melakukan findViewById ke id layout yang bersesuaian</span>
+            TextView heroName = itemView.findViewById(R.id.heroName);
+        }
+    }
+}
+</code></pre>
+<h4 id="oncreateviewholder">OnCreateViewHolder</h4>
+<p>Function ini berfungsi seperti <code>onCreate</code> pada activity dimana pada function ini juga dilakukan pendefenisian layout mana yang digunakan pada saat recyclerview dibuat. Jadi item layout yang dibuat sebelumnya di koneksikan di fungsi ini.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SuperHeroAdapter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">Adapter</span>&lt;<span class="hljs-title">SuperHeroAdapter</span>.<span class="hljs-title">MyViewHolder</span>&gt; </span>{
+    List&lt;SuperHero&gt; heroList;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SuperHeroAdapter</span><span class="hljs-params">(List&lt;SuperHero&gt; heroList)</span> </span>{
+        <span class="hljs-keyword">this</span>.heroList = heroList;
+    }
+
+    <span class="hljs-meta">@NonNull</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> SuperHeroAdapter.<span class="hljs-function">MyViewHolder <span class="hljs-title">onCreateViewHolder</span><span class="hljs-params">(@NonNull ViewGroup parent, <span class="hljs-keyword">int</span> viewType)</span> </span>{
+        <span class="hljs-comment">//object context diambil dari parent</span>
+        Context context = parent.getContext();
+        <span class="hljs-comment">//object context digunakan untuk membuat object layoutInflater</span>
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        <span class="hljs-comment">//object layoutInflater digunakan untuk membuat object view yang merupakan hasil inflate  layout ( mengubungkan adapter degnan layout)</span>
+        View superHeroView = layoutInflater.inflate(R.layout.item_super_hero,parent,<span class="hljs-keyword">false</span>);
+        <span class="hljs-comment">//object superHeroView digunakan untuk membuat object viewHolder</span>
+        MyViewHolder viewHolder = <span class="hljs-keyword">new</span> MyViewHolder(superHeroView);
+        <span class="hljs-keyword">return</span> viewHolder;
+    }
+    ...
+    ...
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span>    </span>{
+        <span class="hljs-keyword">return</span> heroList.size();
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyViewHolder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">ViewHolder</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MyViewHolder</span><span class="hljs-params">(@NonNull View itemView)</span> </span>{
+            <span class="hljs-keyword">super</span>(itemView);
+            TextView heroName = itemView.findViewById(R.id.heroName);
+        }
+    }
+}
+</code></pre>
+<h4 id="onbindviewholder">OnBindViewHolder</h4>
+<p>Pada fungsi ini kita menghubungkan data pada salah satu item di <code>listSuperHero</code> dengan item pada pada layout item_super_hero,kode program pada item_super_hero terdapat sebuah textView dengan id <code>heroName</code> pada fungsi inilah kita menghubungkan data dari item super hero ke layout.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> polinema.ac.id.recyclerviewsangatsederhana.adapters;
+
+
+<span class="hljs-keyword">import</span> android.content.Context;
+<span class="hljs-keyword">import</span> android.view.LayoutInflater;
+<span class="hljs-keyword">import</span> android.view.View;
+<span class="hljs-keyword">import</span> android.view.ViewGroup;
+<span class="hljs-keyword">import</span> android.widget.TextView;
+
+<span class="hljs-keyword">import</span> androidx.annotation.NonNull;
+<span class="hljs-keyword">import</span> androidx.recyclerview.widget.RecyclerView;
+
+<span class="hljs-keyword">import</span> org.w3c.dom.Text;
+
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">import</span> polinema.ac.id.recyclerviewsangatsederhana.R;
+<span class="hljs-keyword">import</span> polinema.ac.id.recyclerviewsangatsederhana.models.SuperHero;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SuperHeroAdapter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">Adapter</span>&lt;<span class="hljs-title">SuperHeroAdapter</span>.<span class="hljs-title">MyViewHolder</span>&gt; </span>{
+    List&lt;SuperHero&gt; heroList;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SuperHeroAdapter</span><span class="hljs-params">(List&lt;SuperHero&gt; heroList)</span> </span>{
+        <span class="hljs-keyword">this</span>.heroList = heroList;
+    }
+
+    <span class="hljs-meta">@NonNull</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> SuperHeroAdapter.<span class="hljs-function">MyViewHolder <span class="hljs-title">onCreateViewHolder</span><span class="hljs-params">(@NonNull ViewGroup parent, <span class="hljs-keyword">int</span> viewType)</span> </span>{
+        Context context = parent.getContext();
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View superHeroView = layoutInflater.inflate(R.layout.item_super_hero,parent,<span class="hljs-keyword">false</span>);
+        MyViewHolder viewHolder = <span class="hljs-keyword">new</span> MyViewHolder(superHeroView);
+        <span class="hljs-keyword">return</span> viewHolder;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBindViewHolder</span><span class="hljs-params">(@NonNull SuperHeroAdapter.MyViewHolder holder, <span class="hljs-keyword">int</span> position)</span> </span>{
+        <span class="hljs-comment">//ambil satu item hero</span>
+        SuperHero hero = heroList.get(position);
+        <span class="hljs-comment">//set text heroName berdasarkan data dari model hero</span>
+        holder.heroName.setText(hero.getHeroName());
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span>    </span>{
+        <span class="hljs-keyword">return</span> heroList.size();
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyViewHolder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">ViewHolder</span> </span>{
+        <span class="hljs-keyword">public</span> TextView heroName;
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MyViewHolder</span><span class="hljs-params">(@NonNull View itemView)</span> </span>{
+            <span class="hljs-keyword">super</span>(itemView);
+            heroName = itemView.findViewById(R.id.heroName);
+        }
+    }
+}
+</code></pre>
 <h2 id="instansiasi-recyclerview">Instansiasi RecyclerView</h2>
+<p>Instansiasi RecyclerView dilakukan di MainActivity untuk melakukannya buatlah sebuah field pada Class MainActivity dengan tipe data RecyclerView berilah anama rvSuperHero.</p>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+    <span class="hljs-comment">//instansiasi Recyclerview</span>
+    RecyclerView rvSuperHero;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+</code></pre>
+<p>Selanjutnya setelah <code>setContentView</code> panggil lakukan <code>findViewById</code> untuk menyambungkan <code>rvSuperHero</code> ke RecyclerView yang ada di layout.</p>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+    <span class="hljs-comment">//instansiasi Recyclerview</span>
+    RecyclerView rvSuperHero;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        <span class="hljs-comment">//menyambungkan rvSuperHero ke layout</span>
+        rvSuperHero = findViewById(R.id.rvSuperHero);
+    }
+}
+</code></pre>
 <h2 id="instansiasi-model">Instansiasi Model</h2>
+<p>Langkah selanjutnya adalah membuat dataset, dataset dapat dibuat dengan membuat sebuah daftar super hero dengan membuat List of object <code>SuperHero</code> pada <code>MainActivity</code></p>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+    <span class="hljs-comment">//instansiasi Recyclerview</span>
+    RecyclerView rvSuperHero;
+    <span class="hljs-comment">//instansiasi list superhero</span>
+    List&lt;SuperHero&gt; listSuperHero = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        <span class="hljs-comment">//menyambungkan rvSuperHero ke layout</span>
+        rvSuperHero = findViewById(R.id.rvSuperHero);
+
+    }
+}
+</code></pre>
+<p>Setelah itu buatlah beberapa object <code>SuperHero</code> dan ditambahkan kedalam <code>List&lt;SuperHero&gt;</code></p>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+    <span class="hljs-comment">//instansiasi Recyclerview</span>
+    RecyclerView rvSuperHero;
+    <span class="hljs-comment">//instansiasi list superhero</span>
+    List&lt;SuperHero&gt; listSuperHero = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        <span class="hljs-comment">//menyambungkan rvSuperHero ke layout</span>
+        rvSuperHero = findViewById(R.id.rvSuperHero);
+        <span class="hljs-comment">//Membuat object hero</span>
+        SuperHero hero = <span class="hljs-keyword">new</span> SuperHero(<span class="hljs-string">&quot;Petruk&quot;</span>);
+        <span class="hljs-comment">//menambahkan hero ke listSuperHero</span>
+        listSuperHero.add(hero);
+        <span class="hljs-comment">//membuat object hero baru</span>
+        hero = <span class="hljs-keyword">new</span> SuperHero(<span class="hljs-string">&quot;Gareng&quot;</span>);
+        <span class="hljs-comment">//menambahkan hero baru ke listSuperhero</span>
+        listSuperHero.add(hero);
+    }
+}
+</code></pre>
 <h2 id="instansiasi-adapter">Instansiasi Adapter</h2>
+<p>Pada langkah ini semua data yang dibutuhkan untuk menginstansiasi adapter sudah dimiliki oleh karena itu adapter dapat di buat objeknya.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+    <span class="hljs-comment">//instansiasi Recyclerview</span>
+    RecyclerView rvSuperHero;
+    <span class="hljs-comment">//instansiasi list superhero</span>
+    List&lt;SuperHero&gt; listSuperHero = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        <span class="hljs-comment">//menyambungkan rvSuperHero ke layout</span>
+        rvSuperHero = findViewById(R.id.rvSuperHero);
+        <span class="hljs-comment">//Membuat object hero</span>
+        SuperHero hero = <span class="hljs-keyword">new</span> SuperHero(<span class="hljs-string">&quot;Petruk&quot;</span>);
+        <span class="hljs-comment">//menambahkan hero ke listSuperHero</span>
+        listSuperHero.add(hero);
+        <span class="hljs-comment">//membuat object hero baru</span>
+        hero = <span class="hljs-keyword">new</span> SuperHero(<span class="hljs-string">&quot;Gareng&quot;</span>);
+        <span class="hljs-comment">//menambahkan hero baru ke listSuperhero</span>
+        listSuperHero.add(hero);
+        <span class="hljs-comment">//Instansiasi Adapter</span>
+        SuperHeroAdapter superHeroAdapter = <span class="hljs-keyword">new</span> SuperHeroAdapter(listSuperHero);
+    }
+}
+</code></pre>
 <h2 id="set-adapter-dan-layout-manager">Set Adapter dan Layout Manager</h2>
+<p>Langkah terakhir dalam membuat recyclerview adalah dengan melakukan set adapter dan set layout manager pada object recyclerview</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+    <span class="hljs-comment">//instansiasi Recyclerview</span>
+    RecyclerView rvSuperHero;
+    <span class="hljs-comment">//instansiasi list superhero</span>
+    List&lt;SuperHero&gt; listSuperHero = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        <span class="hljs-comment">//menyambungkan rvSuperHero ke layout</span>
+        rvSuperHero = findViewById(R.id.rvSuperHero);
+        <span class="hljs-comment">//Membuat object hero</span>
+        SuperHero hero = <span class="hljs-keyword">new</span> SuperHero(<span class="hljs-string">&quot;Petruk&quot;</span>);
+        <span class="hljs-comment">//menambahkan hero ke listSuperHero</span>
+        listSuperHero.add(hero);
+        <span class="hljs-comment">//membuat object hero baru</span>
+        hero = <span class="hljs-keyword">new</span> SuperHero(<span class="hljs-string">&quot;Gareng&quot;</span>);
+        <span class="hljs-comment">//menambahkan hero baru ke listSuperhero</span>
+        listSuperHero.add(hero);
+        <span class="hljs-comment">//Instansiasi Adapter</span>
+        SuperHeroAdapter superHeroAdapter = <span class="hljs-keyword">new</span> SuperHeroAdapter(listSuperHero);
+        <span class="hljs-comment">//set adapter dan layoutmanager</span>
+        rvSuperHero.setAdapter(superHeroAdapter);
+        rvSuperHero.setLayoutManager(<span class="hljs-keyword">new</span> LinearLayoutManager(<span class="hljs-keyword">this</span>));
+    }
+}
+</code></pre>
 
                                 
                                 </section>
@@ -881,7 +1169,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Praktikum 1 - RecyclerView Sangat Sederhana","level":"1.6.3","depth":2,"next":{"title":"Praktikum 2 - RecyclerView Sederhana","level":"1.6.4","depth":2,"path":"chapter05/chapter05-02recyclerviewsederhana.md","ref":"chapter05/chapter05-02recyclerviewsederhana.md","articles":[]},"previous":{"title":"Teori Recycler View","level":"1.6.2","depth":2,"path":"chapter05/chapter05-01teori.md","ref":"chapter05/chapter05-01teori.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter05/chapter05-02recyclerviewsangatsederhana.md","mtime":"2019-07-07T08:00:38.385Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-07T08:00:54.311Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Praktikum 1 - RecyclerView Sangat Sederhana","level":"1.6.3","depth":2,"next":{"title":"Praktikum 2 - RecyclerView Sederhana","level":"1.6.4","depth":2,"path":"chapter05/chapter05-02recyclerviewsederhana.md","ref":"chapter05/chapter05-02recyclerviewsederhana.md","articles":[]},"previous":{"title":"Teori Recycler View","level":"1.6.2","depth":2,"path":"chapter05/chapter05-01teori.md","ref":"chapter05/chapter05-01teori.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter05/chapter05-02recyclerviewsangatsederhana.md","mtime":"2019-07-08T00:00:15.976Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-08T00:00:40.585Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
