@@ -2,13 +2,13 @@
 
 ## New Project
 
-buat new project dengan nama **recyclerview**
+Buat new project dengan nama **recyclerview**.
 
  <p align="center"> <img src="images/newRV.png" alt="new project RV"/></p>
 
-## Dependecy Gradle
+## Dependency Gradle
 
-agar kita bisa menggunakan recycler view maka kita perlu menambahkan dependency pada **build.gradle**  
+Agar kita bisa menggunakan recycler view maka kita perlu menambahkan dependency pada **build.gradle**  
 
 tambahkan dependency
 _butterknife_ untuk memudahkan kita untuk _binding wiew_
@@ -40,7 +40,7 @@ dependencies {
 
 Setiap RecyclerView didukung oleh sumber data. Dalam hal ini, kita akan mendefinisikan kelas Contact yang merepresentasikan **model** data yang nantinya ditampilkan oleh RecyclerView:
 
-buat class baru bernama **Contact.java**
+Buat class baru bernama **Contact.java**
 
 ```java
 public class Contact {
@@ -84,7 +84,7 @@ public class Contact {
 
 ## Membuat Layout Pada Main activity
 
-setelah membuat model, maka kita bisa buat layout untuk pada main activity sebagai _layout manager_ dari recycle view kita, yaitu **activity_main.xml** tambahkan _RecyclerView_ dari _support library_:
+Setelah membuat model, maka kita bisa buat layout untuk pada main activity sebagai _layout manager_ dari recycle view kita, yaitu **activity_main.xml** tambahkan _RecyclerView_ dari _support library_:
 
 ```java
 
@@ -160,7 +160,7 @@ Buat layout khusus untuk recycler view untuk menampilkan data sesuai model yang 
 
 <p align="center"> <img src="images/LayoutItemContact.png" alt="LayoutItemContact"/></p>
 
-setelah layout item selesai, sekarang kita perlu membuat adapter untuk mengisi data ke tampilan recycle view.
+Setelah layout item selesai, sekarang kita perlu membuat adapter untuk mengisi data ke tampilan recycle view.
 
 ## Membuat Adapter Recyclerview
 
@@ -195,7 +195,7 @@ Buat konstruktor
     }
 ```
 
-hubungkan layout item contact ke adapter dan  view holder
+Hubungkan layout item contact ke adapter dan  view holder
 
 ```java
     @NonNull
@@ -209,7 +209,7 @@ hubungkan layout item contact ke adapter dan  view holder
     }
 ```
 
-hubungkan _id_ ke data
+Hubungkan _id_ ke data
 ```java
 
     @Override
@@ -229,7 +229,7 @@ hubungkan _id_ ke data
     }
 ```
 
-buat variabel di view holder, dan hubungkan _id_ di layout view holder
+Buat variabel di view holder, dan hubungkan _id_ di layout view holder
 
 ```java
     public class ContactViewHolder extends RecyclerView.ViewHolder {
@@ -254,7 +254,7 @@ buat variabel di view holder, dan hubungkan _id_ di layout view holder
 
 ## Menyambungkan Adapter ke Recyclerview
 
-untuk menyambungkan adapter ke recycle view dan mengisi beberapa data kontak yang akan kita tampilkan maka kita perlu mengedit **MainActivity.java**
+Untuk menyambungkan adapter ke recycle view dan mengisi beberapa data kontak yang akan kita tampilkan maka kita perlu mengedit **MainActivity.java**
 
 ```java
 public class MainActivity extends AppCompatActivity implements ContactAdapter.OnContactClickListener {

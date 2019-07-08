@@ -1,10 +1,10 @@
 # Pendahuluan
 
 Pada praktikum sebelumnya, Anda telah mempelajari apa itu Intent, fragment, dan
-activity pada aplikasi Android. Anda juga telah mempelajar bagaimana cara
+activity pada aplikasi Android. Anda juga telah mempelajari bagaimana cara
 validasi input dan melakukan interaksi antar activity.
 
-Pada praktikum kali ini, Anda akan belajar untuk membuat Recycle View dengan data yang diambil dari internet
+Pada praktikum kali ini, Anda akan belajar untuk membuat RecycleView dengan data yang diambil dari internet.
 
 ## Pengetahuan yang harus dimiliki
 
@@ -26,4 +26,4 @@ Pada praktikum kali ini, Anda akan belajar untuk membuat Recycle View dengan dat
 
 ## Alat dan Bahan
 
-1. Clone kode starter chapter4 : [Starter Code Chapter 5](https://github.com/polinema-mobile/dtschapter05-starter)
+1. Clone kode starter chapter 5 : [Starter Code Chapter 5](https://github.com/polinema-mobile/dtschapter05-starter)

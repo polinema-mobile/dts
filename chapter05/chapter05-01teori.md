@@ -30,7 +30,7 @@ Untuk membuat recyclerview diperlukan data, data ini dapat berasal dari :
 
 Data ini akan di representasikan sebagai sebuah file `models` dalam project android. Models di desain sesuai dengan kebutuhan dari data yang ditampilkan pada `recyclerview`, data dapat berupa tulisan, gambar, atau angka yang muncul pada desain recyclerview.
 
-### Latihan mendesain models
+## Latihan mendesain models
 
 Contoh desain layout dan class model yang dibuat :
 
@@ -83,7 +83,7 @@ Berdasarkan layout diatas dapat dilihat bahwa ada 3 data yang sering berubah yai
 
 > Perhatikan kembali gambar desain recycler view diatas kemudian coba jelaskan apa strategi anda untuk membuat `warna` yang berbeda pada masing masing kategori.
 
-### Latihan Mandiri
+## Latihan Mandiri
 
 Perhatikan layout dibawah ini kemudian perkirakan ada berapa jenis data yang harus disiapkan pada file modelnya.
 
@@ -196,7 +196,7 @@ public class ContactAdapter extends
 }
 ```
 
-### View holder.
+### View Holder
 
 View holder adalah bagian dari adapter yang berisi tampilan informasi untuk menampilkan satu item dari layout item.
 
