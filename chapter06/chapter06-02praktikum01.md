@@ -26,7 +26,8 @@ Layout yang dibuat meliputi beberapa komponen yaitu `RadioGroup`, `TextView`, `E
 `app:layout_constraintEnd_toEndOf="parent"`,
 `app:layout_constraintStart_toStartOf="parent"`, dan
 `app:layout_constraintTop_toTopOf="parent"`.![radio grup](images/2.3_radio_grup.png)
-4. Item-item pada `radio group` diwujudkan sebagai `radio button`, tambahkan properti-properti berikut di `radio button`, abaikan sementara tanda merah di kode program.![radio button](images/2.4_radio_button.png)
+4. Item-item pada `radio group` diwujudkan sebagai `radio button`, tambahkan properti-properti berikut di `radio button`,abaikan sementara tanda merah di kode program.
+![radio button](images/2.4_radio_button.png)
 5. Tambahkan tiga buah TextView, berikan nama masing-masing **Bobot(kg)**, **Tinggi(cm)**, **Umur(th)**.![textview satu](images/2.6_textview1.png)![text view 2](images/2.7_textview2.png)
 6. Tambahkan dua buah `Button` dan sebuah `EditText` dengan posisi setelah `TextView` yang telah dibuat. Perhatikan bahwa `Button` dan `EditText` memiliki id yang berbeda.
 
