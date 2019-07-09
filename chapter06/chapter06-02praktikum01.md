@@ -167,17 +167,17 @@ Hasil peghitungan BMI ditampilkan dalam bentuk `AlertDialog` yang diproses di me
 
     **Tabel Kriteria BMI**
 
-    | Kategori             | BMI      |         |
-    |----------------------|----------|---------|
-    |                      | **dari** | **ke**  |
-    | Terlalu sangat kurus |          | 15.0    |
-    | Sangat kurus         | 15.0     | 16.0    |
-    | Kurus                | 16       | 18.5    |
-    | Normal               | 18.5     | 25      |
-    | Gemuk                | 25       | 30      |
-    | Cukup Gemuk          | 30       | 35      |
-    | Sangat gemuk         | 35       | 40      |
-    | Terlalu sangat gemuk | 40       |         |
+    | Kategori | BMI ||
+    |---|---|---|
+    || **dari** | **ke**  |
+    | Terlalu sangat kurus | | 15.0 |
+    | Sangat kurus | 15.0 | 16.0 |
+    | Kurus | 16 | 18.5 |
+    | Normal | 18.5 | 25 |
+    | Gemuk | 25 | 30 |
+    | Cukup Gemuk | 30 | 35 |
+    | Sangat gemuk | 35 | 40 |
+    | Terlalu sangat gemuk | 40 ||
 
     ![tampiltiga MainActivity java](images/2.36_tampiltiga.png)
 
@@ -214,7 +214,7 @@ Hasil peghitungan BMI ditampilkan dalam bentuk `AlertDialog` yang diproses di me
 
     ![splashsatu MainActivity java](images/3.1_splashscreensatu.png)
 
-2. Hasil layout **splashbmi.xml**
+2. Hasil layout **splashbmi.xml**.
 
     ![splashdua MainActivity java](images/3.2_splashscreendua.png)
 
@@ -229,7 +229,7 @@ Karena tampilan awal dari aplikasi ini adalah splash screen, maka harus dilakuka
 
 1. Buka **AndroidManifest.xml** di **app -> manifest - AndroidManifest.xml**.
 2. Ubah `<activity android:name=".MainActivity">` menjadi `<activity android:name=".SplashActivity">`.
-3. Tambahkan activity baru dengan nama `.MainActivity` sehingga kode di dalam **AndroidManifest.xml** secara keseluruhan adalah sebagai berikut
+3. Tambahkan activity baru dengan nama `.MainActivity` sehingga kode di dalam **AndroidManifest.xml** secara keseluruhan adalah sebagai berikut.
     ![splashempat MainActivity java](images/3.4_splashscreenempat.png)
 
 ## Hasil Aplikasi
@@ -239,11 +239,11 @@ Jalankan aplikasi yang telah dibuat, jika berhasil maka aplikasi akan berjalan s
 1. Muncul splashscreen sebagai tampilan pembuka aplikasi
     ![hasilsatu MainActivity java](images/4.1_hasilsatu.png)
 
-2. Tampilan berikutnya adalah tampilan kalkulator dengan set nilai pada setiap menu bobot, tinggi, dan umur adalah 0 (sesuai set saat inisialisasi di kode program)
+2. Tampilan berikutnya adalah tampilan kalkulator dengan set nilai pada setiap menu bobot, tinggi, dan umur adalah 0 (sesuai set saat inisialisasi di kode program).
     ![hasildua MainActivity java](images/4.2_hasildua.png)
 
-3. Percobaan pengisian data
+3. Percobaan pengisian data.
     ![hasiltiga MainActivity java](images/4.3_hasiltiga.png)
 
-4. Tekan tombol **Hitung BMI** dan laporan hasil penghitungan ditampilkan
+4. Tekan tombol **Hitung BMI** dan laporan hasil penghitungan ditampilkan.
     ![hasilempat MainActivity java](images/4.4_hasilempat.png)
