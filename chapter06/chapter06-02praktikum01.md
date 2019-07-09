@@ -1,8 +1,10 @@
 # Praktikum  1: Aplikasi BMI Sederhana
+
 Aplikasi yang hendak dibuat pada kegiatan kali ini adalah aplikasi penghitung indeks bobot tubuh atau dikenal dengan istilah *body mass index* (BMI).
 
 Secara ringkas, urutan perjalanan aplikasi yang dibuat berawal dari kemunculan sebuah *splash screen* dan dilanjutkan dengan antarmuka utama yaitu kalkulator BMI dengan aturan pengguna harus memasukkan beberapa data antara lain:
-1. Jenis kelamin (*Radio Group*), 
+
+1. Jenis kelamin (*Radio Group*),
 2. Berat badan (*Edit Text*),
 3. Tinggi badan (*Edit Text*), dan
 4. Umur (*Edit Text*).
@@ -11,15 +13,19 @@ Hasil ditampilkan melalui *dialog box* berisi informasi dari masukan yang telah 
 
 Pada bagian ini, template yang digunakan adalah template asli yang disediakan oleh Android Studio.
 
-## Pembuatan project 
+## Pembuatan project
+
 1. Buka aplikasi Android Studio, pilih `Start a new Android Studio Project`. ![buat project](images/1.1_buat_project.png)
 2. Jenis project yang dipilih adalah `empty activity`.![pilih project](images/1.2_pilih_empty_activity.png)
 3. Beri nama project (contoh: Aplikasi Kalkulator BMI) dan nama packagenya (contoh: polinema.ac.id.aplikasikalkulatorbmi) yang sesuai.![pilih project](images/1.3_tentukan_nama_package.png)
 4. Project awal selesai dibuat.![project berhasil](images/1.4_project_dibuat.png)
+
 ## Penataan Layout
+
 Layout yang dibuat meliputi beberapa komponen yaitu `RadioGroup`, `TextView`, `EditText`, dan `Button`. Layout yang akan dibuat akan berbentuk seperti berikut.
 
 ![layout full](images/2.5_layout.png)
+
 1. Buka **activity_main.xml** yang terletak di **app -> res -> layout -> activity_main.xml**. 
    ![activity main awal](images/2.1_activity_main_kosong.png)
 2. Buat layout dengan jenis `Constraint Layout`. tambahkan id dengan nama `activity_main`.
@@ -78,10 +84,12 @@ Layout yang dibuat meliputi beberapa komponen yaitu `RadioGroup`, `TextView`, `E
 
     ![radio_flat_text_selector xml](images/2.17_warna_teks_rdbtn.png)
 
-    
 ## Fitur BMI
-Fungsi yang dikembangkan dibuat di **MainActivity.java** meliputi: fungsi dasar, fungsi hitung BMI, dan tampilan hasil melalui Dialog Box. 
+
+Fungsi yang dikembangkan dibuat di **MainActivity.java** meliputi: fungsi dasar, fungsi hitung BMI, dan tampilan hasil melalui Dialog Box.
+
 ### Fungsi Dasar
+
 1. Berdasarkan kegiatan sebelumnya, diketahui terdapat tiga komponen antarmuka untuk masukan yang dibuat, yaitu: `EditText`, `RadioGroup`, dan `RadioButton`. Walaupun terdapat beberapa `Button` yang memiliki id yaitu `calc`, `krgBerat`, `tmbBerat`, `krgTinggi`, `tmbTinggi`, `krgUmur`, dan  `tmbUmur` untuk memproses nilai masukan, `Button` tersebut tidak perlu diinisialisasikan di **MainActivity.java** karena sudah didaftarkan `android:onClick=""` di `Button` tersebut (secara otomatis mengarah ke method yang dituju). 
 
     ![dasarsatu MainActivity java](images/2.21_dasarsatu.png)
@@ -159,17 +167,17 @@ Hasil peghitungan BMI ditampilkan dalam bentuk `AlertDialog` yang diproses di me
 
     **Tabel Kriteria BMI**
 
-    | Kategori             | BMI  |      |
-    |----------------------|------|------|
-    |                      | **dari** | **ke**   |
-    | Terlalu sangat kurus |      | 15.0 |
-    | Sangat kurus         | 15.0 | 16.0 |
-    | Kurus                | 16   | 18.5 |
-    | Normal               | 18.5 | 25   |
-    | Gemuk                | 25   | 30   |
-    | Cukup Gemuk          | 30   | 35   |
-    | Sangat gemuk         | 35   | 40   |
-    | Terlalu sangat gemuk | 40   |      |
+    | Kategori             | BMI      |         |
+    |----------------------|----------|---------|
+    |                      | **dari** | **ke**  |
+    | Terlalu sangat kurus |          | 15.0    |
+    | Sangat kurus         | 15.0     | 16.0    |
+    | Kurus                | 16       | 18.5    |
+    | Normal               | 18.5     | 25      |
+    | Gemuk                | 25       | 30      |
+    | Cukup Gemuk          | 30       | 35      |
+    | Sangat gemuk         | 35       | 40      |
+    | Terlalu sangat gemuk | 40       |         |
 
     ![tampiltiga MainActivity java](images/2.36_tampiltiga.png)
 
@@ -183,18 +191,17 @@ Hasil peghitungan BMI ditampilkan dalam bentuk `AlertDialog` yang diproses di me
     ```
     AlertDialog.Builder tampilBMI = new AlertDialog.Builder(this);
 
-        tampilBMI.setTitle("Hasil Penghitunan BMI");
+    tampilBMI.setTitle("Hasil Penghitunan BMI");
 
-        tampilBMI.setMessage(bmiLabel).setNeutralButton("Tutup", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-
+    tampilBMI.setMessage(bmiLabel).setNeutralButton("Tutup", new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialogInterface, int i) {
 
             }
         });
 
-        AlertDialog alertDialog = tampilBMI.create();
-        alertDialog.show();
+    AlertDialog alertDialog = tampilBMI.create();
+    alertDialog.show();
     ```
 
 ## Fitur Splash Screen
