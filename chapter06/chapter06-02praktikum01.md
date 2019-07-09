@@ -61,26 +61,31 @@ Layout yang dibuat meliputi beberapa komponen yaitu `RadioGroup`, `TextView`, `E
     ![strings xml](images/2.15_stringxml.png)
 
     b. **dimen.xml**
+    
     ![dimens xml](images/2.16_dimenxml.png)
 
     c. **drawable**, berdasarkan properti pada `RadioButton` yang sudah dibuat di **activity_main.xml** yaitu `android:background="@drawable/radio_flat_selector"` dan `android:textColor="@drawable/radio_flat_text_selector"`, maka di direktori drawable perlu penambahan berkas sumber daya bernama **radio_flat_selector.xml** yang berfungsi memberikan efek ganti warna pada `RadioButton` ketika dipilih (berwarna pink) atau tidak dipilih (warna putih) dan **radio_flat_text_selector.xml** yang berfungsi untuk memberikan warna yang khas ketika terpilih (teks berwarna putih) dan tidak terpilih (teks berwarna pink) bagi setiap teks di `RadioButton` tersebut.
 
-    **radio_flat_selector.xml**
+    ### radio_flat_selector.xml
+
     ![radio_flat_text_selector xml](images/2.18_warna_rdbtn.png)
 
     Perlu diketahui bahwa di dalam **radio_flat_selector.xml** ternyata membutuhkan **radio_flat_selected.xml** sebagai penanda perubahan warna untuk `RadioButton` yang terpilih dan **radio_flat_regular.xml** sebagai penanda perubahan warna untuk `RadioButton` yang tidak terpilih di direktori **drawable**, oleh karena itu tambahkan dua berkas tersebut.
 
-    **radio_flat_selected.xml**
+    ### radio_flat_selected.xml
+
     ![radio_flat_selected xml](images/2.19_rd_selected.png)
 
-    **radio_flat_regular.xml**
+    ### radio_flat_regular.xml
+    
     ![radio_flat_reguler xml](images/2.20_rd_reguler.png)
 
-    Perhatikan tag `<shape>` di kedua berkas radio flat, terdapat `android:shape="rectangle"` yang menandakan `RadioButton` yang dibuat berbentuk persegi (mirip `Button`, bukan bulatan point seperti `RadioButton` pada umumnya). Jika `@color/colorWhite` belum terdaftar di **colors.xml** di **values** maka tambahkan `<color name="colorWhite">#FFFFFF</color>` di dalamnya
+    Perhatikan tag `<shape>` di kedua berkas radio flat, terdapat `android:shape="rectangle"` yang menandakan `RadioButton` yang dibuat berbentuk persegi (mirip `Button`, bukan bulatan point seperti `RadioButton` pada umumnya). 
+    Jika `@color/colorWhite` belum terdaftar di **colors.xml** di **values** maka tambahkan `<color name="colorWhite">#FFFFFF</color>` di dalamnya
 
     Adapun isi dari **radio_flat_text_selector.xml** adalah sebagai berikut:
 
-    **radio_flat_text_selector.xml**
+    ### radio_flat_text_selector.xml
 
     ![radio_flat_text_selector xml](images/2.17_warna_teks_rdbtn.png)
 
@@ -121,30 +126,31 @@ Contoh pada menu bobot
 
 6. Versi lengkap dari langkah 4 dan 5 adalah sebagai berikut
 
-    **method krg dan tmb**
+    **method krg dan tmb**.
 
     ![dasartujuh MainActivity java](images/2.27_dasartujuh.png)
 
-    **method display**
+    **method display**.
 
     ![dasarenam MainActivity java](images/2.28_dasardelapan.png)
 
 ### Hitung BMI 
+
 Penghitungan BMI membutuhkan method `calculateBMI()` sesuai dengan properti `android:onClick="calculateBMI"` pada `Button` dengan id `calc`.
 
-1. Buat method `calculateBMI()`
+1. Buat method `calculateBMI()`.
 
     ![bmisatu MainActivity java](images/2.29_bmisatu.png)
 
-2. Inisialisasi tipe data string untuk variabel `bobotStr` dan `tinggiStr`
+2. Inisialisasi tipe data string untuk variabel `bobotStr` dan `tinggiStr`.
 
     ![bmidua MainActivity java](images/2.30_bmidua.png)
 
-3. Untuk menghitung BMI, pastikan kolom bobot dan tinggi tidak null (kosong)
+3. Untuk menghitung BMI, pastikan kolom bobot dan tinggi tidak null (kosong).
 
     ![bmitiga MainActivity java](images/2.31_bmitiga.png)
 
-4. Tambahkan penghitungan BMI
+4. Tambahkan penghitungan BMI.
 
     ![bmiempat MainActivity java](images/2.32_bmiempat.png)
 
@@ -153,19 +159,21 @@ Penghitungan BMI membutuhkan method `calculateBMI()` sesuai dengan properti `and
     ![bmilima MainActivity java](images/2.33_bmilima.png)
 
 ### Tampil Hasil Hitung BMI
+
 Hasil peghitungan BMI ditampilkan dalam bentuk `AlertDialog` yang diproses di method `displayBMI()`.
 
-1. Buat method `displayBMI()`
+1. Buat method `displayBMI()`.
 
     ![tampilsatu MainActivity java](images/2.34_tampilsatu.png)
 
-2. Buat variabel dengan tipe data String bernama `bmiLabel` (untuk menampilkan hasil penghitungan BMI) dan `infoUmur` (untuk menampilkan nilai dari kolom umur yang telah dimasukkan)
+2. Buat variabel dengan tipe data String bernama `bmiLabel` (untuk menampilkan hasil penghitungan BMI) dan `infoUmur` (untuk menampilkan nilai dari kolom umur yang telah dimasukkan).
 
     ![tampildua MainActivity java](images/2.35_tampildua.png)
 
 3. Tambahkan informasi kategori BMI berdasarkan kriteria berikut.
 
     **Tabel Kriteria BMI**.
+
     | Kategori | BMI ||
     |---|:---:|:---:|
     || **dari** | **ke**  |
@@ -235,7 +243,7 @@ Karena tampilan awal dari aplikasi ini adalah splash screen, maka harus dilakuka
 
 Jalankan aplikasi yang telah dibuat, jika berhasil maka aplikasi akan berjalan sesuai tahapan berikut:
 
-1. Muncul splashscreen sebagai tampilan pembuka aplikasi
+1. Muncul splashscreen sebagai tampilan pembuka aplikasi.
     ![hasilsatu MainActivity java](images/4.1_hasilsatu.png)
 
 2. Tampilan berikutnya adalah tampilan kalkulator dengan set nilai pada setiap menu bobot, tinggi, dan umur adalah 0 (sesuai set saat inisialisasi di kode program).
