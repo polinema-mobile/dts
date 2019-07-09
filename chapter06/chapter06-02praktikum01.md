@@ -165,10 +165,9 @@ Hasil peghitungan BMI ditampilkan dalam bentuk `AlertDialog` yang diproses di me
 
 3. Tambahkan informasi kategori BMI berdasarkan kriteria berikut.
 
-    **Tabel Kriteria BMI**
-
+    **Tabel Kriteria BMI**.
     | Kategori | BMI ||
-    |---|---|---|
+    |---|:---:|:---:|
     || **dari** | **ke**  |
     | Terlalu sangat kurus | | 15.0 |
     | Sangat kurus | 15.0 | 16.0 |
