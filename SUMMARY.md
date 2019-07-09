@@ -41,3 +41,8 @@
     - [Pendahuluan](chapter06/chapter06-01pendahuluan.md)
     - [Praktikum 1 - Aplikasi BMI Sederhana part 1](chapter06/chapter06-02praktikum01.md)
     - [Praktikum 2 - Aplikasi BMI Sederhana part 2](chapter06/chapter06-03praktikum02.md)
+
+- [Bab 07 Proyek](chapter07/00-pendahuluan.md)
+    - [Pendahuluan](chapter07/00-pendahuluan.md)
+    - [Hasil yang Diharapkan](chapter07/01-hasil.md)
+    - [Proyek](chapter07/02-proyek.md)
