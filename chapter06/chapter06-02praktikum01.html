@@ -755,19 +755,20 @@
 <li><p>Tanda merah yang terdapat di kode program diatasi dengan memperhatikan posisi <code>value</code> yang seharusnya diletakkan, seperti <strong>@string/</strong> berarti terletak di <strong>app -&gt; res -&gt; values -&gt; string</strong>.</p>
 <p> a. <strong>string.xml</strong>, di dalam <strong>string.xml</strong> selain <code>logo_plus</code> dan <code>logo_minus</code> terdapat beberapa string yang sudah tertulis, oleh karena itu sebaiknya peserta menuliskan semua string sesuai dengan petunjuk di bawah ini sehingga seluruh sumber daya string yang digunakan pada aplikasi yang dibuat langsung tersedia tanpa harus menyediakan string tersebut pada setiap langkah penulisan kode program.
  <img src="images/2.15_stringxml.png" alt="strings xml"></p>
-<p> b. <strong>dimen.xml</strong>
- <img src="images/2.16_dimenxml.png" alt="dimens xml"></p>
+<p> b. <strong>dimen.xml</strong></p>
+<p> <img src="images/2.16_dimenxml.png" alt="dimens xml"></p>
 <p> c. <strong>drawable</strong>, berdasarkan properti pada <code>RadioButton</code> yang sudah dibuat di <strong>activity_main.xml</strong> yaitu <code>android:background=&quot;@drawable/radio_flat_selector&quot;</code> dan <code>android:textColor=&quot;@drawable/radio_flat_text_selector&quot;</code>, maka di direktori drawable perlu penambahan berkas sumber daya bernama <strong>radio_flat_selector.xml</strong> yang berfungsi memberikan efek ganti warna pada <code>RadioButton</code> ketika dipilih (berwarna pink) atau tidak dipilih (warna putih) dan <strong>radio_flat_text_selector.xml</strong> yang berfungsi untuk memberikan warna yang khas ketika terpilih (teks berwarna putih) dan tidak terpilih (teks berwarna pink) bagi setiap teks di <code>RadioButton</code> tersebut.</p>
-<p> <strong>radio_flat_selector.xml</strong>
- <img src="images/2.18_warna_rdbtn.png" alt="radio_flat_text_selector xml"></p>
+<h3 id="radioflatselectorxml">radio_flat_selector.xml</h3>
+<p> <img src="images/2.18_warna_rdbtn.png" alt="radio_flat_text_selector xml"></p>
 <p> Perlu diketahui bahwa di dalam <strong>radio_flat_selector.xml</strong> ternyata membutuhkan <strong>radio_flat_selected.xml</strong> sebagai penanda perubahan warna untuk <code>RadioButton</code> yang terpilih dan <strong>radio_flat_regular.xml</strong> sebagai penanda perubahan warna untuk <code>RadioButton</code> yang tidak terpilih di direktori <strong>drawable</strong>, oleh karena itu tambahkan dua berkas tersebut.</p>
-<p> <strong>radio_flat_selected.xml</strong>
- <img src="images/2.19_rd_selected.png" alt="radio_flat_selected xml"></p>
-<p> <strong>radio_flat_regular.xml</strong>
- <img src="images/2.20_rd_reguler.png" alt="radio_flat_reguler xml"></p>
-<p> Perhatikan tag <code>&lt;shape&gt;</code> di kedua berkas radio flat, terdapat <code>android:shape=&quot;rectangle&quot;</code> yang menandakan <code>RadioButton</code> yang dibuat berbentuk persegi (mirip <code>Button</code>, bukan bulatan point seperti <code>RadioButton</code> pada umumnya). Jika <code>@color/colorWhite</code> belum terdaftar di <strong>colors.xml</strong> di <strong>values</strong> maka tambahkan <code>&lt;color name=&quot;colorWhite&quot;&gt;#FFFFFF&lt;/color&gt;</code> di dalamnya</p>
+<h3 id="radioflatselectedxml">radio_flat_selected.xml</h3>
+<p> <img src="images/2.19_rd_selected.png" alt="radio_flat_selected xml"></p>
+<h3 id="radioflatregularxml">radio_flat_regular.xml</h3>
+<p> <img src="images/2.20_rd_reguler.png" alt="radio_flat_reguler xml"></p>
+<p> Perhatikan tag <code>&lt;shape&gt;</code> di kedua berkas radio flat, terdapat <code>android:shape=&quot;rectangle&quot;</code> yang menandakan <code>RadioButton</code> yang dibuat berbentuk persegi (mirip <code>Button</code>, bukan bulatan point seperti <code>RadioButton</code> pada umumnya). 
+ Jika <code>@color/colorWhite</code> belum terdaftar di <strong>colors.xml</strong> di <strong>values</strong> maka tambahkan <code>&lt;color name=&quot;colorWhite&quot;&gt;#FFFFFF&lt;/color&gt;</code> di dalamnya</p>
 <p> Adapun isi dari <strong>radio_flat_text_selector.xml</strong> adalah sebagai berikut:</p>
-<p> <strong>radio_flat_text_selector.xml</strong></p>
+<h3 id="radioflattextselectorxml">radio_flat_text_selector.xml</h3>
 <p> <img src="images/2.17_warna_teks_rdbtn.png" alt="radio_flat_text_selector xml"></p>
 </li>
 </ol>
@@ -796,25 +797,25 @@ Contoh pada menu bobot</p>
 <p> Buat juga method yang lain untuk menu tinggi dan umur.</p>
 </li>
 <li><p>Versi lengkap dari langkah 4 dan 5 adalah sebagai berikut</p>
-<p> <strong>method krg dan tmb</strong></p>
+<p> <strong>method krg dan tmb</strong>.</p>
 <p> <img src="images/2.27_dasartujuh.png" alt="dasartujuh MainActivity java"></p>
-<p> <strong>method display</strong></p>
+<p> <strong>method display</strong>.</p>
 <p> <img src="images/2.28_dasardelapan.png" alt="dasarenam MainActivity java"></p>
 </li>
 </ol>
 <h3 id="hitung-bmi">Hitung BMI</h3>
 <p>Penghitungan BMI membutuhkan method <code>calculateBMI()</code> sesuai dengan properti <code>android:onClick=&quot;calculateBMI&quot;</code> pada <code>Button</code> dengan id <code>calc</code>.</p>
 <ol>
-<li><p>Buat method <code>calculateBMI()</code></p>
+<li><p>Buat method <code>calculateBMI()</code>.</p>
 <p> <img src="images/2.29_bmisatu.png" alt="bmisatu MainActivity java"></p>
 </li>
-<li><p>Inisialisasi tipe data string untuk variabel <code>bobotStr</code> dan <code>tinggiStr</code></p>
+<li><p>Inisialisasi tipe data string untuk variabel <code>bobotStr</code> dan <code>tinggiStr</code>.</p>
 <p> <img src="images/2.30_bmidua.png" alt="bmidua MainActivity java"></p>
 </li>
-<li><p>Untuk menghitung BMI, pastikan kolom bobot dan tinggi tidak null (kosong)</p>
+<li><p>Untuk menghitung BMI, pastikan kolom bobot dan tinggi tidak null (kosong).</p>
 <p> <img src="images/2.31_bmitiga.png" alt="bmitiga MainActivity java"></p>
 </li>
-<li><p>Tambahkan penghitungan BMI</p>
+<li><p>Tambahkan penghitungan BMI.</p>
 <p> <img src="images/2.32_bmiempat.png" alt="bmiempat MainActivity java"></p>
 </li>
 <li><p>Tambahkan <code>displayBMI()</code> untuk menampilkan hasil penghitungan BMI. Jika <code>displayBMI()</code> bertanda merah, abaikan dulu karena method akan dibuat pada subbab selanjutnya.</p>
@@ -824,16 +825,16 @@ Contoh pada menu bobot</p>
 <h3 id="tampil-hasil-hitung-bmi">Tampil Hasil Hitung BMI</h3>
 <p>Hasil peghitungan BMI ditampilkan dalam bentuk <code>AlertDialog</code> yang diproses di method <code>displayBMI()</code>.</p>
 <ol>
-<li><p>Buat method <code>displayBMI()</code></p>
+<li><p>Buat method <code>displayBMI()</code>.</p>
 <p> <img src="images/2.34_tampilsatu.png" alt="tampilsatu MainActivity java"></p>
 </li>
-<li><p>Buat variabel dengan tipe data String bernama <code>bmiLabel</code> (untuk menampilkan hasil penghitungan BMI) dan <code>infoUmur</code> (untuk menampilkan nilai dari kolom umur yang telah dimasukkan)</p>
+<li><p>Buat variabel dengan tipe data String bernama <code>bmiLabel</code> (untuk menampilkan hasil penghitungan BMI) dan <code>infoUmur</code> (untuk menampilkan nilai dari kolom umur yang telah dimasukkan).</p>
 <p> <img src="images/2.35_tampildua.png" alt="tampildua MainActivity java"></p>
 </li>
 <li><p>Tambahkan informasi kategori BMI berdasarkan kriteria berikut.</p>
-<p> <strong>Tabel Kriteria BMI</strong></p>
+<p> <strong>Tabel Kriteria BMI</strong>.</p>
 <p> | Kategori | BMI ||
- |---|---|---|
+ |---|:---:|:---:|
  || <strong>dari</strong> | <strong>ke</strong>  |
  | Terlalu sangat kurus | | 15.0 |
  | Sangat kurus | 15.0 | 16.0 |
@@ -889,7 +890,7 @@ Contoh pada menu bobot</p>
 <h2 id="hasil-aplikasi">Hasil Aplikasi</h2>
 <p>Jalankan aplikasi yang telah dibuat, jika berhasil maka aplikasi akan berjalan sesuai tahapan berikut:</p>
 <ol>
-<li><p>Muncul splashscreen sebagai tampilan pembuka aplikasi
+<li><p>Muncul splashscreen sebagai tampilan pembuka aplikasi.
  <img src="images/4.1_hasilsatu.png" alt="hasilsatu MainActivity java"></p>
 </li>
 <li><p>Tampilan berikutnya adalah tampilan kalkulator dengan set nilai pada setiap menu bobot, tinggi, dan umur adalah 0 (sesuai set saat inisialisasi di kode program).
@@ -945,7 +946,7 @@ Contoh pada menu bobot</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Praktikum 1 - Aplikasi BMI Sederhana part 1","level":"1.7.2","depth":2,"next":{"title":"Praktikum 2 - Aplikasi BMI Sederhana part 2","level":"1.7.3","depth":2,"path":"chapter06/chapter06-03praktikum02.md","ref":"chapter06/chapter06-03praktikum02.md","articles":[]},"previous":{"title":"Pendahuluan","level":"1.7.1","depth":2,"path":"chapter06/chapter06-01pendahuluan.md","ref":"chapter06/chapter06-01pendahuluan.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter06/chapter06-02praktikum01.md","mtime":"2019-07-09T02:08:30.502Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-09T02:09:03.893Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Praktikum 1 - Aplikasi BMI Sederhana part 1","level":"1.7.2","depth":2,"next":{"title":"Praktikum 2 - Aplikasi BMI Sederhana part 2","level":"1.7.3","depth":2,"path":"chapter06/chapter06-03praktikum02.md","ref":"chapter06/chapter06-03praktikum02.md","articles":[]},"previous":{"title":"Pendahuluan","level":"1.7.1","depth":2,"path":"chapter06/chapter06-01pendahuluan.md","ref":"chapter06/chapter06-01pendahuluan.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter06/chapter06-02praktikum01.md","mtime":"2019-07-09T02:21:12.266Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-09T02:21:46.929Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
