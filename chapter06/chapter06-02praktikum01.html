@@ -832,17 +832,17 @@ Contoh pada menu bobot</p>
 </li>
 <li><p>Tambahkan informasi kategori BMI berdasarkan kriteria berikut.</p>
 <p> <strong>Tabel Kriteria BMI</strong></p>
-<p> | Kategori             | BMI      |         |
- |----------------------|----------|---------|
- |                      | <strong>dari</strong> | <strong>ke</strong>  |
- | Terlalu sangat kurus |          | 15.0    |
- | Sangat kurus         | 15.0     | 16.0    |
- | Kurus                | 16       | 18.5    |
- | Normal               | 18.5     | 25      |
- | Gemuk                | 25       | 30      |
- | Cukup Gemuk          | 30       | 35      |
- | Sangat gemuk         | 35       | 40      |
- | Terlalu sangat gemuk | 40       |         |</p>
+<p> | Kategori | BMI ||
+ |---|---|---|
+ || <strong>dari</strong> | <strong>ke</strong>  |
+ | Terlalu sangat kurus | | 15.0 |
+ | Sangat kurus | 15.0 | 16.0 |
+ | Kurus | 16 | 18.5 |
+ | Normal | 18.5 | 25 |
+ | Gemuk | 25 | 30 |
+ | Cukup Gemuk | 30 | 35 |
+ | Sangat gemuk | 35 | 40 |
+ | Terlalu sangat gemuk | 40 ||</p>
 <p> <img src="images/2.36_tampiltiga.png" alt="tampiltiga MainActivity java"></p>
 </li>
 <li><p>Tambahkan <code>bmiLabel</code> sebagai variabel penampung data yang dimasukkan dan hasil penghitungan BMI.</p>
@@ -871,7 +871,7 @@ Contoh pada menu bobot</p>
 <li><p>Buat layout baru bernama <strong>splashbmi.xml</strong> dengan satu komponen <code>TextView</code> (boleh ditambah komponen lain). Warna background pada modul ini menggunakan warna <code>#3395ff</code>.</p>
 <p> <img src="images/3.1_splashscreensatu.png" alt="splashsatu MainActivity java"></p>
 </li>
-<li><p>Hasil layout <strong>splashbmi.xml</strong></p>
+<li><p>Hasil layout <strong>splashbmi.xml</strong>.</p>
 <p> <img src="images/3.2_splashscreendua.png" alt="splashdua MainActivity java"></p>
 </li>
 </ol>
@@ -883,7 +883,7 @@ Contoh pada menu bobot</p>
 <ol>
 <li>Buka <strong>AndroidManifest.xml</strong> di <strong>app -&gt; manifest - AndroidManifest.xml</strong>.</li>
 <li>Ubah <code>&lt;activity android:name=&quot;.MainActivity&quot;&gt;</code> menjadi <code>&lt;activity android:name=&quot;.SplashActivity&quot;&gt;</code>.</li>
-<li>Tambahkan activity baru dengan nama <code>.MainActivity</code> sehingga kode di dalam <strong>AndroidManifest.xml</strong> secara keseluruhan adalah sebagai berikut
+<li>Tambahkan activity baru dengan nama <code>.MainActivity</code> sehingga kode di dalam <strong>AndroidManifest.xml</strong> secara keseluruhan adalah sebagai berikut.
  <img src="images/3.4_splashscreenempat.png" alt="splashempat MainActivity java"></li>
 </ol>
 <h2 id="hasil-aplikasi">Hasil Aplikasi</h2>
@@ -892,13 +892,13 @@ Contoh pada menu bobot</p>
 <li><p>Muncul splashscreen sebagai tampilan pembuka aplikasi
  <img src="images/4.1_hasilsatu.png" alt="hasilsatu MainActivity java"></p>
 </li>
-<li><p>Tampilan berikutnya adalah tampilan kalkulator dengan set nilai pada setiap menu bobot, tinggi, dan umur adalah 0 (sesuai set saat inisialisasi di kode program)
+<li><p>Tampilan berikutnya adalah tampilan kalkulator dengan set nilai pada setiap menu bobot, tinggi, dan umur adalah 0 (sesuai set saat inisialisasi di kode program).
  <img src="images/4.2_hasildua.png" alt="hasildua MainActivity java"></p>
 </li>
-<li><p>Percobaan pengisian data
+<li><p>Percobaan pengisian data.
  <img src="images/4.3_hasiltiga.png" alt="hasiltiga MainActivity java"></p>
 </li>
-<li><p>Tekan tombol <strong>Hitung BMI</strong> dan laporan hasil penghitungan ditampilkan
+<li><p>Tekan tombol <strong>Hitung BMI</strong> dan laporan hasil penghitungan ditampilkan.
  <img src="images/4.4_hasilempat.png" alt="hasilempat MainActivity java"></p>
 </li>
 </ol>
@@ -945,7 +945,7 @@ Contoh pada menu bobot</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Praktikum 1 - Aplikasi BMI Sederhana part 1","level":"1.7.2","depth":2,"next":{"title":"Praktikum 2 - Aplikasi BMI Sederhana part 2","level":"1.7.3","depth":2,"path":"chapter06/chapter06-03praktikum02.md","ref":"chapter06/chapter06-03praktikum02.md","articles":[]},"previous":{"title":"Pendahuluan","level":"1.7.1","depth":2,"path":"chapter06/chapter06-01pendahuluan.md","ref":"chapter06/chapter06-01pendahuluan.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter06/chapter06-02praktikum01.md","mtime":"2019-07-09T01:56:29.440Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-09T02:01:18.199Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Praktikum 1 - Aplikasi BMI Sederhana part 1","level":"1.7.2","depth":2,"next":{"title":"Praktikum 2 - Aplikasi BMI Sederhana part 2","level":"1.7.3","depth":2,"path":"chapter06/chapter06-03praktikum02.md","ref":"chapter06/chapter06-03praktikum02.md","articles":[]},"previous":{"title":"Pendahuluan","level":"1.7.1","depth":2,"path":"chapter06/chapter06-01pendahuluan.md","ref":"chapter06/chapter06-01pendahuluan.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter06/chapter06-02praktikum01.md","mtime":"2019-07-09T02:08:30.502Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-09T02:09:03.893Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
