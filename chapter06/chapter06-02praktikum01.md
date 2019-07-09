@@ -172,19 +172,23 @@ Hasil peghitungan BMI ditampilkan dalam bentuk `AlertDialog` yang diproses di me
 
 3. Tambahkan informasi kategori BMI berdasarkan kriteria berikut.
 
-    **Tabel Kriteria BMI**.
+    **Kriteria BMI**
 
-    | Kategori | BMI ||
-    |---|:---:|:---:|
-    || **dari** | **ke**  |
-    | Terlalu sangat kurus | | 15.0 |
-    | Sangat kurus | 15.0 | 16.0 |
-    | Kurus | 16 | 18.5 |
-    | Normal | 18.5 | 25 |
-    | Gemuk | 25 | 30 |
-    | Cukup Gemuk | 30 | 35 |
-    | Sangat gemuk | 35 | 40 |
-    | Terlalu sangat gemuk | 40 ||
+    Terlalu sangat kurus : 0 - 15.0
+    
+    Sangat kurus : 15.0 - 16.0
+    
+    Kurus : 16 - 18.5
+    
+    Normal : 18.5 - 25
+    
+    Gemuk : 25 - 30
+    
+    Cukup Gemuk : 30 - 35
+    
+    Sangat Gemuk : 35 - 40
+    
+    Terlalu sangat gemuk : > 40
 
     ![tampiltiga MainActivity java](images/2.36_tampiltiga.png)
 
