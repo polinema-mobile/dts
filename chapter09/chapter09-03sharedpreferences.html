@@ -887,7 +887,8 @@
                                 <h1 id="praktikum-1">Praktikum-1</h1>
 <h2 id="menyimpan-dan-membaca-data-dengan-sharedpreferences">Menyimpan dan Membaca Data dengan SharedPreferences</h2>
 <ol>
-<li><p>Bukalah file WelcomeBackActivity.java yang ada pada project starter pertemuan 9 yang telah didownload sebelumnya. Diatas method onCreate() pada Activity tersebut, tambahkan property dan konstanta-konstanta berikut.</p>
+<li><p>Clone atau download starter project yang ada di repo <a href="https://github.com/polinema-mobile/dtschapter09-starter" target="_blank">Starter Code Chapter 9</a>. Jalankan projectnya, pastikan aplikasi dapat muncul pada ponsel Android Anda. Aplikasi tersebut adalah pengembangan dari aplikasi yang pernah Anda buat sebelumnya di pertemuan 3. Apabila dijalankan aplikasi tersebut hanya dapat berpindah-pindah halaman saja. Cobalah untuk membuka halaman Login, Register, dan Profile. Pada pertemuan kali ini, kita akan bekerja pada halaman-halaman tersebut.</p>
+<p>Bukalah file WelcomeBackActivity.java yang ada pada project starter pertemuan 9 yang telah didownload sebelumnya. Diatas method onCreate() pada Activity tersebut, tambahkan property dan konstanta-konstanta berikut.</p>
 <pre><code class="lang-java"><span class="hljs-comment">// SharedPreferences yang akan digunakan untuk menulis dan membaca data</span>
 <span class="hljs-keyword">private</span> SharedPreferences sharedPrefs;
 
@@ -988,6 +989,12 @@
 }
 </code></pre>
 <p>Method ini berfungsi untuk mencocokkan kredensial yang dientrykan user di UI. Apabila username dan password yang dientrykan tadi sama dengan konstanta DUMMY_PASSWORD &amp; DUMMY_USERNAME, maka validasi berhasil dan akan dikembalikan nilai true. Apabila tidak sesuai, maka false yang akan dikembalikan.</p>
+<p><strong>Catatan</strong>: Konstanta DUMMY_PASSWORD &amp; DUMMY_USERNAME sudah dideklarasikan sebelumnya di bagian awal class WelcomeBackActivity.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WelcomeBackActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> 
+</span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String DUMMY_USERNAME = <span class="hljs-string">&quot;dtsawardee&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String DUMMY_PASSWORD = <span class="hljs-string">&quot;dtsrocks&quot;</span>;
+</code></pre>
 </li>
 <li><p>Beriktunya, modifikasilah method action Button Login onBtnLogin_Click(), tambahkan kode-kode dibawah ini untuk menjalankan validasi ketika Button tersebut diklik oleh user.</p>
 <pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBtnLogin_Click</span><span class="hljs-params">(View view)</span>
@@ -1008,6 +1015,7 @@
   }
 }
 </code></pre>
+<p>Setelah mengimplementasikan method action ini, cobalah jalankan kembali aplikasinya dan ujicobalah login menggunakan username dan password dummy seperti pada deklarasi konstantanya diatas.</p>
 </li>
 <li><p>Selanjutnya kita buat sebuah method yang akan menyimpan nilai Boolean ke SharedPreferences untuk menentukan apakah pada kesempatan berikutnya, aplikasi akan otomatis login atau tidak (sesuai dengan centangan CheckBox &#x2018;Keep Login&#x2019;. Modifikasilah method makeAutoLogin() sehingga menjadi seperti berikut:</p>
 <pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">makeAutoLogin</span><span class="hljs-params">()</span>
@@ -1099,7 +1107,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Praktikum 1 - Menyimpan & Membaca data dengan SharedPreferences","level":"1.9.3","depth":2,"next":{"title":"Teori Room Persistence Library","level":"1.9.4","depth":2,"path":"chapter09/chapter09-04teori-room.md","ref":"chapter09/chapter09-04teori-room.md","articles":[]},"previous":{"title":"Teori SharedPreferences","level":"1.9.2","depth":2,"path":"chapter09/chapter09-02teori-sharedpreferences.md","ref":"chapter09/chapter09-02teori-sharedpreferences.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter09/chapter09-03sharedpreferences.md","mtime":"2019-07-11T05:44:21.618Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-11T06:37:04.176Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Praktikum 1 - Menyimpan & Membaca data dengan SharedPreferences","level":"1.9.3","depth":2,"next":{"title":"Teori Room Persistence Library","level":"1.9.4","depth":2,"path":"chapter09/chapter09-04teori-room.md","ref":"chapter09/chapter09-04teori-room.md","articles":[]},"previous":{"title":"Teori SharedPreferences","level":"1.9.2","depth":2,"path":"chapter09/chapter09-02teori-sharedpreferences.md","ref":"chapter09/chapter09-02teori-sharedpreferences.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter09/chapter09-03sharedpreferences.md","mtime":"2019-07-11T07:15:24.611Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-11T07:25:20.266Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
