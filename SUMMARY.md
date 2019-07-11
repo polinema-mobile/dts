@@ -46,3 +46,13 @@
     - [Pendahuluan](chapter07/00-pendahuluan.md)
     - [Hasil yang Diharapkan](chapter07/01-hasil.md)
     - [Proyek](chapter07/02-proyek.md)
+
+- [Bab 09 SharedPreferences & Room Persistence Library](chapter09/chapter09-01pendahuluan.md)
+  - [Pendahuluan](chapter09/chapter09-01pendahuluan.md)
+  - [Teori SharedPreferences](chapter09/chapter09-02teori-sharedpreferences.md)
+  - [Praktikum 1 - Menyimpan & Membaca data dengan SharedPreferences](chapter09/chapter09-03sharedpreferences.md)
+  - [Teori Room Persistence Library](chapter09/chapter09-04teori-room.md)
+  - [Praktikum 2 - AppDatabase & Operasi INSERT](chapter09/chapter09-05appdatabase-insert.md)
+  - [Praktikum 3 - Operasi SELECT](chapter09/chapter09-06select.md)
+  - [Praktikum 4 - Operasi UPDATE](chapter09/chapter09-07update.md)
+  - [Praktikum 5 - Operasi DELETE](chapter09/chapter09-08delete.md)
