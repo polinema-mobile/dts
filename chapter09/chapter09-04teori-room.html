@@ -886,7 +886,33 @@
                                 
                                 <h1 id="room-persistence-library">Room Persistence Library</h1>
 <h2 id="teori">Teori</h2>
-<p>Room adalah:</p>
+<p>Room adalah library baru bawaan Android yang menyediakan abstraksi di atas SQLite untuk memungkinkan akses database yang lebih mudah tanpa menghilangkan keuntungan-keuntungan powerful yang dimiliki oleh SQLite.</p>
+<p>Aplikasi yang menangani jumlah data terstruktur yang kompleks dan besar akan sangat diuntungkan bila dimampukan untuk menyimpan datanya secara lokal di SQLite database. Kasus paling umum adalah untuk meng-cache sejumlah besar data yang paling relevan/penting dari suatu aplikasi sehingga ketika perangkat tidak dapat mengakses jaringan, pengguna masih dapat membaca-baca konten aplikasi tersebut saat sedang offline. Setiap perubahan konten yang dilakukan pengguna kemudian disinkronkan ke server setelah perangkat kembali online nantinya.</p>
+<p>Karena library Room yang sudah sangat lengkap dan mampu meng-handle skenario semacam itu maka kita dianjurkan untuk menggunakan Room alih-alih SQLite. Namun, jika Anda lebih suka menggunakan API SQLite secara langsung, juga sah-sah saja.</p>
+<p>Catatan: Untuk menggunakan Room di aplikasi Anda, Anda perlu menambahkan beberapa library ke file build.gradle aplikasi Anda.</p>
+<p>Ada 3 komponen utama pada Room:</p>
+<ol>
+<li><p><strong>Database</strong> (atau AppDatabase): Merupakan sebuah class yang diturunkan dari class RoomDatabase dan berfungsi sebagai titik akses utama untuk koneksi ke SQLite yang tertanam pada perangkat Android. Class tersebut harus diberi notasi <strong>@Database</strong> dan juga harus memenuhi ketentuan sebagai berikut:</p>
+<ul>
+<li>Merupakan class abstract yang meng-extend class RoomDatabase.</li>
+<li>Menyertakan daftar entitas (tabel-tabel) yang terkait dengan database di bagian anotasi-nya.</li>
+<li>Memiliki method-method abstrak yang memiliki 0 argumen dan mengembalikan kelas yang DAO (beranotasi @Dao).</li>
+</ul>
+<p>Pada saat runtime, kita dapat memperoleh instance dari class Database dengan memanggil method Room.databaseBuilder() atau Room.inMemoryDatabaseBuilder().</p>
+</li>
+<li><p><strong>Entity</strong>: Merupakan class yang merepresentasikan tabel di dalam database.</p>
+</li>
+<li><p><strong>DAO</strong>: Class yang berisi method-method untuk mengakses (baca/tulis) data dari/ke database.</p>
+</li>
+</ol>
+<p>Secara hunbungan kierja ketiga komponen Room tersebut di atas pada suatu aplikasi adalah seperti berikut:</p>
+<ul>
+<li>Aplikasi menggunakan instance database Room untuk mendapatkan objek akses data, atau DAO, yang terkait dengan database. </li>
+<li>Aplikasi kemudian menggunakan setiap DAO untuk mendapatkan Entity dari database dan menyimpan perubahan apa pun pada entitas tersebut kembali ke database. </li>
+<li>Pada akhirnya, aplikasi menggunakan entitas untuk meng-get/set nilai yang sesuai dengan kolom tabel dalam database.</li>
+</ul>
+<p>Hubungan tersebut secara umum seperti digambarkan pada bagan di bawah ini.
+<img src="images/room-architecture.png" alt="Arsitektur Room"></p>
 
                                 
                                 </section>
@@ -930,7 +956,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Teori Room Persistence Library","level":"1.9.4","depth":2,"next":{"title":"Praktikum 2 - AppDatabase & Operasi INSERT","level":"1.9.5","depth":2,"path":"chapter09/chapter09-05appdatabase-insert.md","ref":"chapter09/chapter09-05appdatabase-insert.md","articles":[]},"previous":{"title":"Praktikum 1 - Menyimpan & Membaca data dengan SharedPreferences","level":"1.9.3","depth":2,"path":"chapter09/chapter09-03sharedpreferences.md","ref":"chapter09/chapter09-03sharedpreferences.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter09/chapter09-04teori-room.md","mtime":"2019-07-11T06:46:48.830Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-11T07:25:20.266Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Teori Room Persistence Library","level":"1.9.4","depth":2,"next":{"title":"Praktikum 2 - AppDatabase & Operasi INSERT","level":"1.9.5","depth":2,"path":"chapter09/chapter09-05appdatabase-insert.md","ref":"chapter09/chapter09-05appdatabase-insert.md","articles":[]},"previous":{"title":"Praktikum 1 - Menyimpan & Membaca data dengan SharedPreferences","level":"1.9.3","depth":2,"path":"chapter09/chapter09-03sharedpreferences.md","ref":"chapter09/chapter09-03sharedpreferences.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter09/chapter09-04teori-room.md","mtime":"2019-07-11T11:36:28.240Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-11T11:41:44.304Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

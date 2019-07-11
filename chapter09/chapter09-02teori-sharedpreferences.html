@@ -884,9 +884,72 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="sharedpreference">SharedPreference</h1>
+                                <h1 id="sharedpreferences">SharedPreferences</h1>
 <h2 id="teori">Teori</h2>
-<p>SharedPreference adalah:</p>
+<p>Android menyediakan beberapa cara untuk menyimpan data pada suatu aplikasi. Salah satu cara tersebut adalah dengan memanfaatkan SharedPreferences. SharedPreferences memungkinkan Anda menyimpan dan mengambil data dalam bentuk pasangan kunci-nilai (key-value pairs). Namun dengan catatan, data yang dapat disimpan hanyalah data yang tipe datanya sederhana seperti:</p>
+<ul>
+<li>String</li>
+<li>int/long/float</li>
+<li>boolean</li>
+<li>DateTime</li>
+</ul>
+<p>Untuk menggunakan SharedPreferences, Anda harus memanggil metode getSharedPreferences() yang sudah ada di setiap class turunan AppCompatActivity. Method tersebut akan mengembalikan instance SharedPreference yang merujuk ke file xml yang berisi nilai preferensi, yang terdapat pada penyimpanan device.</p>
+<p>Contoh:</p>
+<pre><code class="lang-java">SharedPreferences sharedpreferences = <span class="hljs-keyword">this</span>.getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+</code></pre>
+<p>Parameter pertama adalah nama SharedPreferences yang kita tentukan sendiri dan parameter kedua adalah MODE. Selain selain MODE_PRIVATE ada beberapa mode lain yang tersedia yaitu:</p>
+<ul>
+<li><p><strong>MODE_APPEND</strong></p>
+<p>  Menumpuk/menggabungkan data yang ada di SharedPreference yang sudah ada ke SharedPreference yang baru dibuat</p>
+</li>
+<li><p><strong>MODE_ENABLE_WRITE_AHEAD_LOGGING</strong></p>
+<p>  Mengatur agar penulisan data menggunakan metode write ahead loggin, adalah sebuah metode khusus pada database. Jika ingin tahu lebih lanjut mengenai write ahead logging, silahkan pelajari materi tentang basis data lanjut dari referensi-referensi yang Anda miliki.</p>
+</li>
+<li><p><strong>MODE_MULTI_PROCESS</strong></p>
+<p>  Memungkinkan SharedPreferences diakses oleh banyak proses.</p>
+</li>
+<li><p><strong>MODE_PRIVATE</strong></p>
+<p>  Dengan mengatur mode ini, file hanya dapat diakses oleh aplikasi saat ini (yang membuat SharedPreferences itu sendiri)</p>
+</li>
+<li><p><strong>MODE_WORLD_READABLE</strong></p>
+<p>  Mode ini memungkinkan aplikasi lain dapat membaca data pada SharedPreference yang dibuat oleh aplikasi saat ini.</p>
+</li>
+<li><p><strong>MODE_WORLD_WRITEABLE</strong></p>
+<p>  Mode ini memungkinkan aplikasi lain dapat menulis data pada SharedPreference yang dibuat oleh aplikasi saat ini.</p>
+</li>
+</ul>
+<p>Untuk menulis/menyimpan sesuatu di SharedPreferences dilakukan dengan menggunakan kelas SharedPreferences.Editor. Kemudian dari instance class tersebut dipanggil method edit() yang akan mengembalikan objek dari class Editor. Setelah mendapatkan objek editor tersebut, dapat dipanggil mehod-method putXXX(key, value) dimana XXX adalah tipe data yang ingin ditulis. Setelah selesai menulis tipe data, harus dipanggil apply()/commit() sehingga perubahan dapat disimpan secara permanen.</p>
+<p>Contoh sintaksisnya adalah sebagai berikut.</p>
+<pre><code class="lang-java">Editor editor = sharedpreferences.edit();
+editor.putString(<span class="hljs-string">&quot;key&quot;</span>, <span class="hljs-string">&quot;value&quot;</span>);
+editor.commit(); <span class="hljs-comment">// Atau editor.apply()</span>
+</code></pre>
+<p>Pada snippet kode diatas, &quot;key&quot; adalah semacam index yang digunakan untuk mengambil nilai &quot;value&quot; yang Anda simpan. Selain putString() &amp; commit() ada method-method lain dari class Editor yang layak untuk Anda ketahui yaitu:</p>
+<ul>
+<li><p><strong>apply()</strong></p>
+<p>  Menerapkan perubahan yang telah dilakukan pada Editor sehingga menjadi permanen</p>
+</li>
+<li><p><strong>clear()</strong></p>
+<p>  Menghapus semua nilai yang ditulis pada Editor.</p>
+</li>
+<li><p><strong>remove(String key)</strong></p>
+<p>  Menghapus suatu nilai dengan key yang diberikan di parameter method.</p>
+</li>
+<li><p><strong>putLong(String key, long value)</strong></p>
+<p>  Menyimpan nilai dengan tipe data long</p>
+</li>
+<li><p><strong>putInt(String key, int value)</strong></p>
+<p>  Menyimpan nilai dengan tipe data int</p>
+</li>
+<li><p><strong>putFloat(String key, float value)</strong></p>
+<p>  Menyimpan nilai dengan tipe data float</p>
+</li>
+</ul>
+<p>Sedangkan untuk membaca nilai dari SharedPreferences cukup dengan sintaksis berikut:</p>
+<pre><code class="lang-java">SharedPreferences sharedPrefs = <span class="hljs-keyword">this</span>.getSharedPreferences(<span class="hljs-string">&quot;shared_preferences_name&quot;</span>, Context.MODE_PRIVATE);
+String valueToRead = sharedPrefs.getString(KEY, <span class="hljs-keyword">null</span>);
+</code></pre>
+<p>Catatan: null pada method getString() adalah nilai default yang dikembalikan jika tidak ditemukan data dengan KEY yang diminta.</p>
 
                                 
                                 </section>
@@ -930,7 +993,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Teori SharedPreferences","level":"1.9.2","depth":2,"next":{"title":"Praktikum 1 - Menyimpan & Membaca data dengan SharedPreferences","level":"1.9.3","depth":2,"path":"chapter09/chapter09-03sharedpreferences.md","ref":"chapter09/chapter09-03sharedpreferences.md","articles":[]},"previous":{"title":"Pendahuluan","level":"1.9.1","depth":2,"path":"chapter09/chapter09-01pendahuluan.md","ref":"chapter09/chapter09-01pendahuluan.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter09/chapter09-02teori-sharedpreferences.md","mtime":"2019-07-11T06:46:48.829Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-11T07:25:20.266Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Teori SharedPreferences","level":"1.9.2","depth":2,"next":{"title":"Praktikum 1 - Menyimpan & Membaca data dengan SharedPreferences","level":"1.9.3","depth":2,"path":"chapter09/chapter09-03sharedpreferences.md","ref":"chapter09/chapter09-03sharedpreferences.md","articles":[]},"previous":{"title":"Pendahuluan","level":"1.9.1","depth":2,"path":"chapter09/chapter09-01pendahuluan.md","ref":"chapter09/chapter09-01pendahuluan.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter09/chapter09-02teori-sharedpreferences.md","mtime":"2019-07-11T11:06:27.055Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-11T11:41:44.304Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
