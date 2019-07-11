@@ -56,3 +56,4 @@
   - [Praktikum 3 - Operasi SELECT](chapter09/chapter09-06select.md)
   - [Praktikum 4 - Operasi UPDATE](chapter09/chapter09-07update.md)
   - [Praktikum 5 - Operasi DELETE](chapter09/chapter09-08delete.md)
+  - [Praktikum 6 - Operasi Database Asynchronous](chapter09/chapter09-09asynchronous-database-ops.md)
