@@ -2,7 +2,9 @@
 
 ## Menjalankan Operasi UPDATE
 
-1.	Untuk mengimplementasikan fitur update profile caranya sangat mudah, seperti biasa, kita hanya perlu memanggil class DAO dari DTSAppDatabase dengan menggunakan AppDbProvider. Kemudian tinggal menjalankan method update yang sudah disediakan di class DAO tersebut. 
+1.	Dalam suatu aplikasi tentu saja seringkali pengguna harus dapat melakukan pengubahan (pembaruan) data yang sebelumnya telah disimpan. Pada contoh kali ini, kita simulasikan pengubahan data profil pengguna aplikasi DTSApp melalui klik pada tombol ‘Save’.
+
+	Untuk mengimplementasikan fitur update profile tadi, caranya sangat mudah. Seperti biasa, kita hanya perlu memanggil class DAO dari DTSAppDatabase dengan menggunakan AppDbProvider. Kemudian tinggal menjalankan method update yang sudah disediakan sebelumnya di class DAO tersebut. 
 	
 	Untuk melakukannya, pertma-tama tambahkan method berikut ke ProfileActivity.
 	```java

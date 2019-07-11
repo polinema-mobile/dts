@@ -2,7 +2,9 @@
 
 ## Menyimpan dan Membaca Data dengan SharedPreferences
 
-1.	Bukalah file WelcomeBackActivity.java yang ada pada project starter pertemuan 9 yang telah didownload sebelumnya. Diatas method onCreate() pada Activity tersebut, tambahkan property dan konstanta-konstanta berikut.
+1.	Clone atau download starter project yang ada di repo [Starter Code Chapter 9](https://github.com/polinema-mobile/dtschapter09-starter). Jalankan projectnya, pastikan aplikasi dapat muncul pada ponsel Android Anda. Aplikasi tersebut adalah pengembangan dari aplikasi yang pernah Anda buat sebelumnya di pertemuan 3. Apabila dijalankan aplikasi tersebut hanya dapat berpindah-pindah halaman saja. Cobalah untuk membuka halaman Login, Register, dan Profile. Pada pertemuan kali ini, kita akan bekerja pada halaman-halaman tersebut.
+	
+	Bukalah file WelcomeBackActivity.java yang ada pada project starter pertemuan 9 yang telah didownload sebelumnya. Diatas method onCreate() pada Activity tersebut, tambahkan property dan konstanta-konstanta berikut.
 
 	```java
 	// SharedPreferences yang akan digunakan untuk menulis dan membaca data
@@ -117,6 +119,14 @@
 	}
 	```
 	Method ini berfungsi untuk mencocokkan kredensial yang dientrykan user di UI. Apabila username dan password yang dientrykan tadi sama dengan konstanta DUMMY_PASSWORD & DUMMY_USERNAME, maka validasi berhasil dan akan dikembalikan nilai true. Apabila tidak sesuai, maka false yang akan dikembalikan.
+	
+	__Catatan__: Konstanta DUMMY_PASSWORD & DUMMY_USERNAME sudah dideklarasikan sebelumnya di bagian awal class WelcomeBackActivity.
+	```java
+	public class WelcomeBackActivity extends AppCompatActivity 
+	{
+	    private static final String DUMMY_USERNAME = "dtsawardee";
+	    private static final String DUMMY_PASSWORD = "dtsrocks";
+	```
 
 8.	Beriktunya, modifikasilah method action Button Login onBtnLogin_Click(), tambahkan kode-kode dibawah ini untuk menjalankan validasi ketika Button tersebut diklik oleh user.
 
@@ -139,6 +149,7 @@
 	    }
 	}
 	```
+	Setelah mengimplementasikan method action ini, cobalah jalankan kembali aplikasinya dan ujicobalah login menggunakan username dan password dummy seperti pada deklarasi konstantanya diatas.
 
 9.	Selanjutnya kita buat sebuah method yang akan menyimpan nilai Boolean ke SharedPreferences untuk menentukan apakah pada kesempatan berikutnya, aplikasi akan otomatis login atau tidak (sesuai dengan centangan CheckBox ‘Keep Login’. Modifikasilah method makeAutoLogin() sehingga menjadi seperti berikut:
 

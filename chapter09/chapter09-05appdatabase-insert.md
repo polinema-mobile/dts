@@ -7,7 +7,50 @@
 	![Halaman registrasi](images/registration-page.png)
 	Misi kita berikutnya adalah menyimpan registrasi pengguna ke database local yang terdapat pada ponsel dengan menggunakan bantuan library Room.
 
-2.	Bukalah source code RegistrationActivity.java yang ada pada project tersebut. Perhatikan disana masih kosong, hanya terdapat beberapa baris kode untuk menginisiasi komponen-komponen dari layout. Pada Actovity ini nantinya kita akan menambahkan kode untuk menyimpan data-data yang diinputkan oleh user di halaman registrasi.
+2.	Bukalah source code RegisterActivity.java yang ada pada project tersebut. Perhatikan disana masih kosong, hanya terdapat beberapa baris kode untuk menginisiasi komponen-komponen dari layout. Pada Actovity ini nantinya kita akan menambahkan kode untuk menyimpan data-data yang diinputkan oleh user di halaman registrasi.
+	```java
+	package polinema.ac.id.dtsapp;
+
+	import android.support.v7.app.AppCompatActivity;
+	import android.os.Bundle;
+	import android.view.View;
+	import android.widget.EditText;
+	import android.widget.Toast;
+
+	public class RegisterActivity extends AppCompatActivity
+	{
+	    private EditText edtUsername;
+	    private EditText edtPassword;
+	    private EditText edtEmail;
+	    private EditText edtPhoneNumber;
+
+	    @Override
+	    protected void onCreate(Bundle savedInstanceState)
+	    {
+	        super.onCreate(savedInstanceState);
+	        setContentView(R.layout.activity_register);
+
+	        this.initComponents();
+	    }
+
+	    private void initComponents()
+	    {
+	        this.edtUsername = this.findViewById(R.id.edt_username);
+	        this.edtPassword = this.findViewById(R.id.edt_password);
+	        this.edtEmail = this.findViewById(R.id.edt_email);
+	        this.edtPhoneNumber = this.findViewById(R.id.edt_phone_number);
+	    }
+
+	    public void onBtnRegisterNow_Click(View view)
+	    {
+	        // Tampilkan pesan konfirmasi
+	        Toast.makeText(this, "Register Success!", Toast.LENGTH_SHORT).show();
+
+	        // Kembali ke halaman login
+	        this.finish();
+	    }
+	}
+	```
 
 3.	Pertama-tama bukalah file gradle Anda ‘build.gradle (Module:app)’. Pada bagian dependencies, tambahkan dua baris kode berikut, dan kemudian sync project Anda.
 	```gradle
