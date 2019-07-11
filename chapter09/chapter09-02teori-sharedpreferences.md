@@ -10,6 +10,8 @@ Android menyediakan beberapa cara untuk menyimpan data pada suatu aplikasi. Sala
 
 Untuk menggunakan SharedPreferences, Anda harus memanggil metode getSharedPreferences() yang sudah ada di setiap class turunan AppCompatActivity. Method tersebut akan mengembalikan instance SharedPreference yang merujuk ke file xml yang berisi nilai preferensi, yang terdapat pada penyimpanan device.
 
+![File SharedPreferences di device](images/sharedprefs-file.png)
+
 Contoh:
 
 ```java
