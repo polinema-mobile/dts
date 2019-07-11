@@ -32,3 +32,5 @@ Secara hunbungan kierja ketiga komponen Room tersebut di atas pada suatu aplikas
 
 Hubungan tersebut secara umum seperti digambarkan pada bagan di bawah ini.
 ![Arsitektur Room](images/room-architecture.png)
+
+Gambar diambil dari: https://developer.android.com/training/data-storage/room/index.html
