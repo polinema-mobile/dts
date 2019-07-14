@@ -59,4 +59,5 @@
   - [Praktikum 6 - Operasi Database Asynchronous](chapter09/chapter09-09asynchronous-database-ops.md)
 
 - [Bab 10 Room Persistence Library, RecyclerView](chapter10/chapter10-01pendahuluan.md)
-    - [Teori 1 - Architecture Component](chapter10/chapter10-02architecture-component.md)
+    - [1 - Architecture Component dan Room Database](chapter10/chapter10-02architecture-component.md)
+    - [2 - View Model](chapter10/chapter10-03MembuatViewModel.md)
