@@ -15,5 +15,9 @@ Pada praktikum kali ini anda akan praktik untuk menyimpan data di Sqlite dengan 
 2. Menampilkan Data di Sqlite ke RecyclerView
 3. Menggunakan Architecture Component
 
+## Reference
+1. https://codelabs.developers.google.com/codelabs/android-room-with-a-view
+2. https://github.com/googlesamples/android-architecture-components
+
 ## Alat dan bahan
-1. Clone starter code : [Starter Code Chapter 10]()
+1. Clone starter code : [Starter Code Chapter 10](https://github.com/polinema-mobile/dtschapter10-starter)

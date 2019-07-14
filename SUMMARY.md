@@ -61,3 +61,5 @@
 - [Bab 10 Room Persistence Library, RecyclerView](chapter10/chapter10-01pendahuluan.md)
     - [1 - Architecture Component dan Room Database](chapter10/chapter10-02architecture-component.md)
     - [2 - View Model](chapter10/chapter10-03MembuatViewModel.md)
+    - [3 - RecyclerView](chapter10/chapter10-04RecyclerView.md)
+    - [4 - Latihan](chapter10/chapter10-05Latihan.md)
