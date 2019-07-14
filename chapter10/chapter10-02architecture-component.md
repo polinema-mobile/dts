@@ -17,6 +17,8 @@ Tujuan dari komponen arsitektur adalah memberikan panduan tentang arsitektur apl
 Hasil Akhir Dari Chapter 10 adalah membuat Aplikasi yang Mencatat Kalori Seseorang Setiap Hari. Pada starter code telah disediakan aplikasi yang dapat menghitung Body Mass Ratio (BMR) berdasarkan literatur [HelloSehat](https://hellosehat.com/hidup-sehat/nutrisi/cara-menghitung-bmr-kebutuhan-kalori/).
 Hasil Akhir Dari Aplikasi ini adalah :
 
+![](images/FinalAppcalories.gif)
+
 -  __1 Membuat Entity__
     - Entity akan digenerate menjadi table.
     - StarterCode sudah menyediakan kelas LogCaloriesEntity, lengkapi code menjadi seperti pada code berikut:
