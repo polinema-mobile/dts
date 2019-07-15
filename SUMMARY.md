@@ -63,3 +63,8 @@
     - [2 - View Model](chapter10/chapter10-03MembuatViewModel.md)
     - [3 - RecyclerView](chapter10/chapter10-04RecyclerView.md)
     - [4 - Latihan](chapter10/chapter10-05Latihan.md)
+
+- [Bab 11 Retrofit](chapter11/00-pendahuluan.md)
+    - [1 - REST](chapter11/01-rest.md)
+    - [2 - Retrofit](chapter11/02-retrofit.md)
+    - [3 - Membuat Model](chapter11/03-model.md)
