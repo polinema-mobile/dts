@@ -2,6 +2,8 @@
 
 ## Hasil yang diharapkan
 
+![SaveCaloryFragment](./images/savecaloryfragment.png)
+
 ## Praktikum
 - Perhatikan pada hasil yang diharapkan pada tampilan `SaveCaloryFragment`
 
