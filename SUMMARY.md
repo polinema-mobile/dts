@@ -68,3 +68,8 @@
     - [1 - REST](chapter11/01-rest.md)
     - [2 - Retrofit](chapter11/02-retrofit.md)
     - [3 - Membuat Model](chapter11/03-model.md)
+    - [4 - Mendefinisikan Service](chapter11/04-mendefinisikan-service.md)
+    - [5 - Menyiapkan RecyclerView](chapter11/05-mempersiapkan-recyclerview.md)
+    - [6 - Implementasi CaloryFragment](chapter11/06-implementasi-caloryfragment.md)
+    - [7 - Implementasi SaveCaloryFragment](chapter11/07-implementasi-savecaloryfragment.md)
+    - [8 - Latihan](chapter11/08-latihan.md)

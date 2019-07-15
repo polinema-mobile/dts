@@ -68,3 +68,17 @@ public class Calory {
     }
 }
 ```
+
+- Implementasikan interface `Parcelable` sehingga definisi class menjadi seperti
+    berikut:
+
+    ```java
+    public class Calory implements Parcelable {
+    }
+    ```
+- Dengan menggunakan bantuan dari Android Studio, generate implementasi dari
+    `Parcelable`.
+
+    > **Catatan**: Model Retrofit tidak wajib mengimplementasikan `Parcelable`.
+    > Tetapi dikarenakan dibutuhkan passing data antar Fragment, sehingga pada
+    > praktikum ini ditambahkan langkah tersebut.

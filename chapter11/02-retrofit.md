@@ -46,5 +46,3 @@ implementation 'com.squareup.retrofit2:retrofit:(insert latest version)'
 > bService = ServiceGenerator.createService(BService.class);
 > cService = ServiceGenerator.createService(CService.class);
 > ```
-
-
