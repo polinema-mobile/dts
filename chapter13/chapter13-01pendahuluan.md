@@ -11,4 +11,4 @@ Pada pertemuan ini, kegiatan yang akan dilakukan adalah pembuatan projek aplikas
 
 
 ## Alat dan Bahan
-1. Clone kode starter chapter 13 : [Starter Code Chapter 3](https://github.com/polinema-mobile/dtschapter13-starter)
+1. Clone kode starter chapter 13 : [Starter Code Chapter 13](https://github.com/polinema-mobile/dtschapter13-starter)
