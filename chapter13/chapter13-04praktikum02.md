@@ -109,7 +109,7 @@ Tambahkan potongan kode berikut di fungsi `onPause` untuk menghentikan pembaruan
     ```
 
     Jadi ketika aplikasi pertama dijalankan, akan muncul kotak dialog untuk meminta izin pada pengguna utntuk mengakses lokasinya.
-    <div style="text-align:center"><img src="images/12.PNG" width="50%" height="50%"/></div>
+    <div style="text-align:center"><img src="images/12.png" width="50%" height="50%"/></div>
 
 2. Handle respon dari *permission request*
 *Dialog box* akan muncul setiap kali Aplikasi meminta izin. Saat pengguna merespons, sistem memanggil metode `onRequestPermissionsResult()` dan aplikasi meneruskannya sebagai respons pengguna. Metode ini digunakan untuk mengetahui apakah izin itu diberikan. Tambahkan kode di bawah ini pada fungsi `onRequestPermissionsResult`
