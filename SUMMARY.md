@@ -73,3 +73,6 @@
     - [6 - Implementasi CaloryFragment](chapter11/06-implementasi-caloryfragment.md)
     - [7 - Implementasi SaveCaloryFragment](chapter11/07-implementasi-savecaloryfragment.md)
     - [8 - Latihan](chapter11/08-latihan.md)
+
+- [Bab 12 Proyek Data Persistence](chapter12/00-pendahuluan.md)
+      [1 - Proyek](chapter12/01-proyek.md)
