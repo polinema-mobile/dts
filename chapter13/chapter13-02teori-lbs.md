@@ -8,11 +8,10 @@ Google Maps adalah salah satu produk berbasis geospatial yang dikembangkan Googl
 
 ### Jenis Maps
 
-Terdapat lima tipe peta yang disediakan oleh google maps, antara lain:
-| Tipe Map | Kode | Keterangan |
-| --- | --- | --- |
-| Normal | setMapType(GoogleMap.MAP_TYPE_NORMAL)    | Menampilkan jalan beserta label namanya. |
-|None | setMapType(GoogleMap.MAP_TYPE_NONE) | Peta tidak terlihat. |
-|Hybrid | setMapType(GoogleMap.MAP_TYPE_HYBRID) | Tipe satelit yang ditambahkan tampilan label jalan. |
-|Terrain | setMapType(GoogleMap.MAP_TYPE_TERRAIN) | Menampilkan data topografi daerah |
-|Satelit | setMapType(GoogleMap.MAP_TYPE_SATELLITE) | Menampilkan gambar satelit saja tanpa label jalan dan lainnya. |
+| Tipe Map | Kode                                     | Keterangan                                                    |
+|----------|------------------------------------------|---------------------------------------------------------------|
+| Normal   | setMapType(GoogleMap.MAP_TYPE_NORMAL)    | Menampilkan jalan beserta label namanya.                      |
+| None     | setMapType(GoogleMap.MAP_TYPE_NONE)      | Peta tidak terlihat                                           |
+| Hybrid   | setMapType(GoogleMap.MAP_TYPE_HYBRID)    | Tipe satelit yang ditambahkan tampilan label jalan            |
+| Terrain  | setMapType(GoogleMap.MAP_TYPE_TERRAIN)   | Menampilkan data topografi daerah                             |
+| Satelit  | setMapType(GoogleMap.MAP_TYPE_SATELLITE) | Menampilkan gambar satelit saja tanpa label jalan dan lainnya |
