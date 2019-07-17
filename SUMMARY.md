@@ -79,4 +79,5 @@
 
 - [Bab 13 Location Based Service](chapter13/chapter13-01pendahuluan.md)
     - [Teori LBS](chapter13/chapter13-02teori-lbs.md)
-    - [Praktikum 1 - Menampilkan Google Maps](chapter13/chapter13-03praktikum01.md)    
+    - [Praktikum 1 - Menampilkan Google Maps](chapter13/chapter13-03praktikum01.md)
+    - [Praktikum 2 - Menampilkan Current Location](chapter13/chapter13-04praktikum02.md)
