@@ -18,7 +18,7 @@ Pada bagian ini kita akan menampilkan Google Maps dengan menunjuk pada koordinat
 
 1. Sebelum mengimplementasikan Google Maps pada proyek Android, pastikan bahwa Google Play services telah terinstall pada Android Studio dengan cara buka **Tools > SDK Manager**, maka akan muncul kotak dialog seperti pada gambar di bawah ini. Pilih tab SDK Tools dan ceklis pada Google Play Services, jika statusnya *Not Installed*, klik *Apply* pada bagian bawah untuk memulai proses instalasi.
 
-<div style="text-align:center"><img src="images/03.png" /></div>
+<div style="text-align:center"><img src="images/03.PNG" /></div>
 
 2. Setelah Google Play Services terinstall, tambahkan referensi library dari google play service ke dalam proyek Android Studio. Pada bagian **Gradle Scripts > build.gradle (Module:app)**, tambahkan baris instruksi berikut pada dependencies, dan klik `Sync Now` di bagian atas untuk melakukan sinkronisasi:
 ```java
@@ -33,17 +33,17 @@ API key diperlukan untuk mengakses server Google Maps. Key ini bersifat gratis d
 
 1. Buka [Google developer console] (https://console.developers.google.com/), dan kemudian login menggunakan email gmail. Satu akun gmail hanya bisa mendapatkan satu API key.
 2. Buat project baru dengan cara klik `Create` pada bagian dashboard, atau melalui dropdown `Select a Project`.
-    <div style="text-align:center"><img src="images/04.png" /></div>
+    <div style="text-align:center"><img src="images/04.PNG" /></div>
 3. Pada halaman New Project, isikan nama project dan lokasi, kemudian klik tombol `Create`. 
     <div style="text-align:center"><img src="images/05.png" /></div>
-4. Klik link `ENABLE APIS AND SERVICES` pada dashboard, dan pilih Maps SDK for Android. ![enable api](images/06.png)
+4. Klik link `ENABLE APIS AND SERVICES` pada dashboard, dan pilih Maps SDK for Android. ![enable api](images/06.PNG)
 5. Klik tombol `ENABLE` . Setelah itu pilih tab `Credentials`, klik `Create Credentials` pada dropdown, dan pilih api key untuk membuat key.
-    <div style="text-align:center"><img src="images/07.png" /></div>
+    <div style="text-align:center"><img src="images/07.PNG" /></div>
     Maka akan muncul popup bahwa API key telah berhasil dibuat, klik `RESTRICT KEY`.
 6. Pada bagian Restrict and rename API key, pilih Android apps, masukkan SHA1, nama package, dan selanjutnya simpan perubahan.
-    <div style="text-align:center"><img src="images/08.png" /></div>
+    <div style="text-align:center"><img src="images/08.PNG" /></div>
     SHA1 dapat diambil dari file `google_maps_api.xml` seperti pada gambar berikut.
-    <div style="text-align:center"><img src="images/09.png" /></div>
+    <div style="text-align:center"><img src="images/09.PNG" /></div>
 6. Setelah menyimpan pengaturan, copy API Key untuk digunakan di tahap selanjutnya.
 
 ## Menampilkan maps pada Android Studio
