@@ -303,7 +303,7 @@ private void showBiometricPrompt() {
 
         }
 
-        // Callback jika autentikasi berhasil
+        // Callback jika autentikasi gagal
         @Override
         public void onAuthenticationFailed() {
             super.onAuthenticationFailed();
