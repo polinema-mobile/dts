@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - 10
+sudo: false
+
+branches:
+  except:
+    - gh-pages
+  only:
+    - master
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install
+
+script:
+  - npm run build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: _book
+  on:
+    branch: master
