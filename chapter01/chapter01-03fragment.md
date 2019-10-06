@@ -11,9 +11,9 @@ Di aplikasi Android kita dapat menggunakan beberapa fragmen dalam satu aktivitas
 
 Fragment Manager bertanggung jawab untuk menambah / menghapus atau mengganti fragmen pada waktu berjalan di mana pun aktivitas.
 
-Bila Kita menambahkan fragmen sebagai bagian dari layout aktivitas, fragmen itu akan berada dalam ViewGroup di hierarki tampilan aktivitas tersebut dan fragmen mendefinisikan layout tampilannya sendiri. 
+Bila Kita menambahkan fragmen sebagai bagian dari layout aktivitas, fragmen itu akan berada dalam ViewGroup di hierarki tampilan aktivitas tersebut dan fragmen mendefinisikan layout tampilannya sendiri.
 
-Kita bisa menyisipkan fragmen ke dalam layout aktivitas dengan mendeklarasikan fragmen dalam file layout aktivitas, sebagai elemen `<fragment>`, atau dari kode aplikasi dengan menambahkannya ke ViewGroup yang ada. 
+Kita bisa menyisipkan fragmen ke dalam layout aktivitas dengan mendeklarasikan fragmen dalam file layout aktivitas, sebagai elemen `<fragment>`, atau dari kode aplikasi dengan menambahkannya ke ViewGroup yang ada.
 
 ![frag1](images/Frag1.png)
 
@@ -21,9 +21,9 @@ Pada gambar di atas, dicontohkan bagaimana dua modul UI yang didefinisikan oleh 
 
 ## Membuat Fragment
 
-Untuk membuat fragment, kita membuat subkelas fragment (atau subkelas yang ada). kelas fragment memiliki kode yang mirip seperti Activity. Kelas ini memiliki metode callback yang serupa dengan activity seperti onCreate(), onStart(), onPause(), dan onStop(). 
+Untuk membuat fragment, kita membuat subkelas fragment (atau subkelas yang ada). kelas fragment memiliki kode yang mirip seperti Activity. Kelas ini memiliki metode callback yang serupa dengan activity seperti onCreate(), onStart(), onPause(), dan onStop().
 
-![frag2](images/frag2.png) 
+![frag2](images/frag2.png)
 
 - **onAttach()**
 metode ini panggil pertama kali bahkan sebelum onCreate() callback dan setelah fragmen telah dipasangkan ke activity
@@ -108,21 +108,10 @@ Di Fragment ini pertama-tama kita inflate layout dan dapatkan referensi terhadap
 9. fragment_second.xml
 ![2ndlayout](images/2ndlay.png)
 
-<<<<<<< HEAD
-10. Buka res > value > color.xml. 
-Disini kita akan mendefinisikan warna yang akan digunakan dalam file xml
-![color](images/color.png)
-
-11. Buka AndroidManifest.xml.  Pada langkah ini, kita buka file Android Manifest yang sebenarnya tidak perlu kita edit sama sekali karena aplikasi ini hanya berisi satu Activitty yaitu MainActivity yang sudah didefinisikan di dalamnya. Dalam proyek ini, kita memang membuat dua Fragment tetapi kedua fragment tersebut tidak perlu didefinisikan dalam manifest karena fragment adalah bagian dari activity.
-
-12. Jalankan aplikasi
-=======
-10. buka res > value > color.xml. 
+10. buka res > value > `colors.xml`.
 Pada tahap ini kita akan mendefinisikan warna yang akan digunakan dalam file xml
 ![color](images/color.png)
 
 11. buka AndroidManifest.xml.  Pada langkah ini, kita buka file Android Manifest yang sebenarnya tidak perlu kita edit sama sekali karena aplikasi ini hanya berisi satu Activitty yaitu MainActivity yang sudah didefinisikan didalamnya. Dalam proyek ini, kita memang membuat dua fragment tetapi kedua fragment tersebut tidak perlu didefinisikan dalam manifest karena fragment adalah bagian dari activity.
 
 12. jalankan aplikasi.
-  
->>>>>>> 637da133233b2ced5a500727bda3496148b6f28a
