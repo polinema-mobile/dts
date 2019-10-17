@@ -6,6 +6,7 @@ Daftar kontributor :
 
 1. [siubie](https://github.com/siubie) - Koordinator
 2. [dhanifudin](https://github.com/dhanifudin) - Maintainer
+3. [yunhasnawa](https://github.com/yunhasnawa/)
 3. [hndr91](https://github.com/hndr91)
 4. [yushintia](https://github.com/yushintia)
 5. [dhyk](https://github.com/dhyk)
