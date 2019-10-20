@@ -22,7 +22,7 @@ Hasil Akhir Dari Aplikasi ini adalah :
 
 -  __1 Membuat Entity__
     - Entity akan digenerate menjadi table.
-    - StarterCode sudah menyediakan kelas LogCaloriesEntity, lengkapi code menjadi seperti pada code berikut:
+    - StarterCode sudah menyediakan kelas `LogCaloriesEntity`. Lengkapi code pada `logCaloriesEnitity` menjadi seperti berikut,
 
     ```java
     @Entity(tableName = "log_calories")
@@ -97,6 +97,7 @@ Hasil Akhir Dari Aplikasi ini adalah :
     - Sebagai tahap awal aplikasi kalori dapat menyimpan dan mendapatkan kalori berdasarkan tanggal.
     - Terdapat anotasi insert untuk melakukan inser data dan anotasi Query untuk melakukan Query
 
+
     ```java
     @Insert
     void InsertLogCalories(LogCaloriesEntity logCaloriesEntity);
@@ -105,13 +106,16 @@ Hasil Akhir Dari Aplikasi ini adalah :
     @Query("Select * from log_calories Where tanggal = :date")
     LiveData<List<LogCaloriesEntity>> GetAllLogCalories(String date);
     ```
+
 -   __3 RoomDatabase__
     - Setelah memiliki Entity dan DAO pada tahap selanjutnya adalah membuat kelas yang mengextend RoomDatabase
-    - Pada langkah ini kita dapat menggunakan kelas __CaloriesRoomDatabase__ untuk melakukan memanipuluasi SQlite dang mendapatkan data dari SQlite,
+    - Pada langkah ini kita dapat menggunakan kelas `CaloriesRoomDatabase` untuk melakukan memanipuluasi SQlite dang mendapatkan data dari SQlite,
     akan tetapi tujuan dari praktikum ini adalah mengenalkan pada architecture component.
-    - Dan untuk melakan manipulasi data sebaiknya dilakukan terpisah dengan main thread karena aplikasi yang dibuat akan sangat berisiko force close disebabkan terlalu lama 
-    menghold Maint Thread.
-    - Oleh karena itu dibuat satu lagi kelas dengan nama Repository yang menghubungkan dao dengan livedata
+    - Manipulasi data sebaiknya dilakukan terpisah dengan *main thread*. Hal ini dikarenakan aplikasi yang dibuat akan sangat berisiko mengalami *force close* yang disebabkan terlalu lama 
+    *menghold* prose pada *main thread*.
+    - Oleh karena itu dibuat akan dibuat satu lagi kelas dengan nama `CaloriesRepository` yang menghubungkan dao dengan livedata
+    - Lengkapi kelas `CaloriesRoomDatabase` menjadi seperti pada code berikut,
+
 
     ```java
     private  static  CaloriesRoomDatabase Instance;
@@ -130,16 +134,18 @@ Hasil Akhir Dari Aplikasi ini adalah :
         return Instance;
     }
     ```
+
 - __4 Repository__
     - Repository merupakan sebuah kelas yang mengabstraksikan akses ke berbagai sumber data. Repository bukan bagian dari Architecture Component library, tetapi Repository merupakan best practice yang disarankan untuk pemisahan antara kode dan arsitektur. Kelas repository menangani operasi data. Hal ini dapat dilihat pada Gambar Berikut ini :
     
-    ![Repository](images/Repository.png);
+    ![Repository](images/Repository.png)
 
     - Repository mengelola query thread dan memungkinkan kita untuk menggunakan beberapa backend. Pada contoh yang sering digunakan, Repository mengimplementasikan logika untuk memutuskan apakah akan mengambil data dari jaringan atau menggunakan hasil yang tersimpan pada database lokal.
-    Implementasi Repository
+    Implementasi Repository dilakukan pada kelas `CaloriesRepository`
     1.	Buat kelas public
     2.	Tambahkan variabel untuk DAO
     3.	Tambahkan konstruktor yang menangani database dan menginisiasi varibel
+
 
     ```java
     private CaloriesRoomDatabase caloriesRoomDatabase;

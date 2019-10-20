@@ -1,12 +1,12 @@
 ## ViewModel
-
 ViewModel berperan dalam menyediakan data ke UI dan tidak terpengaruh dengan perubahan konfigurasi. ViewModel bertindak sebagai pusat komunikasi antara Repository dengan UI. ModelView juga dapat digunakan untuk berbagi data antar fragment. 
 Implementasi ViewModel
 
 
 ## PRAKTIKUM
-1. Membuat ViewModel pada class LogCaloriesViewModel seperti pada code dibawah ini
+1. Membuat ViewModel pada class `LogCaloriesViewModel` seperti pada code dibawah ini
     - View model ini menggunakan class
+
     ```java
     public class LogCaloriesViewModel extends AndroidViewModel {
         private CaloriesRepository mCaloriesRepository;
@@ -25,7 +25,9 @@ Implementasi ViewModel
         }
     }
     ```
-2. Setelah Membuat ViewModel coba gunakan view model untuk mengisert data pada AddDataCaloryFragment
+
+2. Setelah Membuat ViewModel coba gunakan view model untuk mengisert data pada kelas `AddDataCaloryFragment`
+
     - Instansiasi variabel logCaloriesViewModel
     ```java
     private LogCaloriesViewModel logCaloriesViewModel;
