@@ -14,6 +14,14 @@
 tampilan `SaveCaloryFragment` masih menampilkan data yang kosong. Hal ini
 dikarenakan data yang dilempar ke Fragment masih belum ditampilkan.
 
+- Data yang dilempar dari daftar kalori ke fragement `SaveCaloryFragment` dikirim
+menggunakan sebuah bundle. Maka dari itu, kita harus melakukan passing obyek dengan
+menggunakan bundle. Tambahkan kode berikut pada fragment `SaveCaloryFragment`
+
+```java
+bundle.putParcelable(Constant.ARG_CALORY, calory);
+```
+
 - Perhatikan method `initComponents()` pada file `SaveCaloryFragment.java`
 tambahkan baris kode berikut untuk menampilkan data calory yang telah
 didapatkan.
