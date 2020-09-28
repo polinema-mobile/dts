@@ -46,7 +46,7 @@ metode ini dipanggil ketika fragmen tidak lagi berinteraksi dengan pengguna baik
 - **onStop()**
 metode ini dipanggil ketika fragmen tidak lagi berinteraksi dengan pengguna baik karena aktivitasnya dihentikan atau operasi fragmen mengubahnya dalam activity
 
-- **onDestroyView()**
+- **onDestroy()**
 metode ini dipanggil untuk memungkinkan fragmen membersihkan resources yang terkait dengan view yang ada pada activity
 
 - **onDestroyView()**
