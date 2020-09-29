@@ -46,3 +46,4 @@ Lakukan langkah langkah berikut untuk membuat splash screen. Desain yang diingin
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 ```
+Text pada `TextView` dapat berupa teks biasa atau menggunakan resource string. Resource string menyediakan string teks dengan pemformatan dan penataan gaya teks opsional. Untuk mengekstrak resource string dari text biasa, letakkan kursor di string yang di-hardcode, tekan Alt-Enter (Option-Enter di Mac), dan pilih Extract string resource. Lalu edit nama resource untuk nilai string ke `logo_text`.
