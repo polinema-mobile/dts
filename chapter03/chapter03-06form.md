@@ -447,7 +447,6 @@ Tambahkan sebuah ImageView untuk menambahkan gambar dengan nama id= background_t
 #### Tambahkan Button get started
 Buat Button get started, beri text `GET STARTED` dengan nama id=btn_get_started
 ```xml
-<Button
  <Button
         android:id="@+id/btn_get_started"
         android:layout_width="match_parent"
