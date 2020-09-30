@@ -596,7 +596,6 @@ Tambahkan label New Password menggunakan TextView
 #### Tambahkan Edit Text New Password
 Tambahkan EditText untuk pengisian password baru.
 ```xml
-<EditText
     <EditText
         android:id="@+id/edt_new_password"
         android:layout_width="match_parent"
