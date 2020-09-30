@@ -30,6 +30,10 @@ Sebagai pengetahuan tambahan, proses untuk memasukkan aset gambar ke folder `res
 ![import again](images/03importhem.png)
 
 ## Cara Import Custom Font
+Ubah `fontFamily` pada `TextView` pada activity_main.xml menjadi:
+`android:fontFamily="@font/montserrat_semi_bold"`
+setiap font yang digunakan harus menggunakan huruf kecil dan underscore
+
 Pada starter code juga sudah disediakan dua varian custom font yang dapat digunakan pada layout android. Untuk mengimport custom font dilakukan dengan langkah langkah berikut,
 
 1. Klik kanan pada folder `res` kemudian pilih **New -> Android Resource Directory**
