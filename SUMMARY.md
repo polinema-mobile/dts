@@ -82,3 +82,8 @@
     - [Praktikum 1 - Menampilkan Google Maps](chapter13/chapter13-03praktikum01.md)
     - [Praktikum 2 - Menampilkan Current Location](chapter13/chapter13-04praktikum02.md)
     - [Praktikum 3 - Menampilkan Fasilitas Terdekat](chapter13/chapter13-05praktikum03.md)
+
+- [Bab 14 Mobile Security](chapter14/chapter14-01_Pendahuluan.md)
+    - [Best Practice](chapter14/chapter14-02_SecurityBestPractice.md)
+- [Bab 15 Sensor](chapter15/chapter15-01_Pendahuluan.md)
+    - [Sensor Proximity](chapter15/chapter15-02_Proximity.md)
