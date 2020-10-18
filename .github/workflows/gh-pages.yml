@@ -1,0 +1,36 @@
+name: GitHub pages
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  NODE_VERSION: '8.x'
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: master
+          fetch-depth: 1
+
+      - name: Use Node.JS ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Build GitHub Pages
+        run: |
+          npm install
+          npm run build
+      - name: Deploy GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./_book
+        with:
+          forceOrphan: true
