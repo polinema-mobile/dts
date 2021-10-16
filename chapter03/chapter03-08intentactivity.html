@@ -1,0 +1,1524 @@
+
+<!DOCTYPE HTML>
+<html lang="id" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Praktikum 6 Intent Antar Activity · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter03-09task01.html" />
+    
+    
+    <link rel="prev" href="chapter03-07intentsplashscreen.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Ketik untuk mencari" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Digital Talent Scholarship
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter01/chapter01-01pendahuluan.html">
+            
+                <a href="../chapter01/chapter01-01pendahuluan.html">
+            
+                    
+                    Bab 01 Activity dan Fragment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter01/chapter01-04helloworld.html">
+            
+                <a href="../chapter01/chapter01-04helloworld.html">
+            
+                    
+                    Praktikum 1 Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter01/chapter01-02activity.html">
+            
+                <a href="../chapter01/chapter01-02activity.html">
+            
+                    
+                    Praktikum 2 Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter01/chapter01-03fragment.html">
+            
+                <a href="../chapter01/chapter01-03fragment.html">
+            
+                    
+                    Praktikum 3 Fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter02/chapter02-01pendahuluan.html">
+            
+                <a href="../chapter02/chapter02-01pendahuluan.html">
+            
+                    
+                    Bab 02 Android Xml Layout
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter02/chapter02-02linearlayout.html">
+            
+                <a href="../chapter02/chapter02-02linearlayout.html">
+            
+                    
+                    Praktikum 1 Linier Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter02/chapter02-03relativelayout.html">
+            
+                <a href="../chapter02/chapter02-03relativelayout.html">
+            
+                    
+                    Praktikum 2 Relative Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter02/chapter02-04constraintlayout.html">
+            
+                <a href="../chapter02/chapter02-04constraintlayout.html">
+            
+                    
+                    Praktikum 3 Constraint Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter02/chapter02-05latihan.html">
+            
+                <a href="../chapter02/chapter02-05latihan.html">
+            
+                    
+                    Praktikum 4 Latihan Convert Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter03-01pendahuluan.html">
+            
+                <a href="chapter03-01pendahuluan.html">
+            
+                    
+                    Bab 03 Konversi Desain ke Android Xml
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="chapter03-02hasil.html">
+            
+                <a href="chapter03-02hasil.html">
+            
+                    
+                    Hasil Yang Diharapkan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="chapter03-03startercode.html">
+            
+                <a href="chapter03-03startercode.html">
+            
+                    
+                    Praktikum 1 Load Starter Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="chapter03-04splashscreen.html">
+            
+                <a href="chapter03-04splashscreen.html">
+            
+                    
+                    Praktikum 2 Halaman Splash Screen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="chapter03-05welcome.html">
+            
+                <a href="chapter03-05welcome.html">
+            
+                    
+                    Praktikum 3 Halaman Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="chapter03-06form.html">
+            
+                <a href="chapter03-06form.html">
+            
+                    
+                    Praktikum 4 Halaman Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="chapter03-07intentsplashscreen.html">
+            
+                <a href="chapter03-07intentsplashscreen.html">
+            
+                    
+                    Praktikum 5 Intent Splash Screen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.7" data-path="chapter03-08intentactivity.html">
+            
+                <a href="chapter03-08intentactivity.html">
+            
+                    
+                    Praktikum 6 Intent Antar Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="chapter03-09task01.html">
+            
+                <a href="chapter03-09task01.html">
+            
+                    
+                    Tugas 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter04/chapter04-pendahuluan.html">
+            
+                <a href="../chapter04/chapter04-pendahuluan.html">
+            
+                    
+                    Bab 04 Validasi dan Interaksi Activity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter04/chapter04-validasi.html">
+            
+                <a href="../chapter04/chapter04-validasi.html">
+            
+                    
+                    Praktikum 1 - Validasi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter04/chapter04-tugasvalidasi.html">
+            
+                <a href="../chapter04/chapter04-tugasvalidasi.html">
+            
+                    
+                    Praktikum 2 - Tugas Validasi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter04/chapter04-01intent.html">
+            
+                <a href="../chapter04/chapter04-01intent.html">
+            
+                    
+                    Praktikum 3 - Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter04/chapter04-02intent-explicit.html">
+            
+                <a href="../chapter04/chapter04-02intent-explicit.html">
+            
+                    
+                    Praktikum 4 - Intent Explicit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter04/chapter04-03intent-implicit.html">
+            
+                <a href="../chapter04/chapter04-03intent-implicit.html">
+            
+                    
+                    Praktikum 5 - Intent Implicit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter04/chapter04-04intent-dengan-data.html">
+            
+                <a href="../chapter04/chapter04-04intent-dengan-data.html">
+            
+                    
+                    Praktikum 6 - Intent dengan Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../chapter04/chapter04-05parcelable.html">
+            
+                <a href="../chapter04/chapter04-05parcelable.html">
+            
+                    
+                    Praktikum 7 - Parcelable
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter05/chapter05-pendahuluan.html">
+            
+                <a href="../chapter05/chapter05-pendahuluan.html">
+            
+                    
+                    Bab 05 Recycler View
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter05/chapter05-01teori.html">
+            
+                <a href="../chapter05/chapter05-01teori.html">
+            
+                    
+                    Teori Recycler View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter05/chapter05-02recyclerviewsangatsederhana.html">
+            
+                <a href="../chapter05/chapter05-02recyclerviewsangatsederhana.html">
+            
+                    
+                    Praktikum 1 - RecyclerView Sangat Sederhana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter05/chapter05-02recyclerviewsederhana.html">
+            
+                <a href="../chapter05/chapter05-02recyclerviewsederhana.html">
+            
+                    
+                    Praktikum 2 - RecyclerView Sederhana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter05/chapter05-tugas.html">
+            
+                <a href="../chapter05/chapter05-tugas.html">
+            
+                    
+                    Tugas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter06/chapter06-01pendahuluan.html">
+            
+                <a href="../chapter06/chapter06-01pendahuluan.html">
+            
+                    
+                    Bab 06 Project BMI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter06/chapter06-02praktikum01.html">
+            
+                <a href="../chapter06/chapter06-02praktikum01.html">
+            
+                    
+                    Praktikum 1 - Aplikasi BMI Sederhana part 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter06/chapter06-03praktikum02.html">
+            
+                <a href="../chapter06/chapter06-03praktikum02.html">
+            
+                    
+                    Praktikum 2 - Aplikasi BMI Sederhana part 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter07/00-pendahuluan.html">
+            
+                <a href="../chapter07/00-pendahuluan.html">
+            
+                    
+                    Bab 07 Proyek
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter07/01-hasil.html">
+            
+                <a href="../chapter07/01-hasil.html">
+            
+                    
+                    Hasil yang Diharapkan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter07/02-proyek.html">
+            
+                <a href="../chapter07/02-proyek.html">
+            
+                    
+                    Proyek
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter09/chapter09-01pendahuluan.html">
+            
+                <a href="../chapter09/chapter09-01pendahuluan.html">
+            
+                    
+                    Bab 09 SharedPreferences & Room Persistence Library
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter09/chapter09-02teori-sharedpreferences.html">
+            
+                <a href="../chapter09/chapter09-02teori-sharedpreferences.html">
+            
+                    
+                    Teori SharedPreferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter09/chapter09-03sharedpreferences.html">
+            
+                <a href="../chapter09/chapter09-03sharedpreferences.html">
+            
+                    
+                    Praktikum 1 - Menyimpan & Membaca data dengan SharedPreferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../chapter09/chapter09-04teori-room.html">
+            
+                <a href="../chapter09/chapter09-04teori-room.html">
+            
+                    
+                    Teori Room Persistence Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../chapter09/chapter09-05appdatabase-insert.html">
+            
+                <a href="../chapter09/chapter09-05appdatabase-insert.html">
+            
+                    
+                    Praktikum 2 - AppDatabase & Operasi INSERT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../chapter09/chapter09-06select.html">
+            
+                <a href="../chapter09/chapter09-06select.html">
+            
+                    
+                    Praktikum 3 - Operasi SELECT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../chapter09/chapter09-07update.html">
+            
+                <a href="../chapter09/chapter09-07update.html">
+            
+                    
+                    Praktikum 4 - Operasi UPDATE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../chapter09/chapter09-08delete.html">
+            
+                <a href="../chapter09/chapter09-08delete.html">
+            
+                    
+                    Praktikum 5 - Operasi DELETE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../chapter09/chapter09-09asynchronous-database-ops.html">
+            
+                <a href="../chapter09/chapter09-09asynchronous-database-ops.html">
+            
+                    
+                    Praktikum 6 - Operasi Database Asynchronous
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter10/chapter10-01pendahuluan.html">
+            
+                <a href="../chapter10/chapter10-01pendahuluan.html">
+            
+                    
+                    Bab 10 Room Persistence Library, RecyclerView
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter10/chapter10-02architecture-component.html">
+            
+                <a href="../chapter10/chapter10-02architecture-component.html">
+            
+                    
+                    1 - Architecture Component dan Room Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter10/chapter10-03MembuatViewModel.html">
+            
+                <a href="../chapter10/chapter10-03MembuatViewModel.html">
+            
+                    
+                    2 - View Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter10/chapter10-04RecyclerView.html">
+            
+                <a href="../chapter10/chapter10-04RecyclerView.html">
+            
+                    
+                    3 - RecyclerView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../chapter10/chapter10-05Latihan.html">
+            
+                <a href="../chapter10/chapter10-05Latihan.html">
+            
+                    
+                    4 - Latihan
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter11/00-pendahuluan.html">
+            
+                <a href="../chapter11/00-pendahuluan.html">
+            
+                    
+                    Bab 11 Retrofit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter11/01-rest.html">
+            
+                <a href="../chapter11/01-rest.html">
+            
+                    
+                    1 - REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter11/02-retrofit.html">
+            
+                <a href="../chapter11/02-retrofit.html">
+            
+                    
+                    2 - Retrofit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter11/03-model.html">
+            
+                <a href="../chapter11/03-model.html">
+            
+                    
+                    3 - Membuat Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter11/04-mendefinisikan-service.html">
+            
+                <a href="../chapter11/04-mendefinisikan-service.html">
+            
+                    
+                    4 - Mendefinisikan Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../chapter11/05-mempersiapkan-recyclerview.html">
+            
+                <a href="../chapter11/05-mempersiapkan-recyclerview.html">
+            
+                    
+                    5 - Menyiapkan RecyclerView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../chapter11/06-implementasi-caloryfragment.html">
+            
+                <a href="../chapter11/06-implementasi-caloryfragment.html">
+            
+                    
+                    6 - Implementasi CaloryFragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../chapter11/07-implementasi-savecaloryfragment.html">
+            
+                <a href="../chapter11/07-implementasi-savecaloryfragment.html">
+            
+                    
+                    7 - Implementasi SaveCaloryFragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../chapter11/08-latihan.html">
+            
+                <a href="../chapter11/08-latihan.html">
+            
+                    
+                    8 - Latihan
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter12/00-pendahuluan.html">
+            
+                <a href="../chapter12/00-pendahuluan.html">
+            
+                    
+                    Bab 12 Proyek Data Persistence
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../chapter12/01-proyek.html">
+            
+                <a href="../chapter12/01-proyek.html">
+            
+                    
+                    1 - Proyek
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../chapter13/chapter13-01pendahuluan.html">
+            
+                <a href="../chapter13/chapter13-01pendahuluan.html">
+            
+                    
+                    Bab 13 Location Based Service
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../chapter13/chapter13-02teori-lbs.html">
+            
+                <a href="../chapter13/chapter13-02teori-lbs.html">
+            
+                    
+                    Teori LBS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../chapter13/chapter13-03praktikum01.html">
+            
+                <a href="../chapter13/chapter13-03praktikum01.html">
+            
+                    
+                    Praktikum 1 - Menampilkan Google Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../chapter13/chapter13-04praktikum02.html">
+            
+                <a href="../chapter13/chapter13-04praktikum02.html">
+            
+                    
+                    Praktikum 2 - Menampilkan Current Location
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../chapter13/chapter13-05praktikum03.html">
+            
+                <a href="../chapter13/chapter13-05praktikum03.html">
+            
+                    
+                    Praktikum 3 - Menampilkan Fasilitas Terdekat
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../chapter14/chapter14-01_Pendahuluan.html">
+            
+                <a href="../chapter14/chapter14-01_Pendahuluan.html">
+            
+                    
+                    Bab 14 Mobile Security
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../chapter14/chapter14-02_SecurityBestPractice.html">
+            
+                <a href="../chapter14/chapter14-02_SecurityBestPractice.html">
+            
+                    
+                    Best Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../chapter15/chapter15-01_Pendahuluan.html">
+            
+                <a href="../chapter15/chapter15-01_Pendahuluan.html">
+            
+                    
+                    Bab 15 Sensor
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../chapter15/chapter15-02_Proximity.html">
+            
+                <a href="../chapter15/chapter15-02_Proximity.html">
+            
+                    
+                    Sensor Proximity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Dipublikasikan dengan GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Praktikum 6 Intent Antar Activity</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="intent-antar-aplikasi">Intent Antar Aplikasi</h1>
+<p>Intent adalah sebuah class dalam programming Android yang berfungsi untuk perpindahan halaman. Pada praktikum ini akan dibuat intent dari activity yang telah dibuat di praktikum 6 sebelumnya.</p>
+<h2 id="edit-file-activitywelcomeslidecalendarxml">Edit File activity_welcome_slide_calendar.xml</h2>
+<h3 id="menambahkan-event-onclick">Menambahkan event onclick</h3>
+<p>Tambahkan fungsi onClick <code>android:onClick=&quot;clickGetStarted&quot;</code> pada Button Get Started untuk menuju ke halaman berikutnya dan fungsi onClick <code>android:onClick=&quot;clickLogin&quot;</code> pada TextView Login</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+    <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/btn_get_started&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+    <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/get_started&quot;</span>
+    <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;48dp&quot;</span>
+    <span class="hljs-attr">android:layout_marginRight</span>=<span class="hljs-string">&quot;48dp&quot;</span>
+    <span class="hljs-attr">app:layout_constraintBottom_toTopOf</span>=<span class="hljs-string">&quot;@id/login_text&quot;</span>
+    <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;@drawable/button_white&quot;</span>
+    <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;32dp&quot;</span>
+    <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+    <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_light&quot;</span>
+    <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">&quot;clickGetStarted&quot;</span>
+    /&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+    <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/login_text&quot;</span>
+    <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;72dp&quot;</span>
+    <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+    <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Login&quot;</span>
+    <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+    <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_light&quot;</span>
+    <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">&quot;clickLogin&quot;</span>
+    /&gt;</span>
+</code></pre>
+<h3 id="buat-fungsi-handler-onclick">Buat fungsi handler onclick</h3>
+<p>Buka file <code>WelcomeSlideCalendar.java</code>, tambahkan fungsi handler di bawah ini</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clickGetStarted</span><span class="hljs-params">(View view)</span> </span>{
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clickLogin</span><span class="hljs-params">(View view)</span> </span>{
+}
+</code></pre>
+<h3 id="isi-fungsi-handler-onclick">Isi fungsi handler onclick</h3>
+<p>Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika button <code>btn_get_started</code> di Klik maka fungsi <code>clickGetStarted</code> akan memanggil class <code>WelcomeSlideSuperhero.class</code> sedangkan ketika TextView <code>login_text</code> di Klik maka fungsi <code>clickLogin</code> akan memanggil class <code>WelcomeBack.class</code></p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clickGetStarted</span><span class="hljs-params">(View view)</span> </span>{
+    Intent i = <span class="hljs-keyword">new</span> Intent(WelcomeSlideCalendar.<span class="hljs-keyword">this</span>, WelcomeSlideSuperhero.class);
+    startActivity(i);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clickLogin</span><span class="hljs-params">(View view)</span> </span>{
+    Intent i = <span class="hljs-keyword">new</span> Intent(WelcomeSlideCalendar.<span class="hljs-keyword">this</span>, WelcomeBack.class);
+    startActivity(i);
+}
+</code></pre>
+<h2 id="edit-file-activitywelcomebackxml">Edit File activity_welcome_back.xml</h2>
+<h3 id="menambahkan-event-onclick">Menambahkan event onclick</h3>
+<p>Tambahkan fungsi onClick <code>android:onClick=&quot;clickForgot&quot;</code> pada Text View Forgot Password untuk menuju ke halaman Forgot Password dan fungsi <code>android:onClick=&quot;postLogin&quot;</code> pada Button Login untuk melanjutkan Login.</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+    <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/forgot_password&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+    <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+    <span class="hljs-attr">android:layout_marginRight</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+    <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/forgot_password&quot;</span>
+    <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#313131&quot;</span>
+    <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+    <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/edt_new_password&quot;</span>
+    <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">&quot;clickForgot&quot;</span>
+    /&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+    <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+    <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+    <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+    <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;200dp&quot;</span>
+    <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;@drawable/button_red&quot;</span>
+    <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/log_in&quot;</span>
+    <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span>
+    <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/forgot_password&quot;</span>
+    <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;80dp&quot;</span>
+    <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">&quot;postLogin&quot;</span>
+    /&gt;</span>
+</code></pre>
+<h3 id="buat-fungsi-handler-onclick">Buat fungsi handler onclick</h3>
+<p>Buka file <code>WelcomeBack.java</code>, tambahkan fungsi handler di bawah ini</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clickForgot</span><span class="hljs-params">(View view)</span> </span>{
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">postLogin</span><span class="hljs-params">(View view)</span> </span>{
+}
+</code></pre>
+<h3 id="isi-fungsi-handler-onclick">Isi fungsi handler onclick</h3>
+<p>Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika TextView <code>forgot_password</code> di Klik maka fungsi <code>clickForgot</code> akan memanggil class <code>ForgotPassword.class</code> sedangkan ketika TextView <code>log_in</code> di Klik maka fungsi <code>postLogin</code> akan memanggil class <code>SuccessActivity.class</code></p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clickForgot</span><span class="hljs-params">(View view)</span> </span>{
+    Intent i = <span class="hljs-keyword">new</span> Intent(WelcomeBack.<span class="hljs-keyword">this</span>, ForgotPassword.class);
+    startActivity(i);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">postLogin</span><span class="hljs-params">(View view)</span> </span>{
+    Intent i = <span class="hljs-keyword">new</span> Intent(WelcomeBack.<span class="hljs-keyword">this</span>, SuccessActivity.class);
+    startActivity(i);
+}
+</code></pre>
+<h2 id="edit-file-activitywelcomeslidesuperheroxml">Edit File activity_welcome_slide_superhero.xml</h2>
+<h3 id="tambahkan-event-onclick">tambahkan event onclick</h3>
+<p>Tambahkan fungsi onClick <code>android:onClick=&quot;clickGetStarted&quot;</code> pada Button Get Started untuk menuju ke halaman berikutnya dan fungsi onClick <code>android:onClick=&quot;clickLogin&quot;</code> pada TextView Login</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+    <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/btn_get_started&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+    <span class="hljs-attr">app:layout_constraintBottom_toTopOf</span>=<span class="hljs-string">&quot;@id/login_text&quot;</span>
+    <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;42dp&quot;</span>
+    <span class="hljs-attr">android:layout_marginRight</span>=<span class="hljs-string">&quot;42dp&quot;</span>
+    <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+    <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/get_started&quot;</span>
+    <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_light&quot;</span>
+    <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;@drawable/button_white&quot;</span>
+    <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;42dp&quot;</span>
+    <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">&quot;clickGetStarted&quot;</span>
+
+/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+    <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/login_text&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+    <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/log_in&quot;</span>
+    <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_light&quot;</span>
+    <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+    <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span>
+    <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;72dp&quot;</span>
+    <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">&quot;clickLogin&quot;</span>
+/&gt;</span>
+</code></pre>
+<h3 id="buat-fungsi-handler-onclick">Buat fungsi handler onclick</h3>
+<p>Buka file <code>WelcomeSlideSuperhero.java</code>, tambahkan fungsi handler di bawah ini</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clickGetStarted</span><span class="hljs-params">(View view)</span> </span>{
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clickLogin</span><span class="hljs-params">(View view)</span> </span>{
+}
+</code></pre>
+<h3 id="isi-fungsi-handler-onclick">Isi fungsi handler onclick</h3>
+<p>Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika Button <code>btn_get_started</code> di Klik maka fungsi <code>clickGetStarted</code> akan memanggil class <code>WelcomeSlideAssign.class</code> sedangkan ketika TextView <code>login_text</code> di Klik maka fungsi <code>clickLogin</code> akan memanggil class <code>WelcomeBack.class</code></p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clickGetStarted</span><span class="hljs-params">(View view)</span> </span>{
+    Intent i = <span class="hljs-keyword">new</span> Intent(WelcomeSlideSuperhero.<span class="hljs-keyword">this</span>, WelcomeSlideAssign.class);
+    startActivity(i);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clickLogin</span><span class="hljs-params">(View view)</span> </span>{
+    Intent i = <span class="hljs-keyword">new</span> Intent(WelcomeSlideSuperhero.<span class="hljs-keyword">this</span>, WelcomeBack.class);
+    startActivity(i);
+}
+</code></pre>
+<h2 id="edit-file-activitywelcomeslideassignxml">Edit File activity_welcome_slide_assign.xml</h2>
+<h3 id="menambahkan-event-onclick">Menambahkan event onclick</h3>
+<p>Tambahkan fungsi onClick <code>android:onClick=&quot;clickGetStarted&quot;</code> pada Button Get Started untuk menuju ke halaman berikutnya dan fungsi onClick <code>android:onClick=&quot;clickLogin&quot;</code> pada TextView Login</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+    <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/btn_get_started&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+    <span class="hljs-attr">app:layout_constraintBottom_toTopOf</span>=<span class="hljs-string">&quot;@+id/login_text&quot;</span>
+    <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">android:layout_marginLeft</span>=<span class="hljs-string">&quot;42dp&quot;</span>
+    <span class="hljs-attr">android:layout_marginRight</span>=<span class="hljs-string">&quot;42dp&quot;</span>
+    <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Get Started&quot;</span>
+    <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;@drawable/button_white&quot;</span>
+    <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;32dp&quot;</span>
+    <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+    <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">&quot;clickGetStarted&quot;</span>
+    <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_light&quot;</span>
+    /&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+    <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/login_text&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+    <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Log In&quot;</span>
+    <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span>
+    <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+    <span class="hljs-attr">android:fontFamily</span>=<span class="hljs-string">&quot;@font/montserrat_light&quot;</span>
+    <span class="hljs-attr">android:layout_marginBottom</span>=<span class="hljs-string">&quot;72dp&quot;</span>
+    <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">&quot;clickLogin&quot;</span>
+    /&gt;</span>
+</code></pre>
+<h3 id="buat-fungsi-handler-onclick">Buat fungsi handler onclick</h3>
+<p>Buka file <code>WelcomeSlideAssign.java</code>, tambahkan fungsi handler di bawah ini</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clickGetStarted</span><span class="hljs-params">(View view)</span> </span>{
+
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clickLogin</span><span class="hljs-params">(View view)</span> </span>{
+
+}
+</code></pre>
+<h3 id="isi-fungsi-handler-onclick">Isi fungsi handler onclick</h3>
+<p>Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika Button <code>btn_get_started</code> di Klik maka fungsi <code>clickGetStarted</code> akan memanggil class <code>WelcomeBack.class</code> sedangkan ketika TextView <code>login_text</code> di Klik maka fungsi <code>clickLogin</code> akan memanggil class <code>WelcomeBack.class</code></p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clickGetStarted</span><span class="hljs-params">(View view)</span> </span>{
+    Intent i = <span class="hljs-keyword">new</span> Intent(WelcomeSlideAssign.<span class="hljs-keyword">this</span>, WelcomeBack.class);
+    startActivity(i);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clickLogin</span><span class="hljs-params">(View view)</span> </span>{
+    Intent i = <span class="hljs-keyword">new</span> Intent(WelcomeSlideAssign.<span class="hljs-keyword">this</span>, WelcomeBack.class);
+    startActivity(i);
+}
+</code></pre>
+<h2 id="edit-file-activityforgotpasswordxml">Edit File activity_forgot_password.xml</h2>
+<h3 id="menambahkan-event-onclick">Menambahkan event onclick</h3>
+<p>Tambahkan fungsi onClick <code>android:onClick=&quot;postSendRequest&quot;</code> pada Button Send Request untuk mengirim alamat email user</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+    <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+    <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+    <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+    <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;@drawable/button_red&quot;</span>
+    <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/send_request&quot;</span>
+    <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span>
+    <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/edt_reset_code&quot;</span>
+    <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;32dp&quot;</span>
+    <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">&quot;postSendRequest&quot;</span>
+    /&gt;</span>
+</code></pre>
+<h3 id="buat-fungsi-handler-onclick">Buat fungsi handler onclick</h3>
+<p>Buka file <code>ForgotPassword.java</code>, tambahkan fungsi handler di bawah ini</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">postSendRequest</span><span class="hljs-params">(View view)</span> </span>{
+}
+</code></pre>
+<h3 id="isi-fungsi-handler-onclick">Isi fungsi handler onclick</h3>
+<p>Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika Button <code>send_request</code> di Klik maka fungsi <code>postSendRequest</code> akan memanggil class <code>ResetPassword.class</code></p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">postSendRequest</span><span class="hljs-params">(View view)</span> </span>{
+    Intent i = <span class="hljs-keyword">new</span> Intent(ForgotPassword.<span class="hljs-keyword">this</span>, ResetPassword.class);
+    startActivity(i);
+}
+</code></pre>
+<h2 id="edit-file-activityresetpasswordxml">Edit File activity_reset_password.xml</h2>
+<h3 id="menambahkan-event-onclick">Menambahkan event onclick</h3>
+<p>Tambahkan fungsi onClick <code>android:onClick=&quot;postChangePassword&quot;</code> pada Button Change Password untuk merubah password</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+    <span class="hljs-attr">android:layout_marginStart</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+    <span class="hljs-attr">android:layout_marginEnd</span>=<span class="hljs-string">&quot;24dp&quot;</span>
+    <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;18sp&quot;</span>
+    <span class="hljs-attr">android:layout_marginTop</span>=<span class="hljs-string">&quot;64dp&quot;</span>
+    <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;@drawable/button_red&quot;</span>
+    <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/change_password&quot;</span>
+    <span class="hljs-attr">android:textColor</span>=<span class="hljs-string">&quot;#FFFFFF&quot;</span>
+    <span class="hljs-attr">app:layout_constraintEnd_toEndOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">app:layout_constraintStart_toStartOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+    <span class="hljs-attr">app:layout_constraintTop_toBottomOf</span>=<span class="hljs-string">&quot;@id/edt_confirm_password&quot;</span>
+    <span class="hljs-attr">android:onClick</span>=<span class="hljs-string">&quot;postChangePassword&quot;</span>
+    /&gt;</span>
+</code></pre>
+<h3 id="buat-fungsi-handler-onclick">Buat fungsi handler onclick</h3>
+<p>Buka file <code>ResetPassword.java</code>, tambahkan fungsi handler di bawah ini</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">postChangePassword</span><span class="hljs-params">(View view)</span> </span>{
+}
+</code></pre>
+<h3 id="isi-fungsi-handler-onclick">Isi fungsi handler onclick</h3>
+<p>Tambahkan isi pada masing-masing fungsi handler OnClick yang telah dibuat dengan kode berikut, sehingga ketika Button <code>change_password</code> di Klik maka fungsi <code>postChangePassword</code> akan memanggil class <code>SuccessActivity.class</code></p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">postChangePassword</span><span class="hljs-params">(View view)</span> </span>{
+    Intent i = <span class="hljs-keyword">new</span> Intent(ResetPassword.<span class="hljs-keyword">this</span>, SuccessActivity.class);
+    startActivity(i);
+}
+</code></pre>
+<h2 id="test-aplikasi">Test Aplikasi</h2>
+<p>Berikut ini hasil dari project yang telah dibuat
+<img src="images/screencapture.gif" alt="intent activity"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> hasil yang cocok "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">Tidak ada hasil yang cocok "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter03-07intentsplashscreen.html" class="navigation navigation-prev " aria-label="Previous page: Praktikum 5 Intent Splash Screen">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter03-09task01.html" class="navigation navigation-next " aria-label="Next page: Tugas 1">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Praktikum 6 Intent Antar Activity","level":"1.4.7","depth":2,"next":{"title":"Tugas 1","level":"1.4.8","depth":2,"path":"chapter03/chapter03-09task01.md","ref":"chapter03/chapter03-09task01.md","articles":[]},"previous":{"title":"Praktikum 5 Intent Splash Screen","level":"1.4.6","depth":2,"path":"chapter03/chapter03-07intentsplashscreen.md","ref":"chapter03/chapter03-07intentsplashscreen.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter03/chapter03-08intentactivity.md","mtime":"2021-10-16T10:07:40.498Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-16T10:08:48.775Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

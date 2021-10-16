@@ -1,0 +1,1431 @@
+
+<!DOCTYPE HTML>
+<html lang="id" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Praktikum 7 - Parcelable · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../chapter05/chapter05-pendahuluan.html" />
+    
+    
+    <link rel="prev" href="chapter04-04intent-dengan-data.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Ketik untuk mencari" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Digital Talent Scholarship
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter01/chapter01-01pendahuluan.html">
+            
+                <a href="../chapter01/chapter01-01pendahuluan.html">
+            
+                    
+                    Bab 01 Activity dan Fragment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter01/chapter01-04helloworld.html">
+            
+                <a href="../chapter01/chapter01-04helloworld.html">
+            
+                    
+                    Praktikum 1 Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter01/chapter01-02activity.html">
+            
+                <a href="../chapter01/chapter01-02activity.html">
+            
+                    
+                    Praktikum 2 Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter01/chapter01-03fragment.html">
+            
+                <a href="../chapter01/chapter01-03fragment.html">
+            
+                    
+                    Praktikum 3 Fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter02/chapter02-01pendahuluan.html">
+            
+                <a href="../chapter02/chapter02-01pendahuluan.html">
+            
+                    
+                    Bab 02 Android Xml Layout
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter02/chapter02-02linearlayout.html">
+            
+                <a href="../chapter02/chapter02-02linearlayout.html">
+            
+                    
+                    Praktikum 1 Linier Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter02/chapter02-03relativelayout.html">
+            
+                <a href="../chapter02/chapter02-03relativelayout.html">
+            
+                    
+                    Praktikum 2 Relative Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter02/chapter02-04constraintlayout.html">
+            
+                <a href="../chapter02/chapter02-04constraintlayout.html">
+            
+                    
+                    Praktikum 3 Constraint Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter02/chapter02-05latihan.html">
+            
+                <a href="../chapter02/chapter02-05latihan.html">
+            
+                    
+                    Praktikum 4 Latihan Convert Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter03/chapter03-01pendahuluan.html">
+            
+                <a href="../chapter03/chapter03-01pendahuluan.html">
+            
+                    
+                    Bab 03 Konversi Desain ke Android Xml
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter03/chapter03-02hasil.html">
+            
+                <a href="../chapter03/chapter03-02hasil.html">
+            
+                    
+                    Hasil Yang Diharapkan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter03/chapter03-03startercode.html">
+            
+                <a href="../chapter03/chapter03-03startercode.html">
+            
+                    
+                    Praktikum 1 Load Starter Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter03/chapter03-04splashscreen.html">
+            
+                <a href="../chapter03/chapter03-04splashscreen.html">
+            
+                    
+                    Praktikum 2 Halaman Splash Screen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter03/chapter03-05welcome.html">
+            
+                <a href="../chapter03/chapter03-05welcome.html">
+            
+                    
+                    Praktikum 3 Halaman Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../chapter03/chapter03-06form.html">
+            
+                <a href="../chapter03/chapter03-06form.html">
+            
+                    
+                    Praktikum 4 Halaman Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../chapter03/chapter03-07intentsplashscreen.html">
+            
+                <a href="../chapter03/chapter03-07intentsplashscreen.html">
+            
+                    
+                    Praktikum 5 Intent Splash Screen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../chapter03/chapter03-08intentactivity.html">
+            
+                <a href="../chapter03/chapter03-08intentactivity.html">
+            
+                    
+                    Praktikum 6 Intent Antar Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../chapter03/chapter03-09task01.html">
+            
+                <a href="../chapter03/chapter03-09task01.html">
+            
+                    
+                    Tugas 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter04-pendahuluan.html">
+            
+                <a href="chapter04-pendahuluan.html">
+            
+                    
+                    Bab 04 Validasi dan Interaksi Activity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="chapter04-validasi.html">
+            
+                <a href="chapter04-validasi.html">
+            
+                    
+                    Praktikum 1 - Validasi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="chapter04-tugasvalidasi.html">
+            
+                <a href="chapter04-tugasvalidasi.html">
+            
+                    
+                    Praktikum 2 - Tugas Validasi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="chapter04-01intent.html">
+            
+                <a href="chapter04-01intent.html">
+            
+                    
+                    Praktikum 3 - Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="chapter04-02intent-explicit.html">
+            
+                <a href="chapter04-02intent-explicit.html">
+            
+                    
+                    Praktikum 4 - Intent Explicit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="chapter04-03intent-implicit.html">
+            
+                <a href="chapter04-03intent-implicit.html">
+            
+                    
+                    Praktikum 5 - Intent Implicit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="chapter04-04intent-dengan-data.html">
+            
+                <a href="chapter04-04intent-dengan-data.html">
+            
+                    
+                    Praktikum 6 - Intent dengan Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.7" data-path="chapter04-05parcelable.html">
+            
+                <a href="chapter04-05parcelable.html">
+            
+                    
+                    Praktikum 7 - Parcelable
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter05/chapter05-pendahuluan.html">
+            
+                <a href="../chapter05/chapter05-pendahuluan.html">
+            
+                    
+                    Bab 05 Recycler View
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter05/chapter05-01teori.html">
+            
+                <a href="../chapter05/chapter05-01teori.html">
+            
+                    
+                    Teori Recycler View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter05/chapter05-02recyclerviewsangatsederhana.html">
+            
+                <a href="../chapter05/chapter05-02recyclerviewsangatsederhana.html">
+            
+                    
+                    Praktikum 1 - RecyclerView Sangat Sederhana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter05/chapter05-02recyclerviewsederhana.html">
+            
+                <a href="../chapter05/chapter05-02recyclerviewsederhana.html">
+            
+                    
+                    Praktikum 2 - RecyclerView Sederhana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter05/chapter05-tugas.html">
+            
+                <a href="../chapter05/chapter05-tugas.html">
+            
+                    
+                    Tugas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter06/chapter06-01pendahuluan.html">
+            
+                <a href="../chapter06/chapter06-01pendahuluan.html">
+            
+                    
+                    Bab 06 Project BMI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter06/chapter06-02praktikum01.html">
+            
+                <a href="../chapter06/chapter06-02praktikum01.html">
+            
+                    
+                    Praktikum 1 - Aplikasi BMI Sederhana part 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter06/chapter06-03praktikum02.html">
+            
+                <a href="../chapter06/chapter06-03praktikum02.html">
+            
+                    
+                    Praktikum 2 - Aplikasi BMI Sederhana part 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter07/00-pendahuluan.html">
+            
+                <a href="../chapter07/00-pendahuluan.html">
+            
+                    
+                    Bab 07 Proyek
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter07/01-hasil.html">
+            
+                <a href="../chapter07/01-hasil.html">
+            
+                    
+                    Hasil yang Diharapkan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter07/02-proyek.html">
+            
+                <a href="../chapter07/02-proyek.html">
+            
+                    
+                    Proyek
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter09/chapter09-01pendahuluan.html">
+            
+                <a href="../chapter09/chapter09-01pendahuluan.html">
+            
+                    
+                    Bab 09 SharedPreferences & Room Persistence Library
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter09/chapter09-02teori-sharedpreferences.html">
+            
+                <a href="../chapter09/chapter09-02teori-sharedpreferences.html">
+            
+                    
+                    Teori SharedPreferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter09/chapter09-03sharedpreferences.html">
+            
+                <a href="../chapter09/chapter09-03sharedpreferences.html">
+            
+                    
+                    Praktikum 1 - Menyimpan & Membaca data dengan SharedPreferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../chapter09/chapter09-04teori-room.html">
+            
+                <a href="../chapter09/chapter09-04teori-room.html">
+            
+                    
+                    Teori Room Persistence Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../chapter09/chapter09-05appdatabase-insert.html">
+            
+                <a href="../chapter09/chapter09-05appdatabase-insert.html">
+            
+                    
+                    Praktikum 2 - AppDatabase & Operasi INSERT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../chapter09/chapter09-06select.html">
+            
+                <a href="../chapter09/chapter09-06select.html">
+            
+                    
+                    Praktikum 3 - Operasi SELECT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../chapter09/chapter09-07update.html">
+            
+                <a href="../chapter09/chapter09-07update.html">
+            
+                    
+                    Praktikum 4 - Operasi UPDATE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../chapter09/chapter09-08delete.html">
+            
+                <a href="../chapter09/chapter09-08delete.html">
+            
+                    
+                    Praktikum 5 - Operasi DELETE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../chapter09/chapter09-09asynchronous-database-ops.html">
+            
+                <a href="../chapter09/chapter09-09asynchronous-database-ops.html">
+            
+                    
+                    Praktikum 6 - Operasi Database Asynchronous
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter10/chapter10-01pendahuluan.html">
+            
+                <a href="../chapter10/chapter10-01pendahuluan.html">
+            
+                    
+                    Bab 10 Room Persistence Library, RecyclerView
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter10/chapter10-02architecture-component.html">
+            
+                <a href="../chapter10/chapter10-02architecture-component.html">
+            
+                    
+                    1 - Architecture Component dan Room Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter10/chapter10-03MembuatViewModel.html">
+            
+                <a href="../chapter10/chapter10-03MembuatViewModel.html">
+            
+                    
+                    2 - View Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter10/chapter10-04RecyclerView.html">
+            
+                <a href="../chapter10/chapter10-04RecyclerView.html">
+            
+                    
+                    3 - RecyclerView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../chapter10/chapter10-05Latihan.html">
+            
+                <a href="../chapter10/chapter10-05Latihan.html">
+            
+                    
+                    4 - Latihan
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter11/00-pendahuluan.html">
+            
+                <a href="../chapter11/00-pendahuluan.html">
+            
+                    
+                    Bab 11 Retrofit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter11/01-rest.html">
+            
+                <a href="../chapter11/01-rest.html">
+            
+                    
+                    1 - REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter11/02-retrofit.html">
+            
+                <a href="../chapter11/02-retrofit.html">
+            
+                    
+                    2 - Retrofit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter11/03-model.html">
+            
+                <a href="../chapter11/03-model.html">
+            
+                    
+                    3 - Membuat Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter11/04-mendefinisikan-service.html">
+            
+                <a href="../chapter11/04-mendefinisikan-service.html">
+            
+                    
+                    4 - Mendefinisikan Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../chapter11/05-mempersiapkan-recyclerview.html">
+            
+                <a href="../chapter11/05-mempersiapkan-recyclerview.html">
+            
+                    
+                    5 - Menyiapkan RecyclerView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../chapter11/06-implementasi-caloryfragment.html">
+            
+                <a href="../chapter11/06-implementasi-caloryfragment.html">
+            
+                    
+                    6 - Implementasi CaloryFragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../chapter11/07-implementasi-savecaloryfragment.html">
+            
+                <a href="../chapter11/07-implementasi-savecaloryfragment.html">
+            
+                    
+                    7 - Implementasi SaveCaloryFragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../chapter11/08-latihan.html">
+            
+                <a href="../chapter11/08-latihan.html">
+            
+                    
+                    8 - Latihan
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter12/00-pendahuluan.html">
+            
+                <a href="../chapter12/00-pendahuluan.html">
+            
+                    
+                    Bab 12 Proyek Data Persistence
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../chapter12/01-proyek.html">
+            
+                <a href="../chapter12/01-proyek.html">
+            
+                    
+                    1 - Proyek
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../chapter13/chapter13-01pendahuluan.html">
+            
+                <a href="../chapter13/chapter13-01pendahuluan.html">
+            
+                    
+                    Bab 13 Location Based Service
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../chapter13/chapter13-02teori-lbs.html">
+            
+                <a href="../chapter13/chapter13-02teori-lbs.html">
+            
+                    
+                    Teori LBS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../chapter13/chapter13-03praktikum01.html">
+            
+                <a href="../chapter13/chapter13-03praktikum01.html">
+            
+                    
+                    Praktikum 1 - Menampilkan Google Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../chapter13/chapter13-04praktikum02.html">
+            
+                <a href="../chapter13/chapter13-04praktikum02.html">
+            
+                    
+                    Praktikum 2 - Menampilkan Current Location
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../chapter13/chapter13-05praktikum03.html">
+            
+                <a href="../chapter13/chapter13-05praktikum03.html">
+            
+                    
+                    Praktikum 3 - Menampilkan Fasilitas Terdekat
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../chapter14/chapter14-01_Pendahuluan.html">
+            
+                <a href="../chapter14/chapter14-01_Pendahuluan.html">
+            
+                    
+                    Bab 14 Mobile Security
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../chapter14/chapter14-02_SecurityBestPractice.html">
+            
+                <a href="../chapter14/chapter14-02_SecurityBestPractice.html">
+            
+                    
+                    Best Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../chapter15/chapter15-01_Pendahuluan.html">
+            
+                <a href="../chapter15/chapter15-01_Pendahuluan.html">
+            
+                    
+                    Bab 15 Sensor
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../chapter15/chapter15-02_Proximity.html">
+            
+                <a href="../chapter15/chapter15-02_Proximity.html">
+            
+                    
+                    Sensor Proximity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Dipublikasikan dengan GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Praktikum 7 - Parcelable</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tujuan">Tujuan</h1>
+<p>Intent dapat dimanfaatkan untuk mengirimkan informasi antar activity. Namun bagaimana jika data yang kita kirimkan sangat banyak ? Apakah intent menjadi solusi yang efektif ? Kemungkinan jawabannya adalah tidak. Untuk itu, Android menyediakan kelas <a href="https://developer.android.com/reference/android/os/Parcelable" target="_blank">Parcelable</a> untuk mengatasi permasalahan ini. Kita dapat mengirimkan banyak informasi atau data dengan menggunakan <code>Parcelable</code> dalam satu kali pengiriman. Hal ini dikarenakan, <code>Parcelable</code> merupakan sebuah object yang dapat berisi banyak data.</p>
+<h2 id="plugin-tambahan">Plugin Tambahan</h2>
+<p>Untuk mempermudah pembuatan object <code>parcelable</code> kita akan menambahkan plugin kedalam Android Studio.</p>
+<ol>
+<li>Buka File-&gt;Settings-&gt;Plugins (OS Windows)</li>
+<li>Cari plugin dengan nama <strong>Android Parcelable code generator</strong></li>
+<li>Install plugin</li>
+<li>Restart Android Studio</li>
+</ol>
+<p>Berikut ilustrasi instalasi plugin pada Android Studio. Ilustrasi mungkin berbeda pada versi dan OS yang digunakan</p>
+<p><img src="images/plugin.gif" alt="Installasi Plugin - Sumber : https://www.codepolitan.com/menggunakan-parcelable-untuk-pengiriman-data-antar-komponen-di-android-599848cf0f158"></p>
+<h2 id="membuat-model-parcelable">Membuat Model Parcelable</h2>
+<p><strong>Parcelable</strong> merupakan sebuah object yang memiliki property didalamnya. Property dalam sebuah object dapat kita <code>set</code> nilainya dan dapat kita ambil atau <code>get</code> nilai yang sudah di definisikan. Object yang digunakan sebagai <strong>Parcelable</strong> lebih merujuk pada konsep sebuah model. Model merupakan kerangka object yang property-propertynya dapat dimanfaatkan secara berulang.</p>
+<p>Pada percobaan kali ini, kita akan mencoba untuk membuat model <strong>Parcelable</strong> dari form <strong>Register</strong> yang sudah dilakukan sebelumnya. Selanjutnya kita akan mencoba memanfaatkan <strong>Parcelable</strong> untuk mengirim data dengan menggunakan intent.</p>
+<p>Untuk membuat sebuah model <strong>Parcelable</strong> langkah-langkah yang harus dilakukan adalah,</p>
+<ol>
+<li><p>Pertama, buatlah <code>package</code> baru bernama model didalam package <code>polinema.ac.id.dtsdesigntolayout</code>. Klik kanan package <code>polinema.ac.id.dtsdesigntolayout</code> -&gt; New -&gt; Package</p>
+<p> <img src="images/modelpackage.png" alt="Package Model"></p>
+</li>
+<li><p>Berikan nama <code>models</code> pada package. Klik <strong>OK</strong></p>
+</li>
+<li><p>Klik kanan pada package models -&gt; New -&gt; Java Class</p>
+<p> <img src="images/modeljava.png" alt="Model Java"></p>
+</li>
+<li><p>Berikan nama <strong>Register</strong>. Klik <strong>OK</strong></p>
+<p> <img src="images/modelregister.png" alt="Model Register"></p>
+</li>
+<li><p>Buka model <code>Register.java</code>, buatlah 5 variabel <code>string</code> seperti kode dibawah ini</p>
+<p> ```java
+ package polinema.ac.id.dtsdesigntolayout.models;</p>
+</li>
+</ol>
+<pre><code>public class Register {
+
+    private String nama;
+    private String tanggalLahir;
+    private String jenisKelamin;
+    private String username;
+    private String password;
+
+}
+```
+</code></pre><ol>
+<li><p>Tekan kombinasi <code>alt + ins</code> (Windows) atau <code>command + n</code> (Mac) pada keyboard. Akan muncul jendela generator kode.</p>
+</li>
+<li><p>Pilih <code>Parcelable</code>. Klik <strong>OK</strong></p>
+<p> <img src="images/parcel.png" alt="Parcelable"></p>
+</li>
+<li><p>Hapuslah kode konstruktor seperti yang ditunjukkan oleh gambar berikut,</p>
+<p> <img src="images/constructor.png" alt="Delete Constructor"></p>
+</li>
+<li><p>Ulangi langkah ke-6, kemudian pilih <code>Constructor</code> untuk membuat konstruktor. Pilih semua variabel yang ada (Ctrl + A), lalu klik <strong>OK</strong></p>
+<p> <img src="images/constructorvar.png" alt="Constructor"></p>
+</li>
+<li><p>Ulangi langkah ke-6, kemudian pilih <code>Getter and Setter</code>, untuk memuat kode <code>getter</code> dan <code>setter</code>. Pilih semua variabel yang ada (Ctrl + A), lalu klik <strong>OK</strong></p>
+<p><img src="images/settergetter.png" alt="Setter Getter"></p>
+</li>
+<li><p>Sampai tahapan ini kita sudah membuat model <strong>Parcelable</strong> untuk form register.</p>
+</li>
+</ol>
+<h2 id="implementasi-parcelable">Implementasi Parcelable</h2>
+<p>Setelah model selesai kita buat, selanjutnya kita akan mengimplementasi model <strong>Parcelable</strong> pada activity <strong>Register</strong></p>
+<ol>
+<li><p>Buka kode activity <code>RegisterActivity.java</code></p>
+</li>
+<li><p>Modifikasi kode menjadi seperti berikut,</p>
+<pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RegisterActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+
+     <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> String TAG = RegisterActivity.class.getName();
+     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String Key_RegisterActivity = <span class="hljs-string">&quot;Key_RegisterActivity&quot;</span>;
+
+     EditText editTextNama, editTextTanggalLahir, editTextUserName, editTextPassword;
+     <span class="hljs-comment">//RadioButton radioButtonLaki, radioButtonPerempuan;</span>
+     RadioButton radioButtonJK;
+     RadioGroup rgJenisKelamin;
+
+     <span class="hljs-meta">@Override</span>
+     <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_register);
+         editTextNama = findViewById(R.id.edt_txt_nama);
+         editTextTanggalLahir = findViewById(R.id.edt_tanggal_lahir);
+         editTextUserName = findViewById(R.id.edt_username);
+         editTextPassword = findViewById(R.id.edt_password);
+ <span class="hljs-comment">//        radioButtonLaki = findViewById(R.id.rb_laki);</span>
+ <span class="hljs-comment">//        radioButtonPerempuan = findViewById(R.id.rb_perempuan);</span>
+
+         rgJenisKelamin = findViewById(R.id.rg_jenis_kelamin);
+     }
+
+     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">postSignUp</span><span class="hljs-params">(View view)</span> </span>{
+         String password = editTextPassword.getText().toString();
+         String username = editTextUserName.getText().toString();
+         String nama = editTextNama.getText().toString();
+ <span class="hljs-comment">//        String jk = radioButtonPerempuan.isChecked() ? &quot;Perempuan&quot; : &quot;Laki-laki&quot;;</span>
+
+         <span class="hljs-comment">// Ambil id radio button yang dipilih</span>
+         <span class="hljs-keyword">int</span> selectedJk = rgJenisKelamin.getCheckedRadioButtonId();
+         <span class="hljs-comment">// Jadikan id radio button sebagai rujukan binding view</span>
+         radioButtonJK = findViewById(selectedJk);
+
+         <span class="hljs-comment">// Hasilnya sama persis dengan baris 40, namun dengan pendekatan yang berbeda</span>
+         String jk = radioButtonJK.getText().toString();
+
+         String tanggal_lahir = editTextTanggalLahir.getText().toString();
+
+         Register register = <span class="hljs-keyword">new</span> Register(nama, tanggal_lahir, jk, username, password);
+
+         Intent intent = <span class="hljs-keyword">new</span> Intent(RegisterActivity.<span class="hljs-keyword">this</span>, RegisterResultActivity.class);
+         intent.putExtra(Key_RegisterActivity, register);
+         startActivity(intent);
+     }
+ }
+</code></pre>
+<p>Keterangan kode :</p>
+</li>
+<li><p>Baris kode <code>Register register = new Register(nama, tanggal_lahir, jk, username, password);</code> digunakan inisiasi model parcelable</p>
+</li>
+<li><p>nama, tanggal_lahir, jk, username, dan password merupakan property dari model parcelable yang harus diisikan pada saat model dibuat (inisiasi kelas dengan constructor)</p>
+</li>
+<li><p>Pada kode <code>intent.putExtra(Key_RegisterActivity, register);</code> hanya akan mem-<em>passing</em> object parcelable.</p>
+</li>
+<li><p>Selanjutnya buka kode activity <code>RegisterResultActivity.java</code></p>
+</li>
+<li><p>Modifikasi kode activity tersebut menjadi seperti berikut,</p>
+<pre><code class="lang-java"> <span class="hljs-keyword">package</span> polinema.ac.id.dtsdesigntolayout;
+
+ <span class="hljs-keyword">import</span> android.os.Bundle;
+ <span class="hljs-keyword">import</span> android.support.v7.app.AppCompatActivity;
+ <span class="hljs-keyword">import</span> android.widget.TextView;
+
+ <span class="hljs-keyword">import</span> polinema.ac.id.dtsdesigntolayout.models.Register;
+
+ <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RegisterResultActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+
+     <span class="hljs-comment">//inisialisasi variabel</span>
+     TextView tvResultNama, tvResultTanggalLahir, tvResultJenisKelamin, tvResultUsername;
+
+     <span class="hljs-comment">// Intent key</span>
+     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String Key_RegisterActivity = <span class="hljs-string">&quot;Key_RegisterActivity&quot;</span>;
+
+     <span class="hljs-meta">@Override</span>
+     <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_register_result);
+         <span class="hljs-comment">// assign view</span>
+         tvResultNama = findViewById(R.id.tvResultNama);
+         tvResultTanggalLahir = findViewById(R.id.tvResultTanggalLahir);
+         tvResultJenisKelamin = findViewById(R.id.tvResultJenisKelamin);
+         tvResultUsername = findViewById(R.id.tvResultUsername);
+
+         <span class="hljs-comment">//get string array berdasarkan key</span>
+         <span class="hljs-comment">//String[] stringArray = getIntent().getStringArrayExtra(RegisterActivity.Key_RegisterActivity);</span>
+
+         Register register = getIntent().getParcelableExtra(Key_RegisterActivity);
+
+         <span class="hljs-comment">//set value to textview</span>
+ <span class="hljs-comment">//        tvResultNama.setText(stringArray[0]);</span>
+ <span class="hljs-comment">//        tvResultTanggalLahir.setText(stringArray[1]);</span>
+ <span class="hljs-comment">//        tvResultJenisKelamin.setText(stringArray[2]);</span>
+ <span class="hljs-comment">//        tvResultUsername.setText(stringArray[3]);</span>
+
+         <span class="hljs-comment">// Set value to TextView based on Parcel Object</span>
+         tvResultNama.setText(register.getNama());
+         tvResultTanggalLahir.setText(register.getTanggalLahir());
+         tvResultJenisKelamin.setText(register.getJenisKelamin());
+         tvResultUsername.setText(register.getUsername());
+
+     }
+ }
+</code></pre>
+</li>
+</ol>
+<p>Keterangan kode :</p>
+<ul>
+<li><p>Pada baris kode <code>Register register = getIntent().getParcelableExtra(Key_RegisterActivity);</code> kita membuat object register (model register). Object ini memiliki value dari parcelable yang dikirim oleh activity <code>RegisterActivity</code>.</p>
+</li>
+<li><p>Kemudian kita melakukan penggatian text dari TextView dengan menggunakan property dari object register. Perhatikan potongan kode dibawah ini. </p>
+</li>
+</ul>
+<pre><code class="lang-java">tvResultNama.setText(register.getNama());
+tvResultTanggalLahir.setText(register.getTanggalLahir());
+tvResultJenisKelamin.setText(register.getJenisKelamin());
+tvResultUsername.setText(register.getUsername());
+</code></pre>
+<ul>
+<li><p><code>register</code> merupakan variable yang kita inisiasi dengan tipe model <code>Register</code>. Sehingga variabel ini juga memiliki nama, tanggal lahir, jenis kelamin, username, dan password (Perhatikan kembali model yang dibuat)</p>
+</li>
+<li><p>Untuk mendapatkan value dari property tersebut, kita dapat menggunakan method <code>get</code> sesuai <code>getter</code> yang sudah kita generate.</p>
+</li>
+</ul>
+<ol>
+<li>Build kembali aplikasi Anda. Maka hasil pada activity <strong>RegisterResultActivity</strong> tidak jauh berbeda dengan hasil intent dengan data. Namun kali ini kita melakukannya dengan menggunakan metode parcelable yang sangat dianjurkan jika mengirim data dalam jumlah yang banyak dalam satu kali kirim.</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> hasil yang cocok "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">Tidak ada hasil yang cocok "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter04-04intent-dengan-data.html" class="navigation navigation-prev " aria-label="Previous page: Praktikum 6 - Intent dengan Data">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../chapter05/chapter05-pendahuluan.html" class="navigation navigation-next " aria-label="Next page: Bab 05 Recycler View">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Praktikum 7 - Parcelable","level":"1.5.7","depth":2,"next":{"title":"Bab 05 Recycler View","level":"1.6","depth":1,"path":"chapter05/chapter05-pendahuluan.md","ref":"chapter05/chapter05-pendahuluan.md","articles":[{"title":"Teori Recycler View","level":"1.6.1","depth":2,"path":"chapter05/chapter05-01teori.md","ref":"chapter05/chapter05-01teori.md","articles":[]},{"title":"Praktikum 1 - RecyclerView Sangat Sederhana","level":"1.6.2","depth":2,"path":"chapter05/chapter05-02recyclerviewsangatsederhana.md","ref":"chapter05/chapter05-02recyclerviewsangatsederhana.md","articles":[]},{"title":"Praktikum 2 - RecyclerView Sederhana","level":"1.6.3","depth":2,"path":"chapter05/chapter05-02recyclerviewsederhana.md","ref":"chapter05/chapter05-02recyclerviewsederhana.md","articles":[]},{"title":"Tugas","level":"1.6.4","depth":2,"path":"chapter05/chapter05-tugas.md","ref":"chapter05/chapter05-tugas.md","articles":[]}]},"previous":{"title":"Praktikum 6 - Intent dengan Data","level":"1.5.6","depth":2,"path":"chapter04/chapter04-04intent-dengan-data.md","ref":"chapter04/chapter04-04intent-dengan-data.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter04/chapter04-05parcelable.md","mtime":"2021-10-16T10:07:40.574Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-16T10:08:48.775Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

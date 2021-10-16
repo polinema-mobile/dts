@@ -1,0 +1,1411 @@
+
+<!DOCTYPE HTML>
+<html lang="id" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Teori Recycler View · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter05-02recyclerviewsangatsederhana.html" />
+    
+    
+    <link rel="prev" href="chapter05-pendahuluan.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Ketik untuk mencari" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Digital Talent Scholarship
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter01/chapter01-01pendahuluan.html">
+            
+                <a href="../chapter01/chapter01-01pendahuluan.html">
+            
+                    
+                    Bab 01 Activity dan Fragment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter01/chapter01-04helloworld.html">
+            
+                <a href="../chapter01/chapter01-04helloworld.html">
+            
+                    
+                    Praktikum 1 Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter01/chapter01-02activity.html">
+            
+                <a href="../chapter01/chapter01-02activity.html">
+            
+                    
+                    Praktikum 2 Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter01/chapter01-03fragment.html">
+            
+                <a href="../chapter01/chapter01-03fragment.html">
+            
+                    
+                    Praktikum 3 Fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter02/chapter02-01pendahuluan.html">
+            
+                <a href="../chapter02/chapter02-01pendahuluan.html">
+            
+                    
+                    Bab 02 Android Xml Layout
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter02/chapter02-02linearlayout.html">
+            
+                <a href="../chapter02/chapter02-02linearlayout.html">
+            
+                    
+                    Praktikum 1 Linier Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter02/chapter02-03relativelayout.html">
+            
+                <a href="../chapter02/chapter02-03relativelayout.html">
+            
+                    
+                    Praktikum 2 Relative Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter02/chapter02-04constraintlayout.html">
+            
+                <a href="../chapter02/chapter02-04constraintlayout.html">
+            
+                    
+                    Praktikum 3 Constraint Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter02/chapter02-05latihan.html">
+            
+                <a href="../chapter02/chapter02-05latihan.html">
+            
+                    
+                    Praktikum 4 Latihan Convert Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter03/chapter03-01pendahuluan.html">
+            
+                <a href="../chapter03/chapter03-01pendahuluan.html">
+            
+                    
+                    Bab 03 Konversi Desain ke Android Xml
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter03/chapter03-02hasil.html">
+            
+                <a href="../chapter03/chapter03-02hasil.html">
+            
+                    
+                    Hasil Yang Diharapkan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter03/chapter03-03startercode.html">
+            
+                <a href="../chapter03/chapter03-03startercode.html">
+            
+                    
+                    Praktikum 1 Load Starter Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter03/chapter03-04splashscreen.html">
+            
+                <a href="../chapter03/chapter03-04splashscreen.html">
+            
+                    
+                    Praktikum 2 Halaman Splash Screen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter03/chapter03-05welcome.html">
+            
+                <a href="../chapter03/chapter03-05welcome.html">
+            
+                    
+                    Praktikum 3 Halaman Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../chapter03/chapter03-06form.html">
+            
+                <a href="../chapter03/chapter03-06form.html">
+            
+                    
+                    Praktikum 4 Halaman Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../chapter03/chapter03-07intentsplashscreen.html">
+            
+                <a href="../chapter03/chapter03-07intentsplashscreen.html">
+            
+                    
+                    Praktikum 5 Intent Splash Screen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../chapter03/chapter03-08intentactivity.html">
+            
+                <a href="../chapter03/chapter03-08intentactivity.html">
+            
+                    
+                    Praktikum 6 Intent Antar Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../chapter03/chapter03-09task01.html">
+            
+                <a href="../chapter03/chapter03-09task01.html">
+            
+                    
+                    Tugas 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter04/chapter04-pendahuluan.html">
+            
+                <a href="../chapter04/chapter04-pendahuluan.html">
+            
+                    
+                    Bab 04 Validasi dan Interaksi Activity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter04/chapter04-validasi.html">
+            
+                <a href="../chapter04/chapter04-validasi.html">
+            
+                    
+                    Praktikum 1 - Validasi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter04/chapter04-tugasvalidasi.html">
+            
+                <a href="../chapter04/chapter04-tugasvalidasi.html">
+            
+                    
+                    Praktikum 2 - Tugas Validasi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter04/chapter04-01intent.html">
+            
+                <a href="../chapter04/chapter04-01intent.html">
+            
+                    
+                    Praktikum 3 - Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter04/chapter04-02intent-explicit.html">
+            
+                <a href="../chapter04/chapter04-02intent-explicit.html">
+            
+                    
+                    Praktikum 4 - Intent Explicit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter04/chapter04-03intent-implicit.html">
+            
+                <a href="../chapter04/chapter04-03intent-implicit.html">
+            
+                    
+                    Praktikum 5 - Intent Implicit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter04/chapter04-04intent-dengan-data.html">
+            
+                <a href="../chapter04/chapter04-04intent-dengan-data.html">
+            
+                    
+                    Praktikum 6 - Intent dengan Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../chapter04/chapter04-05parcelable.html">
+            
+                <a href="../chapter04/chapter04-05parcelable.html">
+            
+                    
+                    Praktikum 7 - Parcelable
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter05-pendahuluan.html">
+            
+                <a href="chapter05-pendahuluan.html">
+            
+                    
+                    Bab 05 Recycler View
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="chapter05-01teori.html">
+            
+                <a href="chapter05-01teori.html">
+            
+                    
+                    Teori Recycler View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="chapter05-02recyclerviewsangatsederhana.html">
+            
+                <a href="chapter05-02recyclerviewsangatsederhana.html">
+            
+                    
+                    Praktikum 1 - RecyclerView Sangat Sederhana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="chapter05-02recyclerviewsederhana.html">
+            
+                <a href="chapter05-02recyclerviewsederhana.html">
+            
+                    
+                    Praktikum 2 - RecyclerView Sederhana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="chapter05-tugas.html">
+            
+                <a href="chapter05-tugas.html">
+            
+                    
+                    Tugas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter06/chapter06-01pendahuluan.html">
+            
+                <a href="../chapter06/chapter06-01pendahuluan.html">
+            
+                    
+                    Bab 06 Project BMI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter06/chapter06-02praktikum01.html">
+            
+                <a href="../chapter06/chapter06-02praktikum01.html">
+            
+                    
+                    Praktikum 1 - Aplikasi BMI Sederhana part 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter06/chapter06-03praktikum02.html">
+            
+                <a href="../chapter06/chapter06-03praktikum02.html">
+            
+                    
+                    Praktikum 2 - Aplikasi BMI Sederhana part 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter07/00-pendahuluan.html">
+            
+                <a href="../chapter07/00-pendahuluan.html">
+            
+                    
+                    Bab 07 Proyek
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter07/01-hasil.html">
+            
+                <a href="../chapter07/01-hasil.html">
+            
+                    
+                    Hasil yang Diharapkan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter07/02-proyek.html">
+            
+                <a href="../chapter07/02-proyek.html">
+            
+                    
+                    Proyek
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter09/chapter09-01pendahuluan.html">
+            
+                <a href="../chapter09/chapter09-01pendahuluan.html">
+            
+                    
+                    Bab 09 SharedPreferences & Room Persistence Library
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter09/chapter09-02teori-sharedpreferences.html">
+            
+                <a href="../chapter09/chapter09-02teori-sharedpreferences.html">
+            
+                    
+                    Teori SharedPreferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter09/chapter09-03sharedpreferences.html">
+            
+                <a href="../chapter09/chapter09-03sharedpreferences.html">
+            
+                    
+                    Praktikum 1 - Menyimpan & Membaca data dengan SharedPreferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../chapter09/chapter09-04teori-room.html">
+            
+                <a href="../chapter09/chapter09-04teori-room.html">
+            
+                    
+                    Teori Room Persistence Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../chapter09/chapter09-05appdatabase-insert.html">
+            
+                <a href="../chapter09/chapter09-05appdatabase-insert.html">
+            
+                    
+                    Praktikum 2 - AppDatabase & Operasi INSERT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../chapter09/chapter09-06select.html">
+            
+                <a href="../chapter09/chapter09-06select.html">
+            
+                    
+                    Praktikum 3 - Operasi SELECT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../chapter09/chapter09-07update.html">
+            
+                <a href="../chapter09/chapter09-07update.html">
+            
+                    
+                    Praktikum 4 - Operasi UPDATE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../chapter09/chapter09-08delete.html">
+            
+                <a href="../chapter09/chapter09-08delete.html">
+            
+                    
+                    Praktikum 5 - Operasi DELETE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../chapter09/chapter09-09asynchronous-database-ops.html">
+            
+                <a href="../chapter09/chapter09-09asynchronous-database-ops.html">
+            
+                    
+                    Praktikum 6 - Operasi Database Asynchronous
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter10/chapter10-01pendahuluan.html">
+            
+                <a href="../chapter10/chapter10-01pendahuluan.html">
+            
+                    
+                    Bab 10 Room Persistence Library, RecyclerView
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter10/chapter10-02architecture-component.html">
+            
+                <a href="../chapter10/chapter10-02architecture-component.html">
+            
+                    
+                    1 - Architecture Component dan Room Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter10/chapter10-03MembuatViewModel.html">
+            
+                <a href="../chapter10/chapter10-03MembuatViewModel.html">
+            
+                    
+                    2 - View Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter10/chapter10-04RecyclerView.html">
+            
+                <a href="../chapter10/chapter10-04RecyclerView.html">
+            
+                    
+                    3 - RecyclerView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../chapter10/chapter10-05Latihan.html">
+            
+                <a href="../chapter10/chapter10-05Latihan.html">
+            
+                    
+                    4 - Latihan
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter11/00-pendahuluan.html">
+            
+                <a href="../chapter11/00-pendahuluan.html">
+            
+                    
+                    Bab 11 Retrofit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter11/01-rest.html">
+            
+                <a href="../chapter11/01-rest.html">
+            
+                    
+                    1 - REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter11/02-retrofit.html">
+            
+                <a href="../chapter11/02-retrofit.html">
+            
+                    
+                    2 - Retrofit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter11/03-model.html">
+            
+                <a href="../chapter11/03-model.html">
+            
+                    
+                    3 - Membuat Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter11/04-mendefinisikan-service.html">
+            
+                <a href="../chapter11/04-mendefinisikan-service.html">
+            
+                    
+                    4 - Mendefinisikan Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../chapter11/05-mempersiapkan-recyclerview.html">
+            
+                <a href="../chapter11/05-mempersiapkan-recyclerview.html">
+            
+                    
+                    5 - Menyiapkan RecyclerView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../chapter11/06-implementasi-caloryfragment.html">
+            
+                <a href="../chapter11/06-implementasi-caloryfragment.html">
+            
+                    
+                    6 - Implementasi CaloryFragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../chapter11/07-implementasi-savecaloryfragment.html">
+            
+                <a href="../chapter11/07-implementasi-savecaloryfragment.html">
+            
+                    
+                    7 - Implementasi SaveCaloryFragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../chapter11/08-latihan.html">
+            
+                <a href="../chapter11/08-latihan.html">
+            
+                    
+                    8 - Latihan
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter12/00-pendahuluan.html">
+            
+                <a href="../chapter12/00-pendahuluan.html">
+            
+                    
+                    Bab 12 Proyek Data Persistence
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../chapter12/01-proyek.html">
+            
+                <a href="../chapter12/01-proyek.html">
+            
+                    
+                    1 - Proyek
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../chapter13/chapter13-01pendahuluan.html">
+            
+                <a href="../chapter13/chapter13-01pendahuluan.html">
+            
+                    
+                    Bab 13 Location Based Service
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../chapter13/chapter13-02teori-lbs.html">
+            
+                <a href="../chapter13/chapter13-02teori-lbs.html">
+            
+                    
+                    Teori LBS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../chapter13/chapter13-03praktikum01.html">
+            
+                <a href="../chapter13/chapter13-03praktikum01.html">
+            
+                    
+                    Praktikum 1 - Menampilkan Google Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../chapter13/chapter13-04praktikum02.html">
+            
+                <a href="../chapter13/chapter13-04praktikum02.html">
+            
+                    
+                    Praktikum 2 - Menampilkan Current Location
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../chapter13/chapter13-05praktikum03.html">
+            
+                <a href="../chapter13/chapter13-05praktikum03.html">
+            
+                    
+                    Praktikum 3 - Menampilkan Fasilitas Terdekat
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../chapter14/chapter14-01_Pendahuluan.html">
+            
+                <a href="../chapter14/chapter14-01_Pendahuluan.html">
+            
+                    
+                    Bab 14 Mobile Security
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../chapter14/chapter14-02_SecurityBestPractice.html">
+            
+                <a href="../chapter14/chapter14-02_SecurityBestPractice.html">
+            
+                    
+                    Best Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../chapter15/chapter15-01_Pendahuluan.html">
+            
+                <a href="../chapter15/chapter15-01_Pendahuluan.html">
+            
+                    
+                    Bab 15 Sensor
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../chapter15/chapter15-02_Proximity.html">
+            
+                <a href="../chapter15/chapter15-02_Proximity.html">
+            
+                    
+                    Sensor Proximity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Dipublikasikan dengan GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Teori Recycler View</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="recycler-view">Recycler View</h1>
+<p>Saat menampilkan banyak item dalam daftar (list) yang bisa digulir (scroll), sebagian besar item tidak terlihat. Misalnya, dalam daftar kata yang panjang atau banyak judul berita, user hanya melihat sedikit item daftar untuk setiap kalinya. <strong>RecyclerView</strong> digunakan untuk menampilkan daftar kata dari database.</p>
+<p>Atau, jika memiliki kumpulan data yang akan berubah saat user berinteraksi dengannya. Jika membuat tampilan baru setiap kali data berubah, maka harus membuat banyak tampilan, bahkan untuk kumpulan data yang kecil.</p>
+<p><strong>RecyclerView</strong> adalah versi <strong>ListView</strong> yang lebih canggih dan fleksibel. Widget ini adalah kontainer untuk menampilkan rangkaian data besar yang bisa digulir secara sangat efisien dengan mempertahankan tampilan dalam jumlah terbatas.</p>
+<p align="center"><img src="images/android-recyclerview-cardview-output.gif" alt="contoh Recycle view"></p>
+
+<h2 id="komponen-recycle-view">Komponen Recycle View</h2>
+<p>Untuk menampilkan data pada RecyclerView lakukanlah langkah langkah berikut secara berurutan.</p>
+<h3 id="recyclerview">RecyclerView</h3>
+<p>Recyclerview di instansiasi pada activity yang menggunakan recyclerview. Proses pemanggilan data di lakukan di activity ini</p>
+<p>Scroll list yang berisi <strong>item</strong>.
+Instance RecyclerView sebagaimana didefinisikan dalam file layout <strong>activity</strong>, bertindak sebagai kontainer tampilan.</p>
+<p>Recyclerview dibuat pada layout yang di gunakan pada activity ini.</p>
+<h3 id="data">Data</h3>
+<p>Untuk membuat recyclerview diperlukan data, data ini dapat berasal dari :</p>
+<ol>
+<li>Lokal dari variabel atau dari database lokal device android yang digunakan.</li>
+<li>Internet dari server yang di request melalu REST atau dengan cara lain.</li>
+</ol>
+<p>Data ini akan di representasikan sebagai sebuah file <code>models</code> dalam project android. Models di desain sesuai dengan kebutuhan dari data yang ditampilkan pada <code>recyclerview</code>, data dapat berupa tulisan, gambar, atau angka yang muncul pada desain recyclerview.</p>
+<h2 id="latihan-mendesain-models">Latihan mendesain models</h2>
+<p>Contoh desain layout dan class model yang dibuat :</p>
+<p><img src="images/0501latihandata.png" alt="latihandata"></p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> polinema.ac.id.recyclerview.models;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Berita</span> </span>{
+    <span class="hljs-keyword">public</span> String judul;
+    <span class="hljs-keyword">public</span> String kategori;
+    <span class="hljs-keyword">public</span> String image;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Berita</span><span class="hljs-params">(String judul, String kategori, String image)</span> </span>{
+        <span class="hljs-keyword">this</span>.judul = judul;
+        <span class="hljs-keyword">this</span>.kategori = kategori;
+        <span class="hljs-keyword">this</span>.image = image;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getJudul</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> judul;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setJudul</span><span class="hljs-params">(String judul)</span> </span>{
+        <span class="hljs-keyword">this</span>.judul = judul;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getKategori</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> kategori;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setKategori</span><span class="hljs-params">(String kategori)</span> </span>{
+        <span class="hljs-keyword">this</span>.kategori = kategori;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getImage</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> image;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setImage</span><span class="hljs-params">(String image)</span> </span>{
+        <span class="hljs-keyword">this</span>.image = image;
+    }
+}
+</code></pre>
+<p>Berdasarkan layout diatas dapat dilihat bahwa ada 3 data yang sering berubah yaitu judul, kategori, dan gambar berita maka dibuatlah sebuah class <code>Berita</code> yang memiliki 3 variabel bertipe data string yaitu judul, kategori, dan gambar.</p>
+<blockquote>
+<p>Perhatikan pemilihan tipe data ini disesuaikan dengan kondisi dari asal data yang digunakan terutama untuk data gambar jika gabar yang diambil menggunakan data dari internet yang digunakan adalah string karena menggunakan url namun jika data berasal dari device maka digunakan integer karena pada device resource berupa gambar di setting menggunakan <code>resource id</code></p>
+<p>Perhatikan kembali gambar desain recycler view diatas kemudian coba jelaskan apa strategi anda untuk membuat <code>warna</code> yang berbeda pada masing masing kategori.</p>
+</blockquote>
+<h2 id="latihan-mandiri">Latihan Mandiri</h2>
+<p>Perhatikan layout dibawah ini kemudian perkirakan ada berapa jenis data yang harus disiapkan pada file modelnya.</p>
+<p>Latihan layout news
+<img src="images/0502latihandatabookmark.png" alt="latihandata2"></p>
+<p>Latihan Layout music
+<img src="images/0503latihandatamusic.png" alt="latihandata3"></p>
+<h3 id="layout-item">Layout item</h3>
+<p>Semua list item akan tampak sama, sehingga layout yang sama bisa digunakan untuk semuanya. Layout item harus dibuat secara terpisah dari layout <strong>activity</strong>, sehingga satu per satu tampilan item bisa dibuat dan diisi data.
+<img src="images/0504latihanlayout.png" alt="latihanlayout"></p>
+<p>Perhatikan pada saat mendesain layout item kita hanya mendesain untuk satu baris recyclerview saja, karena yang akan memperbanyak dan mengulang layout adalah recyclerview nya.</p>
+<p>Contoh kode program layout :</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">LinearLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="hljs-attr">android:orientation</span>=<span class="hljs-string">&quot;vertical&quot;</span> <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;100dp&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/txtNama&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Hello&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span> /&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">LinearLayout</span>&gt;</span>
+</code></pre>
+<h3 id="adapter">Adapter</h3>
+<p>Adapter menghubungkan data Anda dengan <strong>RecyclerView</strong>. Adapter menyiapkan data dan cara menampilkan data dalam <strong>view holder</strong>. Bila data berubah, adapter akan memperbarui materi tampilan item daftar terkait dalam RecyclerView.</p>
+<p>Adapter juga merupakan ekstensi dari RecyclerView.Adapter. Adapter menggunakan ViewHolder untuk menampung tampilan yang menyusun setiap item dalam RecyclerView, dan mengikat data untuk ditampilkan dalam tampilan yang menampilkannya.</p>
+<p>Kode program pada adapter inilah yang menjadi bagian paling penting pada Recyclerview. Pada umumnya Adapter menerima dua input yaitu data dan layout item yang digunakan pada adapter inilah data dan layout di hubungkan(<code>binding</code>)</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ContactAdapter</span> <span class="hljs-keyword">extends</span>
+        <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">Adapter</span>&lt;<span class="hljs-title">ContactAdapter</span>.<span class="hljs-title">ContactViewHolder</span>&gt;</span>{
+    <span class="hljs-comment">//1 dataset</span>
+    <span class="hljs-keyword">private</span> List&lt;Contact&gt; listContact = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+
+    <span class="hljs-comment">//2 constructor</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ContactAdapter</span><span class="hljs-params">(List&lt;Contact&gt; listContact)</span> </span>{
+        <span class="hljs-keyword">this</span>.listContact = listContact;
+    }
+
+    <span class="hljs-keyword">private</span> OnContactClickListener listener;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">OnContactClickListener</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(View view, <span class="hljs-keyword">int</span> position)</span></span>;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setListener</span><span class="hljs-params">(OnContactClickListener listener)</span> </span>{
+        <span class="hljs-keyword">this</span>.listener = listener;
+    }
+
+    <span class="hljs-comment">//3 menghubungkan layout item contact ke adapter</span>
+    <span class="hljs-meta">@NonNull</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> ContactViewHolder <span class="hljs-title">onCreateViewHolder</span><span class="hljs-params">(@NonNull ViewGroup viewGroup, <span class="hljs-keyword">int</span> i)</span> </span>{
+        View vh = LayoutInflater.
+                from(viewGroup.getContext()).
+                inflate(R.layout.item_contact,viewGroup,<span class="hljs-keyword">false</span>);
+
+        <span class="hljs-comment">//4 membuat view holder</span>
+        ContactViewHolder viewHolder = <span class="hljs-keyword">new</span> ContactViewHolder(vh);
+        <span class="hljs-keyword">return</span> viewHolder;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBindViewHolder</span><span class="hljs-params">(@NonNull ContactViewHolder contactViewHolder, <span class="hljs-keyword">int</span> i)</span> </span>{
+        <span class="hljs-comment">//7 menghubungkan id ke data</span>
+        Contact item = listContact.get(i);
+        contactViewHolder.txtPhone.setText(item.getPhone());
+        contactViewHolder.txtName.setText(item.getName());
+        Picasso.get().load(item.getImageUrl())
+                .placeholder(R.drawable.ic_launcher_background)
+                .into(contactViewHolder.imageContact);
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> listContact.size();
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ContactViewHolder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">ViewHolder</span> </span>{
+        <span class="hljs-comment">//5 membuat variabel di view holder</span>
+        <span class="hljs-keyword">public</span> ImageView imageContact;
+        <span class="hljs-keyword">public</span> TextView txtName,txtPhone;
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ContactViewHolder</span><span class="hljs-params">(@NonNull View itemView)</span> </span>{
+            <span class="hljs-keyword">super</span>(itemView);
+            <span class="hljs-comment">//6 menghubungkan id di layout ke view holder</span>
+            imageContact = itemView.findViewById(R.id.imageContact);
+            txtName = itemView.findViewById(R.id.txtName);
+            txtPhone = itemView.findViewById(R.id.txtPhone);
+            itemView.setOnClickListener(<span class="hljs-keyword">new</span> View.OnClickListener() {
+                <span class="hljs-meta">@Override</span>
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(View v)</span> </span>{
+                    listener.onClick(v, getAdapterPosition());
+                }
+            });
+        }
+    }
+}
+</code></pre>
+<h3 id="view-holder">View Holder</h3>
+<p>View holder adalah bagian dari adapter yang berisi tampilan informasi untuk menampilkan satu item dari layout item.</p>
+<p>Diagram di bawah ini menampilkan hubungan antara komponen-komponen tersebut.</p>
+ <p align="center"><img src="images/RVdiagram.png" alt="contoh Recycle view"></p>
+
+<p>Pada bab ini akan dibahas cara untuk membuat <strong>RecyclerView</strong> sederhana dengan layout custom. Recycler yang akan dibuat adalah daftar kontak.</p>
+<h3 id="layout-manager">Layout Manager</h3>
+<p>Pengelola layout menangani penyusunan (layout) komponen antarmuka pengguna dalam suatu tampilan. Semua grup tampilan memiliki pengelola layout. Untuk LinearLayout, sistem Android menangani layout untuk Anda. RecyclerView memerlukan pengelola layout eksplisit untuk mengelola susunan list item yang terdapat di dalamnya. Layout ini bisa vertikal, horizontal, atau berupa grid.</p>
+<p>Contoh RecyclerView dengan LayoutManager Linear :</p>
+<p><img src="images/0501latihandata.png" alt="gridlayoutmanager"></p>
+<p>Contoh RecyclerView dengan LayoutManager Grid :</p>
+<p><img src="images/0502latihandatabookmark.png" alt="linearrecycler"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> hasil yang cocok "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">Tidak ada hasil yang cocok "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter05-pendahuluan.html" class="navigation navigation-prev " aria-label="Previous page: Bab 05 Recycler View">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter05-02recyclerviewsangatsederhana.html" class="navigation navigation-next " aria-label="Next page: Praktikum 1 - RecyclerView Sangat Sederhana">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Teori Recycler View","level":"1.6.1","depth":2,"next":{"title":"Praktikum 1 - RecyclerView Sangat Sederhana","level":"1.6.2","depth":2,"path":"chapter05/chapter05-02recyclerviewsangatsederhana.md","ref":"chapter05/chapter05-02recyclerviewsangatsederhana.md","articles":[]},"previous":{"title":"Bab 05 Recycler View","level":"1.6","depth":1,"path":"chapter05/chapter05-pendahuluan.md","ref":"chapter05/chapter05-pendahuluan.md","articles":[{"title":"Teori Recycler View","level":"1.6.1","depth":2,"path":"chapter05/chapter05-01teori.md","ref":"chapter05/chapter05-01teori.md","articles":[]},{"title":"Praktikum 1 - RecyclerView Sangat Sederhana","level":"1.6.2","depth":2,"path":"chapter05/chapter05-02recyclerviewsangatsederhana.md","ref":"chapter05/chapter05-02recyclerviewsangatsederhana.md","articles":[]},{"title":"Praktikum 2 - RecyclerView Sederhana","level":"1.6.3","depth":2,"path":"chapter05/chapter05-02recyclerviewsederhana.md","ref":"chapter05/chapter05-02recyclerviewsederhana.md","articles":[]},{"title":"Tugas","level":"1.6.4","depth":2,"path":"chapter05/chapter05-tugas.md","ref":"chapter05/chapter05-tugas.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter05/chapter05-01teori.md","mtime":"2021-10-16T10:07:40.598Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-16T10:08:48.775Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

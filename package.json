@@ -1,0 +1,26 @@
+{
+  "name": "dts",
+  "version": "1.0.0",
+  "description": "Digital Talent Scholarship Module",
+  "main": "index.js",
+  "scripts": {
+    "start": "gitbook serve",
+    "build": "gitbook build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polinema-mobile/dts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/polinema-mobile/dts/issues"
+  },
+  "homepage": "https://github.com/polinema-mobile/dts#readme",
+  "devDependencies": {
+    "gitbook": "git+https://github.com/dhanifudin/gitbook.git",
+    "gitbook-cli": "^2.3.2"
+  }
+}

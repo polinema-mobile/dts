@@ -1,0 +1,1717 @@
+
+<!DOCTYPE HTML>
+<html lang="id" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Praktikum 1 - RecyclerView Sangat Sederhana · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter05-02recyclerviewsederhana.html" />
+    
+    
+    <link rel="prev" href="chapter05-01teori.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Ketik untuk mencari" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Digital Talent Scholarship
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter01/chapter01-01pendahuluan.html">
+            
+                <a href="../chapter01/chapter01-01pendahuluan.html">
+            
+                    
+                    Bab 01 Activity dan Fragment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter01/chapter01-04helloworld.html">
+            
+                <a href="../chapter01/chapter01-04helloworld.html">
+            
+                    
+                    Praktikum 1 Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter01/chapter01-02activity.html">
+            
+                <a href="../chapter01/chapter01-02activity.html">
+            
+                    
+                    Praktikum 2 Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter01/chapter01-03fragment.html">
+            
+                <a href="../chapter01/chapter01-03fragment.html">
+            
+                    
+                    Praktikum 3 Fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter02/chapter02-01pendahuluan.html">
+            
+                <a href="../chapter02/chapter02-01pendahuluan.html">
+            
+                    
+                    Bab 02 Android Xml Layout
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter02/chapter02-02linearlayout.html">
+            
+                <a href="../chapter02/chapter02-02linearlayout.html">
+            
+                    
+                    Praktikum 1 Linier Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter02/chapter02-03relativelayout.html">
+            
+                <a href="../chapter02/chapter02-03relativelayout.html">
+            
+                    
+                    Praktikum 2 Relative Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter02/chapter02-04constraintlayout.html">
+            
+                <a href="../chapter02/chapter02-04constraintlayout.html">
+            
+                    
+                    Praktikum 3 Constraint Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter02/chapter02-05latihan.html">
+            
+                <a href="../chapter02/chapter02-05latihan.html">
+            
+                    
+                    Praktikum 4 Latihan Convert Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter03/chapter03-01pendahuluan.html">
+            
+                <a href="../chapter03/chapter03-01pendahuluan.html">
+            
+                    
+                    Bab 03 Konversi Desain ke Android Xml
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter03/chapter03-02hasil.html">
+            
+                <a href="../chapter03/chapter03-02hasil.html">
+            
+                    
+                    Hasil Yang Diharapkan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter03/chapter03-03startercode.html">
+            
+                <a href="../chapter03/chapter03-03startercode.html">
+            
+                    
+                    Praktikum 1 Load Starter Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter03/chapter03-04splashscreen.html">
+            
+                <a href="../chapter03/chapter03-04splashscreen.html">
+            
+                    
+                    Praktikum 2 Halaman Splash Screen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter03/chapter03-05welcome.html">
+            
+                <a href="../chapter03/chapter03-05welcome.html">
+            
+                    
+                    Praktikum 3 Halaman Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../chapter03/chapter03-06form.html">
+            
+                <a href="../chapter03/chapter03-06form.html">
+            
+                    
+                    Praktikum 4 Halaman Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../chapter03/chapter03-07intentsplashscreen.html">
+            
+                <a href="../chapter03/chapter03-07intentsplashscreen.html">
+            
+                    
+                    Praktikum 5 Intent Splash Screen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../chapter03/chapter03-08intentactivity.html">
+            
+                <a href="../chapter03/chapter03-08intentactivity.html">
+            
+                    
+                    Praktikum 6 Intent Antar Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../chapter03/chapter03-09task01.html">
+            
+                <a href="../chapter03/chapter03-09task01.html">
+            
+                    
+                    Tugas 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter04/chapter04-pendahuluan.html">
+            
+                <a href="../chapter04/chapter04-pendahuluan.html">
+            
+                    
+                    Bab 04 Validasi dan Interaksi Activity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter04/chapter04-validasi.html">
+            
+                <a href="../chapter04/chapter04-validasi.html">
+            
+                    
+                    Praktikum 1 - Validasi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter04/chapter04-tugasvalidasi.html">
+            
+                <a href="../chapter04/chapter04-tugasvalidasi.html">
+            
+                    
+                    Praktikum 2 - Tugas Validasi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter04/chapter04-01intent.html">
+            
+                <a href="../chapter04/chapter04-01intent.html">
+            
+                    
+                    Praktikum 3 - Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter04/chapter04-02intent-explicit.html">
+            
+                <a href="../chapter04/chapter04-02intent-explicit.html">
+            
+                    
+                    Praktikum 4 - Intent Explicit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter04/chapter04-03intent-implicit.html">
+            
+                <a href="../chapter04/chapter04-03intent-implicit.html">
+            
+                    
+                    Praktikum 5 - Intent Implicit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter04/chapter04-04intent-dengan-data.html">
+            
+                <a href="../chapter04/chapter04-04intent-dengan-data.html">
+            
+                    
+                    Praktikum 6 - Intent dengan Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../chapter04/chapter04-05parcelable.html">
+            
+                <a href="../chapter04/chapter04-05parcelable.html">
+            
+                    
+                    Praktikum 7 - Parcelable
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter05-pendahuluan.html">
+            
+                <a href="chapter05-pendahuluan.html">
+            
+                    
+                    Bab 05 Recycler View
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="chapter05-01teori.html">
+            
+                <a href="chapter05-01teori.html">
+            
+                    
+                    Teori Recycler View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="chapter05-02recyclerviewsangatsederhana.html">
+            
+                <a href="chapter05-02recyclerviewsangatsederhana.html">
+            
+                    
+                    Praktikum 1 - RecyclerView Sangat Sederhana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="chapter05-02recyclerviewsederhana.html">
+            
+                <a href="chapter05-02recyclerviewsederhana.html">
+            
+                    
+                    Praktikum 2 - RecyclerView Sederhana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="chapter05-tugas.html">
+            
+                <a href="chapter05-tugas.html">
+            
+                    
+                    Tugas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter06/chapter06-01pendahuluan.html">
+            
+                <a href="../chapter06/chapter06-01pendahuluan.html">
+            
+                    
+                    Bab 06 Project BMI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter06/chapter06-02praktikum01.html">
+            
+                <a href="../chapter06/chapter06-02praktikum01.html">
+            
+                    
+                    Praktikum 1 - Aplikasi BMI Sederhana part 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter06/chapter06-03praktikum02.html">
+            
+                <a href="../chapter06/chapter06-03praktikum02.html">
+            
+                    
+                    Praktikum 2 - Aplikasi BMI Sederhana part 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter07/00-pendahuluan.html">
+            
+                <a href="../chapter07/00-pendahuluan.html">
+            
+                    
+                    Bab 07 Proyek
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter07/01-hasil.html">
+            
+                <a href="../chapter07/01-hasil.html">
+            
+                    
+                    Hasil yang Diharapkan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter07/02-proyek.html">
+            
+                <a href="../chapter07/02-proyek.html">
+            
+                    
+                    Proyek
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter09/chapter09-01pendahuluan.html">
+            
+                <a href="../chapter09/chapter09-01pendahuluan.html">
+            
+                    
+                    Bab 09 SharedPreferences & Room Persistence Library
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter09/chapter09-02teori-sharedpreferences.html">
+            
+                <a href="../chapter09/chapter09-02teori-sharedpreferences.html">
+            
+                    
+                    Teori SharedPreferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter09/chapter09-03sharedpreferences.html">
+            
+                <a href="../chapter09/chapter09-03sharedpreferences.html">
+            
+                    
+                    Praktikum 1 - Menyimpan & Membaca data dengan SharedPreferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../chapter09/chapter09-04teori-room.html">
+            
+                <a href="../chapter09/chapter09-04teori-room.html">
+            
+                    
+                    Teori Room Persistence Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../chapter09/chapter09-05appdatabase-insert.html">
+            
+                <a href="../chapter09/chapter09-05appdatabase-insert.html">
+            
+                    
+                    Praktikum 2 - AppDatabase & Operasi INSERT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../chapter09/chapter09-06select.html">
+            
+                <a href="../chapter09/chapter09-06select.html">
+            
+                    
+                    Praktikum 3 - Operasi SELECT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../chapter09/chapter09-07update.html">
+            
+                <a href="../chapter09/chapter09-07update.html">
+            
+                    
+                    Praktikum 4 - Operasi UPDATE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../chapter09/chapter09-08delete.html">
+            
+                <a href="../chapter09/chapter09-08delete.html">
+            
+                    
+                    Praktikum 5 - Operasi DELETE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../chapter09/chapter09-09asynchronous-database-ops.html">
+            
+                <a href="../chapter09/chapter09-09asynchronous-database-ops.html">
+            
+                    
+                    Praktikum 6 - Operasi Database Asynchronous
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../chapter10/chapter10-01pendahuluan.html">
+            
+                <a href="../chapter10/chapter10-01pendahuluan.html">
+            
+                    
+                    Bab 10 Room Persistence Library, RecyclerView
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter10/chapter10-02architecture-component.html">
+            
+                <a href="../chapter10/chapter10-02architecture-component.html">
+            
+                    
+                    1 - Architecture Component dan Room Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter10/chapter10-03MembuatViewModel.html">
+            
+                <a href="../chapter10/chapter10-03MembuatViewModel.html">
+            
+                    
+                    2 - View Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter10/chapter10-04RecyclerView.html">
+            
+                <a href="../chapter10/chapter10-04RecyclerView.html">
+            
+                    
+                    3 - RecyclerView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../chapter10/chapter10-05Latihan.html">
+            
+                <a href="../chapter10/chapter10-05Latihan.html">
+            
+                    
+                    4 - Latihan
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../chapter11/00-pendahuluan.html">
+            
+                <a href="../chapter11/00-pendahuluan.html">
+            
+                    
+                    Bab 11 Retrofit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter11/01-rest.html">
+            
+                <a href="../chapter11/01-rest.html">
+            
+                    
+                    1 - REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter11/02-retrofit.html">
+            
+                <a href="../chapter11/02-retrofit.html">
+            
+                    
+                    2 - Retrofit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter11/03-model.html">
+            
+                <a href="../chapter11/03-model.html">
+            
+                    
+                    3 - Membuat Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter11/04-mendefinisikan-service.html">
+            
+                <a href="../chapter11/04-mendefinisikan-service.html">
+            
+                    
+                    4 - Mendefinisikan Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../chapter11/05-mempersiapkan-recyclerview.html">
+            
+                <a href="../chapter11/05-mempersiapkan-recyclerview.html">
+            
+                    
+                    5 - Menyiapkan RecyclerView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../chapter11/06-implementasi-caloryfragment.html">
+            
+                <a href="../chapter11/06-implementasi-caloryfragment.html">
+            
+                    
+                    6 - Implementasi CaloryFragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../chapter11/07-implementasi-savecaloryfragment.html">
+            
+                <a href="../chapter11/07-implementasi-savecaloryfragment.html">
+            
+                    
+                    7 - Implementasi SaveCaloryFragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../chapter11/08-latihan.html">
+            
+                <a href="../chapter11/08-latihan.html">
+            
+                    
+                    8 - Latihan
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter12/00-pendahuluan.html">
+            
+                <a href="../chapter12/00-pendahuluan.html">
+            
+                    
+                    Bab 12 Proyek Data Persistence
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../chapter12/01-proyek.html">
+            
+                <a href="../chapter12/01-proyek.html">
+            
+                    
+                    1 - Proyek
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../chapter13/chapter13-01pendahuluan.html">
+            
+                <a href="../chapter13/chapter13-01pendahuluan.html">
+            
+                    
+                    Bab 13 Location Based Service
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../chapter13/chapter13-02teori-lbs.html">
+            
+                <a href="../chapter13/chapter13-02teori-lbs.html">
+            
+                    
+                    Teori LBS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../chapter13/chapter13-03praktikum01.html">
+            
+                <a href="../chapter13/chapter13-03praktikum01.html">
+            
+                    
+                    Praktikum 1 - Menampilkan Google Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../chapter13/chapter13-04praktikum02.html">
+            
+                <a href="../chapter13/chapter13-04praktikum02.html">
+            
+                    
+                    Praktikum 2 - Menampilkan Current Location
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../chapter13/chapter13-05praktikum03.html">
+            
+                <a href="../chapter13/chapter13-05praktikum03.html">
+            
+                    
+                    Praktikum 3 - Menampilkan Fasilitas Terdekat
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../chapter14/chapter14-01_Pendahuluan.html">
+            
+                <a href="../chapter14/chapter14-01_Pendahuluan.html">
+            
+                    
+                    Bab 14 Mobile Security
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../chapter14/chapter14-02_SecurityBestPractice.html">
+            
+                <a href="../chapter14/chapter14-02_SecurityBestPractice.html">
+            
+                    
+                    Best Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../chapter15/chapter15-01_Pendahuluan.html">
+            
+                <a href="../chapter15/chapter15-01_Pendahuluan.html">
+            
+                    
+                    Bab 15 Sensor
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../chapter15/chapter15-02_Proximity.html">
+            
+                <a href="../chapter15/chapter15-02_Proximity.html">
+            
+                    
+                    Sensor Proximity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Dipublikasikan dengan GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Praktikum 1 - RecyclerView Sangat Sederhana</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="recyclerview-sangat-sederhana">RecyclerView Sangat Sederhana</h1>
+<p>Pada Praktikum kali ini kita akan membuat sebuah recyclerview yang sangat sederhana dimana pada recyclerview ini hanya terdapat sebuah item text view.</p>
+<h2 id="hasil-yang-diharapkan">Hasil Yang Diharapkan</h2>
+<p><img src="images/0532hasil.jpeg" alt="hasil"></p>
+<h2 id="new-project">New Project</h2>
+<p>Buatlah sebuah project baru sesuaikan konfigurasi project ini dengan environtment SDK pada Android Studio anda, contoh konfigurasinya :</p>
+<p><img src="images/0505rssnewproject.png" alt="newproject"></p>
+<h2 id="dependency">Dependency</h2>
+<p>Dependency yang digunakan pada project ini adalah dependency untuk recyclerview, namun karena ada perbedaan pada versi android sdk yang digunakan berikut ini disediakan beberapa konfigurasi <code>build.gradle</code> pada module <code>app</code> yang digunakan.</p>
+<p>Untuk sdk 29 sudah menggunakan <code>androidx</code></p>
+<pre><code class="lang-gradle">implementation <span class="hljs-string">&apos;androidx.recyclerview:recyclerview:1.1.0&apos;</span>
+</code></pre>
+<p>Untuk sdk dibawah 29 menggunakan support library. Contoh untuk sdk 28 menggunakan versi recyclerview dibawah ini</p>
+<pre><code class="lang-gradle">implementation <span class="hljs-string">&apos;com.android.support:recyclerview-v7:28.0.0&apos;</span>
+</code></pre>
+<p>Perhatikan target sdk version yang anda gunakan pada file <code>build.gradle</code> untuk module <code>app</code> dan isikan recyclerview yang sesuai dengan kebutuhan anda.</p>
+<p>Contoh dependency :</p>
+<pre><code class="lang-gradle">
+<span class="hljs-keyword">dependencies</span> {
+    implementation <span class="hljs-keyword">fileTree</span>(dir: <span class="hljs-string">&apos;libs&apos;</span>, <span class="hljs-keyword">include</span>: [<span class="hljs-string">&apos;*.jar&apos;</span>])
+    implementation <span class="hljs-string">&apos;androidx.appcompat:appcompat:1.0.2&apos;</span>
+    implementation <span class="hljs-string">&apos;androidx.constraintlayout:constraintlayout:1.1.3&apos;</span>
+    implementation <span class="hljs-string">&apos;androidx.recyclerview:recyclerview:1.0.0&apos;</span>
+    testImplementation <span class="hljs-string">&apos;junit:junit:4.12&apos;</span>
+    androidTestImplementation <span class="hljs-string">&apos;androidx.test:runner:1.2.0&apos;</span>
+    androidTestImplementation <span class="hljs-string">&apos;androidx.test.espresso:espresso-core:3.2.0&apos;</span>
+}
+</code></pre>
+<h2 id="model">Model</h2>
+<p>Berdasarkan hasil yang diharapkan dapat dilihat bahwa pada recyclerview yang dihasilkan hanya memiliki satu data yaitu sebuah text oleh karena itu model di desain sesuai dengan kebutuhan pada hasil akhir. Lakukanlah langkah langkah berikut ini untuk membuat file model pada project ini.</p>
+<h3 id="buat-package-models">Buat Package Models</h3>
+<p>Agar file file yang ada pada project tersusun rapi buatlah sebuah package dengan nama <code>models</code> sebagai tempat untuk menyimpan file models.</p>
+<p><img src="images/0506package.png" alt="package"></p>
+<p>Beri nama package <code>models</code></p>
+<p><img src="images/0507models.png" alt="models"></p>
+<h3 id="buat-class-models">Buat Class Models</h3>
+<p>Buatlah sebuah file baru pada package models beri nama file tersebut <code>SuperHero</code> dan beri tipe <code>class</code></p>
+<p><img src="images/0508java.png" alt="java"></p>
+<p><img src="images/0509createclass.png" alt="class"></p>
+<h3 id="isi-class-models">Isi Class Models</h3>
+<p>Isilah class SuperHero dengan sebuah attribut public bernama <code>heroName</code> dan lengkapi dengan construktor serta <code>setter dan getter</code></p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> polinema.ac.id.recyclerviewsangatsederhana.models;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SuperHero</span> </span>{
+    <span class="hljs-keyword">public</span> String heroName;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SuperHero</span><span class="hljs-params">(String heroName)</span> </span>{
+        <span class="hljs-keyword">this</span>.heroName = heroName;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getHeroName</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> heroName;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setHeroName</span><span class="hljs-params">(String heroName)</span> </span>{
+        <span class="hljs-keyword">this</span>.heroName = heroName;
+    }
+}
+</code></pre>
+<h2 id="item-layout">Item Layout</h2>
+<p>Layout pada recyclerview ini berupa sebuah layout xml sederhana silahkan anda memilih layout mana saja asalkan dapat menampilkan sebuah textview. Berikut ini contoh langkah langkah untuk membuat item layout.</p>
+<p><img src="images/0510itemlayout.png" alt="laoyot"></p>
+<p><img src="images/0511itemxml.png" alt="layout"></p>
+<p>Contoh kode program <code>item_super_hero.xml</code></p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">LinearLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="hljs-attr">android:orientation</span>=<span class="hljs-string">&quot;vertical&quot;</span> <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;50dp&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span>
+        <span class="hljs-attr">android:gravity</span>=<span class="hljs-string">&quot;center&quot;</span>
+        <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/heroName&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+        <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Hero Name&quot;</span>
+        <span class="hljs-attr">android:textSize</span>=<span class="hljs-string">&quot;20sp&quot;</span>
+        /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">LinearLayout</span>&gt;</span>
+</code></pre>
+<h2 id="recycler-layout">Recycler Layout</h2>
+<p>Bukalah file <code>activity_main.xml</code> kemudian hapus <code>textview</code> <code>hello world</code> nya</p>
+<p><img src="images/0512actymain.png" alt="0512actymain"></p>
+<p>Kemudian isikan sebuah recyclerview dan setting constraint nya untuk memenuhi seluruh layar</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">androidx.constraintlayout.widget.ConstraintLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">tools:context</span>=<span class="hljs-string">&quot;.MainActivity&quot;</span>&gt;</span>
+
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">androidx.recyclerview.widget.RecyclerView</span>
+        <span class="hljs-attr">app:layout_constraintLeft_toLeftOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintRight_toRightOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintTop_toTopOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">app:layout_constraintBottom_toBottomOf</span>=<span class="hljs-string">&quot;parent&quot;</span>
+        <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+        <span class="hljs-attr">tools:layout_editor_absoluteX</span>=<span class="hljs-string">&quot;8dp&quot;</span>
+        <span class="hljs-attr">tools:layout_editor_absoluteY</span>=<span class="hljs-string">&quot;8dp&quot;</span> /&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">androidx.constraintlayout.widget.ConstraintLayout</span>&gt;</span>
+</code></pre>
+<p><img src="images/0513rvmain.png" alt="rvmain"></p>
+<h2 id="adapter">Adapter</h2>
+<p>Adapter adalah bagian terpenting dari sebuah <code>recyclerview</code> oleh karena itu perhatikanlah langkah langkah pembuatan <code>Adapter</code> berikut ini dengan seksama.</p>
+<h3 id="buat-package-adapter">Buat Package Adapter</h3>
+<p>Buatlah package <code>adapters</code> pada project dengan langkah berikut ini :
+<img src="images/0514package.png" alt="0514">
+<img src="images/0515adapters.png" alt="0515">
+<img src="images/0516package.png" alt="0516package"></p>
+<h3 id="buat-class-adapter">Buat Class Adapter</h3>
+<p>Buatlah sebuah class pada package <code>adapters</code> berilah nama SuperHeroAdapter
+<img src="images/0517superheroadapter.png" alt="0517superheroadapter"></p>
+<p>Kode program hasil pembuatan class <code>SuperHeroAdapter</code></p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> polinema.ac.id.recyclerviewsangatsederhana.adapters;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SuperHeroAdapter</span> </span>{
+}
+</code></pre>
+<h3 id="extends">Extends</h3>
+<p>Sebuah adapter harus melakukan extend ke class RecyclerView.Adapter<vh>, perhatikan gambar dibawah ini untuk melihat langkah pembuatan extend nya.
+<img src="images/0518extend.png" alt="0518">
+<img src="images/0519extend.png" alt="0519">
+<img src="images/0520extend.png" alt="0520"></vh></p>
+<p>Pada langkah ini akan terjadi error yang akan kita perbaiki pada tahap selanjutnya</p>
+<h3 id="implement-methods">Implement Methods</h3>
+<p>Pindahkan cursor pada awal class <code>RecyclerView</code> kemudian pilih <code>alt+insert</code> untuk windows atau <code>alt + enter</code> untuk mac os kemudian pilih <code>Implements Methods</code>.</p>
+<p><img src="images/0521implementmethods.png" alt="0521">
+<img src="images/0522pilihimplements.png" alt="0522"></p>
+<p>Pilih semua method dan hasilnya ada seperti berikut ini :</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> polinema.ac.id.recyclerviewsangatsederhana.adapters;
+
+
+<span class="hljs-keyword">import</span> android.view.ViewGroup;
+
+<span class="hljs-keyword">import</span> androidx.annotation.NonNull;
+<span class="hljs-keyword">import</span> androidx.recyclerview.widget.RecyclerView;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SuperHeroAdapter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">Adapter</span>&lt;<span class="hljs-title">SuperHeroAdapter</span>.<span class="hljs-title">MyViewHolder</span>&gt; </span>{
+    <span class="hljs-meta">@NonNull</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> SuperHeroAdapter.<span class="hljs-function">MyViewHolder <span class="hljs-title">onCreateViewHolder</span><span class="hljs-params">(@NonNull ViewGroup parent, <span class="hljs-keyword">int</span> viewType)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBindViewHolder</span><span class="hljs-params">(@NonNull SuperHeroAdapter.MyViewHolder holder, <span class="hljs-keyword">int</span> position)</span> </span>{
+
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    }
+}
+</code></pre>
+<h3 id="inner-class">Inner Class</h3>
+<p>Sampai pada saat ini class yang anda buat masih error, lanjutkan dengan memindahkan cursor ke <code>MyViewHolder</code> kemudian tekan kembali <code>alt+insert</code> atau <code>alt+enter</code> kemudian pilih <code>create class</code></p>
+<p><img src="images/0523inner.png" alt="0523"></p>
+<p>Hasil dari perintah diatas seperti gambar dibawah ini</p>
+<p><img src="images/0524intter.png" alt="0524"></p>
+<p>Class nya masih error arahkan cursor ke <code>SuperHeroAdapter.MyViewHolder</code> kemudian pilih opsi <code>Make MyViewHolder extends ...</code></p>
+<p><img src="images/0525make.png" alt="0525"></p>
+<p>Berikut ini hasilnya, namun masih ada error untuk memperbaiki error lanjutkan ke langkah selanjutnya
+<img src="images/0526haha.png" alt="0526"></p>
+<p>Pindahkan kursor ke kode program yang masih merah kemudian tekan kembali <code>alt+enter</code> atau <code>alt+insert</code> kemudian pilih opsi <code>create constructor matching super</code></p>
+<p><img src="images/0527alsjd.png" alt="0527"></p>
+<h3 id="variabel-data">Variabel Data</h3>
+<p>Berikan variabel untuk menampung data dari activity, karena adapter membutuhkan data data ini diambil dari activity oleh karena itu buatlah sebuah variabel berupa list of <code>SuperHero</code> dengan nama <code>heroList</code></p>
+<p><img src="images/0528superhero.png" alt="superhero"></p>
+<p>Setelah itu buatkan constructor untuk class ini dengan menekan shortcut <code>alt + insert</code> pada windows atau <code>cmd+n</code> pada mac.</p>
+<p><img src="images/0529construktor.png" alt="superhero"></p>
+<p>Pilih variabel <code>heroList</code>
+<img src="images/0530pilih.png" alt="superhero"></p>
+<p>Berikut ini hasil dari proses pembuatan Adapter (masih separoh jalan :) )</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> polinema.ac.id.recyclerviewsangatsederhana.adapters;
+
+
+<span class="hljs-keyword">import</span> android.view.View;
+<span class="hljs-keyword">import</span> android.view.ViewGroup;
+
+<span class="hljs-keyword">import</span> androidx.annotation.NonNull;
+<span class="hljs-keyword">import</span> androidx.recyclerview.widget.RecyclerView;
+
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">import</span> polinema.ac.id.recyclerviewsangatsederhana.models.SuperHero;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SuperHeroAdapter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">Adapter</span>&lt;<span class="hljs-title">SuperHeroAdapter</span>.<span class="hljs-title">MyViewHolder</span>&gt; </span>{
+    List&lt;SuperHero&gt; heroList;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SuperHeroAdapter</span><span class="hljs-params">(List&lt;SuperHero&gt; heroList)</span> </span>{
+        <span class="hljs-keyword">this</span>.heroList = heroList;
+    }
+
+    <span class="hljs-meta">@NonNull</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> SuperHeroAdapter.<span class="hljs-function">MyViewHolder <span class="hljs-title">onCreateViewHolder</span><span class="hljs-params">(@NonNull ViewGroup parent, <span class="hljs-keyword">int</span> viewType)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBindViewHolder</span><span class="hljs-params">(@NonNull SuperHeroAdapter.MyViewHolder holder, <span class="hljs-keyword">int</span> position)</span> </span>{
+
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyViewHolder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">ViewHolder</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MyViewHolder</span><span class="hljs-params">(@NonNull View itemView)</span> </span>{
+            <span class="hljs-keyword">super</span>(itemView);
+        }
+    }
+}
+</code></pre>
+<p>Langkah selanjutnya adalah mengisi dan memahami fungsi dari masing masing function dan inner class yang ada pada adapter</p>
+<h3 id="urutan-mengisi-function-pada-adapter">Urutan Mengisi Function Pada Adapter</h3>
+<h4 id="inner-class-viewholder">Inner Class ViewHolder</h4>
+<p>Inner Class ini berfungsi sebagai pembuat view pada class ini dibuat variabel yang menghubungkan id pada layout item_super_hero dengan variabel yang dapat digunakan pada saat mengisi nilai dari dataset.</p>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SuperHeroAdapter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">Adapter</span>&lt;<span class="hljs-title">SuperHeroAdapter</span>.<span class="hljs-title">MyViewHolder</span>&gt; </span>{
+
+    ...
+    <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyViewHolder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">ViewHolder</span> </span>{
+        <span class="hljs-keyword">public</span> TextView heroName;
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MyViewHolder</span><span class="hljs-params">(@NonNull View itemView)</span> </span>{
+            <span class="hljs-keyword">super</span>(itemView);
+            <span class="hljs-comment">//variabel disesuaikan dengan layout, karena pada layout item_super_hero terdapat satu</span>
+            <span class="hljs-comment">//TextView maka pada kode program ini dibuat satu TextView yang melakukan findViewById ke id layout yang bersesuaian</span>
+            heroName = itemView.findViewById(R.id.heroName);
+        }
+    }
+}
+</code></pre>
+<h4 id="get-item-count">Get Item Count</h4>
+<p>Function yang paling mudah untuk di isi pada adapter ini adalah function <code>getItemCount()</code> function ini berfungsi mengembalikan jumlah data yang ingin ditampilkan pada <code>RecyclerView</code>, Tambahkan <code>heroList.size()</code> pada function <code>getItemCount()</code></p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SuperHeroAdapter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">Adapter</span>&lt;<span class="hljs-title">SuperHeroAdapter</span>.<span class="hljs-title">MyViewHolder</span>&gt; </span>{
+...
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span>    </span>{
+        <span class="hljs-keyword">return</span> heroList.size();
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyViewHolder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">ViewHolder</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MyViewHolder</span><span class="hljs-params">(@NonNull View itemView)</span> </span>{
+            <span class="hljs-keyword">super</span>(itemView);
+            <span class="hljs-comment">//variabel disesuaikan dengan layout, karena pada layout item_super_hero terdapat satu</span>
+            <span class="hljs-comment">//TextView maka pada kode program ini dibuat satu TextView yang melakukan findViewById ke id layout yang bersesuaian</span>
+            TextView heroName = itemView.findViewById(R.id.heroName);
+        }
+    }
+}
+</code></pre>
+<h4 id="oncreateviewholder">OnCreateViewHolder</h4>
+<p>Function ini berfungsi seperti <code>onCreate</code> pada activity dimana pada function ini juga dilakukan pendefenisian layout mana yang digunakan pada saat recyclerview dibuat. Jadi item layout yang dibuat sebelumnya di koneksikan di fungsi ini.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SuperHeroAdapter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">Adapter</span>&lt;<span class="hljs-title">SuperHeroAdapter</span>.<span class="hljs-title">MyViewHolder</span>&gt; </span>{
+    List&lt;SuperHero&gt; heroList;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SuperHeroAdapter</span><span class="hljs-params">(List&lt;SuperHero&gt; heroList)</span> </span>{
+        <span class="hljs-keyword">this</span>.heroList = heroList;
+    }
+
+    <span class="hljs-meta">@NonNull</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> SuperHeroAdapter.<span class="hljs-function">MyViewHolder <span class="hljs-title">onCreateViewHolder</span><span class="hljs-params">(@NonNull ViewGroup parent, <span class="hljs-keyword">int</span> viewType)</span> </span>{
+        <span class="hljs-comment">//object context diambil dari parent</span>
+        Context context = parent.getContext();
+        <span class="hljs-comment">//object context digunakan untuk membuat object layoutInflater</span>
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        <span class="hljs-comment">//object layoutInflater digunakan untuk membuat object view yang merupakan hasil inflate  layout ( mengubungkan adapter degnan layout)</span>
+        View superHeroView = layoutInflater.inflate(R.layout.item_super_hero,parent,<span class="hljs-keyword">false</span>);
+        <span class="hljs-comment">//object superHeroView digunakan untuk membuat object viewHolder</span>
+        MyViewHolder viewHolder = <span class="hljs-keyword">new</span> MyViewHolder(superHeroView);
+        <span class="hljs-keyword">return</span> viewHolder;
+    }
+    ...
+    ...
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span>    </span>{
+        <span class="hljs-keyword">return</span> heroList.size();
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyViewHolder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">ViewHolder</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MyViewHolder</span><span class="hljs-params">(@NonNull View itemView)</span> </span>{
+            <span class="hljs-keyword">super</span>(itemView);
+            TextView heroName = itemView.findViewById(R.id.heroName);
+        }
+    }
+}
+</code></pre>
+<h4 id="onbindviewholder">OnBindViewHolder</h4>
+<p>Pada fungsi ini kita menghubungkan data pada salah satu item di <code>listSuperHero</code> dengan item pada pada layout item_super_hero,kode program pada item_super_hero terdapat sebuah textView dengan id <code>heroName</code> pada fungsi inilah kita menghubungkan data dari item super hero ke layout.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> polinema.ac.id.recyclerviewsangatsederhana.adapters;
+
+
+<span class="hljs-keyword">import</span> android.content.Context;
+<span class="hljs-keyword">import</span> android.view.LayoutInflater;
+<span class="hljs-keyword">import</span> android.view.View;
+<span class="hljs-keyword">import</span> android.view.ViewGroup;
+<span class="hljs-keyword">import</span> android.widget.TextView;
+
+<span class="hljs-keyword">import</span> androidx.annotation.NonNull;
+<span class="hljs-keyword">import</span> androidx.recyclerview.widget.RecyclerView;
+
+<span class="hljs-keyword">import</span> org.w3c.dom.Text;
+
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">import</span> polinema.ac.id.recyclerviewsangatsederhana.R;
+<span class="hljs-keyword">import</span> polinema.ac.id.recyclerviewsangatsederhana.models.SuperHero;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SuperHeroAdapter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">Adapter</span>&lt;<span class="hljs-title">SuperHeroAdapter</span>.<span class="hljs-title">MyViewHolder</span>&gt; </span>{
+    List&lt;SuperHero&gt; heroList;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SuperHeroAdapter</span><span class="hljs-params">(List&lt;SuperHero&gt; heroList)</span> </span>{
+        <span class="hljs-keyword">this</span>.heroList = heroList;
+    }
+
+    <span class="hljs-meta">@NonNull</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> SuperHeroAdapter.<span class="hljs-function">MyViewHolder <span class="hljs-title">onCreateViewHolder</span><span class="hljs-params">(@NonNull ViewGroup parent, <span class="hljs-keyword">int</span> viewType)</span> </span>{
+        Context context = parent.getContext();
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View superHeroView = layoutInflater.inflate(R.layout.item_super_hero,parent,<span class="hljs-keyword">false</span>);
+        MyViewHolder viewHolder = <span class="hljs-keyword">new</span> MyViewHolder(superHeroView);
+        <span class="hljs-keyword">return</span> viewHolder;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onBindViewHolder</span><span class="hljs-params">(@NonNull SuperHeroAdapter.MyViewHolder holder, <span class="hljs-keyword">int</span> position)</span> </span>{
+        <span class="hljs-comment">//ambil satu item hero</span>
+        SuperHero hero = heroList.get(position);
+        <span class="hljs-comment">//set text heroName berdasarkan data dari model hero</span>
+        holder.heroName.setText(hero.getHeroName());
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span>    </span>{
+        <span class="hljs-keyword">return</span> heroList.size();
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyViewHolder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">RecyclerView</span>.<span class="hljs-title">ViewHolder</span> </span>{
+        <span class="hljs-keyword">public</span> TextView heroName;
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MyViewHolder</span><span class="hljs-params">(@NonNull View itemView)</span> </span>{
+            <span class="hljs-keyword">super</span>(itemView);
+            heroName = itemView.findViewById(R.id.heroName);
+        }
+    }
+}
+</code></pre>
+<h2 id="instansiasi-recyclerview">Instansiasi RecyclerView</h2>
+<p>Instansiasi RecyclerView dilakukan di MainActivity untuk melakukannya buatlah sebuah field pada Class MainActivity dengan tipe data RecyclerView berilah anama rvSuperHero.</p>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+    <span class="hljs-comment">//instansiasi Recyclerview</span>
+    RecyclerView rvSuperHero;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+</code></pre>
+<p>Selanjutnya setelah <code>setContentView</code> panggil lakukan <code>findViewById</code> untuk menyambungkan <code>rvSuperHero</code> ke RecyclerView yang ada di layout.</p>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+    <span class="hljs-comment">//instansiasi Recyclerview</span>
+    RecyclerView rvSuperHero;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        <span class="hljs-comment">//menyambungkan rvSuperHero ke layout</span>
+        rvSuperHero = findViewById(R.id.rvSuperHero);
+    }
+}
+</code></pre>
+<h2 id="instansiasi-model">Instansiasi Model</h2>
+<p>Langkah selanjutnya adalah membuat dataset, dataset dapat dibuat dengan membuat sebuah daftar super hero dengan membuat List of object <code>SuperHero</code> pada <code>MainActivity</code></p>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+    <span class="hljs-comment">//instansiasi Recyclerview</span>
+    RecyclerView rvSuperHero;
+    <span class="hljs-comment">//instansiasi list superhero</span>
+    List&lt;SuperHero&gt; listSuperHero = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        <span class="hljs-comment">//menyambungkan rvSuperHero ke layout</span>
+        rvSuperHero = findViewById(R.id.rvSuperHero);
+
+    }
+}
+</code></pre>
+<p>Setelah itu buatlah beberapa object <code>SuperHero</code> dan ditambahkan kedalam <code>List&lt;SuperHero&gt;</code></p>
+<pre><code class="lang-java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+    <span class="hljs-comment">//instansiasi Recyclerview</span>
+    RecyclerView rvSuperHero;
+    <span class="hljs-comment">//instansiasi list superhero</span>
+    List&lt;SuperHero&gt; listSuperHero = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        <span class="hljs-comment">//menyambungkan rvSuperHero ke layout</span>
+        rvSuperHero = findViewById(R.id.rvSuperHero);
+        <span class="hljs-comment">//Membuat object hero</span>
+        SuperHero hero = <span class="hljs-keyword">new</span> SuperHero(<span class="hljs-string">&quot;Petruk&quot;</span>);
+        <span class="hljs-comment">//menambahkan hero ke listSuperHero</span>
+        listSuperHero.add(hero);
+        <span class="hljs-comment">//membuat object hero baru</span>
+        hero = <span class="hljs-keyword">new</span> SuperHero(<span class="hljs-string">&quot;Gareng&quot;</span>);
+        <span class="hljs-comment">//menambahkan hero baru ke listSuperhero</span>
+        listSuperHero.add(hero);
+    }
+}
+</code></pre>
+<h2 id="instansiasi-adapter">Instansiasi Adapter</h2>
+<p>Pada langkah ini semua data yang dibutuhkan untuk menginstansiasi adapter sudah dimiliki oleh karena itu adapter dapat di buat objeknya.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+    <span class="hljs-comment">//instansiasi Recyclerview</span>
+    RecyclerView rvSuperHero;
+    <span class="hljs-comment">//instansiasi list superhero</span>
+    List&lt;SuperHero&gt; listSuperHero = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        <span class="hljs-comment">//menyambungkan rvSuperHero ke layout</span>
+        rvSuperHero = findViewById(R.id.rvSuperHero);
+        <span class="hljs-comment">//Membuat object hero</span>
+        SuperHero hero = <span class="hljs-keyword">new</span> SuperHero(<span class="hljs-string">&quot;Petruk&quot;</span>);
+        <span class="hljs-comment">//menambahkan hero ke listSuperHero</span>
+        listSuperHero.add(hero);
+        <span class="hljs-comment">//membuat object hero baru</span>
+        hero = <span class="hljs-keyword">new</span> SuperHero(<span class="hljs-string">&quot;Gareng&quot;</span>);
+        <span class="hljs-comment">//menambahkan hero baru ke listSuperhero</span>
+        listSuperHero.add(hero);
+        <span class="hljs-comment">//Instansiasi Adapter</span>
+        SuperHeroAdapter superHeroAdapter = <span class="hljs-keyword">new</span> SuperHeroAdapter(listSuperHero);
+    }
+}
+</code></pre>
+<h2 id="set-adapter-dan-layout-manager">Set Adapter dan Layout Manager</h2>
+<p>Langkah terakhir dalam membuat recyclerview adalah dengan melakukan set adapter dan set layout manager pada object recyclerview</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+    <span class="hljs-comment">//instansiasi Recyclerview</span>
+    RecyclerView rvSuperHero;
+    <span class="hljs-comment">//instansiasi list superhero</span>
+    List&lt;SuperHero&gt; listSuperHero = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        <span class="hljs-comment">//menyambungkan rvSuperHero ke layout</span>
+        rvSuperHero = findViewById(R.id.rvSuperHero);
+        <span class="hljs-comment">//Membuat object hero</span>
+        SuperHero hero = <span class="hljs-keyword">new</span> SuperHero(<span class="hljs-string">&quot;Petruk&quot;</span>);
+        <span class="hljs-comment">//menambahkan hero ke listSuperHero</span>
+        listSuperHero.add(hero);
+        <span class="hljs-comment">//membuat object hero baru</span>
+        hero = <span class="hljs-keyword">new</span> SuperHero(<span class="hljs-string">&quot;Gareng&quot;</span>);
+        <span class="hljs-comment">//menambahkan hero baru ke listSuperhero</span>
+        listSuperHero.add(hero);
+        <span class="hljs-comment">//Instansiasi Adapter</span>
+        SuperHeroAdapter superHeroAdapter = <span class="hljs-keyword">new</span> SuperHeroAdapter(listSuperHero);
+        <span class="hljs-comment">//set adapter dan layoutmanager</span>
+        rvSuperHero.setAdapter(superHeroAdapter);
+        rvSuperHero.setLayoutManager(<span class="hljs-keyword">new</span> LinearLayoutManager(<span class="hljs-keyword">this</span>));
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> hasil yang cocok "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">Tidak ada hasil yang cocok "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter05-01teori.html" class="navigation navigation-prev " aria-label="Previous page: Teori Recycler View">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter05-02recyclerviewsederhana.html" class="navigation navigation-next " aria-label="Next page: Praktikum 2 - RecyclerView Sederhana">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Praktikum 1 - RecyclerView Sangat Sederhana","level":"1.6.2","depth":2,"next":{"title":"Praktikum 2 - RecyclerView Sederhana","level":"1.6.3","depth":2,"path":"chapter05/chapter05-02recyclerviewsederhana.md","ref":"chapter05/chapter05-02recyclerviewsederhana.md","articles":[]},"previous":{"title":"Teori Recycler View","level":"1.6.1","depth":2,"path":"chapter05/chapter05-01teori.md","ref":"chapter05/chapter05-01teori.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"id","gitbook":"*"},"file":{"path":"chapter05/chapter05-02recyclerviewsangatsederhana.md","mtime":"2021-10-16T10:07:40.598Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-16T10:08:48.775Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
